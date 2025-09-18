@@ -2,8 +2,6 @@
 slug: /
 ---
 
-<meta name="algolia-site-verification"  content="B711AF624E87C3A5" />
-
 # README
 
 :::tip

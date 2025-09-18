@@ -53,7 +53,7 @@ const config = {
                     // Please change this to your repo.
                     // Remove this to remove the "edit this page" links.
                     editUrl:
-                        'https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/',
+                        'https://github.com/fuji-fabric/fuji-fabric.github.io/tree/main/',
                     admonitions: {
                         keywords: ['note', 'tip', 'info', 'warning', 'danger', 'command', 'job', 'config', 'module', 'colorbox-danger', 'colorbox-warning', 'colorbox-note', 'colorbox-tip', 'colorbox-example', 'placeholder', 'argument-type'],
                         extendDefaults: true,
