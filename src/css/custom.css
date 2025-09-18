@@ -1,0 +1,84 @@
+/**
+ * Any CSS included here will be global. The classic template
+ * bundles Infima by default. Infima is a CSS framework designed to
+ * work well for content-centric websites.
+ */
+
+/* You can override the default Infima variables here. */
+:root {
+  --ifm-color-primary: #2e8555;
+  --ifm-color-primary-dark: #29784c;
+  --ifm-color-primary-darker: #277148;
+  --ifm-color-primary-darkest: #205d3b;
+  --ifm-color-primary-light: #33925d;
+  --ifm-color-primary-lighter: #359962;
+  --ifm-color-primary-lightest: #3cad6e;
+  --ifm-code-font-size: 95%;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.1);
+}
+
+/* For readability concerns, you should choose a lighter palette in dark mode. */
+[data-theme='dark'] {
+  --ifm-color-primary: #25c2a0;
+  --ifm-color-primary-dark: #21af90;
+  --ifm-color-primary-darker: #1fa588;
+  --ifm-color-primary-darkest: #1a8870;
+  --ifm-color-primary-light: #29d5b0;
+  --ifm-color-primary-lighter: #32d8b4;
+  --ifm-color-primary-lightest: #4fddbf;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.3);
+}
+
+/* Custom Admonitions */
+.admonition-command {
+  --ifm-alert-background-color: #f3f6ff; /* light background */
+  --ifm-alert-border-color: #3b82f6;     /* blue border */
+  --ifm-alert-color: #1e40af;            /* text color */
+  --ifm-code-background: #dbeafe;
+}
+html[data-theme='dark'] .admonition-command {
+  --ifm-alert-background-color: #1e3a8a; /* deep indigo/blue */
+  --ifm-alert-border-color: #60a5fa;     /* blue-400 border */
+  --ifm-alert-color: #bfdbfe;            /* blue-200 text */
+  --ifm-code-background: #1e40af;        /* strong blue for inline code */
+}
+
+.admonition-job {
+  --ifm-alert-background-color: #fffbeb; /* light warm yellow */
+  --ifm-alert-border-color: #facc15;     /* amber-400, vibrant border */
+  --ifm-alert-color: #92400e;            /* amber-800, readable text */
+  --ifm-code-background: #fef9c3;        /* soft pastel yellow for code */
+}
+html[data-theme='dark'] .admonition-job {
+  --ifm-alert-background-color: #422006; /* deep amber-brown */
+  --ifm-alert-border-color: #facc15;     /* amber-400 border */
+  --ifm-alert-color: #fef08a;            /* yellow-200 text */
+  --ifm-code-background: #713f12;        /* dark amber for code */
+}
+
+.admonition-config {
+  --ifm-alert-background-color: #ecfdf5; /* light teal background */
+  --ifm-alert-border-color: #14b8a6;     /* teal-500 border */
+  --ifm-alert-color: #0f766e;            /* teal-700 text */
+  --ifm-code-background: #ccfbf1;        /* soft cyan for inline code */
+}
+html[data-theme='dark'] .admonition-config {
+  --ifm-alert-background-color: #042f2e; /* deep teal */
+  --ifm-alert-border-color: #14b8a6;     /* keep teal border */
+  --ifm-alert-color: #5eead4;            /* bright aqua text */
+  --ifm-code-background: #134e4a;        /* dark cyan for code */
+}
+
+.admonition-module {
+  --ifm-alert-background-color: #f5f3ff; /* light violet background */
+  --ifm-alert-border-color: #8b5cf6;     /* violet-500 border */
+  --ifm-alert-color: #4c1d95;            /* violet-800 text */
+  --ifm-code-background: #ede9fe;        /* soft violet for inline code */
+}
+
+html[data-theme='dark'] .admonition-module {
+  --ifm-alert-background-color: #2e1065; /* deep violet */
+  --ifm-alert-border-color: #8b5cf6;     /* keep violet border */
+  --ifm-alert-color: #c4b5fd;            /* pale violet text */
+  --ifm-code-background: #5b21b6;        /* dark violet for code */
+}

@@ -1,0 +1,110 @@
+---
+title: tpa
+---
+
+
+# Module: tpa
+
+## Overview
+:::module
+This module provides `/tpa` and `/tpahere` commands.
+:::
+## Configurations
+:::warning
+The JSON content is provided for documentation purposes only.
+
+It should not be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+:::
+:::config
+- File Name: `config.json`
+- File Content: 
+<details>
+
+<summary>Click to expand...</summary>
+
+```json showLineNumbers title="config/fuji/modules/tpa/config.json"
+{
+  /* Expiration duration seconds for each tpa request. */
+  "request_timeout": 300,
+  "mention_player": {
+    "sound": "entity.experience_orb.pickup",
+    "volume": 100.0,
+    "pitch": 1.0,
+    "repeat_count": 3,
+    "interval_ms": 1000
+  }
+}
+```
+</details>
+:::
+## Commands
+:::command
+- Command Syntax: `/tpa`
+- Document: null
+- Can be executed by console: `false`
+- Required Level Permission: `0`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/tpa gui`
+- Document: null
+- Can be executed by console: `false`
+- Required Level Permission: `0`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/tpa <ServerPlayerEntity target>`
+- Document: null
+- Can be executed by console: `false`
+- Required Level Permission: `0`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/tpaaccept all`
+- Document: null
+- Can be executed by console: `false`
+- Required Level Permission: `0`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/tpaaccept <ServerPlayerEntity target>`
+- Document: null
+- Can be executed by console: `false`
+- Required Level Permission: `0`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/tpacancel all`
+- Document: null
+- Can be executed by console: `false`
+- Required Level Permission: `0`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/tpacancel <ServerPlayerEntity target>`
+- Document: null
+- Can be executed by console: `false`
+- Required Level Permission: `0`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/tpadeny all`
+- Document: null
+- Can be executed by console: `false`
+- Required Level Permission: `0`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/tpadeny <ServerPlayerEntity target>`
+- Document: null
+- Can be executed by console: `false`
+- Required Level Permission: `0`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/tpahere <ServerPlayerEntity target>`
+- Document: null
+- Can be executed by console: `false`
+- Required Level Permission: `0`
+- Required String Permission: `null`
+:::
