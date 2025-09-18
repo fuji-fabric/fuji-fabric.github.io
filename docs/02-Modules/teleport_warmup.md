@@ -50,7 +50,7 @@ NOTE: The `admin players` can bypass the teleport warmup.
 
 1. The target dimension is not defined in the `effective dimensions` list.
 
-2. The target player's `age` \<= `3`
+2. The target player's `age <= 3`
 
 3. The target player is admin. (level permission >= 4)
 

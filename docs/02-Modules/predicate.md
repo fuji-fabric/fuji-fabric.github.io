@@ -49,13 +49,13 @@ Issue: `/command-debug has-perm? Steve fuji.permission.back`
 
 ◉ Test if a player's health >= 10
 
-Issue: `/command-debug \<=? Steve 10 %player:health%`
+Issue: `/command-debug <=? Steve 10 %player:health%`
 
 
 
 ◉ Test if a player killed more than 100 zombies.
 
-Issue: `/command-debug \<=? Steve 100 %player:statistic_raw minecraft:deaths%`
+Issue: `/command-debug <=? Steve 100 %player:statistic_raw minecraft:deaths%`
 
 
 

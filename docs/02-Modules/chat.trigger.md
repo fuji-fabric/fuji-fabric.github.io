@@ -50,7 +50,7 @@ Commands:
 
 ◉ To define a shortcut for chat display module with Styled Chat mod.
 
-Regex: `(?\<=^|\\s)item(?=\\s|$)`
+Regex: `(?<=^|\\s)item(?=\\s|$)`
 
 Commands: `run as fake-op %player:name% chat display item`
 :::

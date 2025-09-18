@@ -33,7 +33,7 @@ Typical use cases:
 
 3.a. If the `enable` property is `false`, then do nothing.
 
-3.b. If the `remaining runs` property is `\<= 0`, then do nothing.
+3.b. If the `remaining runs` property is `<= 0`, then do nothing.
 
 3.c. Otherwise, it decreases the `remaining runs` property by 1, and pick a random `command group` to execute.
 

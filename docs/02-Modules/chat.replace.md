@@ -28,7 +28,7 @@ So you can `disable` this module, if you are using that mod.
 
 ◉ Define a chat shortcut, to evaluate a placeholder.
 
-Regex: `(?\<=^|\\s)uuid(?=\\s|$)`
+Regex: `(?<=^|\\s)uuid(?=\\s|$)`
 
 Replacement: `my uuid is %player:uuid%`
 :::
