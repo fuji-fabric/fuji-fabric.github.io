@@ -117,7 +117,7 @@ function PlaceholderAdmonition(props) {
 function ArgumentTypeAdmonition(props) {
     return (
         <Admonition type="tip"
-                    icon={<FontAwesomeIcon icon="fa-fill-drip" size="2x" />}
+                    icon={<FontAwesomeIcon icon="fa-filter" size="2x" />}
                     title="Argument Type"
                     className="admonition-argument-type"
         >
@@ -127,10 +127,10 @@ function ArgumentTypeAdmonition(props) {
 }
 
 const AdmonitionTypes = {
+  /* Extend the existing admonition types. */
   ...DefaultAdmonitionTypes,
 
-  // Add all your custom admonition types here...
-  // You can also override the default ones if you want
+  /* Define custom admonition types. */
   'command': CommandAdmonition,
   'job': JobAdmonition,
   'config': ConfigAdmonition,
@@ -144,4 +144,5 @@ const AdmonitionTypes = {
   'argument-type': ArgumentTypeAdmonition,
 };
 
+// noinspection JSUnusedGlobalSymbols
 export default AdmonitionTypes;
