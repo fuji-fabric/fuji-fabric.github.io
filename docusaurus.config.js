@@ -90,10 +90,10 @@ const config = {
             },
             algolia: {
                 // The application ID provided by Algolia
-                appId: 'EBAF1RE3JC',
+                appId: '3HN40SOF3Z',
 
                 // Public API key: it is safe to commit it
-                apiKey: 'df2d3c468b22ff3ca46bcca593fdcfd0',
+                apiKey: '65b22e8857153179f5934b271d6c6b42',
 
                 indexName: 'Fuji Docs Site Primary Index',
 
