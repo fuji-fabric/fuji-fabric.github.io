@@ -10,6 +10,8 @@ title: title
   This module allows you to define `titles` to display in the chat.
   
   Or display the `active title` in any place that supports placeholders.
+
+
 :::
 ## Color Boxes
 
@@ -30,6 +32,8 @@ title: title
   ◉ To display the `active title`.
   
   Insert the `%fuji:active_title%` in any place that supports placeholders. (Like a chat mod that supports the placeholders).
+
+
 :::
 
 ## Configurations
@@ -97,6 +101,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/title!`
 - Document:   Open the `title` GUI.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -105,4 +111,6 @@ It should NOT be copied directly into your configuration folder, as the document
 :::placeholder
 - Placeholder Name: `fuji:active_title`
 - Document:   Returns the `display name` of `the active title` for the player.
+
+
 :::

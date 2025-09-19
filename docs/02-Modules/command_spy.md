@@ -8,6 +8,8 @@ title: command_spy
 ## Overview
 :::module
   This module allows you to spy `command execution`.
+
+
 :::
 ## Color Boxes
 
@@ -20,6 +22,8 @@ title: command_spy
   2. Find the `first matched rule`.
   
   3. Apply the `first matched rule`, if it exists.
+
+
 :::
 
 ## Configurations

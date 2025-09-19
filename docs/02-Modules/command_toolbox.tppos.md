@@ -26,11 +26,15 @@ title: command_toolbox.tppos
   5. `/tppos --minRange 1000 --maxRange 2000` to specify the setup for `a random tp`.
   
   6. `/tppos here @a` to teleport `all online players` to `you`.
+
+
 :::
 ## Commands
 :::command
 - Command Syntax: `/tppos [Dimension dimension] [Double x] [Double y] [Double z] [Float yaw] [Float pitch] [Integer centerX] [Integer centerZ] [Boolean circle] [Integer minRange] [Integer maxRange] [Integer minY] [Integer maxY] [Integer maxTryTimes] [Integer asyncChunkLoadingTimeoutTicks] [Integer chunkInhabitedTimeLowerThanTicks] [BiomeId biome]`
 - Document:   The unified teleport command.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -46,6 +50,8 @@ title: command_toolbox.tppos
   1. `/tppos here Steve` to teleport `Steve` to `you`.
   
   2. `/tppos here @a` to teleport `all online players` to `you`.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -53,6 +59,8 @@ title: command_toolbox.tppos
 :::command
 - Command Syntax: `/tppos offline <OfflinePlayerName player>`
 - Document:   Teleport to the offline position of a player.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -60,6 +68,8 @@ title: command_toolbox.tppos
 :::command
 - Command Syntax: `/tppos others <PlayerCollection others> [Dimension dimension] [Double x] [Double y] [Double z] [Float yaw] [Float pitch] [Integer centerX] [Integer centerZ] [Boolean circle] [Integer minRange] [Integer maxRange] [Integer minY] [Integer maxY] [Integer maxTryTimes] [Integer asyncChunkLoadingTimeoutTicks] [Integer chunkInhabitedTimeLowerThanTicks] [BiomeId biome]`
 - Document:   The unified teleport command.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

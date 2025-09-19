@@ -14,6 +14,8 @@ title: afk.effect
   2. Targetable: the afk player can not be targeted by a hostile entity.
   
   3. Moveable: the afk player can not be moved.
+
+
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">

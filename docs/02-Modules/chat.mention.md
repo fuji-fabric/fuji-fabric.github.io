@@ -12,6 +12,8 @@ title: chat.mention
   1. The target player name will be highlighted.
   
   2. The target player will be sound notified.
+
+
 :::
 ## Color Boxes
 
@@ -24,6 +26,8 @@ title: chat.mention
   It works, but you will not get the `mention player` rendered in chat.
   
   Other things like the `sound notify` will still work.
+
+
 :::
 
 ## Configurations

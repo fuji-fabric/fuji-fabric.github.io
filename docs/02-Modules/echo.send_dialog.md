@@ -18,11 +18,15 @@ title: echo.send_dialog
   2. `/send-dialog Steve --noButtonSlotIndex -1 <green>Confirm me.`
   
   3. `/send-dialog Steve --yesButtonCommand "say confirmed" <blue>Confirm me.`
+
+
 :::
 ## Commands
 :::command
 - Command Syntax: `/send-dialog <ServerPlayerEntity player> [Integer rows] [Integer yesButtonSlotIndex] [ItemStackWrapper yesButtonItem] [String yesButtonName] [String yesButtonCommand] [Integer noButtonSlotIndex] [ItemStackWrapper noButtonItem] [String noButtonName] [String noButtonCommand] [Boolean canCloseUsingNoButton] <GreedyString title>`
 - Document:   Send a dialog GUI to a player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

@@ -8,6 +8,8 @@ title: works
 ## Overview
 :::module
   Provides a `bill-board`, for `players` to post and share their works.
+
+
 :::
 ## Color Boxes
 
@@ -16,6 +18,8 @@ title: works
   ◉ The difference between `non-production work` and `production work`.
   
   For a `production work`, we provide the `production sample` to count the `hopper` and `minecart-hopper`.
+
+
 :::
 
 :::colorbox-tip
@@ -39,6 +43,8 @@ title: works
   The `hopper counter` provided by `carpet` mod will destroy the output item.
   
   But the hopper counter provided by this module will not.
+
+
 :::
 
 ## Configurations
@@ -91,6 +97,8 @@ It should NOT be copied directly into your configuration folder, as the document
   NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
   
   NOTE: The `disk` will be `overridden` when `fire` this job.
+
+
 :::
 :::job
 - Job Name: `WorksOnScheduleDispatcherJob`
@@ -101,11 +109,15 @@ It should NOT be copied directly into your configuration folder, as the document
   For example:
   
   1. To end the sample of a `production work`.
+
+
 :::
 ## Commands
 :::command
 - Command Syntax: `/works`
 - Document:   Open the works GUI.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`

@@ -8,6 +8,8 @@ title: maintenance
 ## Overview
 :::module
   This module provides a `maintenance mode`, to prevent players joining the server during maintenance.
+
+
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">

@@ -8,6 +8,8 @@ title: command_warmup
 ## Overview
 :::module
   This module allows you to define a `cooldown` before command execution.
+
+
 :::
 ## Color Boxes
 
@@ -20,6 +22,8 @@ title: command_warmup
   
   
   NOTE: Players with level permission 4 can bypass the command warmup.
+
+
 :::
 
 :::colorbox-note
@@ -31,6 +35,8 @@ title: command_warmup
   2. The command source is `admin` (level permission >= 4)
   
   3. The command source has the `warmup bypass permission` for that command.
+
+
 :::
 
 :::colorbox-example
@@ -44,6 +50,8 @@ title: command_warmup
   The `.` character in regex means `match any character`.
   
   The `+` character in regex means `a quantifier, one or more times`.
+
+
 :::
 
 :::colorbox-example
@@ -55,6 +63,8 @@ title: command_warmup
   The `rules` are `matched` from up to down, and `the first matched rule` will be used.
   
   So, you can just write the `special rule` at the top of other rules.
+
+
 :::
 
 :::colorbox-example
@@ -66,6 +76,8 @@ title: command_warmup
   
   
   The regex use the `negative lookahead`, to exclude the string that `starts with back`.
+
+
 :::
 
 :::colorbox-example
@@ -77,6 +89,8 @@ title: command_warmup
   
   
   You can use the `alternative character |` in `regex`.
+
+
 :::
 
 ## Configurations

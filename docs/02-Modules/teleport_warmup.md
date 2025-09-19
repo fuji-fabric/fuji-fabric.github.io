@@ -8,6 +8,8 @@ title: teleport_warmup
 ## Overview
 :::module
   Adds a warmup cooldown before player teleportation.
+
+
 :::
 ## Color Boxes
 
@@ -42,6 +44,8 @@ title: teleport_warmup
   Like, use teleport commands to escape death.
   
   NOTE: The `admin players` can bypass the teleport warmup.
+
+
 :::
 
 :::colorbox-note
@@ -57,6 +61,8 @@ title: teleport_warmup
   4. The target player is a `fake player`.
   
   5. The target player has the `warmup bypass permission`.
+
+
 :::
 
 ## Configurations

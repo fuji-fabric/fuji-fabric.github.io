@@ -18,6 +18,8 @@ title: warning
   
   
   You can use `warnings` to `track` the behaviours of a `player`.
+
+
 :::
 ## Color Boxes
 
@@ -30,6 +32,8 @@ title: warning
   However, you may want some advanced ban tools.
   
   See: https://github.com/Patbox/BanHammer
+
+
 :::
 
 :::colorbox-example
@@ -55,6 +59,8 @@ title: warning
   ◉ Open the `Warning GUI`.
   
   Issue: `/warning gui`
+
+
 :::
 
 ## Configurations
@@ -138,6 +144,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/warning`
 - Document:   Open the warning GUI.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -145,6 +153,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/warning clear-all [Boolean confirm]`
 - Document:   Clear all warnings for all players.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -152,6 +162,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/warning clear <OfflinePlayerName targetPlayer> [Boolean confirm]`
 - Document:   Clear the warnings of a player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -159,6 +171,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/warning create-temp <OfflinePlayerName targetPlayer> <Duration duration> <GreedyString warning>`
 - Document:   Create a new warning with expiration for the player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -166,6 +180,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/warning create <OfflinePlayerName targetPlayer> <GreedyString warning>`
 - Document:   Create a new warning for the player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -173,6 +189,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/warning gui`
 - Document:   Open the warning GUI.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -180,6 +198,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/warning list <OfflinePlayerName targetPlayer>`
 - Document:   List the warnings of a player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -188,16 +208,24 @@ It should NOT be copied directly into your configuration folder, as the document
 :::placeholder
 - Placeholder Name: `fuji:last_warning_created_date`
 - Document:   Returns the `created date` of the last created warning.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:last_warning_creator_name`
 - Document:   Returns the `creator name` of the last created warning.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:last_warning_expiration_date`
 - Document:   Returns the `expiration date` of the last created warning.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:last_warning_reason`
 - Document:   Returns the `reason` of the last created warning.
+
+
 :::

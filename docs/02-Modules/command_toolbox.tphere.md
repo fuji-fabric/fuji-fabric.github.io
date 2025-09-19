@@ -18,6 +18,8 @@ title: command_toolbox.tphere
   1. `/tphere Steve` to teleport `Steve` to `you`.
   
   2. `/tphere @a` to teleport `all online players` to `you`.
+
+
 :::
 ## Commands
 :::command

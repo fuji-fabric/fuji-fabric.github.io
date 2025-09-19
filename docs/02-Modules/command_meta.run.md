@@ -8,6 +8,8 @@ title: command_meta.run
 ## Overview
 :::module
   Provides `/run` command, to run a command with context.
+
+
 :::
 ## Color Boxes
 
@@ -70,6 +72,8 @@ title: command_meta.run
   The player referred to by the `@p` will be in-consistent.
   
   It depends on which player is the closest player to the spawnpoint of `minecraft:overworld` at that time.
+
+
 :::
 
 :::colorbox-note
@@ -133,6 +137,8 @@ title: command_meta.run
   However, we didn't actually `/op` the player `Alice`.
   
   What we do is simple, we just tell the `command executor` to treat the player `Alice` as if he has a `level permission` of `4` when executing `this command` instance.
+
+
 :::
 
 :::colorbox-example
@@ -158,12 +164,16 @@ title: command_meta.run
   ◉ Give online players random amount of diamonds.
   
   Issue: `/run as console foreach give %fuji:escape player:name% minecraft:diamond %fuji:escape fuji:random 8 32 1%`
+
+
 :::
 
 ## Commands
 :::command
 - Command Syntax: `/run as console <GreedyString rest>`
 - Document:   Execute a command as console.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -171,6 +181,8 @@ title: command_meta.run
 :::command
 - Command Syntax: `/run as fake-op <ServerPlayerEntity player> <GreedyString rest>`
 - Document:   Execute a command as a player with fake-op.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -178,6 +190,8 @@ title: command_meta.run
 :::command
 - Command Syntax: `/run as player <ServerPlayerEntity player> <GreedyString rest>`
 - Document:   Execute a command as a player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

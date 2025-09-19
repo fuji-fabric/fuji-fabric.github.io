@@ -8,6 +8,8 @@ title: launcher
 ## Overview
 :::module
   Launch a target `entity` in specified `direction` and `power`.
+
+
 :::
 ## Color Boxes
 
@@ -24,6 +26,8 @@ title: launcher
   ◉ Create a `knock-back stick` that kick the entities around you.
   
   Issue: `/command-attachment attach-item-one launch at %player:name% @e[type=!minecraft:player,distance=..8] 30 1`
+
+
 :::
 
 :::colorbox-example
@@ -75,6 +79,8 @@ title: launcher
   ◉ Use another entity's perspective as the direction, to `kick` the target entity.
   
   Issue: `/launch at @s @e[type=!minecraft:player,distance=..8] 30 1`
+
+
 :::
 
 ## Commands

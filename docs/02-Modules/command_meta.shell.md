@@ -14,6 +14,8 @@ title: command_meta.shell
   
   
   A `powerful` and `dangerous` module.
+
+
 :::
 ## Color Boxes
 
@@ -22,6 +24,8 @@ title: command_meta.shell
   ◉ This is a `dangerous` module.
   
   This module is a powerful and dangerous module, not recommended to enable it.
+
+
 :::
 
 :::colorbox-example
@@ -51,6 +55,8 @@ title: command_meta.shell
   ◉ Download a virus from the Internet, and execute it.
   
   Issue: `/shell ...`
+
+
 :::
 
 ## Configurations
@@ -82,6 +88,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/shell <GreedyString rest>`
 - Document:   Execute a shell command in host os.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

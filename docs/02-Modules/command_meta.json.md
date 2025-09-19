@@ -10,6 +10,8 @@ title: command_meta.json
   Provides `/json` command.
   
   A powerful and unified tool to edit json file.
+
+
 :::
 ## Color Boxes
 
@@ -18,6 +20,8 @@ title: command_meta.json
   Read the detailed document for `Json Path`:
   
   See https://goessner.net/articles/JsonPath/
+
+
 :::
 
 :::colorbox-example
@@ -37,6 +41,8 @@ title: command_meta.json
   ◉ Set the value of a json key.
   
   Issue: `/json write "config/fuji/config.json" "$.core.debug.log_debug_messages" BOOLEAN true`
+
+
 :::
 
 ## Commands

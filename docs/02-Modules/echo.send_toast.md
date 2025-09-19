@@ -10,6 +10,8 @@ title: echo.send_toast
   This module provides `/send-toast` command.
   
   To send the `text` as `toast` to a specified player.
+
+
 :::
 ## Color Boxes
 
@@ -24,6 +26,8 @@ title: echo.send_toast
   For example:
   
   1. `/send-toast @s --icon "minecraft:player_head[minecraft:profile=Steve]" <rb>Hello World`
+
+
 :::
 
 :::colorbox-example
@@ -31,6 +35,8 @@ title: echo.send_toast
   ◉ Send a toast to a player.
   
   Issue: `/send-toast Alice --icon minecraft:golden_carrot <rb>eat this carrot`
+
+
 :::
 
 ## Commands

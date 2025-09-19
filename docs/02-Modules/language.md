@@ -8,6 +8,8 @@ title: language
 ## Overview
 :::module
   Respect the `client-side` language option, if possible.
+
+
 :::
 ## Color Boxes
 
@@ -32,5 +34,7 @@ title: language
   That's to say, if you enable this module, then fuji will support `multiple language` at the same time.
   
   Fuji will use `different languages` for different players. (Respect the client-side language option)
+
+
 :::
 

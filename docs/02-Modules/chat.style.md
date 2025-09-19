@@ -10,6 +10,8 @@ title: chat.style
   This module allows you to customize global chat style.
   
   Besides, players can use `/chat style` to set per-player chat style.
+
+
 :::
 ## Color Boxes
 
@@ -18,6 +20,8 @@ title: chat.style
   If you are using `Styled Chat` mod, then you can `disable` this module.
   
   Because they provide the same `purpose`.
+
+
 :::
 
 :::colorbox-note
@@ -35,6 +39,8 @@ title: chat.style
   TIP: While you are using `Styled Chat` mod, you can still use `chat.*` modules from fuji.
   
   Most of `chat.*` modules are designed to work with other `chat-related mods`, especially the `Styled Chat` mod.
+
+
 :::
 
 :::colorbox-tip
@@ -50,6 +56,8 @@ title: chat.style
   4. This module is designed to work with other `chat-related` mods.
   
   5. You can control what style tags a player can use, using permissions.
+
+
 :::
 
 :::colorbox-tip
@@ -63,6 +71,8 @@ title: chat.style
   1. https://docs.advntr.dev/minimessage/format.html
   
   2. https://placeholders.pb4.eu/user/quicktext
+
+
 :::
 
 :::colorbox-tip
@@ -76,6 +86,8 @@ title: chat.style
   After install it, issue `/lp group default meta setprefix <yellow>[awesome]` to assign a `prefix`.
   
   To use the `prefix`, use the placeholder `%fuji:player_prefix%`.
+
+
 :::
 
 :::colorbox-tip
@@ -83,6 +95,8 @@ title: chat.style
   ◉ To set the per-player chat style:
   
   Issue `/chat style set prefix + %message% + suffix`.
+
+
 :::
 
 :::colorbox-tip
@@ -90,6 +104,8 @@ title: chat.style
   ◉ To allow players to use `<blue>` tag:
   
   Issue `/lp group default permission set fuji.style.chat.blue`.
+
+
 :::
 
 :::colorbox-tip
@@ -97,6 +113,8 @@ title: chat.style
   ◉ To allow players to use `<b>` tag:
   
   Issue `/lp group default permission set fuji.style.chat.b`.
+
+
 :::
 
 :::colorbox-tip
@@ -106,6 +124,8 @@ title: chat.style
   All tags also including dangerous tags like `<click>` tag which can run commands on clicked!
   
   Issue `/lp group default permission set fuji.style.chat.*`
+
+
 :::
 
 :::colorbox-tip
@@ -113,5 +133,7 @@ title: chat.style
   ◉ Customize the chat format using placeholders.
   
   You may want to enable `placeholder` module, to provide more useful placeholders.
+
+
 :::
 

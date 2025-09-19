@@ -10,6 +10,8 @@ title: echo.send_bossbar
   This module provides `/send-bossbar` command.
   
   To send a `text` as the `bossbar` to a specified player.
+
+
 :::
 ## Color Boxes
 
@@ -24,6 +26,8 @@ title: echo.send_bossbar
   ◉ All in one example.
   
   Issue: `/send-bossbar Alice --stepType BACKWARD --totalMs 5000 --color PURPLE --style NOTCHED_6 --notifyMeOnComplete true --commandList "say the player %player:name% is healed|heal others %player:name%" <rb>Healing is coming [elapsed_time]/[total_time]/[left_time]`
+
+
 :::
 
 ## Commands

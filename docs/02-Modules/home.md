@@ -8,6 +8,8 @@ title: home
 ## Overview
 :::module
   Allows players to define their homes.
+
+
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">
@@ -39,6 +41,8 @@ It should NOT be copied directly into your configuration folder, as the document
   NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
   
   NOTE: The `disk` will be `overridden` when `fire` this job.
+
+
 :::
 ## Commands
 :::command

@@ -26,6 +26,8 @@ title: command_meta.when_online
   1. `/when-online Steve give %player:name% minecraft:apple 3`
   
   2. `/when-online Alex delay 8 say Hi %player:name%`
+
+
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">
@@ -51,6 +53,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/when-online`
 - Document:   An alias command for `/when-online list` command.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -58,6 +62,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/when-online list`
 - Document:   List all submitted `when-online` tickets.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -65,6 +71,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/when-online <OfflinePlayerName targetPlayer> <GreedyString command>`
 - Document:   Execute the specified command `exactly once`, when the target player `is online`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

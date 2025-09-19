@@ -32,6 +32,8 @@ title: command_advice
   - `CANCEL_IF_ALL_SUCCESS`
   
   - ...
+
+
 :::
 ## Color Boxes
 
@@ -56,6 +58,8 @@ title: command_advice
   - `CANCEL_IF_ANY_SUCCESS`: If `ANY specified command is SUCCESS`, then cancel the execution of target command, and treat it as `FAILURE` (Return value = 0).
   
   - `CANCEL_IF_ALL_SUCCESS`: If `ALL specified commands are SUCCESS`, then cancel the execution of target command, and treat it as `FAILURE` (Return value = 0).
+
+
 :::
 
 :::colorbox-tip
@@ -65,6 +69,8 @@ title: command_advice
   The `command_advice` module is used to `decorate` an `existing target command`.
   
   The `command_bundle` module is used to `create` a `new command`.
+
+
 :::
 
 :::colorbox-example
@@ -90,6 +96,8 @@ title: command_advice
   2. Use `ON_EXECUTION_CANCELLED` advice type, to send `feedback` if conditions are not met.
   
   3. Use `ON_EXECUTION_SUCCESS` advice type, to apply the `cost` for the execution of target command.
+
+
 :::
 
 ## Configurations

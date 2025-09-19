@@ -8,6 +8,8 @@ title: gameplay.multi_obsidian_platform
 ## Overview
 :::module
   This module makes every `ender portal frame` generates its own `obsidian platform`.
+
+
 :::
 ## Color Boxes
 
@@ -22,6 +24,8 @@ title: gameplay.multi_obsidian_platform
   ◉ A well-known feature if you create the `Ender Portal` in the nether.
   
   See https://bugs.mojang.com/browse/MC-252361
+
+
 :::
 
 ## Configurations

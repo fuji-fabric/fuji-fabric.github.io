@@ -8,6 +8,8 @@ title: chat.replace
 ## Overview
 :::module
   This module allows you to replace `chat string` with a given `chat text`. (Including placeholder parsing)
+
+
 :::
 ## Color Boxes
 
@@ -22,6 +24,8 @@ title: chat.replace
   However, since `Styled Chat` mod allows you to define custom `emotions`.
   
   So you can `disable` this module, if you are using that mod.
+
+
 :::
 
 :::colorbox-example
@@ -31,6 +35,8 @@ title: chat.replace
   Regex: `(?<=^|\\s)uuid(?=\\s|$)`
   
   Replacement: `my uuid is %player:uuid%`
+
+
 :::
 
 ## Configurations

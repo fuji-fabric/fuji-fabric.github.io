@@ -14,6 +14,8 @@ title: command_attachment
   2. Attach commands into a block.
   
   3. Attach commands into an entity.
+
+
 :::
 ## Color Boxes
 
@@ -26,6 +28,8 @@ title: command_attachment
   We will save a `binding ID` in the item NBT.
   
   Every item that has the same `binding ID` in its NBT data, shares the same `binding commands instance`.
+
+
 :::
 
 :::colorbox-note
@@ -37,6 +41,8 @@ title: command_attachment
   - `block`: `LEFT_CLICK`, `RIGHT_CLICK`, `ANY_CLICK`, `STEP_ON`
   
   - `entity`: `RIGHT_CLICK`, `ANY_CLICK`
+
+
 :::
 
 :::colorbox-tip
@@ -52,6 +58,8 @@ title: command_attachment
   Then give the kit to a player.
   
   The player will get the magic item.
+
+
 :::
 
 :::colorbox-tip
@@ -63,6 +71,8 @@ title: command_attachment
   The `named cooldown` can restrict the `use interval` and `use times` of a specified command.
   
   And then, attach the `named cooldown test command` to an `item` using `command_attachment` module.
+
+
 :::
 
 :::colorbox-example
@@ -116,6 +126,8 @@ title: command_attachment
   ◉ View and edit the attached object.
   
   Issue: `/command-attachment editor`
+
+
 :::
 
 ## Configurations
@@ -162,15 +174,21 @@ It should NOT be copied directly into your configuration folder, as the document
   NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
   
   NOTE: The `disk` will be `overridden` when `fire` this job.
+
+
 :::
 :::job
 - Job Name: `TestSteppingOnBlockJob`
 - Document:   This `job` is used to test if the player is stepping on a `block` with `attached commands`.
+
+
 :::
 ## Commands
 :::command
 - Command Syntax: `/command-attachment attach-block-one <BlockPos blockPos> [InteractType interactType] [Integer maxUseTimes] [ExecuteAsType executeAsType] <GreedyString command>`
 - Document:   Attach one command to specified block.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -178,6 +196,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-attachment attach-entity-one <Entity entity> [InteractType interactType] [Integer maxUseTimes] [ExecuteAsType executeAsType] <GreedyString command>`
 - Document:   Attach one command to an entity.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -185,6 +205,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-attachment attach-item-one [InteractType interactType] [Integer maxUseTimes] [ExecuteAsType executeAsType] [Boolean destroyItem] <GreedyString command>`
 - Document:   Attach one command to an item.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -192,6 +214,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-attachment detach-block-all <BlockPos blockPos> [Boolean confirm]`
 - Document:   Detach all attached commands in the block.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -199,6 +223,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-attachment detach-entity-all <Entity entity> [Boolean confirm]`
 - Document:   Detach all attached commands in the entity.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -206,6 +232,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-attachment detach-item-all [Boolean confirm]`
 - Document:   Detach all attached commands in the item.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -213,6 +241,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-attachment editor`
 - Document:   Open the command attachment editor.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -220,6 +250,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-attachment query-block <BlockPos blockPos>`
 - Document:   Query all attached commands in the block.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -227,6 +259,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-attachment query-entity <Entity entity>`
 - Document:   Query all attached commands in the entity.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -234,6 +268,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-attachment query-item`
 - Document:   Query all attached commands in the item.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

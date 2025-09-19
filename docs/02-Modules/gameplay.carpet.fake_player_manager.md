@@ -8,6 +8,8 @@ title: gameplay.carpet.fake_player_manager
 ## Overview
 :::module
   This module provides `fake player management` for `carpet` mod.
+
+
 :::
 ## Color Boxes
 
@@ -44,6 +46,8 @@ title: gameplay.carpet.fake_player_manager
   3. A player can use `/player renew` command to `renew` the `expiration time` for all of its fake players.
   
   4. The `console` can bypass the `spawn caps limit`.
+
+
 :::
 
 ## Configurations
@@ -94,11 +98,15 @@ It should NOT be copied directly into your configuration folder, as the document
 :::job
 - Job Name: `ManageFakePlayersJob`
 - Document:   This `job` is used to check the `fake-player caps limit` for each player.
+
+
 :::
 ## Commands
 :::command
 - Command Syntax: `/player renew`
 - Document:   Renew the expiration time of `all` fake-player you have `spawned`.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -106,6 +114,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/player who`
 - Document:   List all fake-player and its owner player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`

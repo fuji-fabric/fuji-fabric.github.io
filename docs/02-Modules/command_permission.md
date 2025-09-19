@@ -8,6 +8,8 @@ title: command_permission
 ## Overview
 :::module
   This module provides the `luckperms permissions` for `all commands`.
+
+
 :::
 ## Color Boxes
 
@@ -48,6 +50,8 @@ title: command_permission
   To open the command permission GUI, issue `/command-permission gui` command.
   
   To list all commands and their command path, issue `/fuji inspect server-commands` command.
+
+
 :::
 
 :::colorbox-note
@@ -71,6 +75,8 @@ title: command_permission
   
   
   Issue: `/command-permission describe gamemode creative Steve` to see how it works.
+
+
 :::
 
 :::colorbox-note
@@ -86,6 +92,8 @@ title: command_permission
   The complex things like `inheritance permission`, `wildcard permission` and `regex permission` are all processed by `luckperms` mod.
   
   Yeah, the `luckperms` mod does the complex `permission calculation`.
+
+
 :::
 
 :::colorbox-note
@@ -95,6 +103,8 @@ title: command_permission
   The `command_permission` module was originally inspired by the `Vanilla Permissions` mod.
   
   If you want advanced features, check `Vanilla Permissions` mod.
+
+
 :::
 
 :::colorbox-tip
@@ -106,6 +116,8 @@ title: command_permission
   Which allows you to specify the `per-dimension permission` and `temporary permission`.
   
   If you are interested, see the details in their official wiki.
+
+
 :::
 
 :::colorbox-example
@@ -119,6 +131,8 @@ title: command_permission
   NOTE: If you want to allow the client-side to use the gamemode switcher menu, you have to install extra mods in the client-side, to let the client-side believe they are `op`, and they can switch the gamemode.
   
   The mod can be https://modrinth.com/mod/switcher
+
+
 :::
 
 :::colorbox-example
@@ -130,6 +144,8 @@ title: command_permission
   1. `/lp group default permission set fuji.permission.gamemode true`
   
   2. `/lp user Alice permission set fuji.permission.gamemode false`
+
+
 :::
 
 :::colorbox-example
@@ -155,6 +171,8 @@ title: command_permission
   You can use `command_bundle` to create a `user-level` command, to wrap the `/gamemode` command.
   
   Like, create a new command named `/switch-to-survival`, as a wrapper command for `/gamemode` command.
+
+
 :::
 
 :::colorbox-example
@@ -174,6 +192,8 @@ title: command_permission
   
   
   Issue `/command-permission describe seed` command, to see how it works.
+
+
 :::
 
 :::colorbox-example
@@ -199,6 +219,8 @@ title: command_permission
   
   
   Issue `/command-permission describe list` command, to see how it works.
+
+
 :::
 
 :::colorbox-example
@@ -210,6 +232,8 @@ title: command_permission
   You can `unset` the assigned permission before.
   
   Issue `/lp group default permission unset fuji.permission.seed` command, to unset the assign permission.
+
+
 :::
 
 ## Configurations
@@ -252,6 +276,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-permission describe <GreedyString command>`
 - Document:   Describe the `required permissions` of `the given command`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -259,6 +285,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-permission gui`
 - Document:   Open the command permission gui.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -266,6 +294,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-permission verbose`
 - Document:   Toggle the command permission verbose mode.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

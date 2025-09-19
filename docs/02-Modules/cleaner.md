@@ -10,6 +10,8 @@ title: cleaner
   This module provides the `entity` cleaner.
   
   It monitors defined `conditions` and removes `entities` accordingly.
+
+
 :::
 ## Color Boxes
 
@@ -38,6 +40,8 @@ title: cleaner
   It can not be used to clean `blocks` or `block entities`
   
   NOTE: The `block entity` is not a true `entity` within Minecraft internal.
+
+
 :::
 
 :::colorbox-note
@@ -51,6 +55,8 @@ title: cleaner
   
   
   NOTE: For `item entity`, there is no significant difference between the available cleanup methods.
+
+
 :::
 
 :::colorbox-note
@@ -74,6 +80,8 @@ title: cleaner
   - `block.minecraft.*`
   
   - `entity.minecraft.*`
+
+
 :::
 
 :::colorbox-example
@@ -99,6 +107,8 @@ title: cleaner
   1. Set `ignore_living_entity` to `false`.
   
   2. Define a `matcher` for the target entity, for example: `entity.minecraft.skeleton`.
+
+
 :::
 
 ## Configurations
@@ -174,11 +184,15 @@ It should NOT be copied directly into your configuration folder, as the document
 :::job
 - Job Name: `CleanerJob`
 - Document:   This `job` is used to execute `/cleaner clean` command automatically.
+
+
 :::
 ## Commands
 :::command
 - Command Syntax: `/cleaner clean`
 - Document:   Perform entity cleanup, and generate a cleanup report if any entities are removed.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

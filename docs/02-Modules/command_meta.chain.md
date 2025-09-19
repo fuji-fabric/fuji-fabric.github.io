@@ -14,6 +14,8 @@ title: command_meta.chain
   The first command is `any command`.
   
   The second command is `the chain command`.
+
+
 :::
 ## Color Boxes
 
@@ -76,6 +78,8 @@ title: command_meta.chain
   The second part is `chain say 2`, and the `/chain` command will decide whether to submit it `based on` the return value of `the previous submitted command`.
   
   It's a recursive process.
+
+
 :::
 
 :::colorbox-example
@@ -103,12 +107,16 @@ title: command_meta.chain
   Issue: `/chain execute if block ~ ~-1 ~ minecraft:diamond_block if entity @s[nbt={Inventory:[{id:"minecraft:diamond"}]}] chain say You are standing on diamond block and have diamond.`
   
   NOTE: This use-case is similar to `command_meta.if` module.
+
+
 :::
 
 ## Commands
 :::command
 - Command Syntax: `/chain <GreedyString rest>`
 - Document:   Chain commands and executes them in sequence, the chain will break if the previous one command fails.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

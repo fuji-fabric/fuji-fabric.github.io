@@ -8,6 +8,8 @@ title: skin
 ## Overview
 :::module
   This module provides the `skin` management for players.
+
+
 :::
 ## Color Boxes
 
@@ -30,6 +32,8 @@ title: skin
   
   
   2. A player can use `/skin` command to `change the skin` in-game.
+
+
 :::
 
 :::colorbox-example
@@ -59,6 +63,8 @@ title: skin
   ◉ Use a `random` skin from the `default skin list` defined in the config file.
   
   Issue: `/skin use-random-default-skins`
+
+
 :::
 
 ## Configurations
@@ -128,6 +134,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skin`
 - Document:   Alias to `/skin gui` command.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -135,6 +143,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skin gui`
 - Document:   Open the `skin` GUI.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -142,6 +152,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skin use-default-skin <DefaultSkinName defaultSkinName>`
 - Document:   Use the `default skin` with specified `skin name`.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -149,6 +161,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skin use-default-skin others <PlayerCollection others> <DefaultSkinName defaultSkinName>`
 - Document:   Use the `default skin` with specified `skin name`.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -156,6 +170,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skin use-mojang-skin others <PlayerCollection others> <Word skinName>`
 - Document:   Set skin to an online skin of the specified name.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -163,6 +179,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skin use-mojang-skin <Word skinName>`
 - Document:   Set skin to an online skin of the specified name.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -170,6 +188,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skin use-my-mojang-skin`
 - Document:   Set skin to an online skin of the same name.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -177,6 +197,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skin use-my-mojang-skin others <PlayerCollection others>`
 - Document:   Set skin to an online skin of the same name.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -184,6 +206,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skin use-random-default-skins`
 - Document:   Set skin to a random default skin.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -191,6 +215,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skin use-random-default-skins others <PlayerCollection others>`
 - Document:   Set skin to a random default skin.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -198,6 +224,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skin use-url-skin alex others <PlayerCollection others> <GreedyString url>`
 - Document:   Set skin to a custom url in Alex model.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -205,6 +233,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skin use-url-skin alex <GreedyString url>`
 - Document:   Set skin to a custom url in Alex model.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -212,6 +242,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skin use-url-skin steve others <PlayerCollection others> <GreedyString url>`
 - Document:   Set skin to a custom url in Steve model.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -219,6 +251,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skin use-url-skin steve <GreedyString url>`
 - Document:   Set skin to a custom url in Steve model.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`

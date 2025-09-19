@@ -14,6 +14,8 @@ title: leaderboard
   The `time window` of a `leaderboard` can be `hourly`, `daily`, `weekly`, `monthly`, `yearly` and `all_time`.
   
   You can display the `leaderboard` using `placeholders` or `commands`.
+
+
 :::
 ## Color Boxes
 
@@ -36,6 +38,8 @@ title: leaderboard
   3.a. You can use `placeholders` to display the `leaderboard`.
   
   3.b. You can use `commands` to display the `leaderboard`.
+
+
 :::
 
 :::colorbox-tip
@@ -57,6 +61,8 @@ title: leaderboard
   ◉ You can use a `placeholder` to fetch data from `objective`.
   
   For example: `%player:objective [objective]%`
+
+
 :::
 
 :::colorbox-example
@@ -90,6 +96,8 @@ title: leaderboard
   1. `%fuji:lowest_n_score death-board 1 all_time%`
   
   2. `%fuji:highest_n_score zombie-kill-board 1 all_time%`
+
+
 :::
 
 :::colorbox-example
@@ -119,6 +127,8 @@ title: leaderboard
   1. `/run as console send-broadcast The greatest zombie killer this week is %fuji:highest_n_name zombie-kill-board 1 weekly%`
   
   2. `/run as console give %fuji:highest_n_name zombie-kill-board 1 weekly% minecraft:diamond 1`
+
+
 :::
 
 ## Configurations
@@ -179,11 +189,15 @@ It should NOT be copied directly into your configuration folder, as the document
 :::job
 - Job Name: `UpdateLeaderboardsJob`
 - Document:   This `job` is used to execute `/leaderboard update-all` command automatically.
+
+
 :::
 ## Commands
 :::command
 - Command Syntax: `/leaderboard highest <LeaderBoardDescriptor leaderboard> <LeaderBoardTimeWindow timeWindow> [Integer pageSize]`
 - Document:   List the highest N players for specified leaderboard.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -191,6 +205,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/leaderboard lowest <LeaderBoardDescriptor leaderboard> <LeaderBoardTimeWindow timeWindow> [Integer pageSize]`
 - Document:   List the lowest N players for specified leaderboard.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -198,6 +214,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/leaderboard update-all`
 - Document:   Update all `leaderboards` for `online players`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -218,6 +236,8 @@ It should NOT be copied directly into your configuration folder, as the document
   For example:
   
   The `%fuji:lowest_n_name death-board 1 all_time%` returns `the name of the player with the least number of death` from the leaderboard with the id `death-board`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:highest_n_name`
@@ -234,6 +254,8 @@ It should NOT be copied directly into your configuration folder, as the document
   For example:
   
   The `%fuji:highest_n_name zombie-kill-board 1 all_time%` returns `the name of the player with the highest number of zombie kills` from the leaderboard with the id `zombie-kill-board`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:lowest_n_score`
@@ -250,6 +272,8 @@ It should NOT be copied directly into your configuration folder, as the document
   For example:
   
   The `%fuji:lowest_n_score death-board 1 all_time%` returns the `the least number of death score` from the leaderboard with the id `death-board`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:highest_n_score`
@@ -266,6 +290,8 @@ It should NOT be copied directly into your configuration folder, as the document
   For example:
   
   The `%fuji:highest_n_score zombie-kill-board 1 all_time%` returns `the highest zombie kill score` from the leaderboard with the id `zombie-kill-board`.
+
+
 :::
 ## Argument Types
 :::argument-type

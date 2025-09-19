@@ -10,6 +10,8 @@ title: echo.send_actionbar
   This module provides `/send-actionbar` command.
   
   To send the `text` as `action bar` to a specified player.
+
+
 :::
 ## Color Boxes
 
@@ -24,6 +26,8 @@ title: echo.send_actionbar
   ◉ Send a title to online players.
   
   Issue: `/foreach send-title %player:name% --mainTitle "<rainbow>Hello %player:name%"`
+
+
 :::
 
 ## Commands

@@ -10,6 +10,8 @@ title: command_alias
   This module allows you to define alias for existing commands.
   
   The defined alies command will redirect to the existing command node.
+
+
 :::
 ## Color Boxes
 
@@ -30,6 +32,8 @@ title: command_alias
   1. To define `a simple command` with no arguments, use `command_alias` module.
   
   2. To define `a complex command` with arguments, use `command_bundle` module.
+
+
 :::
 
 :::colorbox-example
@@ -41,6 +45,8 @@ title: command_alias
   1. Define a new `/r` command, as alias to `/reply` command.
   
   2. Define a new `/sudo` command, as alias to `/run as fake-op` command.
+
+
 :::
 
 ## Configurations
@@ -172,6 +178,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-alias list`
 - Document:   List all registered alias-commands in server.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -179,6 +187,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/display`
 - Document:   Create an alias command from `/display` into `/chat display` command.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -186,6 +196,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/endersee`
 - Document:   Create an alias command from `/endersee` into `/view ender` command.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -193,6 +205,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/invsee`
 - Document:   Create an alias command from `/invsee` into `/view inv` command.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -200,6 +214,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/r`
 - Document:   Create an alias command from `/r` into `/reply` command.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -207,6 +223,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/sudo`
 - Document:   Create an alias command from `/sudo` into `/run as fake-op` command.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

@@ -14,6 +14,8 @@ title: command_toolbox.disconnect
   - `/dis-connect Steve <red>Kicked.`
   
   - `/dis-connect Steve <red>First Line<newline>Second Line`
+
+
 :::
 
 ## Commands

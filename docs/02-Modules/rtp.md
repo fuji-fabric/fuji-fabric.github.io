@@ -8,6 +8,8 @@ title: rtp
 ## Overview
 :::module
   Provides random teleportation.
+
+
 :::
 ## Color Boxes
 
@@ -38,6 +40,8 @@ title: rtp
   - Filter the result by `specified biomes`
   
   - Filter the result by `chunk inhabited time`
+
+
 :::
 
 :::colorbox-tip
@@ -53,6 +57,8 @@ title: rtp
   Which will slow down the process of `/rtp`.
   
   If you pre generates the world chunks, then it will be fast.
+
+
 :::
 
 :::colorbox-tip
@@ -62,6 +68,8 @@ title: rtp
   You can use `command_cooldown` module, to setup a `cooldown` for `/rtp` command.
   
   To prevent abuse.
+
+
 :::
 
 ## Configurations
@@ -119,8 +127,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:powder_snow",
             "minecraft:void_air",
+            "minecraft:powder_snow",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -164,8 +172,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:powder_snow",
             "minecraft:void_air",
+            "minecraft:powder_snow",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -209,8 +217,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:powder_snow",
             "minecraft:void_air",
+            "minecraft:powder_snow",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -254,8 +262,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:powder_snow",
             "minecraft:void_air",
+            "minecraft:powder_snow",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -299,8 +307,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:powder_snow",
             "minecraft:void_air",
+            "minecraft:powder_snow",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -344,8 +352,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:powder_snow",
             "minecraft:void_air",
+            "minecraft:powder_snow",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -362,6 +370,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rtp [Dimension dimension]`
 - Document:   Random rtp in specified dimension.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -369,6 +379,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rtp others <PlayerCollection others> [Dimension dimension]`
 - Document:   Random rtp in specified dimension.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

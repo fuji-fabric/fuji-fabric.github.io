@@ -8,6 +8,8 @@ title: whitelist
 ## Overview
 :::module
   This module makes the `vanilla whitelist system` only compares the `username`, and `ignore the UUID`.
+
+
 :::
 ## Color Boxes
 
@@ -24,5 +26,7 @@ title: whitelist
   For `online-mode` server, the `UUID` of a player is determined, and always identical.
   
   For `offline-mode` server, the `UUID` of a player is changed by the `authenticate method` of the player, and affected by the `user cache` in server side.
+
+
 :::
 

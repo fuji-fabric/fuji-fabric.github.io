@@ -16,6 +16,8 @@ title: command_scheduler
   1. Send broadcast messages at scheduled times.
   
   2. Execute a specified group of commands at scheduled times.
+
+
 :::
 ## Color Boxes
 
@@ -42,6 +44,8 @@ title: command_scheduler
   3.c. Otherwise, it decreases the `remaining runs` property by 1, and pick a random `command group` to execute.
   
   4. You can `trigger` a `job` using `/command-scheduler trigger <job>` manually.
+
+
 :::
 
 :::colorbox-tip
@@ -61,6 +65,8 @@ title: command_scheduler
   ◉ List the `next fire dates` for each defined `job`.
   
   Issue `/fuji inspect jobs` to see the `fire dates` of defined `jobs`.
+
+
 :::
 
 ## Configurations
@@ -112,17 +118,23 @@ It should NOT be copied directly into your configuration folder, as the document
 - Document:   This `job` is defined by `command_schedule` module.
   
   And used to `execute specified commands`.
+
+
 :::
 :::job
 - Job Name: `CommandScheduleJob`
 - Document:   This `job` is defined by `command_schedule` module.
   
   And used to `execute specified commands`.
+
+
 :::
 ## Commands
 :::command
 - Command Syntax: `/command-scheduler list`
 - Document:   List all defined jobs.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -130,6 +142,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-scheduler trigger <JobName jobName>`
 - Document:   Trigger a job manually.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

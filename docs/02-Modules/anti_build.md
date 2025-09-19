@@ -24,17 +24,23 @@ title: anti_build
   5. Interact with a specified entity.
   
   6. Attack a specified entity.
+
+
 :::
 ## Color Boxes
 
 :::colorbox-tip
 
   Read the document to see the definition of `identifier` in Minecraft.
+
+
 :::
 
 :::colorbox-tip
 
   Use the `command suggestion` from `luckperms` mod to see the supported types by this module.
+
+
 :::
 
 :::colorbox-example
@@ -62,6 +68,8 @@ title: anti_build
   ◉ Dis-allow to place `any` blocks.
   
   Use `*` as the wildcard character, put it into the `place_block` list.
+
+
 :::
 
 :::colorbox-example
@@ -73,6 +81,8 @@ title: anti_build
   1. `/lp group default permission set fuji.anti_build.place_block.override.minecraft:red_mushroom false world=the_end`
   
   2. `/lp group default permission set fuji.anti_build.place_block.override.minecraft:brown_mushroom false world=the_end`
+
+
 :::
 
 ## Configurations

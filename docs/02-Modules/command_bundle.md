@@ -12,6 +12,8 @@ title: command_bundle
   1. The new command can accept arguments.
   
   2. The body of the new command, can be a list of commands.
+
+
 :::
 ## Color Boxes
 
@@ -28,6 +30,8 @@ title: command_bundle
   4. A powerful `type-system`, to use the built-in `argument types`.
   
   5. Register and un-register `custom commands` on the fly, without a server re-start.
+
+
 :::
 
 :::colorbox-note
@@ -49,6 +53,8 @@ title: command_bundle
   The `pattern` describes: what does your `new command` look like?
   
   The `bundle` describes: what `commands` should we execute when your `new command` is executed?
+
+
 :::
 
 :::colorbox-note
@@ -86,6 +92,8 @@ title: command_bundle
   You can issue `/fuji inspect argument-types` to list all registered `adapters`.
   
   You can use any `argument type` listed in that GUI.
+
+
 :::
 
 :::colorbox-note
@@ -103,6 +111,8 @@ title: command_bundle
   Commands are executed `as console`.
   
   You can use `/run as player` or `/run as fake-op` to switch the command execution context, if it is needed.
+
+
 :::
 
 :::colorbox-tip
@@ -112,6 +122,8 @@ title: command_bundle
   You can use command generator to get powerful commands:
   
   https://www.gamergeeks.net/apps/minecraft/particle-command-generator
+
+
 :::
 
 :::colorbox-example
@@ -145,6 +157,8 @@ title: command_bundle
   3. `run as player %player:name% heal`
   
   4. `say after heal %player:name%`
+
+
 :::
 
 :::colorbox-example
@@ -162,6 +176,8 @@ title: command_bundle
   Bundle:
   
   1. `run as player %player:name% send-message $player-arg <red>You are warned: $greedy-arg`
+
+
 :::
 
 :::colorbox-example
@@ -193,6 +209,8 @@ title: command_bundle
   Bundle:
   
   1. `run as fake-op %player:name% kit give @s kit-food`
+
+
 :::
 
 :::colorbox-example
@@ -210,6 +228,8 @@ title: command_bundle
   Besides, there are also a set of pre-defined `bundle commands` for convenience.
   
   For example: `/gmc`, `/gms`, `/day`, `/sun`...
+
+
 :::
 
 :::colorbox-example
@@ -237,6 +257,8 @@ title: command_bundle
   - `/shoot` -> `/summon` with motion
   
   - `/smite` and `/thunder` -> `/summon minecraft:lighting_bolt`
+
+
 :::
 
 :::colorbox-example
@@ -248,6 +270,8 @@ title: command_bundle
   Bundle:
   
   1. `run as fake-op %player:name% tppos --centerX 0 --centerZ 0 --maxRange 128 --dimension fuji:overworld`
+
+
 :::
 
 ## Configurations
@@ -615,6 +639,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-bundle list`
 - Document:   List all registered bundle-commands in server.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -622,6 +648,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-bundle register`
 - Document:   Register all commands defined in bundle-command configuration file.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -629,6 +657,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-bundle un-register`
 - Document:   Un-register all bundle-commands registered in server.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -636,6 +666,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/day`
 - Document:   This command is an alias for `/time set day`
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -643,6 +675,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/gm <GameMode gamemode-arg>`
 - Document:   This command is an alias for `/gamemode`
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -650,6 +684,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/gmc`
 - Document:   This command is an alias for `/gamemode creative`
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -657,6 +693,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/gms`
 - Document:   This command is an alias for `/gamemode survival`
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -664,6 +702,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/gmsp`
 - Document:   This command is an alias for `/gamemode spectator`
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -671,6 +711,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/icanhasbukkit`
 - Document:   This command is an easter egg for `/icanhasbukkit` in Bukkit.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -678,6 +720,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/introduce-me`
 - Document:   This command will introduce yourself to others.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -685,6 +729,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/midnight`
 - Document:   This command is an alias for `/time set midnight`
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -692,6 +738,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/move-speed reset`
 - Document:   This command modifies your movement_speed attribute.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -699,6 +747,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/move-speed set <double double-arg>`
 - Document:   This command modifies your movement_speed attribute.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -706,6 +756,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/my-command a-command-with-a-greedy-string <int int-arg-name> first-literal [GreedyString greedy-string-arg-name]`
 - Document:   This command is used to test the `greedy string` argument type.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -713,6 +765,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/my-command a-command-with-all-types-of-args <int int-arg-name> first-literal [String str-arg-name]`
 - Document:   This command is used to test the `literal argument`, `required argument` and `optional argument`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -720,6 +774,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/my-command a-command-with-optional-arg <int int-arg-name> [String str-arg-name]`
 - Document:   This command is used to test the `optional argument`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -727,6 +783,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/my-command a-command-with-required-arg first-literal second-literal <String str-arg-name>`
 - Document:   This command is used to test the `literal argument` and `required argument`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -734,6 +792,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/nbt block <BlockPos target>`
 - Document:   This command is an alias for `/data get block`
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -741,6 +801,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/nbt entity <Entity target>`
 - Document:   This command is an alias for `/data get entity`
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -748,6 +810,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/nbt item`
 - Document:   This command is an alias for `/data get entity @s SelectedItem`
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -755,6 +819,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/night`
 - Document:   This command is an alias for `/time set night`
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -762,6 +828,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/noon`
 - Document:   This command is an alias for `/time set noon`
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -769,6 +837,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/obtain-all-recipes`
 - Document:   This command will give `all` recipes to the player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -776,6 +846,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/plugins`
 - Document:   This command is an easter egg for `/plugins` in Bukkit.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -783,6 +855,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rain`
 - Document:   This command is an alias for `/weather rain`
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -790,6 +864,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/shoot <NotSupportedType entity-type-arg-name>`
 - Document:   This command summons an entity with specified entity type, with an initial motion.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -797,6 +873,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/skull <OfflinePlayerName offline-player-arg>`
 - Document:   This command will give the skull of specified player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -804,6 +882,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/strike`
 - Document:   This command summons a lightning_bolt entity.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -811,6 +891,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/sun`
 - Document:   This command is an alias for `/weather clear`
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -818,6 +900,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/thunder`
 - Document:   This command is an alias for `/weather thunder`
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -825,6 +909,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/unbreakable`
 - Document:   This command applies the `unbreakable` enchantment for the item in hand.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -832,6 +918,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/uuid <ServerPlayerEntity target>`
 - Document:   This command will display the UUID of specified player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

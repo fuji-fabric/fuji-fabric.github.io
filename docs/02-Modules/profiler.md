@@ -10,6 +10,8 @@ title: profiler
   To query the server health status.
   
   Including: os, vm, cpu, disk, ram, tps, mspt and gc.
+
+
 :::
 ## Color Boxes
 
@@ -20,6 +22,8 @@ title: profiler
   You need to install the `spark` mod, to provide the `placeholders`.
   
   To display `tps`, `mspt` and `cpu` info.
+
+
 :::
 
 ## Configurations
@@ -54,6 +58,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/profiler`
 - Document:   Open the server health status GUI.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`

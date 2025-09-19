@@ -12,11 +12,15 @@ title: command_meta.nop
   This command `does nothing` and returns `success` directly.
   
   It can be used as a `dummy command`.
+
+
 :::
 ## Commands
 :::command
 - Command Syntax: `/nop`
 - Document:   Do nothing, simply return SUCCESS as the command return value.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

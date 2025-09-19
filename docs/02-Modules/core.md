@@ -30,6 +30,8 @@ title: core
   2. If any other mods conflicts with `a module`, you can just `disable that module`.
   
   3. You only enable the `interested modules`, and there is no performance paying for `disabled module`.
+
+
 :::
 
 :::colorbox-tip
@@ -45,6 +47,8 @@ title: core
   Modify the `config/fuji/config.json` file to `enable` a module.
   
   After that, `re-start` the server, to apply the `module enable status`.
+
+
 :::
 
 :::colorbox-tip
@@ -66,6 +70,8 @@ title: core
   - https://modrinth.com/mod/tooltipfix
   
   - https://www.curseforge.com/minecraft/mc-mods/tooltipfix
+
+
 :::
 
 :::colorbox-tip
@@ -87,6 +93,8 @@ title: core
   2. Vim: https://neovim.io/
   
   3. Emacs: https://www.gnu.org/software/emacs/
+
+
 :::
 
 :::colorbox-tip
@@ -106,6 +114,8 @@ title: core
   You can modify and test new things in your `test server`.
   
   After everything is configured and working properly, you just upload the `mods` and `config files` into your `remote machine`.
+
+
 :::
 
 :::colorbox-example
@@ -161,6 +171,8 @@ title: core
   ◉ List all `fuji events`
   
   Issue: `/fuji inspect events`
+
+
 :::
 
 ## Configurations
@@ -181,7 +193,9 @@ It should NOT be copied directly into your configuration folder, as the document
   
   
   
-  NOTE: You need to re-start the server, to `enable` or `disable` a `module`.- File Content: 
+  NOTE: You need to re-start the server, to `enable` or `disable` a `module`.
+
+- File Content: 
 <details>
 
 <summary>_Click to see the `default` content..._</summary>
@@ -728,7 +742,9 @@ It should NOT be copied directly into your configuration folder, as the document
   
   The `command_permission` module will override the `command requirement` defined in this file.
   
-  So, if you are hosting a dedicated Minecraft server, you can simply use `command_permission` module, and ignore this file.- File Content: 
+  So, if you are hosting a dedicated Minecraft server, you can simply use `command_permission` module, and ignore this file.
+
+- File Content: 
 <details>
 
 <summary>_Click to see the `default` content..._</summary>
@@ -750,6 +766,8 @@ It should NOT be copied directly into your configuration folder, as the document
   
   
   The `cache files` are located in `config/fuji/cache/` directory.
+
+
 :::
 :::job
 - Job Name: `CleanTTLMapJob`
@@ -762,6 +780,8 @@ It should NOT be copied directly into your configuration folder, as the document
   NOTE: The `/command-callback` command is typically used for `click event` in text.
   
   A player requires the permission to use `/command-callback` command, or the client will get the `Unknown Command Error`.
+
+
 :::
 ## Argument Types
 :::argument-type

@@ -8,6 +8,8 @@ title: chat.trigger
 ## Overview
 :::module
   This module allows you to define magic spells in chat, to execute commands.
+
+
 :::
 ## Color Boxes
 
@@ -22,6 +24,8 @@ title: chat.trigger
   
   
   You can define a `chat command` like `!report` or `!noclip` in other games.
+
+
 :::
 
 :::colorbox-example
@@ -31,6 +35,8 @@ title: chat.trigger
   Regex: `magic`
   
   Commands: `say magic!`
+
+
 :::
 
 :::colorbox-example
@@ -44,6 +50,8 @@ title: chat.trigger
   1. `say You just said: $0`
   
   2. `say Hello $1`
+
+
 :::
 
 :::colorbox-example
@@ -53,6 +61,8 @@ title: chat.trigger
   Regex: `(?<=^|\\s)item(?=\\s|$)`
   
   Commands: `run as fake-op %player:name% chat display item`
+
+
 :::
 
 ## Configurations

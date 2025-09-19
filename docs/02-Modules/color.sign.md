@@ -8,6 +8,8 @@ title: color.sign
 ## Overview
 :::module
   This module allows you to use color tags in `sign` blocks.
+
+
 :::
 ## Color Boxes
 
@@ -16,6 +18,8 @@ title: color.sign
   ◉ You can write `style tags` on the sign.
   
   Foe example: `<red>`, `<rb>`, `<bold>` and `<i>`.
+
+
 :::
 
 ## Configurations

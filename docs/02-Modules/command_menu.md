@@ -8,6 +8,8 @@ title: command_menu
 ## Overview
 :::module
   This module allows you to define `menu` GUI, to execute commands.
+
+
 :::
 ## Color Boxes
 
@@ -30,6 +32,8 @@ title: command_menu
   In short, you can define a `menu` to hold `slots`.
   
   And bind `commands` to the `slots`.
+
+
 :::
 
 :::colorbox-tip
@@ -49,6 +53,8 @@ title: command_menu
   The `/command-menu open` command is an `admin-level` command.
   
   You need to use `command_bundle` module, to creat a `user-level` command.
+
+
 :::
 
 :::colorbox-tip
@@ -64,6 +70,8 @@ title: command_menu
   - `/run as player %player:name% <cmd>`
   
   - `/run as fake-op %player:name% <cmd>`
+
+
 :::
 
 :::colorbox-tip
@@ -85,6 +93,8 @@ title: command_menu
   You can use `/run as fake-op %player:name% command-menu close %player:name%` command.
   
   To `close` the `opened GUI` for a `player`.
+
+
 :::
 
 :::colorbox-tip
@@ -94,6 +104,8 @@ title: command_menu
   Thanks to Hitnam, we have an `online editor` for `command_menu` module.
   
   The tool is hosted in: https://fuji-command-menu-editor-k4k4.vercel.app/
+
+
 :::
 
 :::colorbox-tip
@@ -111,6 +123,8 @@ title: command_menu
   1. `/give @s minecraft:player_head[minecraft:profile=Steve]`
   
   2. `/give @s minecraft:player_head{SkullOwner:"Steve"}`
+
+
 :::
 
 ## Configurations
@@ -283,6 +297,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-menu close <ServerPlayerEntity player>`
 - Document:   Close the currently `opened GUI` for the player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -290,6 +306,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-menu open <ServerPlayerEntity player> <MenuName menuName>`
 - Document:   Open the specified `menu` for the player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

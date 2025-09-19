@@ -10,6 +10,8 @@ title: echo.send_message
   This module provides the `/send-message` command.
   
   To send the `text` as `message` to a specified player.
+
+
 :::
 ## Color Boxes
 
@@ -18,6 +20,8 @@ title: echo.send_message
   ◉ Say hello to a player
   
   Issue: `/send-message Alice <blue>Hello %player:name%`
+
+
 :::
 
 ## Commands

@@ -16,6 +16,8 @@ title: command_state
   - Check whether a player is in the `state`.
   
   - Use `placeholders` related to the `state`.
+
+
 :::
 ## Color Boxes
 
@@ -62,6 +64,8 @@ title: command_state
   
   
   Besides that, the `/is-in-state? <player> <state-id>` can be used as a `predicate command`.
+
+
 :::
 
 ## Configurations
@@ -165,6 +169,8 @@ It should NOT be copied directly into your configuration folder, as the document
   NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
   
   NOTE: The `disk` will be `overridden` when `fire` this job.
+
+
 :::
 :::job
 - Job Name: `CommandStateAutoUpdaterJob`
@@ -173,11 +179,15 @@ It should NOT be copied directly into your configuration folder, as the document
   
   
   When fired, its effect is equivalent to running the `/command-state update-all` command.
+
+
 :::
 ## Commands
 :::command
 - Command Syntax: `/command-state info <ServerPlayerEntity player>`
 - Document:   Display the value of all `states` of the specified player.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -185,6 +195,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-state list`
 - Document:   List all defined `states`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -192,6 +204,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-state update-all`
 - Document:   Update all defined `states` for online players.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -199,6 +213,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-state update <StateDescriptor state>`
 - Document:   Update the specified `state` for online players.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -206,6 +222,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/is-in-state? <ServerPlayerEntity player> <StateDescriptor state>`
 - Document:   Returns whether the specified `state` value for the player is currently `true`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -220,6 +238,8 @@ It should NOT be copied directly into your configuration folder, as the document
   Example:
   
   - `%fuji:is_in_state is-in-overworld%`
+
+
 :::
 ## Argument Types
 :::argument-type

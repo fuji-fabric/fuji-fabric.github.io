@@ -8,6 +8,8 @@ title: nametag
 ## Overview
 :::module
   Customize the nametag above the players.
+
+
 :::
 ## Color Boxes
 
@@ -28,6 +30,8 @@ title: nametag
   Read the semantics of each field:
   
   - https://minecraft.wiki/w/Display
+
+
 :::
 
 :::colorbox-example
@@ -47,6 +51,8 @@ title: nametag
   ◉ Scale the size of text into double.
   
   Set the `x`, `y`, and `z` in `scale` to `2.0`.
+
+
 :::
 
 :::colorbox-example
@@ -66,6 +72,8 @@ title: nametag
   ◉ Turn off the `nametag entity` for online players.
   
   Issue: `/nametag toggle others @a false`
+
+
 :::
 
 ## Configurations
@@ -144,6 +152,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::job
 - Job Name: `UpdateNametagJob`
 - Document:   This `job` is used to `update` the nametag for each player.
+
+
 :::
 ## Commands
 :::command

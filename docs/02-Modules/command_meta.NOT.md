@@ -10,6 +10,8 @@ title: command_meta.NOT
   Provides a `/NOT <command>` command.
   
   To execute the specified command, and `reverse` the return values of `SUCCESS` and `FAILURE`.
+
+
 :::
 ## Color Boxes
 
@@ -22,6 +24,8 @@ title: command_meta.NOT
   1.a. If the `command return value` represents `SUCCESS` (value > 0), then return `FAILURE` (value 0).
   
   1.b. If the `command return value` represents `FAILURE` (value = 0), then return `SUCCESS` (value 1).
+
+
 :::
 
 :::colorbox-example
@@ -29,12 +33,16 @@ title: command_meta.NOT
   ◉ Use with other `predicate` commands.
   
   Issue: /IF NOT has-item? \<player\> minecraft:apple 16 THEN say You don't have 16 apples. ELSE say You have 16 apples.
+
+
 :::
 
 ## Commands
 :::command
 - Command Syntax: `/NOT <GreedyString command>`
 - Document:   Execute the command as the console, and reverse the return values of `SUCCESS` and `FAILURE`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

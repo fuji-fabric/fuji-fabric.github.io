@@ -9,6 +9,8 @@ title: command_toolbox.more
 :::command
 - Command Syntax: `/more [Boolean oversize]`
 - Document:   Set the count of item in hand to max count.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

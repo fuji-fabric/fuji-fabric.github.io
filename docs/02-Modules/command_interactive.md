@@ -10,6 +10,8 @@ title: command_interactive
   This module allows you to write commands in `sign` block.
   
   And then click to execute commands.
+
+
 :::
 ## Color Boxes
 
@@ -24,6 +26,8 @@ title: command_interactive
   We will check if the `facing texts` contains the `/` character.
   
   If contains, we will treat as the player issue the command.
+
+
 :::
 
 :::colorbox-tip
@@ -33,6 +37,8 @@ title: command_interactive
   You can use `right click` to execute the commands written on the interactive sign block.
   
   You can use `shift + right click` to edit an `interactive sign block`.
+
+
 :::
 
 :::colorbox-tip
@@ -42,5 +48,7 @@ title: command_interactive
   All 4 lines will be joined and treated as one single big line.
   
   So be careful with the `space character`, and ignore the `linefeed character`.
+
+
 :::
 

@@ -8,6 +8,8 @@ title: command_event
 ## Overview
 :::module
   This module allows you to execute commands on specified events.
+
+
 :::
 ## Color Boxes
 
@@ -18,6 +20,8 @@ title: command_event
   When an interested event occurs, this module will execute specified commands for that event as console.
   
   The `contextual player` in that `event` will be used as the `placeholder context`, to parse the `placeholders` in the `command string`.
+
+
 :::
 
 :::colorbox-example
@@ -43,6 +47,8 @@ title: command_event
   4. `run as fake-op %player:name% rtp`
   
   5. `delay 10 spawnpoint %player:name%"`
+
+
 :::
 
 :::colorbox-example
@@ -52,6 +58,8 @@ title: command_event
   YOu can use the player death event.
   
   1. `run as fake-op %player:name% tppos --dimension minecraft:overworld --x 32 --y 64 --z 128`
+
+
 :::
 
 ## Configurations

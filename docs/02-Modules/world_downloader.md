@@ -18,6 +18,8 @@ title: world_downloader
   Simple, no surprises.
   
   It's also useful for players to download other's buildings, or their own buildings.
+
+
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">
@@ -50,6 +52,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/download`
 - Document:   Download the region file around you.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`

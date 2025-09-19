@@ -8,6 +8,8 @@ title: top_chunks
 ## Overview
 :::module
   Analyze all loaded chunks of the server, and find the most lagged chunks.
+
+
 :::
 ## Color Boxes
 
@@ -34,6 +36,8 @@ title: top_chunks
   That depends on your case.
   
   Simple method often works.
+
+
 :::
 
 ## Configurations
@@ -129,6 +133,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/chunks`
 - Document:   An alias command to `/chunks message`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -136,6 +142,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/chunks gui`
 - Document:   List all chunks ordered by lag score, and send in `GUI`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -143,6 +151,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/chunks message`
 - Document:   List all chunks ordered by lag score, and send in `message`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`

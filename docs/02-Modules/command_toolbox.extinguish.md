@@ -9,6 +9,8 @@ title: command_toolbox.extinguish
 :::command
 - Command Syntax: `/extinguish`
 - Document:   Set fire ticks to 0.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -16,6 +18,8 @@ title: command_toolbox.extinguish
 :::command
 - Command Syntax: `/extinguish others <PlayerCollection others>`
 - Document:   Set fire ticks to 0.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

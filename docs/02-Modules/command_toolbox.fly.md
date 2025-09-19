@@ -9,6 +9,8 @@ title: command_toolbox.fly
 :::command
 - Command Syntax: `/fly`
 - Document:   Toggle the fly state of the player.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -16,6 +18,8 @@ title: command_toolbox.fly
 :::command
 - Command Syntax: `/fly <boolean flag>`
 - Document:   Set the fly state of the player.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -23,6 +27,8 @@ title: command_toolbox.fly
 :::command
 - Command Syntax: `/fly others <PlayerCollection others>`
 - Document:   Toggle the fly state of the player.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -30,6 +36,8 @@ title: command_toolbox.fly
 :::command
 - Command Syntax: `/fly others <PlayerCollection others> <boolean flag>`
 - Document:   Set the fly state of the player.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

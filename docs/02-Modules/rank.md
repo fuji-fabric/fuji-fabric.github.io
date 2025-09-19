@@ -10,6 +10,8 @@ title: rank
   This module provides the rank up system.
   
   You can define a `rank` with `requirements` and `award`.
+
+
 :::
 ## Color Boxes
 
@@ -46,6 +48,8 @@ title: rank
   3.c. A player can use `/rank down <rank>` to `rank down` to a previously `earned rank`.
   
   3.d. The admin can use `/rank remove <player>` to set a player's rank to `none`.
+
+
 :::
 
 :::colorbox-tip
@@ -59,6 +63,8 @@ title: rank
   So that each player will get auto rank up if there is only one `available next rank` for them.
   
   It can be `/execute as @a run rank try-up @s` or `/foreach rank try-up %player:name%`
+
+
 :::
 
 :::colorbox-example
@@ -108,6 +114,8 @@ title: rank
   ◉ Set a player's rank to none
   
   Issue: `/rank remove Steve --confirm true`.
+
+
 :::
 
 :::colorbox-example
@@ -123,6 +131,8 @@ title: rank
   This will allow players to pick `branch-1-3` as their `starting rank node`.
   
   You can define multiple `starting rank nodes` for different `luckperms groups`.
+
+
 :::
 
 ## Configurations
@@ -623,6 +633,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rank down <PreviousAvailableRankNode previousRank> [Boolean confirm]`
 - Document:   Rank down to the previous available rank node.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -630,6 +642,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rank info <RankNode rankNode>`
 - Document:   Query the info of the specified `rank node`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -637,6 +651,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rank list all-rank-nodes`
 - Document:   List all defined `rank nodes`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -644,6 +660,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rank list next-rank-nodes <ServerPlayerEntity target>`
 - Document:   List all available `next rank nodes` for the specified player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -651,6 +669,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rank list previous-rank-nodes <ServerPlayerEntity target>`
 - Document:   List all available `previous rank nodes` for the specified player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -658,6 +678,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rank list starting-rank-nodes <ServerPlayerEntity target>`
 - Document:   List all available `starting rank nodes` for the specified player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -665,6 +687,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rank list walked-rank-nodes <ServerPlayerEntity target>`
 - Document:   List all `walked rank nodes` for the specified player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -672,6 +696,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rank progress`
 - Document:   Query the rank progress.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -679,6 +705,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rank progress <ServerPlayerEntity target>`
 - Document:   Query the rank progress of the specified player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -686,6 +714,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rank remove <ServerPlayerEntity player> [Boolean confirm]`
 - Document:   Set the specified player's rank to none.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -693,6 +723,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rank set <ServerPlayerEntity target> <RankNode rankNode>`
 - Document:   Set the rank for specified player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -700,6 +732,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rank try-up <ServerPlayerEntity target>`
 - Document:   If there is only one `next rank node` for the player, then rank up to that node, else do nothing.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -707,6 +741,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/rank up <NextAvailableRankNode nextRank> [Boolean confirm]`
 - Document:   Rank up to the next available rank node.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -715,14 +751,20 @@ It should NOT be copied directly into your configuration folder, as the document
 :::placeholder
 - Placeholder Name: `fuji:rank_id`
 - Document:   Returns the `rank id` of the player's current rank.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:rank_displayname`
 - Document:   Returns the `rank display name` of the player's current rank.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:rank_displayname_raw`
 - Document:   Returns the `rank display name raw string` of the player's current rank.
+
+
 :::
 ## Argument Types
 :::argument-type

@@ -12,6 +12,8 @@ title: command_toolbox.speed
   1. Modify the `walk speed`.
   
   2. Modify the `fly speed`.
+
+
 :::
 ## Color Boxes
 
@@ -22,6 +24,8 @@ title: command_toolbox.speed
   When a new `speed` is set, the client's `camera` will be broken.
   
   You have to re-join the server, to fix the client-side camera settings.
+
+
 :::
 
 :::colorbox-example
@@ -39,6 +43,8 @@ title: command_toolbox.speed
   The default value is `0.05`
   
   Issue: `/speed fly set Steve 0.1`
+
+
 :::
 
 ## Commands

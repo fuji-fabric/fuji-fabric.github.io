@@ -9,6 +9,8 @@ title: command_toolbox.ping
 :::command
 - Command Syntax: `/ping <ServerPlayerEntity target>`
 - Document:   Query the ping of a player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

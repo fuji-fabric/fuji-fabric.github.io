@@ -8,6 +8,8 @@ title: motd
 ## Overview
 :::module
   Customize the MOTD of the server.
+
+
 :::
 ## Color Boxes
 
@@ -16,6 +18,8 @@ title: motd
   ◉ Use an `editor` to help you design the MOTD.
   
   Online MOTD editor: https://colorize.fun/en/minecraft
+
+
 :::
 
 :::colorbox-tip
@@ -25,6 +29,8 @@ title: motd
   The `Formating Codes` is a vanilla Minecraft feature.
   
   See: https://minecraft.fandom.com/wiki/Formatting_codes
+
+
 :::
 
 :::colorbox-example
@@ -36,6 +42,8 @@ title: motd
   The module will pick up a random image as the icon of the server.
   
   To respond the server status request.
+
+
 :::
 
 ## Configurations

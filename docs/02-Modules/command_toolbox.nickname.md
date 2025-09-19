@@ -8,6 +8,8 @@ title: command_toolbox.nickname
 ## Overview
 :::module
   Allows you to customize the `display name` of players.
+
+
 :::
 ## Color Boxes
 
@@ -16,6 +18,8 @@ title: command_toolbox.nickname
   ◉ Using the `nickname` module with `Styled Chat` mod.
   
   See: https://github.com/sakurawald/fuji/issues/489
+
+
 :::
 
 ## Configurations
@@ -61,6 +65,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/nickname reset`
 - Document:   Clear the display name.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -68,6 +74,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/nickname reset others <PlayerCollection others>`
 - Document:   Clear the display name.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -75,6 +83,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/nickname set <GreedyString format>`
 - Document:   Set the display name.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -82,6 +92,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/nickname set others <PlayerCollection others> <GreedyString format>`
 - Document:   Set the display name.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

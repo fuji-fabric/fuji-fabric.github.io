@@ -10,6 +10,8 @@ title: chat.history
   This module will store chat message as history.
   
   And send them to the player joined the server.
+
+
 :::
 ## Color Boxes
 
@@ -18,6 +20,8 @@ title: chat.history
   ◉ This module works with `Styled Chat` mod.
   
   You can use this module to provide the `chat history` for it.
+
+
 :::
 
 ## Configurations

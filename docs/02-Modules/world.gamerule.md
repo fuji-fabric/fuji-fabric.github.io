@@ -8,6 +8,8 @@ title: world.gamerule
 ## Overview
 :::module
   This module allows you to customize the `per-dimension gamerule`.
+
+
 :::
 ## Color Boxes
 
@@ -36,6 +38,8 @@ title: world.gamerule
   ◉ Can I use this module in vanilla dimensions?
   
   Yes, you can.
+
+
 :::
 
 :::colorbox-tip
@@ -55,6 +59,8 @@ title: world.gamerule
   You can install the `WorldGameRules` mod to provide such commands.
   
   See https://github.com/DrexHD/WorldGameRules
+
+
 :::
 
 ## Configurations

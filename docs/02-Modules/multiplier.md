@@ -16,6 +16,8 @@ title: multiplier
   1. `damage`: The damage to a player.
   
   2. `experience`: The gained experience of a player.
+
+
 :::
 ## Color Boxes
 
@@ -48,5 +50,7 @@ title: multiplier
   ◉ Double all experience a player gained.
   
   Issue: `/lp group default meta set fuji.multiplier.experience.all 2`
+
+
 :::
 

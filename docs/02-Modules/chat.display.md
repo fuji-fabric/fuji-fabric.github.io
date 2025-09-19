@@ -14,6 +14,8 @@ title: chat.display
   2. Show their inventory.
   
   3. Show their ender chest.
+
+
 :::
 ## Color Boxes
 
@@ -22,6 +24,8 @@ title: chat.display
   ◉ This module is designed to work with other `chat-related` mods.
   
   For example, you use this with `Styled Chat` mod.
+
+
 :::
 
 :::colorbox-tip
@@ -35,6 +39,8 @@ title: chat.display
   Then you can type `"item"` in chat.
   
   To create a display directly using chat, without the commands.
+
+
 :::
 
 ## Configurations
@@ -62,6 +68,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/chat display ender`
 - Document:   Show your enderchest.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -69,6 +77,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/chat display inv`
 - Document:   Show your inventory.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -76,6 +86,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/chat display item`
 - Document:   Show your item in main hand.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -84,12 +96,18 @@ It should NOT be copied directly into your configuration folder, as the document
 :::placeholder
 - Placeholder Name: `fuji:item`
 - Document:   Create a `item display` and return the `clickable` text to open that display.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:inv`
 - Document:   Create a `inventory display` and return the `clickable` text to open that display.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:ender`
 - Document:   Create a `enderchest display` and return the `clickable` text to open that display.
+
+
 :::

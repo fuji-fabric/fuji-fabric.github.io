@@ -10,6 +10,8 @@ title: jail
   This module allows you to define a `jail`.
   
   It can be used to `punish` a player with bad behaviour, without `banning` it.
+
+
 :::
 ## Color Boxes
 
@@ -62,6 +64,8 @@ title: jail
    You need to write `punishment commands` in `onJailedEvent` and `onUnjailedEvent`.
   
    You can also write `patrol commands` to check and restrict the actions of the jailed players.
+
+
 :::
 
 :::colorbox-note
@@ -105,6 +109,8 @@ title: jail
   NOTE: To disable the `vanilla Minecraft command feedbacks`, you can issue:
   
   1. `/gamerule sendCommandFeedback false`
+
+
 :::
 
 :::colorbox-tip
@@ -150,6 +156,8 @@ title: jail
   5. `/lp group jailed permission set fuji.anti_build.interact_block.override.* false`
   
   NOTE: You need to enable the `wildcard permission` feature in `luckperms` mod config.
+
+
 :::
 
 :::colorbox-tip
@@ -169,6 +177,8 @@ title: jail
   2. `/lp group jailed permission set fuji.permission.back true`
   
   Allow to use the `/back` command.
+
+
 :::
 
 :::colorbox-example
@@ -216,6 +226,8 @@ title: jail
   ◉ Query which jail a player is in.
   
   Issue: `/jail where Steve`
+
+
 :::
 
 ## Configurations
@@ -299,19 +311,27 @@ It should NOT be copied directly into your configuration folder, as the document
   NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
   
   NOTE: The `disk` will be `overridden` when `fire` this job.
+
+
 :::
 :::job
 - Job Name: `PatrolJailJob`
 - Document:   This `job` is used to `execute the patrol commands` for a `jail` periodically.
+
+
 :::
 :::job
 - Job Name: `UpdateJailRecordsJob`
 - Document:   This job is used to update all active `jail records` across all `jails`.
+
+
 :::
 ## Commands
 :::command
 - Command Syntax: `/is-jailed? <String playerName>`
 - Document:   A predicate command to check if the target player is jailed.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -319,6 +339,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/jail create <String jailId>`
 - Document:   Create a new `jail` descriptor.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -326,6 +348,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/jail delete <JailDescriptor jail> [Boolean confirm]`
 - Document:   Delete an existing `jail` descriptor
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -333,6 +357,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/jail gui`
 - Document:   Open the jail GUI.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -340,6 +366,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/jail list`
 - Document:   List all defined `jails`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -347,6 +375,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/jail put <OfflinePlayerName playerName> <JailDescriptor jail> [Duration duration] <GreedyString reason>`
 - Document:   Put the `player` into a specified `jail`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -354,6 +384,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/jail set-position <JailDescriptor jail>`
 - Document:   Set the `position` of the specified `jail` to your current position.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -361,6 +393,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/jail tp <JailDescriptor jail>`
 - Document:   Teleport to the `position` of an existing `jail`.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -368,6 +402,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/jail tp others <PlayerCollection others> <JailDescriptor jail>`
 - Document:   Teleport to the `position` of an existing `jail`.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -375,6 +411,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/jail un-put <JailedPlayerName playerName>`
 - Document:   Remove a player from the jail it is currently in.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -382,6 +420,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/jail where <JailedPlayerName playerName>`
 - Document:   Find the `jail` the player is in.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -390,54 +430,80 @@ It should NOT be copied directly into your configuration folder, as the document
 :::placeholder
 - Placeholder Name: `fuji:jail_id`
 - Document:   Returns the `jail id` from the player's active `jail record`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:jail_displayname`
 - Document:   Returns the `jail display name` from the player's active `jail record`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:jail_creator_name`
 - Document:   Returns the `creator name` from the player's active `jail record`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:jail_created_date`
 - Document:   Returns the `created date` from the player's active `jail record`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:jail_specified_duration`
 - Document:   Returns the `specified jail duration` from the player's active `jail record`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:jail_remaining_duration`
 - Document:   Returns the `remaining jail duration` from the player's active `jail record`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:jail_reason`
 - Document:   Returns the `reason` from the player's active `jail record`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:jail_dimension`
 - Document:   Returns the `dimension` from the player's active `jail record`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:jail_x`
 - Document:   Returns the `position x` from the player's active `jail record`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:jail_y`
 - Document:   Returns the `position y` from the player's active `jail record`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:jail_z`
 - Document:   Returns the `position z` from the player's active `jail record`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:jail_yaw`
 - Document:   Returns the `position yaw` from the player's active `jail record`.
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:jail_pitch`
 - Document:   Returns the `position pitch` from the player's active `jail record`.
+
+
 :::
 ## Argument Types
 :::argument-type

@@ -8,6 +8,8 @@ title: world
 ## Overview
 :::module
   Provides a unified world management.
+
+
 :::
 ## Color Boxes
 
@@ -34,6 +36,8 @@ title: world
   
   
   NOTE: You can just think the `dimension` word is identical to `world`.
+
+
 :::
 
 :::colorbox-note
@@ -93,6 +97,8 @@ title: world
   2. https://minecraft.wiki/w/Dimension_definition
   
   3. https://minecraft.wiki/w/Noise_settings
+
+
 :::
 
 :::colorbox-note
@@ -142,6 +148,8 @@ title: world
   If the specified chunk is not `generated`, then the chunk generator will `generate` a new one.
   
   If the specified chunk is `generated`, the chunk generator will just use the `existed chunk data` in storage.
+
+
 :::
 
 :::colorbox-note
@@ -159,6 +167,8 @@ title: world
   1. https://github.com/DrexHD/WorldManager
   
   2. https://github.com/DrexHD/WorldGameRules
+
+
 :::
 
 :::colorbox-note
@@ -188,6 +198,8 @@ title: world
   - https://minecraft.wiki/w/Chunk_format
   
   - https://minecraft.wiki/w/Loot_table
+
+
 :::
 
 :::colorbox-tip
@@ -195,6 +207,8 @@ title: world
   ◉ Make a resource world that reset automatically every day.
   
   You can use `command_scheduler` module, to execute `/world reset` command automatically.
+
+
 :::
 
 :::colorbox-tip
@@ -240,6 +254,8 @@ title: world
   ◉ The logic of `/time {set/add} ...` command.
   
   For command `/time {set/add}`, it operates on `all dimensions` in the server.
+
+
 :::
 
 :::colorbox-tip
@@ -271,6 +287,8 @@ title: world
   ◉ Set the weather per-dimension.
   
   You can modify the weather directly in config file, and issue `/fuji reload` to apply it.
+
+
 :::
 
 :::colorbox-tip
@@ -282,6 +300,8 @@ title: world
   Most of datapack should work.
   
   Anyway, always backup your world data before install a new datapack.
+
+
 :::
 
 :::colorbox-tip
@@ -315,6 +335,8 @@ title: world
   1. If the player is now in `minecraft:the_end`, then destination dimension is `minecraft:overworld`.
   
   2. Else the destination dimension is `minecraft:the_end`.
+
+
 :::
 
 :::colorbox-example
@@ -342,6 +364,8 @@ title: world
   1. `/world create my_nether --seed 1234567890 minecraft:the_nether`
   
   2. `/world reset fuji:my_nether --useTheSameSeed true --confirm true`
+
+
 :::
 
 :::colorbox-example
@@ -377,6 +401,8 @@ title: world
   The definition of `world preset`: https://minecraft.fandom.com/wiki/World_preset
   
   The definition of `superflat dimension`: https://minecraft.fandom.com/wiki/Superflat
+
+
 :::
 
 :::colorbox-example
@@ -394,6 +420,8 @@ title: world
   2. `chunk generator type`
   
   3. `chunk generator parameters`.
+
+
 :::
 
 :::colorbox-example
@@ -427,6 +455,8 @@ title: world
   The `/world create` command does the `import`, `make` and `load`.
   
   The `/world delete` command does the `unload` and also `delete the chunk files of that dimension`.
+
+
 :::
 
 :::colorbox-example
@@ -472,6 +502,8 @@ title: world
   ◉ Import a `superflat dimension`.
   
   Issue: `/world import my_superflat minecraft:overworld --seed <seed> --chunkGeneratorType FLAT`
+
+
 :::
 
 :::colorbox-example
@@ -489,6 +521,8 @@ title: world
   1. `/tppos --dimension minecraft:overworld --x 0 --y 128 --z 0 --yaw 0 --pitch 0`
   
   2. `/tppos --dimension minecraft:overworld --centerX 0 --centerZ 0 --minRange 0 --maxRange 1000 --maxTryTimes 16`
+
+
 :::
 
 ## Configurations
@@ -533,6 +567,8 @@ It should NOT be copied directly into your configuration folder, as the document
   NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
   
   NOTE: The `disk` will be `overridden` when `fire` this job.
+
+
 :::
 ## Commands
 :::command
@@ -544,6 +580,8 @@ It should NOT be copied directly into your configuration folder, as the document
   2. Use that `dimension descriptor` to `make` the `runtime dimension`.
   
   3. `Load` the runtime dimension into the `server`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -557,6 +595,8 @@ It should NOT be copied directly into your configuration folder, as the document
   2. Delete the chunk files of the dimension.
   
   3. Delete the `runtime dimension descriptor` in config file.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -570,6 +610,8 @@ It should NOT be copied directly into your configuration folder, as the document
   
   
   NOTE: This command is almost identical to `/world create` command.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -577,6 +619,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/world info <Dimension dimension>`
 - Document:   List the debug info of specified dimension.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -584,6 +628,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/world list`
 - Document:   List `loaded dimensions` and `unloaded dimensions`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -595,6 +641,8 @@ It should NOT be copied directly into your configuration folder, as the document
   1. `Make` the `runtime dimension` instance based on the `runtime dimension descriptor`.
   
   2. `Load` the made `runtime dimension` into the `server`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -602,6 +650,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/world reset <Dimension dimension> [Boolean useTheSameSeed] [Boolean confirm]`
 - Document:   Delete and create the specified world.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -609,6 +659,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/world save-configs`
 - Document:   Saves all the `dimension descriptors` from `memory` into the `storage`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -616,6 +668,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/world tp <Dimension dimension>`
 - Document:   Teleport to the target dimension with the same coordinate.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -630,6 +684,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/world who`
 - Document:   List the dimensions each player is in.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -637,6 +693,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/world who <Dimension dimension>`
 - Document:   List the players in specified dimension.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -644,6 +702,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/world who <ServerPlayerEntity player>`
 - Document:   Query which dimension the player is in.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

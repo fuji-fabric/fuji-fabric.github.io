@@ -10,6 +10,8 @@ title: echo.send_title
   This module provides `/send-title` command.
   
   To send the `text` as `title` to a specified player.
+
+
 :::
 ## Color Boxes
 
@@ -24,6 +26,8 @@ title: echo.send_title
   ◉ Send a title to online players.
   
   Issue: `/foreach send-title %player:name% --mainTitle "<rainbow>Hello %player:name%"`
+
+
 :::
 
 ## Commands

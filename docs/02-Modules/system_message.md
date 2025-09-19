@@ -28,6 +28,8 @@ title: system_message
   7. Player banned screen message.
   
   8. ... (There are many translatable texts in server-side)
+
+
 :::
 ## Color Boxes
 
@@ -38,6 +40,8 @@ title: system_message
   For example, if you are using `Styled Chat` mod, then you should not modify the `player join message` and `player leave message`.
   
   Because the `Styled Chat` mod already handles them.
+
+
 :::
 
 :::colorbox-note
@@ -65,6 +69,8 @@ title: system_message
   We will see what `translatable text` is going to be sent, and `replace` it with `user-defined text` if needed.
   
   The client just receive the `user-define text`, and display it to the player.
+
+
 :::
 
 :::colorbox-example
@@ -82,6 +88,8 @@ title: system_message
   Key: `multiplayer.player.left`
   
   Value: `<dark_gray>%s leeeeeeeeft the game`
+
+
 :::
 
 :::colorbox-example
@@ -99,6 +107,8 @@ title: system_message
   Key: `commands.seed.success`
   
   Value: `<rainbow> Seeeeeeeeeeed: %s`
+
+
 :::
 
 :::colorbox-example
@@ -120,6 +130,8 @@ title: system_message
   Key: `container.chest`
   
   Value: `<rb>I see you opening the chest!`
+
+
 :::
 
 :::colorbox-example
@@ -133,6 +145,8 @@ title: system_message
   
   
   NOTE: If you leave the `value` to `null`, then it means let's `cancel` the sending of this translatable text.
+
+
 :::
 
 :::colorbox-example
@@ -150,6 +164,8 @@ title: system_message
   Key: `multiplayer.disconnect.banned.reason`
   
   Value: `<red>You are banned from this server<newline><yellow>Reason: %s`
+
+
 :::
 
 ## Configurations

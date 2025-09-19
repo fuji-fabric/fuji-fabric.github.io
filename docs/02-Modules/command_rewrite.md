@@ -8,6 +8,8 @@ title: command_rewrite
 ## Overview
 :::module
   This module allows you to define `regex` to rewrite the command line a player issued.
+
+
 :::
 ## Color Boxes
 
@@ -36,6 +38,8 @@ title: command_rewrite
   2. **Parsing** – The command string is parsed into `a command node`. At this point, command suggestions and exceptions can be provided.
   
   3. **Execution** – The `actions` associated with the command node are `executed`, producing the intended `effects` of the command.
+
+
 :::
 
 :::colorbox-note
@@ -47,6 +51,8 @@ title: command_rewrite
   2. The `command bundle` module allows you to define `new command`, and define the argument and body of the new command.
   
   3. The `command rewrite` module didn't define any new command. It just works in `network packet` level, and modifies the `issued command string` from the command source player.
+
+
 :::
 
 :::colorbox-tip
@@ -56,6 +62,8 @@ title: command_rewrite
   Like, rewrite the command string `/home` into `/home tp default`.
   
   And provide a shortcut, for `/home tp default` command.
+
+
 :::
 
 ## Configurations

@@ -10,6 +10,8 @@ title: command_meta.IF
   This module provides a simple `/IF` command.
   
   It can be used to express `conditional logic`, such as `IF ... THEN ... ELSE ...`.
+
+
 :::
 ## Color Boxes
 
@@ -60,6 +62,8 @@ title: command_meta.IF
   The `nested IF` is not supported.
   
   Once there is an `ambiguity` found in the `/IF` command, the entire execution of the `/IF` command will be aborted.
+
+
 :::
 
 :::colorbox-note
@@ -91,6 +95,8 @@ title: command_meta.IF
   4. It supports the `placeholders`.
   
   5. Still, You can leverage the `/execute if` command as the `condition-command` of `/IF` command.
+
+
 :::
 
 :::colorbox-note
@@ -126,6 +132,8 @@ title: command_meta.IF
   Issue: `/command-debug execute at @a if block ~ ~-1 ~ minecraft:diamond_block`
   
   You will get the integer `2` as the `return value` of that `/execute ...` command instance.
+
+
 :::
 
 :::colorbox-tip
@@ -141,6 +149,8 @@ title: command_meta.IF
   4. https://minecraft.fandom.com/wiki/Commands/tag
   
   5. https://minecraft.fandom.com/wiki/Commands/data
+
+
 :::
 
 :::colorbox-tip
@@ -150,6 +160,8 @@ title: command_meta.IF
   You can use `command_bundle` module to create a `template command` to help you write `conditional logic`.
   
   For example, you can create a new command `/try-give-item <item> <required-balance>`.
+
+
 :::
 
 :::colorbox-example
@@ -197,6 +209,8 @@ title: command_meta.IF
   1. The player is standing on a `minecraft:diamond_block` block.
   
   2. The player has a `minecraft:diamond` item in its inventory.
+
+
 :::
 
 :::colorbox-example
@@ -226,6 +240,8 @@ title: command_meta.IF
   ◉ Leverage the vanilla Minecraft's `/scoreboard` command, to store states.
   
   It's similar to `/tag` command, but more advanced.
+
+
 :::
 
 ## Commands

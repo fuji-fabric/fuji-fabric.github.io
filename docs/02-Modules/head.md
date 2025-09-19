@@ -8,6 +8,8 @@ title: head
 ## Overview
 :::module
   This module allows player to buy decorative heads from a head shop.
+
+
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">
@@ -35,6 +37,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/head`
 - Document:   See /head gui
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -42,6 +46,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/head gui`
 - Document:   Open the head shop GUI.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -49,6 +55,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/head sync`
 - Document:   Download the head database from the internet. (You need to delete the existing head database file.)
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

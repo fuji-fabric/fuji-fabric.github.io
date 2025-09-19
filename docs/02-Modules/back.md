@@ -12,6 +12,8 @@ title: back
   1. His last teleport point.
   
   2. His death point.
+
+
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">
@@ -64,11 +66,15 @@ It should NOT be copied directly into your configuration folder, as the document
   NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
   
   NOTE: The `disk` will be `overridden` when `fire` this job.
+
+
 :::
 ## Commands
 :::command
 - Command Syntax: `/back`
 - Document:   Back to the specified location.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -76,6 +82,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/back 1 <Dimension targetDimension>`
 - Document:   Back to the specified location.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -83,6 +91,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/back clear others <PlayerCollection others>`
 - Document:   Clear the back location history.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -90,6 +100,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/back clear <ServerPlayerEntity player>`
 - Document:   Clear the back location history.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -97,6 +109,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/back <int lastNLocation>`
 - Document:   Back to the specified location.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -104,6 +118,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/back <int lastNLocation> <Dimension targetDimension>`
 - Document:   Back to the specified location.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -111,6 +127,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/back list`
 - Document:   List the back location history.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -118,6 +136,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/back list <ServerPlayerEntity player>`
 - Document:   List the back location history.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -125,6 +145,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/back push`
 - Document:   Push current location into the back location history.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -132,6 +154,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/back push others <PlayerCollection others>`
 - Document:   Push current location into the back location history.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

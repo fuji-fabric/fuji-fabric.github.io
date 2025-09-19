@@ -8,6 +8,8 @@ title: command_cooldown
 ## Overview
 :::module
   This module allows you to define a `cooldown` for a specified `command`.
+
+
 :::
 ## Color Boxes
 
@@ -56,6 +58,8 @@ title: command_cooldown
   
   
   NOTE: If you only want to define a simple `cooling duration` for a specified command, just use `unnamed cooldown`.
+
+
 :::
 
 :::colorbox-note
@@ -65,6 +69,8 @@ title: command_cooldown
   1. The command source is `the console`.
   
   2. The command source is `admin` (level permission >= 4)
+
+
 :::
 
 :::colorbox-example
@@ -132,6 +138,8 @@ title: command_cooldown
   A `global` named cooldown applies `per-server`.
   
   Issue: `/command-cooldown create kitfood 3000 --global true`
+
+
 :::
 
 :::colorbox-example
@@ -145,6 +153,8 @@ title: command_cooldown
   Issue: `/command-cooldown create kitfood 999999999999 --persistent false`
   
   This cooldown says that, it can be used only once after each server re-start.
+
+
 :::
 
 ## Configurations
@@ -203,11 +213,15 @@ It should NOT be copied directly into your configuration folder, as the document
   NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
   
   NOTE: The `disk` will be `overridden` when `fire` this job.
+
+
 :::
 ## Commands
 :::command
 - Command Syntax: `/command-cooldown create <String name> <long cooldownDuration> [Integer maxUses] [Boolean persistent] [Boolean global]`
 - Document:   Create a named-cooldown.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -215,6 +229,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-cooldown delete <NamedCooldownDescriptor namedCooldown> [Boolean confirm]`
 - Document:   Delete a named-cooldown.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -222,6 +238,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-cooldown list`
 - Document:   List all `unnamed-cooldown` and `named-cooldown`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -229,6 +247,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-cooldown reset <NamedCooldownDescriptor namedCooldown> <ServerPlayerEntity player>`
 - Document:   Reset `the last use time` of a named-cooldown for a player.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -236,6 +256,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-cooldown test <NamedCooldownDescriptor namedCooldown> <ServerPlayerEntity player> [StringList onFailed] <GreedyStringList onSuccess>`
 - Document:   Test a named-cooldown with `arbitrary command instance`, and execute `success case command` or `failure case command`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -243,6 +265,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/command-cooldown try-use <NamedCooldownDescriptor namedCooldown> <ServerPlayerEntity player>`
 - Document:   Test a named-cooldown with `pre-defined command instance`, and execute `success case command` or `failure case command`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -257,6 +281,8 @@ It should NOT be copied directly into your configuration folder, as the document
   For example, if you have a `named cooldown` whose name is `kitfood`.
   
   You can use: `%fuji:command_cooldown_left_time kitfood%`
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:command_cooldown_left_time_date`
@@ -267,6 +293,8 @@ It should NOT be copied directly into your configuration folder, as the document
   For example, if you have a `named cooldown` whose name is `kitfood`.
   
   You can use: `%fuji:command_cooldown_left_time_date kitfood%`
+
+
 :::
 :::placeholder
 - Placeholder Name: `fuji:command_cooldown_left_usage`
@@ -277,6 +305,8 @@ It should NOT be copied directly into your configuration folder, as the document
   For example, if you have a `named cooldown` whose name is `kitfood`.
   
   You can use: `%fuji:command_cooldown_left_usage kitfood%`
+
+
 :::
 ## Argument Types
 :::argument-type

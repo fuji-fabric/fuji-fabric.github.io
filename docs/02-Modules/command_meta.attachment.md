@@ -8,6 +8,8 @@ title: command_meta.attachment
 ## Overview
 :::module
   Provides a unified attachment facility, to attach any data to any object.
+
+
 :::
 ## Color Boxes
 
@@ -22,6 +24,8 @@ title: command_meta.attachment
   ◉ Get a attachment.
   
   Issue: `/attachment get news today`
+
+
 :::
 
 ## Commands

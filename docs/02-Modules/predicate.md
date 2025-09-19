@@ -8,6 +8,8 @@ title: predicate
 ## Overview
 :::module
   Provides `predicate` commands, which suffix with `?`.
+
+
 :::
 ## Color Boxes
 
@@ -24,6 +26,8 @@ title: predicate
   
   
   Actually, you can also use the `predicate command` with `command block`.
+
+
 :::
 
 :::colorbox-example
@@ -31,6 +35,8 @@ title: predicate
   ◉ Test a condition, and then run a command if success.
   
   Issue: `/run as player Alice chain has-perm? %player:name% 4 chain say value is true`
+
+
 :::
 
 :::colorbox-example
@@ -68,6 +74,8 @@ title: predicate
   ◉ More examples
   
   You can see more examples in `command_meta.IF` module and `command_meta.chain` module.
+
+
 :::
 
 ## Commands
@@ -137,6 +145,8 @@ title: predicate
 :::command
 - Command Syntax: `/has-level? <OfflineGameProfile player> <int levelPermission>`
 - Document:   Predicate to test if the player has the level-perm?
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -151,6 +161,8 @@ title: predicate
 :::command
 - Command Syntax: `/has-players? [Integer n]`
 - Document:   Predicate if online players >= n.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

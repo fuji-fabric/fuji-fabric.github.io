@@ -10,6 +10,8 @@ title: echo.send_console
   This module provides the `/send-console` command.
   
   To send a string into the `console`.
+
+
 :::
 ## Color Boxes
 
@@ -26,6 +28,8 @@ title: echo.send_console
   You can integrate with other modules, to `log a specific action`.
   
   The effect is like: `/run as console send-console Player %player:name% joins the server.`
+
+
 :::
 
 ## Commands

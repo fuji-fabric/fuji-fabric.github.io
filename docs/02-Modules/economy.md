@@ -16,6 +16,8 @@ title: economy
   One `player` can have many `accounts`.
   
   One `account` holds one type of `currency`.
+
+
 :::
 ## Color Boxes
 
@@ -28,6 +30,8 @@ title: economy
   This mod provides the `Admin Shops` and `Player Shops`.
   
   It brings the similar gameplay into `fabric` like `QuickShop` plugin in `bukkit`.
+
+
 :::
 
 :::colorbox-example
@@ -75,6 +79,8 @@ title: economy
   ◉ Transfer the specified `balance` of specified `currency` from self to another player.
   
   Issue: `/economy pay Bob fuji:gold 100`
+
+
 :::
 
 ## Configurations
@@ -136,6 +142,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/economy account <OfflineGameProfile player> <CurrencyId currencyId>`
 - Document:   Get the `player`'s `account` for `currency ID`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -143,6 +151,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/economy accounts <OfflineGameProfile player>`
 - Document:   List all `accounts` owned by the `player`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -150,6 +160,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/economy balance-top <CurrencyId currencyId>`
 - Document:   List the top players of specified currency using message.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -157,6 +169,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/economy balance-top gui <CurrencyId currencyId>`
 - Document:   List the top players of specified currency using GUI.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -164,6 +178,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/economy balance`
 - Document:   Query your economy `accounts`.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -171,6 +187,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/economy clear <OfflineGameProfile player> <CurrencyId currencyId> [Boolean confirm]`
 - Document:   Clear the `amount` of the player's `account` for `specified currency`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -178,6 +196,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/economy give <OfflineGameProfile player> <CurrencyId currencyId> <double amount>`
 - Document:   Give `amount` to the player's `account` for `specified currency`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -185,6 +205,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/economy pay <OfflineGameProfile player> <CurrencyId currencyId> <double amount>`
 - Document:   Pay specified `amount` of `currency` to another player's account.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -192,6 +214,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/economy providers`
 - Document:   List all installed `economy providers`, and what `economy currencies` they provided.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -199,6 +223,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/economy set <OfflineGameProfile player> <CurrencyId currencyId> <double amount>`
 - Document:   Set the `amount` of the player's `account` for `specified currency`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -206,6 +232,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/economy take <OfflineGameProfile player> <CurrencyId currencyId> <double amount>`
 - Document:   Take `amount` from the player's `account` for `specified currency`.
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -213,6 +241,8 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/has-currency? <OfflineGameProfile player> <CurrencyId currencyId> <double amount>`
 - Document:   Has the specified amount of currency?
+
+
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -241,6 +271,8 @@ It should NOT be copied directly into your configuration folder, as the document
   To prevent the placeholder being parsed by the `/run` command.
   
   You need to insert a `backslash` character in case `2.` before the placeholder.
+
+
 :::
 ## Argument Types
 :::argument-type

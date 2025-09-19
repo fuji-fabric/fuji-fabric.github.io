@@ -9,6 +9,8 @@ title: command_toolbox.suicide
 :::command
 - Command Syntax: `/suicide`
 - Document:   Kill yourself.
+
+
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
