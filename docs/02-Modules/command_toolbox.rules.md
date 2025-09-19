@@ -17,11 +17,11 @@ In vanilla Minecraft, if a player has `no permission` to use that command, the c
 :::
 
 ## Configurations
-:::warning
-The JSON content is provided for documentation purposes only.
+<Admonition type="warning" icon="" title="">
+**The JSON content is provided for documentation purposes only.**
 
-It should not be copied directly into your configuration folder, as the document format is not valid JSON syntax.
-:::
+It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+</Admonition>
 :::config
 - File Name: `config.json`
 - File Content: 
