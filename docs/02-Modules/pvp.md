@@ -7,7 +7,7 @@ title: pvp
 
 ## Overview
 :::module
-Provides PvP management for players.
+  Provides PvP management for players.
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">
@@ -32,49 +32,49 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/pvp list`
-- Document: List the players that enable the PvP.
+- Document:   List the players that enable the PvP.
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/pvp off`
-- Document: Disable the PvP for the player.
+- Document:   Disable the PvP for the player.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/pvp off others <PlayerCollection others>`
-- Document: Disable the PvP for the player.
+- Document:   Disable the PvP for the player.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/pvp on`
-- Document: Enable the PvP for the player.
+- Document:   Enable the PvP for the player.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/pvp on others <PlayerCollection others>`
-- Document: Enable the PvP for the player.
+- Document:   Enable the PvP for the player.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/pvp status`
-- Document: Query the status of PvP for the player.
+- Document:   Query the status of PvP for the player.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/pvp status others <PlayerCollection others>`
-- Document: Query the status of PvP for the player.
+- Document:   Query the status of PvP for the player.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

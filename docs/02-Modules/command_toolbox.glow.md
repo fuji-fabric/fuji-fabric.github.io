@@ -8,7 +8,7 @@ title: command_toolbox.glow
 ## Commands
 :::command
 - Command Syntax: `/glow`
-- Document: Toggle the glowing state.
+- Document:   Toggle the glowing state.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -22,7 +22,7 @@ title: command_toolbox.glow
 :::
 :::command
 - Command Syntax: `/glow others <PlayerCollection others>`
-- Document: Toggle the glowing state.
+- Document:   Toggle the glowing state.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

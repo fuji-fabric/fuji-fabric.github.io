@@ -7,7 +7,7 @@ title: sit
 
 ## Overview
 :::module
-Provides a facility to sit on blocks.
+  Provides a facility to sit on blocks.
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">
@@ -38,14 +38,14 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/sit`
-- Document: Sit in current position.
+- Document:   Sit in current position.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/sit others <PlayerCollection others>`
-- Document: Sit in current position.
+- Document:   Sit in current position.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

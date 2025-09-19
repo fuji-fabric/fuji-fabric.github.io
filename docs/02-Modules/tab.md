@@ -7,23 +7,23 @@ title: tab
 
 ## Overview
 :::module
-Customize the TAB list.
+  Customize the TAB list.
 :::
 ## Color Boxes
 
 :::colorbox-note
 
-◉ I want a complex `tab` list.
-
-If you want to design a complex and advanced `tab` list.
-
-I would recommend to use https://github.com/NEZNAMY/TAB
-
-
-
-◉ I want to customize the `scoreboard`.
-
-Use the mod mentioned above. It works perfect.
+  ◉ I want a complex `tab` list.
+  
+  If you want to design a complex and advanced `tab` list.
+  
+  I would recommend to use https://github.com/NEZNAMY/TAB
+  
+  
+  
+  ◉ I want to customize the `scoreboard`.
+  
+  Use the mod mentioned above. It works perfect.
 :::
 
 ## Configurations
@@ -64,5 +64,5 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Jobs
 :::job
 - Job Name: `RenderHeaderAndFooterJob`
-- Document: This `job` is used to `update` the `header` and `footer` in `tab` list.
+- Document:   This `job` is used to `update` the `header` and `footer` in `tab` list.
 :::

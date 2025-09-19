@@ -7,7 +7,7 @@ title: home
 
 ## Overview
 :::module
-Allows players to define their homes.
+  Allows players to define their homes.
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">
@@ -32,10 +32,13 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Jobs
 :::job
 - Job Name: `ConfigurationHandlerWriteStorageJob`
-- Document: This `job` is used to `write data` from `memory` into `storage`.
-
-NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
-NOTE: The `disk` will be `overridden` when `fire` this job.
+- Document:   This `job` is used to `write data` from `memory` into `storage`.
+  
+  
+  
+  NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
+  
+  NOTE: The `disk` will be `overridden` when `fire` this job.
 :::
 ## Commands
 :::command

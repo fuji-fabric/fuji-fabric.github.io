@@ -7,30 +7,33 @@ title: afk
 
 ## Overview
 :::module
-This module provides:
-1. Afk detection: If a player idle too long, we will mark it as afk state.
-2. Afk event: Execute commands when a player enters or leaves afk state.
-3. Afk name customization: For a afk player, we can customize its display name in tab list.
+  This module provides:
+  
+  1. Afk detection: If a player idle too long, we will mark it as afk state.
+  
+  2. Afk event: Execute commands when a player enters or leaves afk state.
+  
+  3. Afk name customization: For a afk player, we can customize its display name in tab list.
 :::
 ## Color Boxes
 
 :::colorbox-note
 
-◉ How it works?
-
-
-
-For each player, define a `number` to track `the last action time`.
-
-Actions can be: `mine a block`, `movement`, `issue a command` ...
-
-When action received, update the number.
-
-Define a `job` using cron, to be triggered periodically.
-
-The job will check and compare 2 consecutive value of the `number`.
-
-If number is identical, then the player is considered as in `afk`.
+  ◉ How it works?
+  
+  
+  
+  For each player, define a `number` to track `the last action time`.
+  
+  Actions can be: `mine a block`, `movement`, `issue a command` ...
+  
+  When action received, update the number.
+  
+  Define a `job` using cron, to be triggered periodically.
+  
+  The job will check and compare 2 consecutive value of the `number`.
+  
+  If number is identical, then the player is considered as in `afk`.
 :::
 
 ## Configurations
@@ -72,26 +75,26 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Jobs
 :::job
 - Job Name: `AfkMarkerJob`
-- Document: This `job` is used to check the last action time for each player.
+- Document:   This `job` is used to check the last action time for each player.
 :::
 ## Commands
 :::command
 - Command Syntax: `/afk`
-- Document: Enter afk state.
+- Document:   Enter afk state.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/afk others <PlayerCollection others>`
-- Document: Enter afk state.
+- Document:   Enter afk state.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/is-afk? <ServerPlayerEntity player>`
-- Document: Test if a player is in afk state.
+- Document:   Test if a player is in afk state.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

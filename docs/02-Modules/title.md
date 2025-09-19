@@ -7,28 +7,29 @@ title: title
 
 ## Overview
 :::module
-This module allows you to define `titles` to display in the chat.
-Or display the `active title` in any place that supports placeholders.
+  This module allows you to define `titles` to display in the chat.
+  
+  Or display the `active title` in any place that supports placeholders.
 :::
 ## Color Boxes
 
 :::colorbox-example
 
-◉ Give the `fisher` title to player Alice.
-
-Issue: `/lp user Alice permission set fuji.title.obtain.fisher true`
-
-
-
-◉ Give the `fisher` title to player Alice, but it expires in 7 days.
-
-Issue: `/lp user Alice permission settemp fuji.title.obtain.fisher true 7d`
-
-
-
-◉ To display the `active title`.
-
-Insert the `%fuji:active_title%` in any place that supports placeholders. (Like a chat mod that supports the placeholders).
+  ◉ Give the `fisher` title to player Alice.
+  
+  Issue: `/lp user Alice permission set fuji.title.obtain.fisher true`
+  
+  
+  
+  ◉ Give the `fisher` title to player Alice, but it expires in 7 days.
+  
+  Issue: `/lp user Alice permission settemp fuji.title.obtain.fisher true 7d`
+  
+  
+  
+  ◉ To display the `active title`.
+  
+  Insert the `%fuji:active_title%` in any place that supports placeholders. (Like a chat mod that supports the placeholders).
 :::
 
 ## Configurations
@@ -95,7 +96,7 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/title!`
-- Document: Open the `title` GUI.
+- Document:   Open the `title` GUI.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
@@ -103,5 +104,5 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Placeholders
 :::placeholder
 - Placeholder Name: `fuji:active_title`
-- Document: Returns the `display name` of `the active title` for the player.
+- Document:   Returns the `display name` of `the active title` for the player.
 :::

@@ -7,35 +7,35 @@ title: motd
 
 ## Overview
 :::module
-Customize the MOTD of the server.
+  Customize the MOTD of the server.
 :::
 ## Color Boxes
 
 :::colorbox-tip
 
-◉ Use an `editor` to help you design the MOTD.
-
-Online MOTD editor: https://colorize.fun/en/minecraft
+  ◉ Use an `editor` to help you design the MOTD.
+  
+  Online MOTD editor: https://colorize.fun/en/minecraft
 :::
 
 :::colorbox-tip
 
-◉ Customize the MOTD using `Formating Codes`.
-
-The `Formating Codes` is a vanilla Minecraft feature.
-
-See: https://minecraft.fandom.com/wiki/Formatting_codes
+  ◉ Customize the MOTD using `Formating Codes`.
+  
+  The `Formating Codes` is a vanilla Minecraft feature.
+  
+  See: https://minecraft.fandom.com/wiki/Formatting_codes
 :::
 
 :::colorbox-example
 
-◉ Configure server icons.
-
-You can put `64x64 pixels .png image file` into the directory `config/fuji/modules/motd/icon` dir.
-
-The module will pick up a random image as the icon of the server.
-
-To respond the server status request.
+  ◉ Configure server icons.
+  
+  You can put `64x64 pixels .png image file` into the directory `config/fuji/modules/motd/icon` dir.
+  
+  The module will pick up a random image as the icon of the server.
+  
+  To respond the server status request.
 :::
 
 ## Configurations

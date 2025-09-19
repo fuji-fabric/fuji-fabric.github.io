@@ -7,57 +7,61 @@ title: command_state
 
 ## Overview
 :::module
-This module lets you define a `state` using `predicate commands`.
-With it, you can:
-- Define commands to be executed when a player `enters` or `leaves` this `state`.
-- Check whether a player is in the `state`.
-- Use `placeholders` related to the `state`.
+  This module lets you define a `state` using `predicate commands`.
+  
+  With it, you can:
+  
+  - Define commands to be executed when a player `enters` or `leaves` this `state`.
+  
+  - Check whether a player is in the `state`.
+  
+  - Use `placeholders` related to the `state`.
 :::
 ## Color Boxes
 
 :::colorbox-tip
 
-◉ Define a `state` using `predicate commands`.
-
-A `state` is composed by `predicate commands`.
-
-
-
-You can define a `state` called `has-iron-and-gold`, with the following `predicate commands`:
-
-1. `has-item? %player:name% minecraft:iron_ingot 16`
-
-2. `has-item? %player:name% minecraft:gold_ingot 8`
-
-
-
-◉ Integrate with `luckperms`'s `temporary permission`.
-
-Assign a `temporary permission` using `/lp group default permission settemp fuji.permission.fly true 10s`
-
-
-
-Then define a `state` to check whether a player `has specified temporary permission`.
-
-This `state` can be called `can-use-fly-command` with the following `predicate commands`:
-
-1. `has-perm? %player:name% fuji.permission.fly`
-
-
-
-Last, you can define `commands to be executed` when a player `leave this state`.
-
-For example, define commands to `turn off the flying` while the player `leaves` the `state`.
-
-
-
-◉ Check the value of a `state` of a player.
-
-Issue: `/command-state info Steve`
-
-
-
-Besides that, the `/is-in-state? <player> <state-id>` can be used as a `predicate command`.
+  ◉ Define a `state` using `predicate commands`.
+  
+  A `state` is composed by `predicate commands`.
+  
+  
+  
+  You can define a `state` called `has-iron-and-gold`, with the following `predicate commands`:
+  
+  1. `has-item? %player:name% minecraft:iron_ingot 16`
+  
+  2. `has-item? %player:name% minecraft:gold_ingot 8`
+  
+  
+  
+  ◉ Integrate with `luckperms`'s `temporary permission`.
+  
+  Assign a `temporary permission` using `/lp group default permission settemp fuji.permission.fly true 10s`
+  
+  
+  
+  Then define a `state` to check whether a player `has specified temporary permission`.
+  
+  This `state` can be called `can-use-fly-command` with the following `predicate commands`:
+  
+  1. `has-perm? %player:name% fuji.permission.fly`
+  
+  
+  
+  Last, you can define `commands to be executed` when a player `leave this state`.
+  
+  For example, define commands to `turn off the flying` while the player `leaves` the `state`.
+  
+  
+  
+  ◉ Check the value of a `state` of a player.
+  
+  Issue: `/command-state info Steve`
+  
+  
+  
+  Besides that, the `/is-in-state? <player> <state-id>` can be used as a `predicate command`.
 :::
 
 ## Configurations
@@ -154,49 +158,54 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Jobs
 :::job
 - Job Name: `ConfigurationHandlerWriteStorageJob`
-- Document: This `job` is used to `write data` from `memory` into `storage`.
-
-NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
-NOTE: The `disk` will be `overridden` when `fire` this job.
+- Document:   This `job` is used to `write data` from `memory` into `storage`.
+  
+  
+  
+  NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
+  
+  NOTE: The `disk` will be `overridden` when `fire` this job.
 :::
 :::job
 - Job Name: `CommandStateAutoUpdaterJob`
-- Document: This `job` is used to `check` and `update` the value of all the defined `states` for all online players.
-
-When fired, its effect is equivalent to running the `/command-state update-all` command.
+- Document:   This `job` is used to `check` and `update` the value of all the defined `states` for all online players.
+  
+  
+  
+  When fired, its effect is equivalent to running the `/command-state update-all` command.
 :::
 ## Commands
 :::command
 - Command Syntax: `/command-state info <ServerPlayerEntity player>`
-- Document: Display the value of all `states` of the specified player.
+- Document:   Display the value of all `states` of the specified player.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-state list`
-- Document: List all defined `states`.
+- Document:   List all defined `states`.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-state update-all`
-- Document: Update all defined `states` for online players.
+- Document:   Update all defined `states` for online players.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-state update <StateDescriptor state>`
-- Document: Update the specified `state` for online players.
+- Document:   Update the specified `state` for online players.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/is-in-state? <ServerPlayerEntity player> <StateDescriptor state>`
-- Document: Returns whether the specified `state` value for the player is currently `true`.
+- Document:   Returns whether the specified `state` value for the player is currently `true`.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -204,10 +213,13 @@ When fired, its effect is equivalent to running the `/command-state update-all` 
 ## Placeholders
 :::placeholder
 - Placeholder Name: `fuji:is_in_state`
-- Document: Returns the value of specified `state` of the player.
-
-Example:
-- `%fuji:is_in_state is-in-overworld%`
+- Document:   Returns the value of specified `state` of the player.
+  
+  
+  
+  Example:
+  
+  - `%fuji:is_in_state is-in-overworld%`
 :::
 ## Argument Types
 :::argument-type

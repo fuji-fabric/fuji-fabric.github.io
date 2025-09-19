@@ -7,35 +7,36 @@ title: command_meta.json
 
 ## Overview
 :::module
-Provides `/json` command.
-A powerful and unified tool to edit json file.
+  Provides `/json` command.
+  
+  A powerful and unified tool to edit json file.
 :::
 ## Color Boxes
 
 :::colorbox-tip
 
-Read the detailed document for `Json Path`:
-
-See https://goessner.net/articles/JsonPath/
+  Read the detailed document for `Json Path`:
+  
+  See https://goessner.net/articles/JsonPath/
 :::
 
 :::colorbox-example
 
-◉ Read a json key.
-
-Issue: `/json read "config/fuji/config.json" "$.core.debug"`
-
-
-
-◉ List json keys.
-
-Issue: `/json read "config/fuji/config.json" "$.modules.keys()"`
-
-
-
-◉ Set the value of a json key.
-
-Issue: `/json write "config/fuji/config.json" "$.core.debug.log_debug_messages" BOOLEAN true`
+  ◉ Read a json key.
+  
+  Issue: `/json read "config/fuji/config.json" "$.core.debug"`
+  
+  
+  
+  ◉ List json keys.
+  
+  Issue: `/json read "config/fuji/config.json" "$.modules.keys()"`
+  
+  
+  
+  ◉ Set the value of a json key.
+  
+  Issue: `/json write "config/fuji/config.json" "$.core.debug.log_debug_messages" BOOLEAN true`
 :::
 
 ## Commands

@@ -7,67 +7,67 @@ title: predicate
 
 ## Overview
 :::module
-Provides `predicate` commands, which suffix with `?`.
+  Provides `predicate` commands, which suffix with `?`.
 :::
 ## Color Boxes
 
 :::colorbox-note
 
-◉ How it works?
-
-A `predicate command` will return an `integer value` to represent the `SUCCESS` or `FAILED` test result.
-
-It relies on the `return value of command` in vanilla Minecraft.
-
-See https://minecraft.fandom.com/wiki/Commands/return
-
-
-
-Actually, you can also use the `predicate command` with `command block`.
+  ◉ How it works?
+  
+  A `predicate command` will return an `integer value` to represent the `SUCCESS` or `FAILED` test result.
+  
+  It relies on the `return value of command` in vanilla Minecraft.
+  
+  See https://minecraft.fandom.com/wiki/Commands/return
+  
+  
+  
+  Actually, you can also use the `predicate command` with `command block`.
 :::
 
 :::colorbox-example
 
-◉ Test a condition, and then run a command if success.
-
-Issue: `/run as player Alice chain has-perm? %player:name% 4 chain say value is true`
+  ◉ Test a condition, and then run a command if success.
+  
+  Issue: `/run as player Alice chain has-perm? %player:name% 4 chain say value is true`
 :::
 
 :::colorbox-example
 
-◉ Test if a player is holding an apple
-
-Issue: `/command-debug is-holding? Steve minecraft:apple`
-
-
-
-◉ Test if a player has specified string permission
-
-Issue: `/command-debug has-perm? Steve fuji.permission.back`
-
-
-
-◉ Test if a player's health >= 10
-
-Issue: `/command-debug <=? Steve 10 %player:health%`
-
-
-
-◉ Test if a player killed more than 100 zombies.
-
-Issue: `/command-debug <=? Steve 100 %player:statistic_raw minecraft:deaths%`
-
-
-
-◉ Leverage the `vanilla Minecraft statistics`
-
-See: https://minecraft.fandom.com/wiki/Statistics
-
-
-
-◉ More examples
-
-You can see more examples in `command_meta.IF` module and `command_meta.chain` module.
+  ◉ Test if a player is holding an apple
+  
+  Issue: `/command-debug is-holding? Steve minecraft:apple`
+  
+  
+  
+  ◉ Test if a player has specified string permission
+  
+  Issue: `/command-debug has-perm? Steve fuji.permission.back`
+  
+  
+  
+  ◉ Test if a player's health >= 10
+  
+  Issue: `/command-debug <=? Steve 10 %player:health%`
+  
+  
+  
+  ◉ Test if a player killed more than 100 zombies.
+  
+  Issue: `/command-debug <=? Steve 100 %player:statistic_raw minecraft:deaths%`
+  
+  
+  
+  ◉ Leverage the `vanilla Minecraft statistics`
+  
+  See: https://minecraft.fandom.com/wiki/Statistics
+  
+  
+  
+  ◉ More examples
+  
+  You can see more examples in `command_meta.IF` module and `command_meta.chain` module.
 :::
 
 ## Commands
@@ -136,7 +136,7 @@ You can see more examples in `command_meta.IF` module and `command_meta.chain` m
 :::
 :::command
 - Command Syntax: `/has-level? <OfflineGameProfile player> <int levelPermission>`
-- Document: Predicate to test if the player has the level-perm?
+- Document:   Predicate to test if the player has the level-perm?
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -150,7 +150,7 @@ You can see more examples in `command_meta.IF` module and `command_meta.chain` m
 :::
 :::command
 - Command Syntax: `/has-players? [Integer n]`
-- Document: Predicate if online players >= n.
+- Document:   Predicate if online players >= n.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

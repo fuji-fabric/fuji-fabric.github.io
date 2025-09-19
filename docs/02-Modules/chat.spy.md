@@ -7,23 +7,23 @@ title: chat.spy
 
 ## Overview
 :::module
-This module allows you to spy on specified chat message type. (Mainly used for private message types)
+  This module allows you to spy on specified chat message type. (Mainly used for private message types)
 :::
 ## Color Boxes
 
 :::colorbox-note
 
-Pick a good implementation of `chat spy` in fabric platform is hard.
-
-In vanilla Minecraft, each chat message has its `message type`.
-
-You can identify the `private chat` from its `message type`.
-
-Though not all other chat mods respect this point.
-
-You can issue `/fuji debug` to enable the `debug mode`.
-
-And see how the `chat.spy` module works.
+  Pick a good implementation of `chat spy` in fabric platform is hard.
+  
+  In vanilla Minecraft, each chat message has its `message type`.
+  
+  You can identify the `private chat` from its `message type`.
+  
+  Though not all other chat mods respect this point.
+  
+  You can issue `/fuji debug` to enable the `debug mode`.
+  
+  And see how the `chat.spy` module works.
 :::
 
 ## Configurations
@@ -73,7 +73,7 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/chat spy toggle`
-- Document: Enable/disable the chat spy mode for you.
+- Document:   Enable/disable the chat spy mode for you.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

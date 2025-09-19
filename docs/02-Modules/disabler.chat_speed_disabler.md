@@ -7,5 +7,5 @@ title: disabler.chat_speed_disabler
 
 ## Overview
 :::module
-This module disables `Kicked for spamming` checker.
+  This module disables `Kicked for spamming` checker.
 :::

@@ -9,158 +9,158 @@ title: core
 
 :::colorbox-note
 
-◉ Does fuji support the `hot reload`?
-
-
-
-Yes, fuji does support to `hot reload` the `files` from a `enabled module`.
-
-To do that, just issue `/fuji reload`.
-
-
-
-However, you can't `enable` or `disable` a module when the server `is running`.
-
-This is a design decision.
-
-Fuji will `never load` a `disabled module` at all, for these considerations:
-
-1. For flexible, you can `disable any module` you don't like.
-
-2. If any other mods conflicts with `a module`, you can just `disable that module`.
-
-3. You only enable the `interested modules`, and there is no performance paying for `disabled module`.
+  ◉ Does fuji support the `hot reload`?
+  
+  
+  
+  Yes, fuji does support to `hot reload` the `files` from a `enabled module`.
+  
+  To do that, just issue `/fuji reload`.
+  
+  
+  
+  However, you can't `enable` or `disable` a module when the server `is running`.
+  
+  This is a design decision.
+  
+  Fuji will `never load` a `disabled module` at all, for these considerations:
+  
+  1. For flexible, you can `disable any module` you don't like.
+  
+  2. If any other mods conflicts with `a module`, you can just `disable that module`.
+  
+  3. You only enable the `interested modules`, and there is no performance paying for `disabled module`.
 :::
 
 :::colorbox-tip
 
-◉ How to use fuji?
-
-
-
-All `modules` are `disabled` by default.
-
-You can only enable the `interested modules`.
-
-Modify the `config/fuji/config.json` file to `enable` a module.
-
-After that, `re-start` the server, to apply the `module enable status`.
+  ◉ How to use fuji?
+  
+  
+  
+  All `modules` are `disabled` by default.
+  
+  You can only enable the `interested modules`.
+  
+  Modify the `config/fuji/config.json` file to `enable` a module.
+  
+  After that, `re-start` the server, to apply the `module enable status`.
 :::
 
 :::colorbox-tip
 
-◉ Adjust the `lore` text font size.
-
-If the `lore` text is too large in your UI.
-
-You can configure it in `Esc` - `Options` - `Video Settings` - `GUI Scale`
-
-
-
-◉ Install the `client-side` mod to improve the displaying of `tooltip`.
-
-If adjusting the `GUI Scale` option doesn't work well for you.
-
-You can install the `ToolTipFix` mod to enhance the `tooltip` displaying.
-
-- https://modrinth.com/mod/tooltipfix
-
-- https://www.curseforge.com/minecraft/mc-mods/tooltipfix
+  ◉ Adjust the `lore` text font size.
+  
+  If the `lore` text is too large in your UI.
+  
+  You can configure it in `Esc` - `Options` - `Video Settings` - `GUI Scale`
+  
+  
+  
+  ◉ Install the `client-side` mod to improve the displaying of `tooltip`.
+  
+  If adjusting the `GUI Scale` option doesn't work well for you.
+  
+  You can install the `ToolTipFix` mod to enhance the `tooltip` displaying.
+  
+  - https://modrinth.com/mod/tooltipfix
+  
+  - https://www.curseforge.com/minecraft/mc-mods/tooltipfix
 :::
 
 :::colorbox-tip
 
-◉ Use a `modern` text editor.
-
-The most of `config files` are written in `json language`, and contains lots of lines.
-
-A `modern` text editor can `highlight` the structure of the file, and check the `syntax errors` for you.
-
-So that you can `read` and `edit` the config files easier.
-
-
-
-Here are recommended text editors:
-
-1. Visual Studio Code: https://code.visualstudio.com/
-
-2. Vim: https://neovim.io/
-
-3. Emacs: https://www.gnu.org/software/emacs/
+  ◉ Use a `modern` text editor.
+  
+  The most of `config files` are written in `json language`, and contains lots of lines.
+  
+  A `modern` text editor can `highlight` the structure of the file, and check the `syntax errors` for you.
+  
+  So that you can `read` and `edit` the config files easier.
+  
+  
+  
+  Here are recommended text editors:
+  
+  1. Visual Studio Code: https://code.visualstudio.com/
+  
+  2. Vim: https://neovim.io/
+  
+  3. Emacs: https://www.gnu.org/software/emacs/
 :::
 
 :::colorbox-tip
 
-◉ Setup a `test server` in your `local machine`.
-
-You may have a `remote machine` (Typically named `production server`) that is `running` and `hosting` your `Minecraft network`.
-
-However, it's strongly recommended to setup a `test server` in your `local machine`.
-
-The `test server` should be a `mirror` of that `production server`.
-
-It should contains the `mods` files and the `config files`.
-
-
-
-You can modify and test new things in your `test server`.
-
-After everything is configured and working properly, you just upload the `mods` and `config files` into your `remote machine`.
+  ◉ Setup a `test server` in your `local machine`.
+  
+  You may have a `remote machine` (Typically named `production server`) that is `running` and `hosting` your `Minecraft network`.
+  
+  However, it's strongly recommended to setup a `test server` in your `local machine`.
+  
+  The `test server` should be a `mirror` of that `production server`.
+  
+  It should contains the `mods` files and the `config files`.
+  
+  
+  
+  You can modify and test new things in your `test server`.
+  
+  After everything is configured and working properly, you just upload the `mods` and `config files` into your `remote machine`.
 :::
 
 :::colorbox-example
 
-◉ Open `this` GUI
-
-Issue: `/fuji`
-
-
-
-◉ List all `fuji commands`
-
-Issue: `/fuji inspect fuji-commands`
-
-
-
-◉ List all `fuji permissions` and `fuji metas`
-
-Issue: `/fuji inspect permissions-and-metas`
-
-
-
-◉ List all `fuji placeholders`
-
-Issue: `/fuji inspect placeholders`
-
-
-
-◉ List all `fuji configurations`
-
-Issue: `/fuji inspect configurations`
-
-
-
-◉ List all `fuji jobs`
-
-Issue: `/fuji inspect jobs`
-
-
-
-◉ List all `fuji languages`
-
-Issue: `/fuji inspect languages`
-
-
-
-◉ List all `fuji argument types`
-
-Issue: `/fuji inspect argument-types`
-
-
-
-◉ List all `fuji events`
-
-Issue: `/fuji inspect events`
+  ◉ Open `this` GUI
+  
+  Issue: `/fuji`
+  
+  
+  
+  ◉ List all `fuji commands`
+  
+  Issue: `/fuji inspect fuji-commands`
+  
+  
+  
+  ◉ List all `fuji permissions` and `fuji metas`
+  
+  Issue: `/fuji inspect permissions-and-metas`
+  
+  
+  
+  ◉ List all `fuji placeholders`
+  
+  Issue: `/fuji inspect placeholders`
+  
+  
+  
+  ◉ List all `fuji configurations`
+  
+  Issue: `/fuji inspect configurations`
+  
+  
+  
+  ◉ List all `fuji jobs`
+  
+  Issue: `/fuji inspect jobs`
+  
+  
+  
+  ◉ List all `fuji languages`
+  
+  Issue: `/fuji inspect languages`
+  
+  
+  
+  ◉ List all `fuji argument types`
+  
+  Issue: `/fuji inspect argument-types`
+  
+  
+  
+  ◉ List all `fuji events`
+  
+  Issue: `/fuji inspect events`
 :::
 
 ## Configurations
@@ -171,17 +171,17 @@ It should NOT be copied directly into your configuration folder, as the document
 </Admonition>
 :::config
 - File Name: `config.json`
-- Document: This file is named `Main Control File`.
-
-It's used to:
-
-1. Configure the options for `core`, which affects all `modules`.
-
-2. Enable or disable a `module`.
-
-
-
-NOTE: You need to re-start the server, to `enable` or `disable` a `module`.- File Content: 
+- Document:   This file is named `Main Control File`.
+  
+  It's used to:
+  
+  1. Configure the options for `core`, which affects all `modules`.
+  
+  2. Enable or disable a `module`.
+  
+  
+  
+  NOTE: You need to re-start the server, to `enable` or `disable` a `module`.- File Content: 
 <details>
 
 <summary>_Click to see the `default` content..._</summary>
@@ -700,35 +700,35 @@ NOTE: You need to re-start the server, to `enable` or `disable` a `module`.- Fil
 :::
 :::config
 - File Name: `permission.json`
-- Document: ◉ How is `permission` handled for each fuji command?
-
-1. Each fuji command is registered with a `default level permission`.
-
-1.a. Check the status of `all_commands_require_level_4_permission_to_use_by_default` option in `config.json` file.
-
-1.a.i. If it's `true`, then all fuji commands are registered with `level permission 4`.
-
-1.a.ii. If it's `false`, then each fuji command is registered with `level permission N` defined in `permission.json` file.
-
-2. You can use `command_permission` module to assign a `string permission` for each command, and override the `default level permission`.
-
-
-
-◉ What is the `permission.json` file?
-
-This file is used to define the `default required level permission` for each registered fuji commands.
-
-After modifying this file, issue the `/reload` command to reload all the commands.
-
-
-
-This config is typically used in a `single-player world`, where no `LuckPerms` mod is installed.
-
-If you are hosting a dedicated Minecraft server, you can configure the `string permission` for each command using `command_permission` module.
-
-The `command_permission` module will override the `command requirement` defined in this file.
-
-So, if you are hosting a dedicated Minecraft server, you can simply use `command_permission` module, and ignore this file.- File Content: 
+- Document:   ◉ How is `permission` handled for each fuji command?
+  
+  1. Each fuji command is registered with a `default level permission`.
+  
+  1.a. Check the status of `all_commands_require_level_4_permission_to_use_by_default` option in `config.json` file.
+  
+  1.a.i. If it's `true`, then all fuji commands are registered with `level permission 4`.
+  
+  1.a.ii. If it's `false`, then each fuji command is registered with `level permission N` defined in `permission.json` file.
+  
+  2. You can use `command_permission` module to assign a `string permission` for each command, and override the `default level permission`.
+  
+  
+  
+  ◉ What is the `permission.json` file?
+  
+  This file is used to define the `default required level permission` for each registered fuji commands.
+  
+  After modifying this file, issue the `/reload` command to reload all the commands.
+  
+  
+  
+  This config is typically used in a `single-player world`, where no `LuckPerms` mod is installed.
+  
+  If you are hosting a dedicated Minecraft server, you can configure the `string permission` for each command using `command_permission` module.
+  
+  The `command_permission` module will override the `command requirement` defined in this file.
+  
+  So, if you are hosting a dedicated Minecraft server, you can simply use `command_permission` module, and ignore this file.- File Content: 
 <details>
 
 <summary>_Click to see the `default` content..._</summary>
@@ -745,17 +745,23 @@ So, if you are hosting a dedicated Minecraft server, you can simply use `command
 ## Jobs
 :::job
 - Job Name: `FlushCacheJob`
-- Document: This `job` is used to `flush` the `cache data` from `memory` into `storage`.
-
-The `cache files` are located in `config/fuji/cache/` directory.
+- Document:   This `job` is used to `flush` the `cache data` from `memory` into `storage`.
+  
+  
+  
+  The `cache files` are located in `config/fuji/cache/` directory.
 :::
 :::job
 - Job Name: `CleanTTLMapJob`
-- Document: This `job` is used to clean up the `TTL Map` data structure, and remove `expired entries`.
-The `TTL Map` is used in `/command-callback` command, to store the `callback entry`.
-
-NOTE: The `/command-callback` command is typically used for `click event` in text.
-A player requires the permission to use `/command-callback` command, or the client will get the `Unknown Command Error`.
+- Document:   This `job` is used to clean up the `TTL Map` data structure, and remove `expired entries`.
+  
+  The `TTL Map` is used in `/command-callback` command, to store the `callback entry`.
+  
+  
+  
+  NOTE: The `/command-callback` command is typically used for `click event` in text.
+  
+  A player requires the permission to use `/command-callback` command, or the client will get the `Unknown Command Error`.
 :::
 ## Argument Types
 :::argument-type

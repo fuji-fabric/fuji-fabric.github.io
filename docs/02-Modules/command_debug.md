@@ -7,15 +7,15 @@ title: command_debug
 
 ## Overview
 :::module
-This module provides debug tools for executing commands.
+  This module provides debug tools for executing commands.
 :::
 ## Color Boxes
 
 :::colorbox-example
 
-◉ Execute a specified command, and sees the debug info.
-
-Issue `/command-debug has-exp? Alice 100`
+  ◉ Execute a specified command, and sees the debug info.
+  
+  Issue `/command-debug has-exp? Alice 100`
 :::
 
 ## Commands

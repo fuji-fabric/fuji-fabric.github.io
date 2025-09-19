@@ -7,22 +7,23 @@ title: echo.send_chat
 
 ## Overview
 :::module
-This module provides `/send-chat` command.
-To send a `chat message` as a player.
+  This module provides `/send-chat` command.
+  
+  To send a `chat message` as a player.
 :::
 ## Color Boxes
 
 :::colorbox-example
 
-◉ Send a chat message as a player.
-
-Issue: `/send-chat Steve i am steve.`
-
-
-
-◉ Send a chat message as a player for each online player.
-
-Issue: `/foreach send-chat %player:name% i am %player:name%`
+  ◉ Send a chat message as a player.
+  
+  Issue: `/send-chat Steve i am steve.`
+  
+  
+  
+  ◉ Send a chat message as a player for each online player.
+  
+  Issue: `/foreach send-chat %player:name% i am %player:name%`
 :::
 
 ## Commands

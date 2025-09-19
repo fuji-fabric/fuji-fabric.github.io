@@ -7,16 +7,17 @@ title: echo.send_message
 
 ## Overview
 :::module
-This module provides the `/send-message` command.
-To send the `text` as `message` to a specified player.
+  This module provides the `/send-message` command.
+  
+  To send the `text` as `message` to a specified player.
 :::
 ## Color Boxes
 
 :::colorbox-example
 
-◉ Say hello to a player
-
-Issue: `/send-message Alice <blue>Hello %player:name%`
+  ◉ Say hello to a player
+  
+  Issue: `/send-message Alice <blue>Hello %player:name%`
 :::
 
 ## Commands

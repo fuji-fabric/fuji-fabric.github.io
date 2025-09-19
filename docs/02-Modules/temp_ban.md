@@ -7,16 +7,17 @@ title: temp_ban
 
 ## Overview
 :::module
-This module provides the `/temp-ban` command.
-So that you can specify `the duration` for `/ban` command.
+  This module provides the `/temp-ban` command.
+  
+  So that you can specify `the duration` for `/ban` command.
 :::
 ## Color Boxes
 
 :::colorbox-example
 
-◉ All in one example
-
-Issue: `/temp-ban player Alice 1s2m3h4d5w6M7y bad boy`
+  ◉ All in one example
+  
+  Issue: `/temp-ban player Alice 1s2m3h4d5w6M7y bad boy`
 :::
 
 ## Commands

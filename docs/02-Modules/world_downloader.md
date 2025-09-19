@@ -7,12 +7,17 @@ title: world_downloader
 
 ## Overview
 :::module
-Allows a player to download nearest `region` file.
-
-It's useful for players to save and debug a `redstone structure`.
-It simply downloads the `identical` region file used by the server.
-Simple, no surprises.
-It's also useful for players to download other's buildings, or their own buildings.
+  Allows a player to download nearest `region` file.
+  
+  
+  
+  It's useful for players to save and debug a `redstone structure`.
+  
+  It simply downloads the `identical` region file used by the server.
+  
+  Simple, no surprises.
+  
+  It's also useful for players to download other's buildings, or their own buildings.
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">
@@ -44,7 +49,7 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/download`
-- Document: Download the region file around you.
+- Document:   Download the region file around you.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`

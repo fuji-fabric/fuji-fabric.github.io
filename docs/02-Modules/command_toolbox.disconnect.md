@@ -9,11 +9,11 @@ title: command_toolbox.disconnect
 
 :::colorbox-example
 
-◉ Dis-connect a player.
-
-- `/dis-connect Steve <red>Kicked.`
-
-- `/dis-connect Steve <red>First Line<newline>Second Line`
+  ◉ Dis-connect a player.
+  
+  - `/dis-connect Steve <red>Kicked.`
+  
+  - `/dis-connect Steve <red>First Line<newline>Second Line`
 :::
 
 ## Commands

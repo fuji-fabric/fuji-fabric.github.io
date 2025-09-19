@@ -7,21 +7,21 @@ title: command_meta.attachment
 
 ## Overview
 :::module
-Provides a unified attachment facility, to attach any data to any object.
+  Provides a unified attachment facility, to attach any data to any object.
 :::
 ## Color Boxes
 
 :::colorbox-example
 
-◉ Set a attachment.
-
-Issue: `/attachment set news today hello world`
-
-
-
-◉ Get a attachment.
-
-Issue: `/attachment get news today`
+  ◉ Set a attachment.
+  
+  Issue: `/attachment set news today hello world`
+  
+  
+  
+  ◉ Get a attachment.
+  
+  Issue: `/attachment get news today`
 :::
 
 ## Commands

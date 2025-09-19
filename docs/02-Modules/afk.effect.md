@@ -7,10 +7,13 @@ title: afk.effect
 
 ## Overview
 :::module
-This module provides special effects for afk player:
-1. Invulnerable: the afk player is immune to all damage.
-2. Targetable: the afk player can not be targeted by a hostile entity.
-3. Moveable: the afk player can not be moved.
+  This module provides special effects for afk player:
+  
+  1. Invulnerable: the afk player is immune to all damage.
+  
+  2. Targetable: the afk player can not be targeted by a hostile entity.
+  
+  3. Moveable: the afk player can not be moved.
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">

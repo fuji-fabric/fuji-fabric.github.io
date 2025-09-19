@@ -7,245 +7,247 @@ title: command_bundle
 
 ## Overview
 :::module
-This module allows you to create new command:
-1. The new command can accept arguments.
-2. The body of the new command, can be a list of commands.
+  This module allows you to create new command:
+  
+  1. The new command can accept arguments.
+  
+  2. The body of the new command, can be a list of commands.
 :::
 ## Color Boxes
 
 :::colorbox-note
 
-◉ The features of this module:
-
-1. Provide a user-friendly DSL, to create `a new custom command` easily.
-
-2. Support the inter-operation with `user-defined variable`, `placeholders` and `vanilla target selectors`.
-
-3. Support complex `argument types`: `required argument`, `literal argument` and even `optional argument with a specified default value`.
-
-4. A powerful `type-system`, to use the built-in `argument types`.
-
-5. Register and un-register `custom commands` on the fly, without a server re-start.
+  ◉ The features of this module:
+  
+  1. Provide a user-friendly DSL, to create `a new custom command` easily.
+  
+  2. Support the inter-operation with `user-defined variable`, `placeholders` and `vanilla target selectors`.
+  
+  3. Support complex `argument types`: `required argument`, `literal argument` and even `optional argument with a specified default value`.
+  
+  4. A powerful `type-system`, to use the built-in `argument types`.
+  
+  5. Register and un-register `custom commands` on the fly, without a server re-start.
 :::
 
 :::colorbox-note
 
-◉ The `purpose` of this module
-
-This module allows you to `define` a `new command`.
-
-To `define` a new command, you need to specify the following things:
-
-1. The `pattern` of this new command: If the pattern is `claim-kit example`, then the new command is `/claim-kit example`.
-
-2. The `bundle` of this new command: It is the `body` of this new command. It is `a list of commands` to be executed.
-
-
-
-To define a new `bundle command`, you need to specify the `pattern` and the `bundle` for it.
-
-The `pattern` describes: what does your `new command` look like?
-
-The `bundle` describes: what `commands` should we execute when your `new command` is executed?
+  ◉ The `purpose` of this module
+  
+  This module allows you to `define` a `new command`.
+  
+  To `define` a new command, you need to specify the following things:
+  
+  1. The `pattern` of this new command: If the pattern is `claim-kit example`, then the new command is `/claim-kit example`.
+  
+  2. The `bundle` of this new command: It is the `body` of this new command. It is `a list of commands` to be executed.
+  
+  
+  
+  To define a new `bundle command`, you need to specify the `pattern` and the `bundle` for it.
+  
+  The `pattern` describes: what does your `new command` look like?
+  
+  The `bundle` describes: what `commands` should we execute when your `new command` is executed?
 :::
 
 :::colorbox-note
 
-◉ The syntax of the `pattern`.
-
-The `pattern` is composed by a list of `command node`.
-
-For example, the `pattern` instance `first second third` describes a command `/first second third`.
-
-It is composed by 3 `command node`, they are all `literal arguments`.
-
-
-
-In the syntax of `pattern`, there are 3 types of `arguments`:
-
-1. `Literal Argument`: You can write it down directly. For example `first`, `second`, `third`, and `claim-kit` are all literal arguments.
-
-2. `Required Argument`: It's syntax is `<arg-type arg-name>`. For example, `<int age>` means a `required argument` whose `argument type is int` and `argument name is age`.
-
-3. `Optional Argument`: It's syntax is `[arg-type arg-name default-value]`. It is similar to `required argument`, but you can provide a `default value` if this argument is not specified by the `command source`.
-
-
-
-You can `reference` the value of `Required Argument` or `Optional Argument` in the `bundle` component.
-
-For example, you can write down `$age` to refer to a `variable` named `age` defined in the `pattern` component.
-
-
-
-◉ What is the `type system` used by the syntax of `pattern`?
-
-Fuji will register an `argument type adapter` for a specific `argument type`.
-
-You can issue `/fuji inspect argument-types` to list all registered `adapters`.
-
-You can use any `argument type` listed in that GUI.
+  ◉ The syntax of the `pattern`.
+  
+  The `pattern` is composed by a list of `command node`.
+  
+  For example, the `pattern` instance `first second third` describes a command `/first second third`.
+  
+  It is composed by 3 `command node`, they are all `literal arguments`.
+  
+  
+  
+  In the syntax of `pattern`, there are 3 types of `arguments`:
+  
+  1. `Literal Argument`: You can write it down directly. For example `first`, `second`, `third`, and `claim-kit` are all literal arguments.
+  
+  2. `Required Argument`: It's syntax is `<arg-type arg-name>`. For example, `<int age>` means a `required argument` whose `argument type is int` and `argument name is age`.
+  
+  3. `Optional Argument`: It's syntax is `[arg-type arg-name default-value]`. It is similar to `required argument`, but you can provide a `default value` if this argument is not specified by the `command source`.
+  
+  
+  
+  You can `reference` the value of `Required Argument` or `Optional Argument` in the `bundle` component.
+  
+  For example, you can write down `$age` to refer to a `variable` named `age` defined in the `pattern` component.
+  
+  
+  
+  ◉ What is the `type system` used by the syntax of `pattern`?
+  
+  Fuji will register an `argument type adapter` for a specific `argument type`.
+  
+  You can issue `/fuji inspect argument-types` to list all registered `adapters`.
+  
+  You can use any `argument type` listed in that GUI.
 :::
 
 :::colorbox-note
 
-◉ The syntax of the `bundle`.
-
-Actually, the `bundle` is just a `list of commands`.
-
-You can write `Minecraft commands` directly in the `bundle` list.
-
-
-
-When a `bundle command` is executed, we will execute the `list of commands` defined by `bundle` from up to down.
-
-Commands are executed `as console`.
-
-You can use `/run as player` or `/run as fake-op` to switch the command execution context, if it is needed.
+  ◉ The syntax of the `bundle`.
+  
+  Actually, the `bundle` is just a `list of commands`.
+  
+  You can write `Minecraft commands` directly in the `bundle` list.
+  
+  
+  
+  When a `bundle command` is executed, we will execute the `list of commands` defined by `bundle` from up to down.
+  
+  Commands are executed `as console`.
+  
+  You can use `/run as player` or `/run as fake-op` to switch the command execution context, if it is needed.
 :::
 
 :::colorbox-tip
 
-◉ Generate powerful commands using a generator.
-
-You can use command generator to get powerful commands:
-
-https://www.gamergeeks.net/apps/minecraft/particle-command-generator
+  ◉ Generate powerful commands using a generator.
+  
+  You can use command generator to get powerful commands:
+  
+  https://www.gamergeeks.net/apps/minecraft/particle-command-generator
 :::
 
 :::colorbox-example
 
-◉ Use a `bundle command` to combine many commands into one command.
-
-In this example, we want to register a new command `/composite-heal`.
-
-To `decorate` an existed command `/heal`.
-
-The decorations are:
-
-1. We will `say` before the execution of `/heal` command.
-
-2. We will spawn a `heart particle` before the execution of `/heal` command.
-
-3. We will `say` after the execution of `/heal` command.
-
-
-
-To define this `bundle command` as shown below.
-
-Pattern: `composite-heal`
-
-Bundle:
-
-1. `say before heal %player:name%`
-
-2. `run as fake-op %player:name% particle minecraft:heart ~ ~2 ~`
-
-3. `run as player %player:name% heal`
-
-4. `say after heal %player:name%`
+  ◉ Use a `bundle command` to combine many commands into one command.
+  
+  In this example, we want to register a new command `/composite-heal`.
+  
+  To `decorate` an existed command `/heal`.
+  
+  The decorations are:
+  
+  1. We will `say` before the execution of `/heal` command.
+  
+  2. We will spawn a `heart particle` before the execution of `/heal` command.
+  
+  3. We will `say` after the execution of `/heal` command.
+  
+  
+  
+  To define this `bundle command` as shown below.
+  
+  Pattern: `composite-heal`
+  
+  Bundle:
+  
+  1. `say before heal %player:name%`
+  
+  2. `run as fake-op %player:name% particle minecraft:heart ~ ~2 ~`
+  
+  3. `run as player %player:name% heal`
+  
+  4. `say after heal %player:name%`
 :::
 
 :::colorbox-example
 
-◉ Use a `bundle command` to transform the form of an existed command.
-
-In this example, we want to register a new command `/warn`.
-
-As a `shortcut command` to a specific command instance.
-
-
-
-Pattern: `warn <player player-arg> <greedy greedy-arg>`
-
-Bundle:
-
-1. `run as player %player:name% send-message $player-arg <red>You are warned: $greedy-arg`
+  ◉ Use a `bundle command` to transform the form of an existed command.
+  
+  In this example, we want to register a new command `/warn`.
+  
+  As a `shortcut command` to a specific command instance.
+  
+  
+  
+  Pattern: `warn <player player-arg> <greedy greedy-arg>`
+  
+  Bundle:
+  
+  1. `run as player %player:name% send-message $player-arg <red>You are warned: $greedy-arg`
 :::
 
 :::colorbox-example
 
-◉ Use a `bundle command` to wrap a specific command instance.
-
-In this example, if you want to allow players to use `/give @s minecraft:apple`.
-
-You only want to allow the players to get free `apples`.
-
-And you didn't want to allow players to use `/give` command arbitrarily.
-
-
-
-Then, you can define a `bundle command` like `/free-apple` to `wrap` a specific instance of `/give` command.
-
-Pattern: `free-apple`
-
-Bundle:
-
-1. `run as fake-op %player:name% give @s minecraft:apple`
-
-
-
-◉ Define a `bundle command` to wrap a specific `/kit give` command instance.
-
-Pattern: `kitfood`
-
-Bundle:
-
-1. `run as fake-op %player:name% kit give @s kit-food`
+  ◉ Use a `bundle command` to wrap a specific command instance.
+  
+  In this example, if you want to allow players to use `/give @s minecraft:apple`.
+  
+  You only want to allow the players to get free `apples`.
+  
+  And you didn't want to allow players to use `/give` command arbitrarily.
+  
+  
+  
+  Then, you can define a `bundle command` like `/free-apple` to `wrap` a specific instance of `/give` command.
+  
+  Pattern: `free-apple`
+  
+  Bundle:
+  
+  1. `run as fake-op %player:name% give @s minecraft:apple`
+  
+  
+  
+  ◉ Define a `bundle command` to wrap a specific `/kit give` command instance.
+  
+  Pattern: `kitfood`
+  
+  Bundle:
+  
+  1. `run as fake-op %player:name% kit give @s kit-food`
 :::
 
 :::colorbox-example
 
-◉ See more advanced examples.
-
-The default config file contains a set of `advanced examples`.
-
-You can see there are many pre-defined `bundle commands`.
-
-Their name starts with `/my-command`.
-
-
-
-Besides, there are also a set of pre-defined `bundle commands` for convenience.
-
-For example: `/gmc`, `/gms`, `/day`, `/sun`...
+  ◉ See more advanced examples.
+  
+  The default config file contains a set of `advanced examples`.
+  
+  You can see there are many pre-defined `bundle commands`.
+  
+  Their name starts with `/my-command`.
+  
+  
+  
+  Besides, there are also a set of pre-defined `bundle commands` for convenience.
+  
+  For example: `/gmc`, `/gms`, `/day`, `/sun`...
 :::
 
 :::colorbox-example
 
-◉ Transform the form of a command.
-
-- `/blocknbt` -> `/data get block`
-
-- `/entitynbt` -> `/data get entity`
-
-- `/gm`, `/gms` and `/gmc` -> `/gamemode`
-
-- `/findbiome` -> `/locate biome`
-
-- `/flyspeed` -> `/attribute Alice minecraft:generic.flying_speed`
-
-- `/walkspeed` -> `/attribute Alice minecraft:movement_speed`
-
-- `/maxhealth` -> `/attribute Alice minecraft:generic.max_health`
-
-- `/groundclean` -> `/kill @e[type=...]`
-
-- `/spawnmob` -> `/summon`
-
-- `/shoot` -> `/summon` with motion
-
-- `/smite` and `/thunder` -> `/summon minecraft:lighting_bolt`
+  ◉ Transform the form of a command.
+  
+  - `/blocknbt` -> `/data get block`
+  
+  - `/entitynbt` -> `/data get entity`
+  
+  - `/gm`, `/gms` and `/gmc` -> `/gamemode`
+  
+  - `/findbiome` -> `/locate biome`
+  
+  - `/flyspeed` -> `/attribute Alice minecraft:generic.flying_speed`
+  
+  - `/walkspeed` -> `/attribute Alice minecraft:movement_speed`
+  
+  - `/maxhealth` -> `/attribute Alice minecraft:generic.max_health`
+  
+  - `/groundclean` -> `/kill @e[type=...]`
+  
+  - `/spawnmob` -> `/summon`
+  
+  - `/shoot` -> `/summon` with motion
+  
+  - `/smite` and `/thunder` -> `/summon minecraft:lighting_bolt`
 :::
 
 :::colorbox-example
 
-◉ Define a `/tpw` command to teleport players to a specified dimension.
-
-Pattern: `tpw resource-world`
-
-Bundle:
-
-1. `run as fake-op %player:name% tppos --centerX 0 --centerZ 0 --maxRange 128 --dimension fuji:overworld`
+  ◉ Define a `/tpw` command to teleport players to a specified dimension.
+  
+  Pattern: `tpw resource-world`
+  
+  Bundle:
+  
+  1. `run as fake-op %player:name% tppos --centerX 0 --centerZ 0 --maxRange 128 --dimension fuji:overworld`
 :::
 
 ## Configurations
@@ -612,224 +614,224 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/command-bundle list`
-- Document: List all registered bundle-commands in server.
+- Document:   List all registered bundle-commands in server.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-bundle register`
-- Document: Register all commands defined in bundle-command configuration file.
+- Document:   Register all commands defined in bundle-command configuration file.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-bundle un-register`
-- Document: Un-register all bundle-commands registered in server.
+- Document:   Un-register all bundle-commands registered in server.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/day`
-- Document: This command is an alias for `/time set day`
+- Document:   This command is an alias for `/time set day`
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/gm <GameMode gamemode-arg>`
-- Document: This command is an alias for `/gamemode`
+- Document:   This command is an alias for `/gamemode`
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/gmc`
-- Document: This command is an alias for `/gamemode creative`
+- Document:   This command is an alias for `/gamemode creative`
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/gms`
-- Document: This command is an alias for `/gamemode survival`
+- Document:   This command is an alias for `/gamemode survival`
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/gmsp`
-- Document: This command is an alias for `/gamemode spectator`
+- Document:   This command is an alias for `/gamemode spectator`
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/icanhasbukkit`
-- Document: This command is an easter egg for `/icanhasbukkit` in Bukkit.
+- Document:   This command is an easter egg for `/icanhasbukkit` in Bukkit.
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/introduce-me`
-- Document: This command will introduce yourself to others.
+- Document:   This command will introduce yourself to others.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/midnight`
-- Document: This command is an alias for `/time set midnight`
+- Document:   This command is an alias for `/time set midnight`
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/move-speed reset`
-- Document: This command modifies your movement_speed attribute.
+- Document:   This command modifies your movement_speed attribute.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/move-speed set <double double-arg>`
-- Document: This command modifies your movement_speed attribute.
+- Document:   This command modifies your movement_speed attribute.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/my-command a-command-with-a-greedy-string <int int-arg-name> first-literal [GreedyString greedy-string-arg-name]`
-- Document: This command is used to test the `greedy string` argument type.
+- Document:   This command is used to test the `greedy string` argument type.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/my-command a-command-with-all-types-of-args <int int-arg-name> first-literal [String str-arg-name]`
-- Document: This command is used to test the `literal argument`, `required argument` and `optional argument`.
+- Document:   This command is used to test the `literal argument`, `required argument` and `optional argument`.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/my-command a-command-with-optional-arg <int int-arg-name> [String str-arg-name]`
-- Document: This command is used to test the `optional argument`.
+- Document:   This command is used to test the `optional argument`.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/my-command a-command-with-required-arg first-literal second-literal <String str-arg-name>`
-- Document: This command is used to test the `literal argument` and `required argument`.
+- Document:   This command is used to test the `literal argument` and `required argument`.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/nbt block <BlockPos target>`
-- Document: This command is an alias for `/data get block`
+- Document:   This command is an alias for `/data get block`
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/nbt entity <Entity target>`
-- Document: This command is an alias for `/data get entity`
+- Document:   This command is an alias for `/data get entity`
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/nbt item`
-- Document: This command is an alias for `/data get entity @s SelectedItem`
+- Document:   This command is an alias for `/data get entity @s SelectedItem`
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/night`
-- Document: This command is an alias for `/time set night`
+- Document:   This command is an alias for `/time set night`
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/noon`
-- Document: This command is an alias for `/time set noon`
+- Document:   This command is an alias for `/time set noon`
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/obtain-all-recipes`
-- Document: This command will give `all` recipes to the player.
+- Document:   This command will give `all` recipes to the player.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/plugins`
-- Document: This command is an easter egg for `/plugins` in Bukkit.
+- Document:   This command is an easter egg for `/plugins` in Bukkit.
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rain`
-- Document: This command is an alias for `/weather rain`
+- Document:   This command is an alias for `/weather rain`
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/shoot <NotSupportedType entity-type-arg-name>`
-- Document: This command summons an entity with specified entity type, with an initial motion.
+- Document:   This command summons an entity with specified entity type, with an initial motion.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/skull <OfflinePlayerName offline-player-arg>`
-- Document: This command will give the skull of specified player.
+- Document:   This command will give the skull of specified player.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/strike`
-- Document: This command summons a lightning_bolt entity.
+- Document:   This command summons a lightning_bolt entity.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/sun`
-- Document: This command is an alias for `/weather clear`
+- Document:   This command is an alias for `/weather clear`
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/thunder`
-- Document: This command is an alias for `/weather thunder`
+- Document:   This command is an alias for `/weather thunder`
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/unbreakable`
-- Document: This command applies the `unbreakable` enchantment for the item in hand.
+- Document:   This command applies the `unbreakable` enchantment for the item in hand.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/uuid <ServerPlayerEntity target>`
-- Document: This command will display the UUID of specified player.
+- Document:   This command will display the UUID of specified player.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

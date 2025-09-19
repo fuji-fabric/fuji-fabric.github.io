@@ -7,33 +7,33 @@ title: top_chunks
 
 ## Overview
 :::module
-Analyze all loaded chunks of the server, and find the most lagged chunks.
+  Analyze all loaded chunks of the server, and find the most lagged chunks.
 :::
 ## Color Boxes
 
 :::colorbox-note
 
-◉ How it works?
-
-This module use a `simple statistical method` to estimate the `degree of lag of a chunk`.
-
-The method is simple, it simply counts the `entities` and `block entities` inside a `chunk`.
-
-And sum up the `score` by the `type` of `entity` or `block entity`.
-
-
-
-It's simple, fast and useful.
-
-You can define the score of `a zombie` as `4`.
-
-The score of `a bee` as `15`.
-
-And the score of `a piston` as `10`.
-
-That depends on your case.
-
-Simple method often works.
+  ◉ How it works?
+  
+  This module use a `simple statistical method` to estimate the `degree of lag of a chunk`.
+  
+  The method is simple, it simply counts the `entities` and `block entities` inside a `chunk`.
+  
+  And sum up the `score` by the `type` of `entity` or `block entity`.
+  
+  
+  
+  It's simple, fast and useful.
+  
+  You can define the score of `a zombie` as `4`.
+  
+  The score of `a bee` as `15`.
+  
+  And the score of `a piston` as `10`.
+  
+  That depends on your case.
+  
+  Simple method often works.
 :::
 
 ## Configurations
@@ -128,21 +128,21 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/chunks`
-- Document: An alias command to `/chunks message`.
+- Document:   An alias command to `/chunks message`.
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/chunks gui`
-- Document: List all chunks ordered by lag score, and send in `GUI`.
+- Document:   List all chunks ordered by lag score, and send in `GUI`.
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/chunks message`
-- Document: List all chunks ordered by lag score, and send in `message`.
+- Document:   List all chunks ordered by lag score, and send in `message`.
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`

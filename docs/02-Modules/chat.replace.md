@@ -7,30 +7,30 @@ title: chat.replace
 
 ## Overview
 :::module
-This module allows you to replace `chat string` with a given `chat text`. (Including placeholder parsing)
+  This module allows you to replace `chat string` with a given `chat text`. (Including placeholder parsing)
 :::
 ## Color Boxes
 
 :::colorbox-warning
 
-◉ This module didn't work with `Styled Chat` mod.
-
-The `chat.replace` module does work with `chat.style` module.
-
-But if you are using the `Styled Chat` mod, then it didn't work.
-
-However, since `Styled Chat` mod allows you to define custom `emotions`.
-
-So you can `disable` this module, if you are using that mod.
+  ◉ This module didn't work with `Styled Chat` mod.
+  
+  The `chat.replace` module does work with `chat.style` module.
+  
+  But if you are using the `Styled Chat` mod, then it didn't work.
+  
+  However, since `Styled Chat` mod allows you to define custom `emotions`.
+  
+  So you can `disable` this module, if you are using that mod.
 :::
 
 :::colorbox-example
 
-◉ Define a chat shortcut, to evaluate a placeholder.
-
-Regex: `(?<=^|\\s)uuid(?=\\s|$)`
-
-Replacement: `my uuid is %player:uuid%`
+  ◉ Define a chat shortcut, to evaluate a placeholder.
+  
+  Regex: `(?<=^|\\s)uuid(?=\\s|$)`
+  
+  Replacement: `my uuid is %player:uuid%`
 :::
 
 ## Configurations

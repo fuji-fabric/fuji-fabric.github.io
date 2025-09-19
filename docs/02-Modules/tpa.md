@@ -7,7 +7,7 @@ title: tpa
 
 ## Overview
 :::module
-This module provides `/tpa` and `/tpahere` commands.
+  This module provides `/tpa` and `/tpahere` commands.
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">

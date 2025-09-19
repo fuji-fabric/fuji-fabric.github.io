@@ -7,21 +7,23 @@ title: chat.mention
 
 ## Overview
 :::module
-This module allows you to mention another online player in chat:
-1. The target player name will be highlighted.
-2. The target player will be sound notified.
+  This module allows you to mention another online player in chat:
+  
+  1. The target player name will be highlighted.
+  
+  2. The target player will be sound notified.
 :::
 ## Color Boxes
 
 :::colorbox-warning
 
-◉ This module work partially with `Styled Chat` mod.
-
-You can use this module with that mod.
-
-It works, but you will not get the `mention player` rendered in chat.
-
-Other things like the `sound notify` will still work.
+  ◉ This module work partially with `Styled Chat` mod.
+  
+  You can use this module with that mod.
+  
+  It works, but you will not get the `mention player` rendered in chat.
+  
+  Other things like the `sound notify` will still work.
 :::
 
 ## Configurations

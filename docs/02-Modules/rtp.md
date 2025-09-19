@@ -7,61 +7,61 @@ title: rtp
 
 ## Overview
 :::module
-Provides random teleportation.
+  Provides random teleportation.
 :::
 ## Color Boxes
 
 :::colorbox-note
 
-◉ Features
-
-- Per-dimension settings
-
-- Real-time searching feedback.
-
-- Full async `chunk loading` and `chunk generation`. (Lag-free)
-
-- Customization of `center x` and `center z`
-
-- Customization of `min range` and `max range`
-
-- Supported `circle` and `rectangle` shape.
-
-- Respect `world border`.
-
-- Skip any `liquid block`.
-
-- Filter the result by `min Y` and `max Y`
-
-- Filter the result by `specified blocks`
-
-- Filter the result by `specified biomes`
-
-- Filter the result by `chunk inhabited time`
+  ◉ Features
+  
+  - Per-dimension settings
+  
+  - Real-time searching feedback.
+  
+  - Full async `chunk loading` and `chunk generation`. (Lag-free)
+  
+  - Customization of `center x` and `center z`
+  
+  - Customization of `min range` and `max range`
+  
+  - Supported `circle` and `rectangle` shape.
+  
+  - Respect `world border`.
+  
+  - Skip any `liquid block`.
+  
+  - Filter the result by `min Y` and `max Y`
+  
+  - Filter the result by `specified blocks`
+  
+  - Filter the result by `specified biomes`
+  
+  - Filter the result by `chunk inhabited time`
 :::
 
 :::colorbox-tip
 
-◉ Improve the performance of rtp.
-
-It's highly recommended to pre generate the world chunks using `chunky` mod.
-
-If the `target chunk` is not generated, then we have to generate it while doing the random teleport.
-
-To generate a chunk requires about 2 seconds to 10 seconds.
-
-Which will slow down the process of `/rtp`.
-
-If you pre generates the world chunks, then it will be fast.
+  ◉ Improve the performance of rtp.
+  
+  It's highly recommended to pre generate the world chunks using `chunky` mod.
+  
+  If the `target chunk` is not generated, then we have to generate it while doing the random teleport.
+  
+  To generate a chunk requires about 2 seconds to 10 seconds.
+  
+  Which will slow down the process of `/rtp`.
+  
+  If you pre generates the world chunks, then it will be fast.
 :::
 
 :::colorbox-tip
 
-◉ Limit the usage of `/rtp` command
-
-You can use `command_cooldown` module, to setup a `cooldown` for `/rtp` command.
-
-To prevent abuse.
+  ◉ Limit the usage of `/rtp` command
+  
+  You can use `command_cooldown` module, to setup a `cooldown` for `/rtp` command.
+  
+  To prevent abuse.
 :::
 
 ## Configurations
@@ -361,14 +361,14 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/rtp [Dimension dimension]`
-- Document: Random rtp in specified dimension.
+- Document:   Random rtp in specified dimension.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rtp others <PlayerCollection others> [Dimension dimension]`
-- Document: Random rtp in specified dimension.
+- Document:   Random rtp in specified dimension.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

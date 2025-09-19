@@ -7,19 +7,19 @@ title: command_spy
 
 ## Overview
 :::module
-This module allows you to spy `command execution`.
+  This module allows you to spy `command execution`.
 :::
 ## Color Boxes
 
 :::colorbox-note
 
-◉ How it works?
-
-1. Match the defined `rules` in top-down order.
-
-2. Find the `first matched rule`.
-
-3. Apply the `first matched rule`, if it exists.
+  ◉ How it works?
+  
+  1. Match the defined `rules` in top-down order.
+  
+  2. Find the `first matched rule`.
+  
+  3. Apply the `first matched rule`, if it exists.
 :::
 
 ## Configurations

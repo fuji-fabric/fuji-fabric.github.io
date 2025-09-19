@@ -7,64 +7,72 @@ title: anti_build
 
 ## Overview
 :::module
-This module allows you to ban `types of actions` for players.
-
-Currently supported types are:
-1. Break a specified block.
-2. Place a specified block.
-3. Interact with a specified item.
-4. Interact with a specified block.
-5. Interact with a specified entity.
-6. Attack a specified entity.
+  This module allows you to ban `types of actions` for players.
+  
+  
+  
+  Currently supported types are:
+  
+  1. Break a specified block.
+  
+  2. Place a specified block.
+  
+  3. Interact with a specified item.
+  
+  4. Interact with a specified block.
+  
+  5. Interact with a specified entity.
+  
+  6. Attack a specified entity.
 :::
 ## Color Boxes
 
 :::colorbox-tip
 
-Read the document to see the definition of `identifier` in Minecraft.
+  Read the document to see the definition of `identifier` in Minecraft.
 :::
 
 :::colorbox-tip
 
-Use the `command suggestion` from `luckperms` mod to see the supported types by this module.
+  Use the `command suggestion` from `luckperms` mod to see the supported types by this module.
 :::
 
 :::colorbox-example
 
-◉ To ban the placement of TNT block:
-
-Just add the `minecraft:tnt` into the `place_block` list in config file.
-
-
-
-◉ To ban the placement of TNT block, but allow player Alice to use it.
-
-Grant a `bypass permission` for that player: `/lp user Alice permission set fuji.anti_build.place_block.bypass.minecraft:tnt`.
-
-
-
-◉ To assign a override permission for a player explicitly.
-
-Issue: `/lp user Alice permission set fuji.anti_build.break_block.override.minecraft:grass_block false`
-
-This will `dis-allow` the player Alice to `break a minecraft:grass_block block`.
-
-
-
-◉ Dis-allow to place `any` blocks.
-
-Use `*` as the wildcard character, put it into the `place_block` list.
+  ◉ To ban the placement of TNT block:
+  
+  Just add the `minecraft:tnt` into the `place_block` list in config file.
+  
+  
+  
+  ◉ To ban the placement of TNT block, but allow player Alice to use it.
+  
+  Grant a `bypass permission` for that player: `/lp user Alice permission set fuji.anti_build.place_block.bypass.minecraft:tnt`.
+  
+  
+  
+  ◉ To assign a override permission for a player explicitly.
+  
+  Issue: `/lp user Alice permission set fuji.anti_build.break_block.override.minecraft:grass_block false`
+  
+  This will `dis-allow` the player Alice to `break a minecraft:grass_block block`.
+  
+  
+  
+  ◉ Dis-allow to place `any` blocks.
+  
+  Use `*` as the wildcard character, put it into the `place_block` list.
 :::
 
 :::colorbox-example
 
-◉ Ban the `placement` of `mushroom` in `minecraft:the_end` dimension.
-
-Issue:
-
-1. `/lp group default permission set fuji.anti_build.place_block.override.minecraft:red_mushroom false world=the_end`
-
-2. `/lp group default permission set fuji.anti_build.place_block.override.minecraft:brown_mushroom false world=the_end`
+  ◉ Ban the `placement` of `mushroom` in `minecraft:the_end` dimension.
+  
+  Issue:
+  
+  1. `/lp group default permission set fuji.anti_build.place_block.override.minecraft:red_mushroom false world=the_end`
+  
+  2. `/lp group default permission set fuji.anti_build.place_block.override.minecraft:brown_mushroom false world=the_end`
 :::
 
 ## Configurations

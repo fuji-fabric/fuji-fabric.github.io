@@ -7,5 +7,5 @@ title: queue
 
 ## Overview
 :::module
-This module provides customization of join queue.
+  This module provides customization of join queue.
 :::

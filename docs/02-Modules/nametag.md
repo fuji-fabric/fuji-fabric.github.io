@@ -7,65 +7,65 @@ title: nametag
 
 ## Overview
 :::module
-Customize the nametag above the players.
+  Customize the nametag above the players.
 :::
 ## Color Boxes
 
 :::colorbox-note
 
-◉ How it works?
-
-1. A `nametag entity` is a `text display entity`.
-
-2. A `nametag entity` is a `virtual entity`.
-
-2.a. The `entity` is not actually presented in the `server-side world`
-
-2.b. The `server` simulates the existence of `the nametag entity` on the `client-side world`, allowing the client to perceive it as if it were a real entity.
-
-
-
-Read the semantics of each field:
-
-- https://minecraft.wiki/w/Display
+  ◉ How it works?
+  
+  1. A `nametag entity` is a `text display entity`.
+  
+  2. A `nametag entity` is a `virtual entity`.
+  
+  2.a. The `entity` is not actually presented in the `server-side world`
+  
+  2.b. The `server` simulates the existence of `the nametag entity` on the `client-side world`, allowing the client to perceive it as if it were a real entity.
+  
+  
+  
+  Read the semantics of each field:
+  
+  - https://minecraft.wiki/w/Display
 :::
 
 :::colorbox-example
 
-◉ Set the background of nametag to blue color.
-
-Set `background` to `-16776961` (The integer representation of blue color)
-
-
-
-◉ Set the half transparency for nametag.
-
-Set `text_opacity` to `128`.
-
-
-
-◉ Scale the size of text into double.
-
-Set the `x`, `y`, and `z` in `scale` to `2.0`.
+  ◉ Set the background of nametag to blue color.
+  
+  Set `background` to `-16776961` (The integer representation of blue color)
+  
+  
+  
+  ◉ Set the half transparency for nametag.
+  
+  Set `text_opacity` to `128`.
+  
+  
+  
+  ◉ Scale the size of text into double.
+  
+  Set the `x`, `y`, and `z` in `scale` to `2.0`.
 :::
 
 :::colorbox-example
 
-◉ Toggle the `nametag entity` for self.
-
-Issue: `/nametag toggle @s`
-
-
-
-◉ Turn on the `nametag entity` for online players.
-
-Issue: `/nametag toggle others @a true`
-
-
-
-◉ Turn off the `nametag entity` for online players.
-
-Issue: `/nametag toggle others @a false`
+  ◉ Toggle the `nametag entity` for self.
+  
+  Issue: `/nametag toggle @s`
+  
+  
+  
+  ◉ Turn on the `nametag entity` for online players.
+  
+  Issue: `/nametag toggle others @a true`
+  
+  
+  
+  ◉ Turn off the `nametag entity` for online players.
+  
+  Issue: `/nametag toggle others @a false`
 :::
 
 ## Configurations
@@ -143,7 +143,7 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Jobs
 :::job
 - Job Name: `UpdateNametagJob`
-- Document: This `job` is used to `update` the nametag for each player.
+- Document:   This `job` is used to `update` the nametag for each player.
 :::
 ## Commands
 :::command

@@ -8,28 +8,28 @@ title: command_toolbox.god
 ## Commands
 :::command
 - Command Syntax: `/god`
-- Document: Toggle the invulnerable state.
+- Document:   Toggle the invulnerable state.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/god <boolean flag>`
-- Document: Set the invulnerable state.
+- Document:   Set the invulnerable state.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/god others <PlayerCollection others>`
-- Document: Toggle the invulnerable state.
+- Document:   Toggle the invulnerable state.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/god others <PlayerCollection others> <boolean flag>`
-- Document: Set the invulnerable state.
+- Document:   Set the invulnerable state.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

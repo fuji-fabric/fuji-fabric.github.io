@@ -7,47 +7,50 @@ title: command_meta.shell
 
 ## Overview
 :::module
-Provides `/shell` command.
-To execute the `command line` in `host shell`.
-
-A `powerful` and `dangerous` module.
+  Provides `/shell` command.
+  
+  To execute the `command line` in `host shell`.
+  
+  
+  
+  A `powerful` and `dangerous` module.
 :::
 ## Color Boxes
 
 :::colorbox-danger
 
-◉ This is a `dangerous` module.
-
-This module is a powerful and dangerous module, not recommended to enable it.
+  ◉ This is a `dangerous` module.
+  
+  This module is a powerful and dangerous module, not recommended to enable it.
 :::
 
 :::colorbox-example
 
-◉ Create a file using placeholder.
-
-Issue: `/shell touch %player:name%.dangerous`
-
-
-
-◉ Execute a program in the host machine.
-
-Issue: `/shell emacs`
-
-
-
-◉ Call a program in the host machine, to backup your server.
-
-You need to combine `shell` module with `command_scheduler` module.
-
-And setup the `external backup program`.
-
-See more in https://rdiff-backup.net/
-
-
-
-◉ Download a virus from the Internet, and execute it.
-
-Issue: `/shell ...`
+  ◉ Create a file using placeholder.
+  
+  Issue: `/shell touch %player:name%.dangerous`
+  
+  
+  
+  ◉ Execute a program in the host machine.
+  
+  Issue: `/shell emacs`
+  
+  
+  
+  ◉ Call a program in the host machine, to backup your server.
+  
+  You need to combine `shell` module with `command_scheduler` module.
+  
+  And setup the `external backup program`.
+  
+  See more in https://rdiff-backup.net/
+  
+  
+  
+  ◉ Download a virus from the Internet, and execute it.
+  
+  Issue: `/shell ...`
 :::
 
 ## Configurations
@@ -78,7 +81,7 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/shell <GreedyString rest>`
-- Document: Execute a shell command in host os.
+- Document:   Execute a shell command in host os.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

@@ -9,11 +9,11 @@ title: command_toolbox.rules
 
 :::colorbox-tip
 
-◉ Ensure the players are allowed to use `/command-callback` command.
-
-The `/command-callback` command is a fuji command, used for `click event`.
-
-In vanilla Minecraft, if a player has `no permission` to use that command, the client will says `Unknown Command` error.
+  ◉ Ensure the players are allowed to use `/command-callback` command.
+  
+  The `/command-callback` command is a fuji command, used for `click event`.
+  
+  In vanilla Minecraft, if a player has `no permission` to use that command, the client will says `Unknown Command` error.
 :::
 
 ## Configurations
@@ -39,14 +39,14 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/rules`
-- Document: Query the server rules.
+- Document:   Query the server rules.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rules others <PlayerCollection others>`
-- Document: Query the server rules.
+- Document:   Query the server rules.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

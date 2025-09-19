@@ -7,58 +7,58 @@ title: skin
 
 ## Overview
 :::module
-This module provides the `skin` management for players.
+  This module provides the `skin` management for players.
 :::
 ## Color Boxes
 
 :::colorbox-note
 
-◉ How it works?
-
-This module provides the `skin` management:
-
-1. This module will `modify the skin` when the the player `login the server`.
-
-1.a. If there is existing `skin data` for this `player`, then we use that data.
-
-1.b. If there is no existing `skin data` for this `player`.
-
-1.b.i. If the `apply_default_skin_if_no_data` option is `true`, then we use `default skin` defined in the config file.
-
-1.b.ii. If the `apply_default_skin_if_no_data` option is `false`, then we fetch the skin from `Mojang online server`.
-
-
-
-2. A player can use `/skin` command to `change the skin` in-game.
+  ◉ How it works?
+  
+  This module provides the `skin` management:
+  
+  1. This module will `modify the skin` when the the player `login the server`.
+  
+  1.a. If there is existing `skin data` for this `player`, then we use that data.
+  
+  1.b. If there is no existing `skin data` for this `player`.
+  
+  1.b.i. If the `apply_default_skin_if_no_data` option is `true`, then we use `default skin` defined in the config file.
+  
+  1.b.ii. If the `apply_default_skin_if_no_data` option is `false`, then we fetch the skin from `Mojang online server`.
+  
+  
+  
+  2. A player can use `/skin` command to `change the skin` in-game.
 :::
 
 :::colorbox-example
 
-◉ Use the `Mojang skin`.
-
-Issue: `/skin use-my-mojang-skin` to use your own skin.
-
-Issue: `/skin use-mojang-skin Alice` to use another player's skin.
-
-NOTE: This requires fetching the skin from the Mojang server, which may be time-consuming.
-
-
-
-◉ Set a skin from custom URL
-
-Issue: `/skin use-url-skin alex https://s.namemc.com/i/2af8c11db5fe6061.png`
-
-
-
-◉ Use a `specified skin name` from the `default skin list` defined in the config file.
-
-Issue: `/skin use-default-skin reimu-hakurei`
-
-
-
-◉ Use a `random` skin from the `default skin list` defined in the config file.
-
-Issue: `/skin use-random-default-skins`
+  ◉ Use the `Mojang skin`.
+  
+  Issue: `/skin use-my-mojang-skin` to use your own skin.
+  
+  Issue: `/skin use-mojang-skin Alice` to use another player's skin.
+  
+  NOTE: This requires fetching the skin from the Mojang server, which may be time-consuming.
+  
+  
+  
+  ◉ Set a skin from custom URL
+  
+  Issue: `/skin use-url-skin alex https://s.namemc.com/i/2af8c11db5fe6061.png`
+  
+  
+  
+  ◉ Use a `specified skin name` from the `default skin list` defined in the config file.
+  
+  Issue: `/skin use-default-skin reimu-hakurei`
+  
+  
+  
+  ◉ Use a `random` skin from the `default skin list` defined in the config file.
+  
+  Issue: `/skin use-random-default-skins`
 :::
 
 ## Configurations
@@ -127,98 +127,98 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/skin`
-- Document: Alias to `/skin gui` command.
+- Document:   Alias to `/skin gui` command.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/skin gui`
-- Document: Open the `skin` GUI.
+- Document:   Open the `skin` GUI.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/skin use-default-skin <DefaultSkinName defaultSkinName>`
-- Document: Use the `default skin` with specified `skin name`.
+- Document:   Use the `default skin` with specified `skin name`.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/skin use-default-skin others <PlayerCollection others> <DefaultSkinName defaultSkinName>`
-- Document: Use the `default skin` with specified `skin name`.
+- Document:   Use the `default skin` with specified `skin name`.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/skin use-mojang-skin others <PlayerCollection others> <Word skinName>`
-- Document: Set skin to an online skin of the specified name.
+- Document:   Set skin to an online skin of the specified name.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/skin use-mojang-skin <Word skinName>`
-- Document: Set skin to an online skin of the specified name.
+- Document:   Set skin to an online skin of the specified name.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/skin use-my-mojang-skin`
-- Document: Set skin to an online skin of the same name.
+- Document:   Set skin to an online skin of the same name.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/skin use-my-mojang-skin others <PlayerCollection others>`
-- Document: Set skin to an online skin of the same name.
+- Document:   Set skin to an online skin of the same name.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/skin use-random-default-skins`
-- Document: Set skin to a random default skin.
+- Document:   Set skin to a random default skin.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/skin use-random-default-skins others <PlayerCollection others>`
-- Document: Set skin to a random default skin.
+- Document:   Set skin to a random default skin.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/skin use-url-skin alex others <PlayerCollection others> <GreedyString url>`
-- Document: Set skin to a custom url in Alex model.
+- Document:   Set skin to a custom url in Alex model.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/skin use-url-skin alex <GreedyString url>`
-- Document: Set skin to a custom url in Alex model.
+- Document:   Set skin to a custom url in Alex model.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/skin use-url-skin steve others <PlayerCollection others> <GreedyString url>`
-- Document: Set skin to a custom url in Steve model.
+- Document:   Set skin to a custom url in Steve model.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/skin use-url-skin steve <GreedyString url>`
-- Document: Set skin to a custom url in Steve model.
+- Document:   Set skin to a custom url in Steve model.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`

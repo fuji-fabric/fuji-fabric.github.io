@@ -28,7 +28,7 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/seen <OfflinePlayerName playerName>`
-- Document: Query the last online time of a player.
+- Document:   Query the last online time of a player.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

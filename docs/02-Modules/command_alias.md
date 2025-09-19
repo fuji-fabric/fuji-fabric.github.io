@@ -7,39 +7,40 @@ title: command_alias
 
 ## Overview
 :::module
-This module allows you to define alias for existing commands.
-The defined alies command will redirect to the existing command node.
+  This module allows you to define alias for existing commands.
+  
+  The defined alies command will redirect to the existing command node.
 :::
 ## Color Boxes
 
 :::colorbox-tip
 
-The `command_alias` command only has the ability to define `a new command`, as the alias of `an existing command`.
-
-It works by `command redirecting`.
-
-You can't use `command_alias` module to actually define `a new command with arguments`, that's the weakness.
-
-If you want to define `a new command with arguments`, see `command_bundle` module.
-
-
-
-In short:
-
-1. To define `a simple command` with no arguments, use `command_alias` module.
-
-2. To define `a complex command` with arguments, use `command_bundle` module.
+  The `command_alias` command only has the ability to define `a new command`, as the alias of `an existing command`.
+  
+  It works by `command redirecting`.
+  
+  You can't use `command_alias` module to actually define `a new command with arguments`, that's the weakness.
+  
+  If you want to define `a new command with arguments`, see `command_bundle` module.
+  
+  
+  
+  In short:
+  
+  1. To define `a simple command` with no arguments, use `command_alias` module.
+  
+  2. To define `a complex command` with arguments, use `command_bundle` module.
 :::
 
 :::colorbox-example
 
-◉ Define a `new shortcut command` as an alias to `an existing command`.
-
-For example:
-
-1. Define a new `/r` command, as alias to `/reply` command.
-
-2. Define a new `/sudo` command, as alias to `/run as fake-op` command.
+  ◉ Define a `new shortcut command` as an alias to `an existing command`.
+  
+  For example:
+  
+  1. Define a new `/r` command, as alias to `/reply` command.
+  
+  2. Define a new `/sudo` command, as alias to `/run as fake-op` command.
 :::
 
 ## Configurations
@@ -170,42 +171,42 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/command-alias list`
-- Document: List all registered alias-commands in server.
+- Document:   List all registered alias-commands in server.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/display`
-- Document: Create an alias command from `/display` into `/chat display` command.
+- Document:   Create an alias command from `/display` into `/chat display` command.
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/endersee`
-- Document: Create an alias command from `/endersee` into `/view ender` command.
+- Document:   Create an alias command from `/endersee` into `/view ender` command.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/invsee`
-- Document: Create an alias command from `/invsee` into `/view inv` command.
+- Document:   Create an alias command from `/invsee` into `/view inv` command.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/r`
-- Document: Create an alias command from `/r` into `/reply` command.
+- Document:   Create an alias command from `/r` into `/reply` command.
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/sudo`
-- Document: Create an alias command from `/sudo` into `/run as fake-op` command.
+- Document:   Create an alias command from `/sudo` into `/run as fake-op` command.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

@@ -7,16 +7,25 @@ title: command_meta.when_online
 
 ## Overview
 :::module
-This module provides the `/when-online <player> <cmd>` command.
-To execute a specified command `exactly once` when the target player is `online`:
-1. If the target player is `online` now, the command will be executed `at once`.
-2. If the target player is `offline` now, the command will be executed `when the player online`.
-
-Besides, you use `/when-online list` to manage `submitted commands`.
-
-For example:
-1. `/when-online Steve give %player:name% minecraft:apple 3`
-2. `/when-online Alex delay 8 say Hi %player:name%`
+  This module provides the `/when-online <player> <cmd>` command.
+  
+  To execute a specified command `exactly once` when the target player is `online`:
+  
+  1. If the target player is `online` now, the command will be executed `at once`.
+  
+  2. If the target player is `offline` now, the command will be executed `when the player online`.
+  
+  
+  
+  Besides, you use `/when-online list` to manage `submitted commands`.
+  
+  
+  
+  For example:
+  
+  1. `/when-online Steve give %player:name% minecraft:apple 3`
+  
+  2. `/when-online Alex delay 8 say Hi %player:name%`
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">
@@ -41,21 +50,21 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/when-online`
-- Document: An alias command for `/when-online list` command.
+- Document:   An alias command for `/when-online list` command.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/when-online list`
-- Document: List all submitted `when-online` tickets.
+- Document:   List all submitted `when-online` tickets.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/when-online <OfflinePlayerName targetPlayer> <GreedyString command>`
-- Document: Execute the specified command `exactly once`, when the target player `is online`.
+- Document:   Execute the specified command `exactly once`, when the target player `is online`.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`

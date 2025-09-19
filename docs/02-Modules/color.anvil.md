@@ -7,7 +7,7 @@ title: color.anvil
 
 ## Overview
 :::module
-This module allows you to use color tags in `anvil` screen.
+  This module allows you to use color tags in `anvil` screen.
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">

@@ -7,22 +7,23 @@ title: command_toolbox.warp
 
 ## Overview
 :::module
-Provides `/warp` command.
-As a public teleport point.
+  Provides `/warp` command.
+  
+  As a public teleport point.
 :::
 ## Color Boxes
 
 :::colorbox-example
 
-◉ Set a display name for a warp.
-
-Issue: `/warp set-name <warp> <blue>This is the display name`
-
-
-
-◉ Set a lore for a warp.
-
-Issue: `/warp set-lore <warp> <blue>This is the first line|<red>This is the second line`
+  ◉ Set a display name for a warp.
+  
+  Issue: `/warp set-name <warp> <blue>This is the display name`
+  
+  
+  
+  ◉ Set a lore for a warp.
+  
+  Issue: `/warp set-lore <warp> <blue>This is the first line|<red>This is the second line`
 :::
 
 ## Configurations
@@ -48,10 +49,13 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Jobs
 :::job
 - Job Name: `ConfigurationHandlerWriteStorageJob`
-- Document: This `job` is used to `write data` from `memory` into `storage`.
-
-NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
-NOTE: The `disk` will be `overridden` when `fire` this job.
+- Document:   This `job` is used to `write data` from `memory` into `storage`.
+  
+  
+  
+  NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
+  
+  NOTE: The `disk` will be `overridden` when `fire` this job.
 :::
 ## Commands
 :::command
@@ -63,63 +67,63 @@ NOTE: The `disk` will be `overridden` when `fire` this job.
 :::
 :::command
 - Command Syntax: `/warp list`
-- Document: List warp points.
+- Document:   List warp points.
 - Can be executed by console: `true`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/warp set-item <WarpDescriptor warp> <ItemStackWrapper itemStack>`
-- Document: Set the item for a warp.
+- Document:   Set the item for a warp.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/warp set-lore <WarpDescriptor warp> <GreedyString lore>`
-- Document: Set the lore for a warp.
+- Document:   Set the lore for a warp.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/warp set-name <WarpDescriptor warp> <GreedyString name>`
-- Document: Set the display name for a warp.
+- Document:   Set the display name for a warp.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/warp set-position <WarpDescriptor warp>`
-- Document: Set the position for a warp.
+- Document:   Set the position for a warp.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/warp set <String warpName> [Boolean override]`
-- Document: Set current location as new wrap point.
+- Document:   Set current location as new wrap point.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/warp tp others <PlayerCollection others> <WarpDescriptor warpName>`
-- Document: Teleport to the specified warp point.
+- Document:   Teleport to the specified warp point.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/warp tp <WarpDescriptor warpName>`
-- Document: Teleport to the specified warp point.
+- Document:   Teleport to the specified warp point.
 - Can be executed by console: `false`
 - Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/warp unset <WarpDescriptor warpName>`
-- Document: Delete a warp point.
+- Document:   Delete a warp point.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`

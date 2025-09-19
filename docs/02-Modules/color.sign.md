@@ -7,15 +7,15 @@ title: color.sign
 
 ## Overview
 :::module
-This module allows you to use color tags in `sign` blocks.
+  This module allows you to use color tags in `sign` blocks.
 :::
 ## Color Boxes
 
 :::colorbox-tip
 
-◉ You can write `style tags` on the sign.
-
-Foe example: `<red>`, `<rb>`, `<bold>` and `<i>`.
+  ◉ You can write `style tags` on the sign.
+  
+  Foe example: `<red>`, `<rb>`, `<bold>` and `<i>`.
 :::
 
 ## Configurations

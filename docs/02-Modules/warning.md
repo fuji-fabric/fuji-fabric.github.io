@@ -7,49 +7,54 @@ title: warning
 
 ## Overview
 :::module
-This module provides the `information management` for `staffs`.
-A shared `warning GUI` to `track` the behaviours of players, between `staffs`.
-You can `create` a `warning` for a `player`.
-All `staffs` can `view` the `warnings` of a `player`.
-
-You can use `warnings` to `track` the behaviours of a `player`.
+  This module provides the `information management` for `staffs`.
+  
+  A shared `warning GUI` to `track` the behaviours of players, between `staffs`.
+  
+  You can `create` a `warning` for a `player`.
+  
+  All `staffs` can `view` the `warnings` of a `player`.
+  
+  
+  
+  You can use `warnings` to `track` the behaviours of a `player`.
 :::
 ## Color Boxes
 
 :::colorbox-note
 
-◉ Integrate with advanced `ban` tools.
-
-You can integrate the `warning` module with `temp_ban` module.
-
-However, you may want some advanced ban tools.
-
-See: https://github.com/Patbox/BanHammer
+  ◉ Integrate with advanced `ban` tools.
+  
+  You can integrate the `warning` module with `temp_ban` module.
+  
+  However, you may want some advanced ban tools.
+  
+  See: https://github.com/Patbox/BanHammer
 :::
 
 :::colorbox-example
 
-◉ Create a `permanent warning` for a player.
-
-Issue: `/warning create Steve Steal items.`
-
-
-
-◉ Create a `temporal warning` for a player.
-
-Issue: `/warning create-temp Steve 3d Steal items.`
-
-
-
-◉ List all the warnings of a player.
-
-Issue: `/warning list Steve`
-
-
-
-◉ Open the `Warning GUI`.
-
-Issue: `/warning gui`
+  ◉ Create a `permanent warning` for a player.
+  
+  Issue: `/warning create Steve Steal items.`
+  
+  
+  
+  ◉ Create a `temporal warning` for a player.
+  
+  Issue: `/warning create-temp Steve 3d Steal items.`
+  
+  
+  
+  ◉ List all the warnings of a player.
+  
+  Issue: `/warning list Steve`
+  
+  
+  
+  ◉ Open the `Warning GUI`.
+  
+  Issue: `/warning gui`
 :::
 
 ## Configurations
@@ -132,49 +137,49 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Commands
 :::command
 - Command Syntax: `/warning`
-- Document: Open the warning GUI.
+- Document:   Open the warning GUI.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/warning clear-all [Boolean confirm]`
-- Document: Clear all warnings for all players.
+- Document:   Clear all warnings for all players.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/warning clear <OfflinePlayerName targetPlayer> [Boolean confirm]`
-- Document: Clear the warnings of a player.
+- Document:   Clear the warnings of a player.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/warning create-temp <OfflinePlayerName targetPlayer> <Duration duration> <GreedyString warning>`
-- Document: Create a new warning with expiration for the player.
+- Document:   Create a new warning with expiration for the player.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/warning create <OfflinePlayerName targetPlayer> <GreedyString warning>`
-- Document: Create a new warning for the player.
+- Document:   Create a new warning for the player.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/warning gui`
-- Document: Open the warning GUI.
+- Document:   Open the warning GUI.
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/warning list <OfflinePlayerName targetPlayer>`
-- Document: List the warnings of a player.
+- Document:   List the warnings of a player.
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
@@ -182,17 +187,17 @@ It should NOT be copied directly into your configuration folder, as the document
 ## Placeholders
 :::placeholder
 - Placeholder Name: `fuji:last_warning_created_date`
-- Document: Returns the `created date` of the last created warning.
+- Document:   Returns the `created date` of the last created warning.
 :::
 :::placeholder
 - Placeholder Name: `fuji:last_warning_creator_name`
-- Document: Returns the `creator name` of the last created warning.
+- Document:   Returns the `creator name` of the last created warning.
 :::
 :::placeholder
 - Placeholder Name: `fuji:last_warning_expiration_date`
-- Document: Returns the `expiration date` of the last created warning.
+- Document:   Returns the `expiration date` of the last created warning.
 :::
 :::placeholder
 - Placeholder Name: `fuji:last_warning_reason`
-- Document: Returns the `reason` of the last created warning.
+- Document:   Returns the `reason` of the last created warning.
 :::

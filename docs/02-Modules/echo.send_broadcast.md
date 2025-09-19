@@ -7,8 +7,9 @@ title: echo.send_broadcast
 
 ## Overview
 :::module
-This module provides the `/send-broadcast` command.
-To send the `text` as `message` to `all online players`.
+  This module provides the `/send-broadcast` command.
+  
+  To send the `text` as `message` to `all online players`.
 :::
 ## Commands
 :::command
