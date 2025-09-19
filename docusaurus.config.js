@@ -95,7 +95,7 @@ const config = {
                 // Public API key: it is safe to commit it
                 apiKey: 'df2d3c468b22ff3ca46bcca593fdcfd0',
 
-                indexName: 'Fuij Docs Site Crawler',
+                indexName: 'Fuji Docs Site Crawler',
 
                 // Optional: see doc section below
                 contextualSearch: true,
