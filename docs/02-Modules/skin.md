@@ -72,7 +72,7 @@ It should NOT be copied directly into your configuration folder, as the document
 - File Content: 
 <details>
 
-<summary>Click to expand...</summary>
+<summary>_Click to see the `default` content..._</summary>
 
 ```json showLineNumbers title="config/fuji/modules/skin/config.json"
 {
@@ -115,7 +115,7 @@ It should NOT be copied directly into your configuration folder, as the document
 - File Content: 
 <details>
 
-<summary>Click to expand...</summary>
+<summary>_Click to see the `default` content..._</summary>
 
 ```json showLineNumbers title="config/fuji/modules/skin/skin-data.json"
 {

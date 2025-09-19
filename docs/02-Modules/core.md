@@ -184,7 +184,7 @@ It's used to:
 NOTE: You need to re-start the server, to `enable` or `disable` a `module`.- File Content: 
 <details>
 
-<summary>Click to expand...</summary>
+<summary>_Click to see the `default` content..._</summary>
 
 ```json showLineNumbers title="config/fuji/config.json"
 {
@@ -731,7 +731,7 @@ The `command_permission` module will override the `command requirement` defined 
 So, if you are hosting a dedicated Minecraft server, you can simply use `command_permission` module, and ignore this file.- File Content: 
 <details>
 
-<summary>Click to expand...</summary>
+<summary>_Click to see the `default` content..._</summary>
 
 ```json showLineNumbers title="config/fuji/permission.json"
 {

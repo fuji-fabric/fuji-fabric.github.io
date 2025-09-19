@@ -75,7 +75,7 @@ It should NOT be copied directly into your configuration folder, as the document
 - File Content: 
 <details>
 
-<summary>Click to expand...</summary>
+<summary>_Click to see the `default` content..._</summary>
 
 ```json showLineNumbers title="config/fuji/modules/rtp/config.json"
 {
@@ -119,8 +119,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:void_air",
             "minecraft:powder_snow",
+            "minecraft:void_air",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -164,8 +164,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:void_air",
             "minecraft:powder_snow",
+            "minecraft:void_air",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -209,8 +209,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:void_air",
             "minecraft:powder_snow",
+            "minecraft:void_air",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -254,8 +254,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:void_air",
             "minecraft:powder_snow",
+            "minecraft:void_air",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -299,8 +299,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:void_air",
             "minecraft:powder_snow",
+            "minecraft:void_air",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -344,8 +344,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:void_air",
             "minecraft:powder_snow",
+            "minecraft:void_air",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
