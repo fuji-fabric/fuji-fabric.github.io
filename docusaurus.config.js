@@ -6,12 +6,10 @@
 
 import {themes as prismThemes} from 'prism-react-renderer';
 
-// This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
-
 /** @type {import('@docusaurus/types').Config} */
 const config = {
     title: 'Fuji',
-    tagline: 'Dinosaurs are cool',
+    tagline: 'Fuji Documentation Site',
     favicon: 'img/icon.png',
 
     // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -20,7 +18,7 @@ const config = {
     },
 
     // Set the production url of your site here
-    url: 'https://your-docusaurus-site.example.com',
+    url: 'https://fuji-fabric.github.io',
     // Set the /<baseUrl>/ pathname under which your site is served
     // For GitHub pages deployment, it is often '/<projectName>/'
     baseUrl: '/',
@@ -66,8 +64,6 @@ const config = {
     themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
         ({
-            // Replace with your project's social card
-            image: 'img/docusaurus-social-card.jpg',
             navbar: {
                 title: 'Fuji',
                 logo: {
@@ -127,4 +123,5 @@ const config = {
         }),
 };
 
+// noinspection JSUnusedGlobalSymbols
 export default config;
