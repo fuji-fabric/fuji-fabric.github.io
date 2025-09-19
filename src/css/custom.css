@@ -35,6 +35,11 @@
   vertical-align: initial;
 }
 
+/* Define the style of admonition header. */
+.admonitionHeading_Gvgb {
+  text-transform: none;
+}
+
 /* Custom Admonitions */
 .admonition-command {
   --ifm-alert-background-color: #f3f6ff; /* light background */
