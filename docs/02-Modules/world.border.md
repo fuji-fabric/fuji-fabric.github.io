@@ -13,6 +13,17 @@ title: world.border
 :::
 ## Color Boxes
 
+:::colorbox-warning
+
+  ◉ The `per-dimension worldborder` since `MC 1.21.9`
+  
+  Since `MC 1.21.9`, the `/worldborder` command is `dimension specific`.
+  
+  You should only use `world.border` module when your MC version is lower than `MC 1.21.9`.
+
+
+:::
+
 :::colorbox-note
 
   ◉ How it works?
