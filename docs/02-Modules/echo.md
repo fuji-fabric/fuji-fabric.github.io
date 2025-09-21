@@ -1,7 +1,0 @@
----
-title: echo
----
-
-
-# Module: echo
-
