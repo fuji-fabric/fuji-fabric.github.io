@@ -194,6 +194,15 @@ It should NOT be copied directly into your configuration folder, as the document
 - Required String Permission: `null`
 :::
 :::command
+- Command Syntax: `/ec`
+- Document:   Create an alias command from `/ec` into `/enderchest` command.
+
+
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
 - Command Syntax: `/endersee`
 - Document:   Create an alias command from `/endersee` into `/view ender` command.
 
@@ -223,6 +232,15 @@ It should NOT be copied directly into your configuration folder, as the document
 :::command
 - Command Syntax: `/sudo`
 - Document:   Create an alias command from `/sudo` into `/run as fake-op` command.
+
+
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/wb`
+- Document:   Create an alias command from `/wb` into `/workbench` command.
 
 
 - Can be executed by console: `true`

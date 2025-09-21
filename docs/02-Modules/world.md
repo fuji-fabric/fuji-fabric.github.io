@@ -378,13 +378,13 @@ title: world
   
   ◉ Create a `flat dimension` with `overworld` dimension type and `customized preset`.
   
-  Issue: `/world create 3 minecraft:overworld --chunkGeneratorType FLAT --chunkGeneratorParameters "minecraft:bedrock,3*minecraft:stone,116*minecraft:sandstone;minecraft:desert"`
+  Issue: `/world create my_desert_world minecraft:overworld --chunkGeneratorType FLAT --chunkGeneratorParameters "minecraft:bedrock,3*minecraft:stone,116*minecraft:sandstone;minecraft:desert"`
   
   
   
   ◉ Create a `void dimension`.
   
-  Issue: `/world create 4 minecraft:overworld --chunkGeneratorType FLAT --chunkGeneratorParameters "minecraft:air;minecraft:the_void"`
+  Issue: `/world create my_void_world minecraft:overworld --chunkGeneratorType FLAT --chunkGeneratorParameters "minecraft:air;minecraft:the_void"`
   
   NOTE: The `secret` is, a `void dimension` is just a `flat dimension` with customized `minecraft:air layers` with the `minecraft:the_void` biome.
   

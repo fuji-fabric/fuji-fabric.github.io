@@ -4,9 +4,7 @@ slug: /
 
 # README
 
-<meta name="algolia-site-verification"  content="096A221BF2D54934" />
-
-:::tip
+:::tip[Tip]
 ## How to Use This Document
 
 This document is divided into two main sections:

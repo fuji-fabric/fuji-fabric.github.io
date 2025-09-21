@@ -137,3 +137,87 @@ title: chat.style
 
 :::
 
+## Configurations
+<Admonition type="warning" icon="" title="">
+**The JSON content is provided for documentation purposes only.**
+
+It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+</Admonition>
+:::config
+- File Name: `chat.json`
+- File Content: 
+<details>
+
+<summary>_Click to see the `default` content..._</summary>
+
+```json showLineNumbers title="config/fuji/modules/chat/style/chat.json"
+{
+  /* Per-player chat content format. */
+  "format": {
+    "player2format": {
+      "Steve": "<#FFC7EA>%message%"
+    }
+  }
+}
+```
+</details>
+:::
+:::config
+- File Name: `config.json`
+- File Content: 
+<details>
+
+<summary>_Click to see the `default` content..._</summary>
+
+```json showLineNumbers title="config/fuji/modules/chat/style/config.json"
+{
+  /* Customize the `chat style`. */
+  "style": {
+    "sender": "<#B1B2FF>[%fuji:player_playtime%🔥 %fuji:player_mined%⛏ %fuji:player_placed%🔳 %fuji:player_killed%🗡 %fuji:player_moved%🌍]<reset> <<dark_green><click:suggest_command:'/msg %player:name% '><hover:show_text:'Time: %fuji:date%<newline><italic>Click to Message'>%player:displayname_visual%</hover></click></dark_green>> ",
+    "content": "%s"
+  }
+}
+```
+</details>
+:::
+## Commands
+:::command
+- Command Syntax: `/chat style reset`
+- Document:   Reset your personal chat content format.
+
+
+- Can be executed by console: `false`
+- Required Level Permission: `0`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/chat style reset others <PlayerCollection others>`
+- Document:   Reset your personal chat content format.
+
+
+- Can be executed by console: `false`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/chat style set <GreedyString format>`
+- Document:   Set your personal chat content format.
+  
+  For example: `/chat style set prefix + %message% + suffix`
+
+
+- Can be executed by console: `false`
+- Required Level Permission: `0`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/chat style set others <PlayerCollection others> <GreedyString format>`
+- Document:   Set your personal chat content format.
+  
+  For example: `/chat style set prefix + %message% + suffix`
+
+
+- Can be executed by console: `false`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::

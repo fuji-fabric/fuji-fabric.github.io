@@ -260,7 +260,7 @@ It should NOT be copied directly into your configuration folder, as the document
         "accept_player_command_source": true,
         "accept_console_command_source": false
       },
-      "advice_type": "CANCEL_IF_ALL_SUCCESS",
+      "advice_type": "CANCEL_IF_ANY_SUCCESS",
       "commands": [
         "has-perm? $1 your.custom.permission"
       ]
