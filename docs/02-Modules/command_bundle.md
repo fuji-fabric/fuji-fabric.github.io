@@ -7,11 +7,17 @@ title: command_bundle
 
 ## Overview
 :::module
-  This module allows you to create new command:
+  This module allows `creating` a new command (Called `template command` or `bundle command`):
   
-  1. The new command can accept arguments.
+  - `User-Defined Arguments`: the new command can accept user-defined arguments.
   
-  2. The body of the new command, can be a list of commands.
+  - `Command Body`: the body of a new command can consist of a list of existing commands.
+  
+  - `Placeholders`: the body can support placeholder parsing.
+  
+  
+  
+  It can be used as a generic `command template` system.
 
 
 :::
@@ -276,9 +282,8 @@ title: command_bundle
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `config.json`

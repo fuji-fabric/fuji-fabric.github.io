@@ -9,9 +9,9 @@ title: echo.send_custom
 :::module
   This module provides `/send-custom` command.
   
-  To define `custom text` and auto-page them.
+  It allows defining a `custom text` with automatic pagination.
   
-  And then send it `as message` or `as book` to a specified player.
+  Then it can be sent `as message` or `as book` to a player.
 
 
 :::
@@ -34,7 +34,7 @@ title: echo.send_custom
   
   You can download the `example-custom-text.txt` file.
   
-  It is in https://github.com/sakurawald/fuji/blob/dev/.github/files/example-custom-text.txt
+  It is in https://github.com/fuji-fabric/fuji/blob/dev/.github/files/example-custom-text.txt
 
 
 :::

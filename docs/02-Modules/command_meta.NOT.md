@@ -32,7 +32,7 @@ title: command_meta.NOT
 
   ◉ Use with other `predicate` commands.
   
-  Issue: /IF NOT has-item? \<player\> minecraft:apple 16 THEN say You don't have 16 apples. ELSE say You have 16 apples.
+  Issue: `/IF NOT has-item? <player> minecraft:apple 16 THEN say You don't have 16 apples. ELSE say You have 16 apples.`
 
 
 :::

@@ -7,7 +7,7 @@ title: language
 
 ## Overview
 :::module
-  Respect the `client-side` language option, if possible.
+  This module enables respect for the `client-side language option` whenever possible.
 
 
 :::

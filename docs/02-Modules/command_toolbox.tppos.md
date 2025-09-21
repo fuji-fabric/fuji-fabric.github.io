@@ -15,17 +15,19 @@ title: command_toolbox.tppos
   
   For example:
   
-  1. `/tppos --z 64 --x 32 --y 128` to teleport to `a specified position`
+  - `/tppos --z 64 --x 32 --y 128` to teleport to `a specified position`
   
-  2. `/tppos --others Steve` to specify the `target player`.
+  - `/tppos --others Steve` to specify the `target player`.
   
-  3. `/tppos offline Alex` to teleport to the `offline position of Alex`.
+  - `/tppos offline Alex` to teleport to the `offline position of Alex`.
   
-  4. `/tppos --dimension` to specify the `target dimension`, and start `a random tp`.
+  - `/tppos --dimension` to specify the `target dimension`, and start `a random tp`.
   
-  5. `/tppos --minRange 1000 --maxRange 2000` to specify the setup for `a random tp`.
+  - `/tppos --minRange 1000 --maxRange 2000` to specify the setup for `a random tp`.
   
-  6. `/tppos here @a` to teleport `all online players` to `you`.
+  - `/tppos here @a` to teleport `all online players` to `you`.
+  
+  - `/tppos --biome minecraft:mushroom_fields`
 
 
 :::

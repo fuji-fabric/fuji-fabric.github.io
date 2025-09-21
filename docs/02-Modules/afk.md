@@ -9,11 +9,11 @@ title: afk
 :::module
   This module provides:
   
-  1. Afk detection: If a player idle too long, we will mark it as afk state.
+  1. Afk Detection: When a player remains `idle` beyond a specified threshold, they are marked as being in `the AFK state`.
   
-  2. Afk event: Execute commands when a player enters or leaves afk state.
+  2. Afk Event: Execute configured commands when a player `enters` or `leaves` the afk state.
   
-  3. Afk name customization: For a afk player, we can customize its display name in tab list.
+  3. Afk Name Customization: Allows customization of the `display name` of AFK players.
 
 
 :::
@@ -42,9 +42,8 @@ title: afk
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `config.json`

@@ -9,7 +9,7 @@ title: rank
 :::module
   This module provides the rank up system.
   
-  You can define a `rank` with `requirements` and `award`.
+  It allows defining a `rank` with `requirements` and `award`.
 
 
 :::
@@ -137,9 +137,8 @@ title: rank
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `config.json`

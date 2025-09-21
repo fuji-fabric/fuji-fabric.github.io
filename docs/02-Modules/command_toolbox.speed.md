@@ -5,16 +5,6 @@ title: command_toolbox.speed
 
 # Module: command_toolbox.speed
 
-## Overview
-:::module
-  Provides `/speed` command, to:
-  
-  1. Modify the `walk speed`.
-  
-  2. Modify the `fly speed`.
-
-
-:::
 ## Color Boxes
 
 :::colorbox-note

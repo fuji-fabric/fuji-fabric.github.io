@@ -7,7 +7,7 @@ title: command_meta.attachment
 
 ## Overview
 :::module
-  Provides a unified attachment facility, to attach any data to any object.
+  Provides a unified attachment facility, to attach data to any object.
 
 
 :::

@@ -7,7 +7,7 @@ title: echo.send_dialog
 
 ## Overview
 :::module
-  Send text using the `dialog GUI`.
+  Send the `text` using the `dialog GUI`.
   
   
   

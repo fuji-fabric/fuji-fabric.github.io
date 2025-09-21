@@ -74,9 +74,8 @@ title: rtp
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `config.json`
@@ -127,8 +126,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:powder_snow",
             "minecraft:void_air",
+            "minecraft:powder_snow",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -172,8 +171,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:powder_snow",
             "minecraft:void_air",
+            "minecraft:powder_snow",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -217,8 +216,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:powder_snow",
             "minecraft:void_air",
+            "minecraft:powder_snow",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -262,8 +261,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:powder_snow",
             "minecraft:void_air",
+            "minecraft:powder_snow",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -307,8 +306,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:powder_snow",
             "minecraft:void_air",
+            "minecraft:powder_snow",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"
@@ -352,8 +351,8 @@ It should NOT be copied directly into your configuration folder, as the document
           "skip": [
             "minecraft:magma_block",
             "minecraft:cactus",
-            "minecraft:powder_snow",
             "minecraft:void_air",
+            "minecraft:powder_snow",
             "minecraft:sweet_berry_bush",
             "minecraft:campfire",
             "minecraft:fire"

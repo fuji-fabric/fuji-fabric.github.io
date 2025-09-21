@@ -7,11 +7,11 @@ title: anti_build
 
 ## Overview
 :::module
-  This module allows you to ban `types of actions` for players.
+  This module allows restricting specific player `actions`.
   
   
   
-  Currently supported types are:
+  Currently supported `action types` include:
   
   1. Break a specified block.
   
@@ -87,9 +87,8 @@ title: anti_build
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `config.json`

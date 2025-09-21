@@ -9,7 +9,7 @@ title: echo.send_bossbar
 :::module
   This module provides `/send-bossbar` command.
   
-  To send a `text` as the `bossbar` to a specified player.
+  To send the `text` as the `bossbar` to a specified player.
 
 
 :::

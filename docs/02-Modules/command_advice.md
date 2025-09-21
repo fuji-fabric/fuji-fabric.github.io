@@ -7,11 +7,11 @@ title: command_advice
 
 ## Overview
 :::module
-  This module allows you to define `advices` to decorate `an existing target command`.
+  This module allows defining `advices` to decorate `an existing target command`.
   
   
   
-  The command advice types can be:
+  The command `advice types` include:
   
   - `BEFORE_EXECUTION`
   
@@ -102,9 +102,8 @@ title: command_advice
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `config.json`

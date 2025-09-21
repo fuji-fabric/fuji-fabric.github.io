@@ -7,9 +7,11 @@ title: chat.history
 
 ## Overview
 :::module
-  This module will store chat message as history.
+  This module does:
   
-  And send them to the player joined the server.
+  1. Stores chat messages as history.
+  
+  2. Delivers them to players when they join the server.
 
 
 :::
@@ -26,9 +28,8 @@ title: chat.history
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `config.json`

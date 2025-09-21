@@ -9,7 +9,7 @@ title: command_toolbox.hat
 :::module
   This module provides the `/hat` command.
   
-  And allows a player to put `any item` in the `head slot`.
+  It allows a player to put `any item` in the `head equipment slot`.
 
 
 :::

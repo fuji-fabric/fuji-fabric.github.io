@@ -7,9 +7,9 @@ title: cleaner
 
 ## Overview
 :::module
-  This module provides the `entity` cleaner.
+  This module provides an `entity cleaner`.
   
-  It monitors defined `conditions` and removes `entities` accordingly.
+  It monitors specified conditions and `clean` entities that `match defined rules`.
 
 
 :::
@@ -69,7 +69,7 @@ title: cleaner
   
   An example translation file can be found here:
   
-  https://github.com/sakurawald/fuji/blob/dev/.github/files/en_us.json
+  https://github.com/fuji-fabric/fuji/blob/dev/.github/files/en_us.json
   
   
   
@@ -113,9 +113,8 @@ title: cleaner
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `config.json`

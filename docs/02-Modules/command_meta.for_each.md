@@ -7,9 +7,9 @@ title: command_meta.for_each
 
 ## Overview
 :::module
-  Provides `/foreach` command.
+  This module provides the `/foreach` command.
   
-  If a command only targets a single player, you can use `/foreach` to apply it to each online player.
+  It allows applying a command that normally targets a single player `to each` online player.
 
 
 :::

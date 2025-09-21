@@ -11,7 +11,7 @@ This document is divided into two main sections:
 
 1. **Core**
    For the core functionality, please refer to the following resources:
-   - [Fuji Manual (PDF)](https://github.com/sakurawald/fuji/raw/dev/docs/release/fuji.pdf)
+   - [Fuji Manual (PDF)](https://github.com/fuji-fabric/fuji/raw/dev/docs/release/fuji.pdf)
    - [Core Documentation](./02-Modules/core.md)
 
 2. **Modules**

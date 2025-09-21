@@ -7,9 +7,9 @@ title: jail
 
 ## Overview
 :::module
-  This module allows you to define a `jail`.
+  This module allows defining a `jail`.
   
-  It can be used to `punish` a player with bad behaviour, without `banning` it.
+  It can be used to `punish` players for misbehavior without `banning` them.
 
 
 :::
@@ -232,9 +232,8 @@ title: jail
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `config.json`
@@ -311,6 +310,18 @@ It should NOT be copied directly into your configuration folder, as the document
   NOTE: If you modify the `file` in `disk`, then you need to issue `/fuji reload` as soon as possible.
   
   NOTE: The `disk` will be `overridden` when `fire` this job.
+
+
+:::
+:::job
+- Job Name: `PatrolJailJob`
+- Document:   This `job` is used to `execute the patrol commands` for a `jail` periodically.
+
+
+:::
+:::job
+- Job Name: `PatrolJailJob`
+- Document:   This `job` is used to `execute the patrol commands` for a `jail` periodically.
 
 
 :::

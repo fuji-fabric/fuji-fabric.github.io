@@ -7,7 +7,7 @@ title: deathlog
 
 ## Overview
 :::module
-  This module stores the `inventory` as death log on player death.
+  This module stores a player's inventory as a `death log` upon death.
 
 
 :::

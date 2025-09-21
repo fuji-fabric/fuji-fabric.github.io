@@ -7,13 +7,11 @@ title: command_meta.chain
 
 ## Overview
 :::module
-  Provides `/chain` command.
+  This module provides the `/chain` command, which allows executing `two commands` sequentially:
   
-  It allows you to run another 2 commands.
+  1. The first command, is `any command`. (Required)
   
-  The first command is `any command`.
-  
-  The second command is `the chain command`.
+  2. The second command, is `/chain` command. (Optionally)
 
 
 :::

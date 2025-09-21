@@ -7,15 +7,15 @@ title: command_state
 
 ## Overview
 :::module
-  This module lets you define a `state` using `predicate commands`.
+  This module allows defining a `state` using `predicate commands`.
   
-  With it, you can:
+  Using this defined `state`, you can:
   
   - Define commands to be executed when a player `enters` or `leaves` this `state`.
   
-  - Check whether a player is in the `state`.
+  - Check whether a player is currently in the `state`.
   
-  - Use `placeholders` related to the `state`.
+  - Display `placeholders` relevant to the `state`.
 
 
 :::
@@ -70,9 +70,8 @@ title: command_state
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `command-state-data.json`

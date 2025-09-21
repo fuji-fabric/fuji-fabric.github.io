@@ -7,19 +7,18 @@ title: back
 
 ## Overview
 :::module
-  THis module allows the player to teleport back to:
+  This module allows players to `teleport back` to:
   
-  1. His last teleport point.
+  - Their last teleport point.
   
-  2. His death point.
+  - Their death location.
 
 
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `config.json`

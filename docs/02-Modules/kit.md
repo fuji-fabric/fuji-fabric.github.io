@@ -7,7 +7,7 @@ title: kit
 
 ## Overview
 :::module
-  Make a set of `item stacks` as a `kit`, and give the kit to players.
+  This module allows creating a set of item stacks as a `kit` and distributing the kit to players.
 
 
 :::

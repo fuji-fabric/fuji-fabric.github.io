@@ -7,7 +7,9 @@ title: predicate
 
 ## Overview
 :::module
-  Provides `predicate` commands, which suffix with `?`.
+  This module provides a collection of `predicate commands`.
+  
+  They can be used to test the `conditions`.
 
 
 :::

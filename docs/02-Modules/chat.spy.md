@@ -7,7 +7,7 @@ title: chat.spy
 
 ## Overview
 :::module
-  This module allows you to spy on specified chat message type. (Mainly used for private message types)
+  This module allows spying on specified `chat message types`. (Primarily private messages types.)
 
 
 :::
@@ -32,9 +32,8 @@ title: chat.spy
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `config.json`

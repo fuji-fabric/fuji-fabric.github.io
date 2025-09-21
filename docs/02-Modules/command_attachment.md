@@ -7,13 +7,15 @@ title: command_attachment
 
 ## Overview
 :::module
-  This module allows you to attach commands into things:
+  This module allows `attaching` commands to various `objects`:
   
-  1. Attach commands into an item stack.
+  - Item Stacks
   
-  2. Attach commands into a block.
+  - Blocks
   
-  3. Attach commands into an entity.
+  - Entities
+  
+  - ...
 
 
 :::
@@ -132,9 +134,8 @@ title: command_attachment
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `command-attachment-data.json`

@@ -7,9 +7,9 @@ title: command_alias
 
 ## Overview
 :::module
-  This module allows you to define alias for existing commands.
+  This module allows defining `aliases` for `an existing target command`.
   
-  The defined alies command will redirect to the existing command node.
+  The defined `alias command` redirects to the corresponding existing command node.
 
 
 :::
@@ -51,9 +51,8 @@ title: command_alias
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `config.json`

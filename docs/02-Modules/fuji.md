@@ -9,11 +9,11 @@ title: fuji
 :::module
   Provides `/fuji` command.
   
-  To reload the configs of fuji.
+  To `reload` the configs of fuji.
   
-  To inspect states of fuji.
+  To `inspect` states of fuji.
   
-  To discover things of fuji.
+  To `discover` things of fuji.
 
 
 :::

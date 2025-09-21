@@ -7,21 +7,20 @@ title: afk.effect
 
 ## Overview
 :::module
-  This module provides special effects for afk player:
+  This module provides special `effects` for `afk player`:
   
-  1. Invulnerable: the afk player is immune to all damage.
+  1. `Invulnerable`: the afk player is immune to all damage.
   
-  2. Targetable: the afk player can not be targeted by a hostile entity.
+  2. `Targetable`: the afk player cannot be selected as a target by hostile entities.
   
-  3. Moveable: the afk player can not be moved.
+  3. `Moveable`: the position of afk player can not be moved by `external cause`. (Piston, gravity...)
 
 
 :::
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `config.json`

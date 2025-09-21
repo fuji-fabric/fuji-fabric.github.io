@@ -7,15 +7,13 @@ title: command_scheduler
 
 ## Overview
 :::module
-  This module allows you to execute commands on a schedule.
+  This module allows executing commands on a `schedule`.
   
   
   
-  Typical use cases:
+  Its typical use case is executing `broadcast commands` on a schedule.
   
-  1. Send broadcast messages at scheduled times.
-  
-  2. Execute a specified group of commands at scheduled times.
+  However, it can also be used to execute any specified commands.
 
 
 :::
@@ -71,9 +69,8 @@ title: command_scheduler
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `scheduler.json`

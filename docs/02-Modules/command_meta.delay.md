@@ -9,7 +9,7 @@ title: command_meta.delay
 :::module
   This module provides the `/delay` command.
   
-  To allow you `delay` the `execution time` of a specified command.
+  To `delay` the `execution` of a specified command.
 
 
 :::

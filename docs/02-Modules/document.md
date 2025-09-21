@@ -7,7 +7,7 @@ title: document
 
 ## Overview
 :::module
-  This module provides the tools to `generate mod document`.
+  This module provides the tools to `build document files`.
   
   NOTE: This module is typically used by developers, to generate the user manual.
 

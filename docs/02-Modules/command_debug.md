@@ -7,7 +7,7 @@ title: command_debug
 
 ## Overview
 :::module
-  This module provides debug tools for executing commands.
+  This module provides debug tools for the executing command.
 
 
 :::

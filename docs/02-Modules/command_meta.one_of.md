@@ -7,7 +7,7 @@ title: command_meta.one_of
 
 ## Overview
 :::module
-  Provides `/one-of` command, to pick a random command from commands, and execute it.
+  Provides `/one-of` command, to pick a random command from specified commands, and execute it.
 
 
 :::

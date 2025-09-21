@@ -7,11 +7,11 @@ title: chat.mention
 
 ## Overview
 :::module
-  This module allows you to mention another online player in chat:
+  This module allows players to `mention` other online players in chat:
   
-  1. The target player name will be highlighted.
+  1. Name Highlighting: the mentioned player's name is visually highlighted.
   
-  2. The target player will be sound notified.
+  2. Sound Notification: the mentioned player receives an audible notification.
 
 
 :::
@@ -32,9 +32,8 @@ title: chat.mention
 
 ## Configurations
 <Admonition type="warning" icon="" title="">
-**The JSON content is provided for documentation purposes only.**
-
-It should NOT be copied directly into your configuration folder, as the document format is not valid JSON syntax.
+**The following JSON content is provided for reference only.**
+It must NOT be copied directly into the configuration directory, as it does not represent valid JSON syntax.
 </Admonition>
 :::config
 - File Name: `config.json`
