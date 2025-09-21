@@ -78,7 +78,7 @@ const config = {
                         label: 'Document',
                     },
                     {
-                        href: 'https://github.com/sakurawald/fuji',
+                        href: 'https://github.com/fuji-fabric/fuji',
                         label: 'GitHub',
                         position: 'right',
                     },
