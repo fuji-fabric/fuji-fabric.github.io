@@ -83,8 +83,8 @@ It must NOT be copied directly into the configuration directory, as it does not 
   /* Defined `rewrite` entries. */
   "rules": [
     {
-      "regex": "home",
-      "replacement": "home tp default"
+      "regex": "\\?",
+      "replacement": "help"
     }
   ]
 }

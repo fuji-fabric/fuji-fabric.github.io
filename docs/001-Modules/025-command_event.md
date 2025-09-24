@@ -125,6 +125,18 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "commands": [
         "send-broadcast <dark_grey>%player:name% left the server."
       ]
+    },
+    "on_server_started": {
+      "enable": false,
+      "commands": [
+        "send-broadcast <pink>The server is started."
+      ]
+    },
+    "on_server_stopping": {
+      "enable": false,
+      "commands": [
+        "send-broadcast <pink>The server is stopping."
+      ]
     }
   }
 }

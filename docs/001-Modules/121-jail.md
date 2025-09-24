@@ -320,18 +320,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 :::
 :::job
-- Job Name: `PatrolJailJob`
-- Document:   This `job` is used to `execute the patrol commands` for a `jail` periodically.
-
-
-:::
-:::job
-- Job Name: `PatrolJailJob`
-- Document:   This `job` is used to `execute the patrol commands` for a `jail` periodically.
-
-
-:::
-:::job
 - Job Name: `UpdateJailRecordsJob`
 - Document:   This job is used to update all active `jail records` across all `jails`.
 

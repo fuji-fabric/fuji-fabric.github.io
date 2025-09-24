@@ -297,6 +297,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
   /* Defined `bundle commands`. */
   "bundle_commands": [
     {
+      "enable": true,
       "document": "This command is used to test the `optional argument`.",
       "requirement": {
         "level": 4,
@@ -310,6 +311,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is used to test the `literal argument` and `required argument`.",
       "requirement": {
         "level": 4,
@@ -322,6 +324,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is used to test the `greedy string` argument type.",
       "requirement": {
         "level": 4,
@@ -335,6 +338,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is used to test the `literal argument`, `required argument` and `optional argument`.",
       "requirement": {
         "level": 4,
@@ -348,6 +352,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an alias for `/gamemode`",
       "requirement": {
         "level": 4,
@@ -359,6 +364,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an alias for `/gamemode creative`",
       "requirement": {
         "level": 4,
@@ -370,6 +376,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an alias for `/gamemode survival`",
       "requirement": {
         "level": 4,
@@ -381,6 +388,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an alias for `/gamemode spectator`",
       "requirement": {
         "level": 4,
@@ -392,6 +400,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an alias for `/weather clear`",
       "requirement": {
         "level": 4,
@@ -403,6 +412,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an alias for `/weather rain`",
       "requirement": {
         "level": 4,
@@ -414,6 +424,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an alias for `/weather thunder`",
       "requirement": {
         "level": 4,
@@ -425,6 +436,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an alias for `/time set day`",
       "requirement": {
         "level": 4,
@@ -436,6 +448,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an alias for `/time set night`",
       "requirement": {
         "level": 4,
@@ -447,6 +460,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an alias for `/time set midnight`",
       "requirement": {
         "level": 4,
@@ -458,6 +472,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an alias for `/time set noon`",
       "requirement": {
         "level": 4,
@@ -469,6 +484,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an alias for `/data get entity`",
       "requirement": {
         "level": 4,
@@ -480,6 +496,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an alias for `/data get block`",
       "requirement": {
         "level": 4,
@@ -491,6 +508,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an alias for `/data get entity @s SelectedItem`",
       "requirement": {
         "level": 4,
@@ -502,6 +520,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an easter egg for `/plugins` in Bukkit.",
       "requirement": {
         "level": 0,
@@ -513,6 +532,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command is an easter egg for `/icanhasbukkit` in Bukkit.",
       "requirement": {
         "level": 0,
@@ -526,6 +546,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command summons an entity with specified entity type, with an initial motion.",
       "requirement": {
         "level": 4,
@@ -537,6 +558,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command summons a lightning_bolt entity.",
       "requirement": {
         "level": 4,
@@ -548,6 +570,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command applies the `unbreakable` enchantment for the item in hand.",
       "requirement": {
         "level": 4,
@@ -559,6 +582,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command modifies your movement_speed attribute.",
       "requirement": {
         "level": 4,
@@ -570,6 +594,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command modifies your movement_speed attribute.",
       "requirement": {
         "level": 4,
@@ -581,6 +606,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command will introduce yourself to others.",
       "requirement": {
         "level": 4,
@@ -592,6 +618,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command will roll a random dice.",
       "requirement": {
         "level": 4,
@@ -603,6 +630,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command will give `all` recipes to the player.",
       "requirement": {
         "level": 4,
@@ -614,6 +642,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command will give the skull of specified player.",
       "requirement": {
         "level": 4,
@@ -625,6 +654,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      "enable": true,
       "document": "This command will print the UUID of specified player.",
       "requirement": {
         "level": 4,
@@ -671,6 +701,15 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::command
 - Command Syntax: `/day`
 - Document:   This command is an alias for `/time set day`
+
+
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/dice`
+- Document:   This command will roll a random dice.
 
 
 - Can be executed by console: `true`
@@ -922,7 +961,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::command
 - Command Syntax: `/uuid <ServerPlayerEntity target>`
-- Document:   This command will display the UUID of specified player.
+- Document:   This command will print the UUID of specified player.
 
 
 - Can be executed by console: `true`

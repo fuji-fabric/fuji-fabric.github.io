@@ -45,6 +45,15 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 ## Commands
 :::command
+- Command Syntax: `/home`
+- Document:   Teleport to any of your homes.
+
+
+- Can be executed by console: `false`
+- Required Level Permission: `0`
+- Required String Permission: `null`
+:::
+:::command
 - Command Syntax: `/home gui`
 - Document: null
 - Can be executed by console: `false`
