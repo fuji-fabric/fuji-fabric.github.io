@@ -59,20 +59,20 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
+- Command Syntax: `/when-online <OfflinePlayerName targetPlayer> <GreedyCommandString command>`
+- Document:   Execute the specified command `exactly once`, when the target player `is online`.
+
+
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
 - Command Syntax: `/when-online list`
 - Document:   List all submitted `when-online` tickets.
 
 
 - Can be executed by console: `false`
-- Required Level Permission: `4`
-- Required String Permission: `null`
-:::
-:::command
-- Command Syntax: `/when-online <OfflinePlayerName targetPlayer> <GreedyString command>`
-- Document:   Execute the specified command `exactly once`, when the target player `is online`.
-
-
-- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

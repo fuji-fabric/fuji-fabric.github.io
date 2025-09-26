@@ -156,20 +156,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 ## Commands
 :::command
-- Command Syntax: `/nametag toggle others <PlayerCollection others>`
-- Document: null
-- Can be executed by console: `true`
-- Required Level Permission: `4`
-- Required String Permission: `null`
-:::
-:::command
-- Command Syntax: `/nametag toggle others <PlayerCollection others> <boolean flag>`
-- Document: null
-- Can be executed by console: `true`
-- Required Level Permission: `4`
-- Required String Permission: `null`
-:::
-:::command
 - Command Syntax: `/nametag toggle <ServerPlayerEntity target>`
 - Document: null
 - Can be executed by console: `true`
@@ -178,6 +164,20 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::command
 - Command Syntax: `/nametag toggle <ServerPlayerEntity target> <boolean flag>`
+- Document: null
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/nametag toggle others <PlayerCollection others>`
+- Document: null
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/nametag toggle others <PlayerCollection others> <boolean flag>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`

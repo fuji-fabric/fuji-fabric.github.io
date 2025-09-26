@@ -111,11 +111,16 @@ title: command_meta.chain
 
 ## Commands
 :::command
-- Command Syntax: `/chain <GreedyString rest>`
+- Command Syntax: `/chain <ChainGreedyCommandString rest>`
 - Document:   Chain commands and executes them in sequence, the chain will break if the previous one command fails.
 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
+:::
+## Argument Types
+:::argument-type
+- Argument Type Name: `[chain-greedy-command-string]`
+- Argument Type Class: `[ChainGreedyCommandString]`
 :::

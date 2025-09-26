@@ -72,6 +72,15 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
+- Command Syntax: `/warp set <String warpName> [Boolean override]`
+- Document:   Set current location as new wrap point.
+
+
+- Can be executed by console: `false`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
 - Command Syntax: `/warp set-item <WarpDescriptor warp> <ItemStackWrapper itemStack>`
 - Document:   Set the item for a warp.
 
@@ -108,12 +117,12 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/warp set <String warpName> [Boolean override]`
-- Document:   Set current location as new wrap point.
+- Command Syntax: `/warp tp <WarpDescriptor warpName>`
+- Document:   Teleport to the specified warp point.
 
 
 - Can be executed by console: `false`
-- Required Level Permission: `4`
+- Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command
@@ -123,15 +132,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
-:::
-:::command
-- Command Syntax: `/warp tp <WarpDescriptor warpName>`
-- Document:   Teleport to the specified warp point.
-
-
-- Can be executed by console: `false`
-- Required Level Permission: `0`
 - Required String Permission: `null`
 :::
 :::command

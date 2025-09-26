@@ -24,11 +24,16 @@ title: command_meta.one_of
 
 ## Commands
 :::command
-- Command Syntax: `/one-of <GreedyString rest>`
+- Command Syntax: `/one-of <OneOfGreedyCommandString rest>`
 - Document:   One-of command randomly pick one of commands and execute it as console.
 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
+:::
+## Argument Types
+:::argument-type
+- Argument Type Name: `[one-of-greedy-command-string]`
+- Argument Type Class: `[OneOfGreedyCommandString]`
 :::

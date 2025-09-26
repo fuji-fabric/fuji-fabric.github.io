@@ -254,7 +254,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": true
     },
     "language": {
-      "enable": false
+      "enable": true
     },
     "chat": {
       "enable": false,
@@ -874,6 +874,10 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::argument-type
 - Argument Type Name: `[greedy-string, greedy]`
 - Argument Type Class: `[GreedyString]`
+:::
+:::argument-type
+- Argument Type Name: `[greedy-command-string]`
+- Argument Type Class: `[GreedyCommandString]`
 :::
 :::argument-type
 - Argument Type Name: `[greedy-string-list, greedy-list]`

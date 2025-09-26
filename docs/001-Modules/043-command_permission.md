@@ -275,7 +275,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 ## Commands
 :::command
-- Command Syntax: `/command-permission describe <GreedyString command>`
+- Command Syntax: `/command-permission describe <GreedyCommandString command>`
 - Document:   Describe the `required permissions` of `the given command`.
 
 

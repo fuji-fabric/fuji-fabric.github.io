@@ -30,11 +30,16 @@ title: command_meta.OR
 
 ## Commands
 :::command
-- Command Syntax: `/OR <GreedyString rest>`
+- Command Syntax: `/OR <OrGreedyCommandString rest>`
 - Document:   Returns `SUCCESS` if and only if `any of` the commands returns `SUCCESS`.
 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
+:::
+## Argument Types
+:::argument-type
+- Argument Type Name: `[or-greedy-command-string]`
+- Argument Type Class: `[OrGreedyCommandString]`
 :::

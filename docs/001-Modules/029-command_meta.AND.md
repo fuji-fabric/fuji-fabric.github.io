@@ -30,11 +30,16 @@ title: command_meta.AND
 
 ## Commands
 :::command
-- Command Syntax: `/AND <GreedyString rest>`
+- Command Syntax: `/AND <AndGreedyCommandString rest>`
 - Document:   Returns `SUCCESS` if and only if `all of` the commands returns `SUCCESS`.
 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
+:::
+## Argument Types
+:::argument-type
+- Argument Type Name: `[and-greedy-command-string]`
+- Argument Type Class: `[AndGreedyCommandString]`
 :::

@@ -19,14 +19,14 @@ title: tester
 :::
 ## Commands
 :::command
-- Command Syntax: `/tester non-split others <PlayerCollection others> <String string>`
+- Command Syntax: `/tester non-split <String string>`
 - Document: null
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/tester non-split <String string>`
+- Command Syntax: `/tester non-split others <PlayerCollection others> <String string>`
 - Document: null
 - Can be executed by console: `false`
 - Required Level Permission: `4`
@@ -40,14 +40,14 @@ title: tester
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/tester split others <PlayerCollection others> <String string>`
+- Command Syntax: `/tester split <ServerPlayerEntity target> <String string>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/tester split <ServerPlayerEntity target> <String string>`
+- Command Syntax: `/tester split others <PlayerCollection others> <String string>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`

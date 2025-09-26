@@ -253,7 +253,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/command-cooldown test <NamedCooldownDescriptor namedCooldown> <ServerPlayerEntity player> [StringList onFailed] <GreedyStringList onSuccess>`
+- Command Syntax: `/command-cooldown test <NamedCooldownDescriptor namedCooldown> <ServerPlayerEntity player> [StringList onFailed] <GreedyCommandString onSuccess>`
 - Document:   Test a named-cooldown with `arbitrary command instance`, and execute `success case command` or `failure case command`.
 
 

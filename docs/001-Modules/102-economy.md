@@ -157,6 +157,15 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
+- Command Syntax: `/economy balance`
+- Document:   Query your economy `accounts`.
+
+
+- Can be executed by console: `false`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
 - Command Syntax: `/economy balance-top <CurrencyId currencyId>`
 - Document:   List the top players of specified currency using message.
 
@@ -168,15 +177,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::command
 - Command Syntax: `/economy balance-top gui <CurrencyId currencyId>`
 - Document:   List the top players of specified currency using GUI.
-
-
-- Can be executed by console: `false`
-- Required Level Permission: `4`
-- Required String Permission: `null`
-:::
-:::command
-- Command Syntax: `/economy balance`
-- Document:   Query your economy `accounts`.
 
 
 - Can be executed by console: `false`

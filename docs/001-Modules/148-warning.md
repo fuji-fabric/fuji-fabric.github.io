@@ -150,15 +150,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/warning clear-all [Boolean confirm]`
-- Document:   Clear all warnings for all players.
-
-
-- Can be executed by console: `true`
-- Required Level Permission: `4`
-- Required String Permission: `null`
-:::
-:::command
 - Command Syntax: `/warning clear <OfflinePlayerName targetPlayer> [Boolean confirm]`
 - Document:   Clear the warnings of a player.
 
@@ -168,8 +159,8 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/warning create-temp <OfflinePlayerName targetPlayer> <Duration duration> <GreedyString warning>`
-- Document:   Create a new warning with expiration for the player.
+- Command Syntax: `/warning clear-all [Boolean confirm]`
+- Document:   Clear all warnings for all players.
 
 
 - Can be executed by console: `true`
@@ -179,6 +170,15 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::command
 - Command Syntax: `/warning create <OfflinePlayerName targetPlayer> <GreedyString warning>`
 - Document:   Create a new warning for the player.
+
+
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/warning create-temp <OfflinePlayerName targetPlayer> <Duration duration> <GreedyString warning>`
+- Document:   Create a new warning with expiration for the player.
 
 
 - Can be executed by console: `true`

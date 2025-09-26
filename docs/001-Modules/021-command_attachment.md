@@ -186,7 +186,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 ## Commands
 :::command
-- Command Syntax: `/command-attachment attach-block-one <BlockPos blockPos> [InteractType interactType] [Integer maxUseTimes] [ExecuteAsType executeAsType] <GreedyString command>`
+- Command Syntax: `/command-attachment attach-block-one <BlockPos blockPos> [InteractType interactType] [Integer maxUseTimes] [ExecuteAsType executeAsType] <GreedyCommandString command>`
 - Document:   Attach one command to specified block.
 
 
@@ -195,7 +195,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/command-attachment attach-entity-one <Entity entity> [InteractType interactType] [Integer maxUseTimes] [ExecuteAsType executeAsType] <GreedyString command>`
+- Command Syntax: `/command-attachment attach-entity-one <Entity entity> [InteractType interactType] [Integer maxUseTimes] [ExecuteAsType executeAsType] <GreedyCommandString command>`
 - Document:   Attach one command to an entity.
 
 
@@ -204,7 +204,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/command-attachment attach-item-one [InteractType interactType] [Integer maxUseTimes] [ExecuteAsType executeAsType] [Boolean destroyItem] <GreedyString command>`
+- Command Syntax: `/command-attachment attach-item-one [InteractType interactType] [Integer maxUseTimes] [ExecuteAsType executeAsType] [Boolean destroyItem] <GreedyCommandString command>`
 - Document:   Attach one command to an item.
 
 

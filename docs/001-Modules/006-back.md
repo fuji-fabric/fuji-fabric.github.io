@@ -88,24 +88,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/back clear others <PlayerCollection others>`
-- Document:   Clear the back location history.
-
-
-- Can be executed by console: `true`
-- Required Level Permission: `4`
-- Required String Permission: `null`
-:::
-:::command
-- Command Syntax: `/back clear <ServerPlayerEntity player>`
-- Document:   Clear the back location history.
-
-
-- Can be executed by console: `true`
-- Required Level Permission: `4`
-- Required String Permission: `null`
-:::
-:::command
 - Command Syntax: `/back <int lastNLocation>`
 - Document:   Back to the specified location.
 
@@ -121,6 +103,24 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/back clear <ServerPlayerEntity player>`
+- Document:   Clear the back location history.
+
+
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/back clear others <PlayerCollection others>`
+- Document:   Clear the back location history.
+
+
+- Can be executed by console: `true`
+- Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command

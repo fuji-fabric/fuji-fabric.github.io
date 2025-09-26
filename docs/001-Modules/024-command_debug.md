@@ -24,7 +24,7 @@ title: command_debug
 
 ## Commands
 :::command
-- Command Syntax: `/command-debug <GreedyString command>`
+- Command Syntax: `/command-debug <GreedyCommandString command>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`

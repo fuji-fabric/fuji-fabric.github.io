@@ -31,21 +31,21 @@ title: command_toolbox.compass
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/compass track player others <PlayerCollection others> <ServerPlayerEntity target>`
-- Document:   Let the compass in hand track a specified player.
-
-
-- Can be executed by console: `false`
-- Required Level Permission: `4`
-- Required String Permission: `null`
-:::
-:::command
 - Command Syntax: `/compass track player <ServerPlayerEntity target>`
 - Document:   Let the compass in hand track a specified player.
 
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/compass track player others <PlayerCollection others> <ServerPlayerEntity target>`
+- Document:   Let the compass in hand track a specified player.
+
+
+- Can be executed by console: `false`
+- Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command

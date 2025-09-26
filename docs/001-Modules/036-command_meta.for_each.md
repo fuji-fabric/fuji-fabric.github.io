@@ -26,7 +26,7 @@ title: command_meta.for_each
 
 ## Commands
 :::command
-- Command Syntax: `/foreach <GreedyString rest>`
+- Command Syntax: `/foreach <GreedyCommandString rest>`
 - Document:   Execute a command targeted on single-player for each player online.
 
 

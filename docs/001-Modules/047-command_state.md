@@ -201,8 +201,8 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/command-state update-all`
-- Document:   Update all defined `states` for online players.
+- Command Syntax: `/command-state update <StateDescriptor state>`
+- Document:   Update the specified `state` for online players.
 
 
 - Can be executed by console: `true`
@@ -210,8 +210,8 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/command-state update <StateDescriptor state>`
-- Document:   Update the specified `state` for online players.
+- Command Syntax: `/command-state update-all`
+- Document:   Update all defined `states` for online players.
 
 
 - Can be executed by console: `true`

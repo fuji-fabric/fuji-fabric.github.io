@@ -39,7 +39,7 @@ title: command_meta.NOT
 
 ## Commands
 :::command
-- Command Syntax: `/NOT <GreedyString command>`
+- Command Syntax: `/NOT <GreedyCommandString command>`
 - Document:   Execute the command as the console, and reverse the return values of `SUCCESS` and `FAILURE`.
 
 

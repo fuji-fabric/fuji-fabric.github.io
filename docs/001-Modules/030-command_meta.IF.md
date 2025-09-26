@@ -246,9 +246,14 @@ title: command_meta.IF
 
 ## Commands
 :::command
-- Command Syntax: `/IF <GreedyString rest>`
+- Command Syntax: `/IF <IfGreedyCommandString rest>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
+:::
+## Argument Types
+:::argument-type
+- Argument Type Name: `[if-greedy-command-string]`
+- Argument Type Class: `[IfGreedyCommandString]`
 :::

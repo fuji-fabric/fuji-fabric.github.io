@@ -47,7 +47,7 @@ title: command_meta.delay
 
 ## Commands
 :::command
-- Command Syntax: `/delay <double time> <GreedyString rest>`
+- Command Syntax: `/delay <double time> <GreedyCommandString rest>`
 - Document:   Execute a command in seconds.
 
 
