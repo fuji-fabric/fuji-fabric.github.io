@@ -276,6 +276,32 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "commands": [
         "send-message %player:name% <red>You can't view the inventory of $1 player, it's exempted."
       ]
+    },
+    {
+      "enable": false,
+      "document": "Ban the use of `/home set` command in the minecraft:the_end dimension.",
+      "matcher": {
+        "command_string_regex": "home set (.+)",
+        "accept_player_command_source": true,
+        "accept_console_command_source": false
+      },
+      "advice_type": "CANCEL_IF_ANY_SUCCESS",
+      "commands": [
+        "is-in-world? %player:name% minecraft:the_end"
+      ]
+    },
+    {
+      "enable": false,
+      "document": "Ban the use of `/home set` command in the minecraft:the_end dimension.",
+      "matcher": {
+        "command_string_regex": "home set (.+)",
+        "accept_player_command_source": true,
+        "accept_console_command_source": false
+      },
+      "advice_type": "ON_EXECUTION_CANCELLED",
+      "commands": [
+        "send-message %player:name% <red>You can't set a home in %world:id% dimension."
+      ]
     }
   ]
 }

@@ -705,6 +705,9 @@ It must NOT be copied directly into the configuration directory, as it does not 
     },
     "document": {
       "enable": false
+    },
+    "evaluator": {
+      "enable": false
     }
   }
 }

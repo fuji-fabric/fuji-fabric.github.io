@@ -19,6 +19,17 @@ title: chat.display
 :::
 ## Color Boxes
 
+:::colorbox-note
+
+  ◉ Advanced `server-side` show-case mod.
+  
+  A new mod is released in https://modrinth.com/mod/showcase
+  
+  You may want to check it!
+
+
+:::
+
 :::colorbox-tip
 
   ◉ This module is designed to work with other `chat-related` mods.
