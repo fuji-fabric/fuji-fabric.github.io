@@ -297,13 +297,20 @@ It must NOT be copied directly into the configuration directory, as it does not 
   /* Defined `bundle commands`. */
   "bundle_commands": [
     {
-      "enable": true,
-      "document": "This command is used to test the `optional argument`.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is used to test the `optional argument`."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "my-command a-command-with-optional-arg <int int-arg-name> [str str-arg-name this is the default value]",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "my-command a-command-with-optional-arg <int int-arg-name> [str str-arg-name this is the default value]"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "say hello %player:name%",
         "say int is $int-arg-name",
@@ -311,26 +318,40 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
-      "enable": true,
-      "document": "This command is used to test the `literal argument` and `required argument`.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is used to test the `literal argument` and `required argument`."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "my-command a-command-with-required-arg first-literal second-literal <str str-arg-name>",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "my-command a-command-with-required-arg first-literal second-literal <str str-arg-name>"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "say hello %player:name%",
         "say str is $str-arg-name"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is used to test the `greedy string` argument type.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is used to test the `greedy string` argument type."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "my-command a-command-with-a-greedy-string <int int-arg-name> first-literal [greedy-string greedy-string-arg-name this is the default value]",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "my-command a-command-with-a-greedy-string <int int-arg-name> first-literal [greedy-string greedy-string-arg-name this is the default value]"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "say hello %player:name%",
         "say int is $int-arg-name",
@@ -338,13 +359,20 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
-      "enable": true,
-      "document": "This command is used to test the `literal argument`, `required argument` and `optional argument`.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is used to test the `literal argument`, `required argument` and `optional argument`."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "my-command a-command-with-all-types-of-args <int int-arg-name> first-literal [str str-arg-name the default value can contains placeholder %player:name% in %world:name%]",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "my-command a-command-with-all-types-of-args <int int-arg-name> first-literal [str str-arg-name the default value can contains placeholder %player:name% in %world:name%]"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "say hello %player:name%",
         "say int is $int-arg-name",
@@ -352,193 +380,305 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an alias for `/gamemode`",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an alias for `/gamemode`"
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "gm <gamemode gamemode-arg>",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "gm <gamemode gamemode-arg>"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as player %player:name% gamemode $gamemode-arg"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an alias for `/gamemode creative`",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an alias for `/gamemode creative`"
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "gmc",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "gmc"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as player %player:name% gamemode creative"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an alias for `/gamemode survival`",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an alias for `/gamemode survival`"
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "gms",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "gms"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as player %player:name% gamemode survival"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an alias for `/gamemode spectator`",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an alias for `/gamemode spectator`"
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "gmsp",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "gmsp"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as player %player:name% gamemode spectator"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an alias for `/weather clear`",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an alias for `/weather clear`"
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "sun",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "sun"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as player %player:name% weather clear"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an alias for `/weather rain`",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an alias for `/weather rain`"
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "rain",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "rain"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as player %player:name% weather rain"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an alias for `/weather thunder`",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an alias for `/weather thunder`"
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "thunder",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "thunder"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as player %player:name% weather thunder"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an alias for `/time set day`",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an alias for `/time set day`"
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "day",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "day"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as player %player:name% time set day"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an alias for `/time set night`",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an alias for `/time set night`"
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "night",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "night"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as player %player:name% time set night"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an alias for `/time set midnight`",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an alias for `/time set midnight`"
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "midnight",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "midnight"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as player %player:name% time set midnight"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an alias for `/time set noon`",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an alias for `/time set noon`"
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "noon",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "noon"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as player %player:name% time set noon"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an alias for `/data get entity`",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an alias for `/data get entity`"
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "nbt entity <entity target>",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "nbt entity <entity target>"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as fake-op %player:name% data get entity $target"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an alias for `/data get block`",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an alias for `/data get block`"
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "nbt block <block-pos target>",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "nbt block <block-pos target>"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as fake-op %player:name% data get block $target"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an alias for `/data get entity @s SelectedItem`",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an alias for `/data get entity @s SelectedItem`"
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "nbt item",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "nbt item"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as fake-op %player:name% data get entity %player:name% SelectedItem"
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an easter egg for `/plugins` in Bukkit.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an easter egg for `/plugins` in Bukkit."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 0,
         "string": null
-      },
-      "pattern": "plugins",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "plugins"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "send-message %player:name% Server Plugins (0): "
       ]
     },
     {
-      "enable": true,
-      "document": "This command is an easter egg for `/icanhasbukkit` in Bukkit.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command is an easter egg for `/icanhasbukkit` in Bukkit."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 0,
         "string": null
-      },
-      "pattern": "icanhasbukkit",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "icanhasbukkit"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "send-message %player:name% <i>Checking version, please wait...",
         "delay 2 send-message %player:name% This server is running Bukkit version (MC: %server:version%)",
@@ -546,121 +686,191 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
-      "enable": true,
-      "document": "This command summons an entity with specified entity type, with an initial motion.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command summons an entity with specified entity type, with an initial motion."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "shoot <entity-type entity-type-arg-name>",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "shoot <entity-type entity-type-arg-name>"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "execute as %player:name% run summon $entity-type-arg-name ~ ~1 ~ {ExplosionPower:4,Motion:[3.0,0.0,0.0]}"
       ]
     },
     {
-      "enable": true,
-      "document": "This command summons a lightning_bolt entity.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command summons a lightning_bolt entity."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "strike",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "strike"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "execute as %player:name% at @s run summon lightning_bolt ^ ^ ^32"
       ]
     },
     {
-      "enable": true,
-      "document": "This command applies the `unbreakable` enchantment for the item in hand.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command applies the `unbreakable` enchantment for the item in hand."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "unbreakable",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "unbreakable"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as player %player:name% enchant %player:name% minecraft:unbreaking"
       ]
     },
     {
-      "enable": true,
-      "document": "This command modifies your movement_speed attribute.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command modifies your movement_speed attribute."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "move-speed set <double double-arg>",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "move-speed set <double double-arg>"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as player %player:name% attribute %player:name% minecraft:generic.movement_speed base set $double-arg"
       ]
     },
     {
-      "enable": true,
-      "document": "This command modifies your movement_speed attribute.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command modifies your movement_speed attribute."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "move-speed reset",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "move-speed reset"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as player %player:name% attribute %player:name% minecraft:generic.movement_speed base set 0.10000000149011612"
       ]
     },
     {
-      "enable": true,
-      "document": "This command will introduce yourself to others.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command will introduce yourself to others."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "introduce-me",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "introduce-me"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as fake-op %player:name% me i am %player:name%"
       ]
     },
     {
-      "enable": true,
-      "document": "This command will roll a random dice.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command will roll a random dice."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "dice",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "dice"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "say %player:name% just roll out %fuji:random 1 6% points."
       ]
     },
     {
-      "enable": true,
-      "document": "This command will give `all` recipes to the player.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command will give `all` recipes to the player."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "obtain-all-recipes",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "obtain-all-recipes"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as fake-op %player:name% recipe give %player:name% *"
       ]
     },
     {
-      "enable": true,
-      "document": "This command will give the skull of specified player.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command will give the skull of specified player."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "skull <offline-player offline-player-arg>",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "skull <offline-player offline-player-arg>"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "give %player:name% minecraft:player_head[minecraft:profile=$offline-player-arg]"
       ]
     },
     {
-      "enable": true,
-      "document": "This command will print the UUID of specified player.",
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command will print the UUID of specified player."
+      /* The requirement to use this `bundle command`. */,
       "requirement": {
         "level": 4,
         "string": null
-      },
-      "pattern": "uuid <player target>",
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "uuid <player target>"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
       "bundle": [
         "run as fake-op $target send-message %player:name% <yellow>The UUID of player $target is %fuji:escape player:uuid 2%"
       ]

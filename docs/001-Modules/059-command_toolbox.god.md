@@ -29,7 +29,7 @@ title: command_toolbox.god
 - Document:   Toggle the invulnerable state.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
@@ -38,7 +38,7 @@ title: command_toolbox.god
 - Document:   Set the invulnerable state.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

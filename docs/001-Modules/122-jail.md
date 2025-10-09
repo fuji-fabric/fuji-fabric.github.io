@@ -250,7 +250,8 @@ It must NOT be copied directly into the configuration directory, as it does not 
   "jail_descriptors": [
     {
       "id": "example",
-      "display_name": "<blue>The Great Jail</blue>",
+      "display_name": "<blue>The Great Jail</blue>"
+      /* Tae `jail duration` to use if you didn't specify a `jail duration`. */,
       "default_jailed_duration": "15m",
       "count_remaining_jail_seconds_when_prisoners_offline": false,
       "global_position": {
@@ -403,7 +404,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Document:   Teleport to the `position` of an existing `jail`.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

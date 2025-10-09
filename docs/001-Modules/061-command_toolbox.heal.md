@@ -20,7 +20,7 @@ title: command_toolbox.heal
 - Document:   Fill the `health` and `hunger` for the player.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

@@ -99,12 +99,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
   "state_descriptors": [
     {
       "enable": true,
-      "id": "is-in-overworld",
+      "id": "is-in-overworld"
+      /* The `predicate commands` used to define this `state`. */,
       "definition": {
         "predicate_commands": [
           "is-in-world? %player:name% minecraft:overworld"
         ]
-      },
+      }
+      /* The intervals to `check` and `update` the `status` of this `state` for online players. */,
       "update_interval_seconds": 3,
       "events": {
         "on_enter_this_state_commands": [
@@ -117,13 +119,15 @@ It must NOT be copied directly into the configuration directory, as it does not 
     },
     {
       "enable": true,
-      "id": "has-iron-and-gold",
+      "id": "has-iron-and-gold"
+      /* The `predicate commands` used to define this `state`. */,
       "definition": {
         "predicate_commands": [
           "has-item? %player:name% minecraft:iron_ingot 16",
           "has-item? %player:name% minecraft:gold_ingot 8"
         ]
-      },
+      }
+      /* The intervals to `check` and `update` the `status` of this `state` for online players. */,
       "update_interval_seconds": 3,
       "events": {
         "on_enter_this_state_commands": [
@@ -136,12 +140,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
     },
     {
       "enable": true,
-      "id": "can-use-fly-command",
+      "id": "can-use-fly-command"
+      /* The `predicate commands` used to define this `state`. */,
       "definition": {
         "predicate_commands": [
           "has-perm? %player:name% fuji.permission.fly"
         ]
-      },
+      }
+      /* The intervals to `check` and `update` the `status` of this `state` for online players. */,
       "update_interval_seconds": 3,
       "events": {
         "on_enter_this_state_commands": [

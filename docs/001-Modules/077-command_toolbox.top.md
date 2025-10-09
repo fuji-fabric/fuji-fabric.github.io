@@ -20,7 +20,7 @@ title: command_toolbox.top
 - Document:   Teleport to the top of your current position.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

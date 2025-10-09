@@ -53,10 +53,16 @@ It must NOT be copied directly into the configuration directory, as it does not 
   ]
   /* Should reject and never save messages that meet the `rejector`. */,
   "message_rejectors": {
+    /* Should reject and never save messages whose `content` meets the rejector. */
     "content_rejector": {
+      /* Define `regex` expression to match `message content` */
       "matches": []
-    },
+    }
+    /* Should reject and never save messages whose `parameter` meets the rejector. */,
     "parameter_rejector": {
+      /* Use `regex` expression to match `message parameter`.
+      
+      Issue `/fuji debug` to see the `parameter` of a message. */
       "matches": [
         ".*literal\\{PM\\}.*"
       ]

@@ -28,7 +28,7 @@ title: tester
 :::command
 - Command Syntax: `/tester non-split others <PlayerCollection others> <String string>`
 - Document: null
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

@@ -92,6 +92,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
   We will pick the `highest` number of warnings satisfied first. */,
   "on_permanent_warning_created": [
     {
+      /* If the `number of warnings` of the `player` >= `the defined value`, then execute the commands. */
       "if_number_of_warnings_greater_equal_than": 1,
       "commands": [
         "send-broadcast <dark_red>Player %player:name% has just received a permanent-warning.<newline><dark_red>◉ Reason: %fuji:last_warning_reason%",
@@ -99,6 +100,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     {
+      /* If the `number of warnings` of the `player` >= `the defined value`, then execute the commands. */
       "if_number_of_warnings_greater_equal_than": 3,
       "commands": [
         "send-broadcast <dark_red>Player %player:name% has just received a permanent-warning.<newline><dark_red>◉ Reason: %fuji:last_warning_reason%",
@@ -108,12 +110,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
   ],
   "on_temporal_warning_created": [
     {
+      /* If the `number of warnings` of the `player` >= `the defined value`, then execute the commands. */
       "if_number_of_warnings_greater_equal_than": 1,
       "commands": [
         "send-broadcast <dark_red>Player %player:name% has just received a temporal-warning.<newline><dark_red>◉ Expiration Date: %fuji:last_warning_expiration_date%<newline><dark_red>◉ Reason: %fuji:last_warning_reason%"
       ]
     },
     {
+      /* If the `number of warnings` of the `player` >= `the defined value`, then execute the commands. */
       "if_number_of_warnings_greater_equal_than": 3,
       "commands": [
         "send-broadcast <dark_red>Player %player:name% has just received a temporal-warning.<newline><dark_red>◉ Expiration Date: %fuji:last_warning_expiration_date%<newline><dark_red>◉ Reason: %fuji:last_warning_reason%",

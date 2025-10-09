@@ -82,12 +82,17 @@ It must NOT be copied directly into the configuration directory, as it does not 
   /* The `warmup seconds` for `all` teleports. */
   "warmup_second": 3.0,
   "interruptible": {
-    "enable": true,
-    "interrupt_distance": 1.0,
-    "interrupt_on_damaged": true,
+    /* Is this request interruptible? */
+    "enable": true
+    /* The max distance to interrupt this request. */,
+    "interrupt_distance": 1.0
+    /* Interrupt this request when player damaged. */,
+    "interrupt_on_damaged": true
+    /* Interrupt this request if player in combat. */,
     "interrupt_in_combat": true
   },
   "dimension": {
+    /* Define the `effective dimensions` for `teleport warmup`. */
     "effective_dimensions": [
       "minecraft:overworld",
       "minecraft:the_nether",

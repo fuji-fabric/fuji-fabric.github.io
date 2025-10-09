@@ -20,7 +20,7 @@ title: command_toolbox.feed
 - Document:   Set food level, saturation level and exhaustion to healthy state.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

@@ -72,7 +72,7 @@ title: command_toolbox.tppos
 - Document:   The unified teleport command.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

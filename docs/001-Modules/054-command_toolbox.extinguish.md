@@ -20,7 +20,7 @@ title: command_toolbox.extinguish
 - Document:   Set fire ticks to 0.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

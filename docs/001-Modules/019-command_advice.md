@@ -120,11 +120,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": true,
       "document": "Spawn a heart particle after the execution of `/heal` command.",
       "matcher": {
+        /* The `regex` expression used to match the `target command`. */
         "command_string_regex": "heal",
         "accept_player_command_source": true,
         "accept_console_command_source": false
-      },
-      "advice_type": "AFTER_EXECUTION",
+      }
+      /* The type of this advice. */,
+      "advice_type": "AFTER_EXECUTION"
+      /* The commands to execute when `perform` this `advice`. */,
       "commands": [
         "say Display the heard particle for player %player:name%",
         "run as fake-op %player:name% --silent true particle minecraft:heart ~ ~1 ~ 0.6 0.6 0.6 0 20 force %player:name%"
@@ -134,11 +137,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": true,
       "document": "Replace the execution of `/say` command with the `/send-broadcast` command.",
       "matcher": {
+        /* The `regex` expression used to match the `target command`. */
         "command_string_regex": "say (.+)",
         "accept_player_command_source": true,
         "accept_console_command_source": true
-      },
-      "advice_type": "CANCEL_AS_SUCCESS",
+      }
+      /* The type of this advice. */,
+      "advice_type": "CANCEL_AS_SUCCESS"
+      /* The commands to execute when `perform` this `advice`. */,
       "commands": [
         "send-broadcast <rb>[My Server]</rb> $1"
       ]
@@ -147,11 +153,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": false,
       "document": "Replace the execution of `/msg` command with our own DIY `/send-message` command.",
       "matcher": {
+        /* The `regex` expression used to match the `target command`. */
         "command_string_regex": "(?:msg|tell) (\\S+?) (.+)",
         "accept_player_command_source": true,
         "accept_console_command_source": false
-      },
-      "advice_type": "CANCEL_AS_SUCCESS",
+      }
+      /* The type of this advice. */,
+      "advice_type": "CANCEL_AS_SUCCESS"
+      /* The commands to execute when `perform` this `advice`. */,
       "commands": [
         "send-message %player:name% <green>[PM] You -> $1: $2",
         "send-message $1 <green>[PM] %player:name% -> you: $2"
@@ -161,11 +170,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": true,
       "document": "Print a message before the execution of `/repair` command.",
       "matcher": {
+        /* The `regex` expression used to match the `target command`. */
         "command_string_regex": "repair",
         "accept_player_command_source": true,
         "accept_console_command_source": false
-      },
-      "advice_type": "BEFORE_EXECUTION",
+      }
+      /* The type of this advice. */,
+      "advice_type": "BEFORE_EXECUTION"
+      /* The commands to execute when `perform` this `advice`. */,
       "commands": [
         "send-message %player:name% <pink>Before the execution of `/repair` command for %player:name%"
       ]
@@ -174,11 +186,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": true,
       "document": "Print a message after the execution of `/repair` command.",
       "matcher": {
+        /* The `regex` expression used to match the `target command`. */
         "command_string_regex": "repair",
         "accept_player_command_source": true,
         "accept_console_command_source": false
-      },
-      "advice_type": "AFTER_EXECUTION",
+      }
+      /* The type of this advice. */,
+      "advice_type": "AFTER_EXECUTION"
+      /* The commands to execute when `perform` this `advice`. */,
       "commands": [
         "send-message %player:name% <pink>After the execution of `/repair` command for %player:name%"
       ]
@@ -187,11 +202,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": true,
       "document": "Cancel the execution of `/repair` command, if the player doesn't have the required items in their inventory.",
       "matcher": {
+        /* The `regex` expression used to match the `target command`. */
         "command_string_regex": "repair",
         "accept_player_command_source": true,
         "accept_console_command_source": false
-      },
-      "advice_type": "CANCEL_IF_ANY_SUCCESS",
+      }
+      /* The type of this advice. */,
+      "advice_type": "CANCEL_IF_ANY_SUCCESS"
+      /* The commands to execute when `perform` this `advice`. */,
       "commands": [
         "NOT has-item? %player:name% minecraft:iron_ingot 16",
         "NOT has-item? %player:name% minecraft:gold_ingot 16"
@@ -201,11 +219,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": true,
       "document": "Send a feedback message when the execution of `/repair` command is cancelled.",
       "matcher": {
+        /* The `regex` expression used to match the `target command`. */
         "command_string_regex": "repair",
         "accept_player_command_source": true,
         "accept_console_command_source": false
-      },
-      "advice_type": "ON_EXECUTION_CANCELLED",
+      }
+      /* The type of this advice. */,
+      "advice_type": "ON_EXECUTION_CANCELLED"
+      /* The commands to execute when `perform` this `advice`. */,
       "commands": [
         "send-message %player:name% <red>You need `iron_ingot x 16` and `gold_ingot x 16` to use the `/repair` command."
       ]
@@ -214,11 +235,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": true,
       "document": "Take required items from the player's inventory, when the execution of `/repair` command is SUCCESS.",
       "matcher": {
+        /* The `regex` expression used to match the `target command`. */
         "command_string_regex": "repair",
         "accept_player_command_source": true,
         "accept_console_command_source": false
-      },
-      "advice_type": "ON_EXECUTION_SUCCESS",
+      }
+      /* The type of this advice. */,
+      "advice_type": "ON_EXECUTION_SUCCESS"
+      /* The commands to execute when `perform` this `advice`. */,
       "commands": [
         "send-message %player:name% The `/repair` command execution result is `SUCCESS`, I will take `iron_ingot x 16` and `gold_ingot x 16` from your inventory.",
         "clear %player:name% minecraft:iron_ingot 16",
@@ -229,11 +253,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": true,
       "document": "Print a message, when the execution of `/repair` command is FAILURE.",
       "matcher": {
+        /* The `regex` expression used to match the `target command`. */
         "command_string_regex": "repair",
         "accept_player_command_source": true,
         "accept_console_command_source": false
-      },
-      "advice_type": "ON_EXECUTION_FAILURE",
+      }
+      /* The type of this advice. */,
+      "advice_type": "ON_EXECUTION_FAILURE"
+      /* The commands to execute when `perform` this `advice`. */,
       "commands": [
         "send-message %player:name% The `/repair` command execution result is `FAILURE`, I will do nothing."
       ]
@@ -242,11 +269,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": true,
       "document": "Cancel the dangerous `/kill @e` command.",
       "matcher": {
+        /* The `regex` expression used to match the `target command`. */
         "command_string_regex": "kill @e",
         "accept_player_command_source": true,
         "accept_console_command_source": true
-      },
-      "advice_type": "CANCEL_AS_FAILURE",
+      }
+      /* The type of this advice. */,
+      "advice_type": "CANCEL_AS_FAILURE"
+      /* The commands to execute when `perform` this `advice`. */,
       "commands": [
         "send-message %player:name% <red>The `/kill @e` command should be used with a filter."
       ]
@@ -255,11 +285,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": true,
       "document": "Add a `exempt` feature for `/view inv <player>` command.",
       "matcher": {
+        /* The `regex` expression used to match the `target command`. */
         "command_string_regex": "view inv (.+)",
         "accept_player_command_source": true,
         "accept_console_command_source": false
-      },
-      "advice_type": "CANCEL_IF_ANY_SUCCESS",
+      }
+      /* The type of this advice. */,
+      "advice_type": "CANCEL_IF_ANY_SUCCESS"
+      /* The commands to execute when `perform` this `advice`. */,
       "commands": [
         "has-perm? $1 your.custom.permission"
       ]
@@ -268,11 +301,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": true,
       "document": "Add a `exempt` feature for `/view inv <player>` command.",
       "matcher": {
+        /* The `regex` expression used to match the `target command`. */
         "command_string_regex": "view inv (.+)",
         "accept_player_command_source": true,
         "accept_console_command_source": false
-      },
-      "advice_type": "ON_EXECUTION_CANCELLED",
+      }
+      /* The type of this advice. */,
+      "advice_type": "ON_EXECUTION_CANCELLED"
+      /* The commands to execute when `perform` this `advice`. */,
       "commands": [
         "send-message %player:name% <red>You can't view the inventory of $1 player, it's exempted."
       ]
@@ -281,11 +317,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": false,
       "document": "Ban the use of `/home set` command in the minecraft:the_end dimension.",
       "matcher": {
+        /* The `regex` expression used to match the `target command`. */
         "command_string_regex": "home set (.+)",
         "accept_player_command_source": true,
         "accept_console_command_source": false
-      },
-      "advice_type": "CANCEL_IF_ANY_SUCCESS",
+      }
+      /* The type of this advice. */,
+      "advice_type": "CANCEL_IF_ANY_SUCCESS"
+      /* The commands to execute when `perform` this `advice`. */,
       "commands": [
         "is-in-world? %player:name% minecraft:the_end"
       ]
@@ -294,11 +333,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": false,
       "document": "Ban the use of `/home set` command in the minecraft:the_end dimension.",
       "matcher": {
+        /* The `regex` expression used to match the `target command`. */
         "command_string_regex": "home set (.+)",
         "accept_player_command_source": true,
         "accept_console_command_source": false
-      },
-      "advice_type": "ON_EXECUTION_CANCELLED",
+      }
+      /* The type of this advice. */,
+      "advice_type": "ON_EXECUTION_CANCELLED"
+      /* The commands to execute when `perform` this `advice`. */,
       "commands": [
         "send-message %player:name% <red>You can't set a home in %world:id% dimension."
       ]

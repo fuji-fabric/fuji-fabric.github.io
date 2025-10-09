@@ -29,7 +29,7 @@ title: command_toolbox.fly
 - Document:   Toggle the fly state of the player.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
@@ -38,7 +38,7 @@ title: command_toolbox.fly
 - Document:   Set the fly state of the player.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

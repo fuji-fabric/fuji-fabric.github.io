@@ -20,7 +20,7 @@ title: command_toolbox.jump
 - Document:   Jump to the position looking at.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

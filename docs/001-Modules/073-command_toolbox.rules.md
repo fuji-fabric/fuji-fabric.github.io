@@ -52,7 +52,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Document:   Query the server rules.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

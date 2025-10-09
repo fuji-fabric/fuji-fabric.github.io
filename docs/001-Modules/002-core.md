@@ -205,41 +205,80 @@ It must NOT be copied directly into the configuration directory, as it does not 
   The `core` config affects `all` modules.
   The `module` config only affects that specific module. */
   "core": {
+    /* Debug related options. */
     "debug": {
-      "disable_all_modules": false,
-      "log_debug_messages": false,
+      /* Force disable `all` modules.
+      Used to test the compatibility between `fuji` and `other mods`. */
+      "disable_all_modules": false
+      /* Should we log the `debug` level messages into the `console`?
+      This option can be changed using `/fuji debug` command. */,
+      "log_debug_messages": false
+      /* Should we print the user guide in the console on server startup? */,
       "print_user_guide_in_console": true
-    },
+    }
+    /* Fuji will back up the `config/fuji` dir before it loads any module. */,
     "backup": {
-      "max_slots": 15,
+      /* How many `backup files` should we keep? */
+      "max_slots": 15
+      /* The `paths` that should be skipped when backup.
+      The `path` is resolved and related to `config/fuji/` dir. */,
       "skip": [
         "modules/head/head-data"
       ]
-    },
+    }
+    /* The language related options. */,
     "language": {
+      /* The `default language` used by Fuji.
+      The language files are located in `config/fuji/lang` dir. */
       "default_language": "en_US",
       "validator": {
+        /* Should we validate the `arguments` when loading a `language file`? */
         "validate_arguments": true
       }
-    },
+    }
+    /* The options for all fuji commands. */,
     "command": {
+      /* The `command assistant` offers an `auto help` feature for all fuji commands.
+      It dynamically inspects possible command paths and provides users with real-time command hints.
+      
+      <green>NOTE: To hot-switch this feature without a server re-start, you have to:
+      1. Issue `/fuji reload` first, to reload the `main control file`.
+      2. Issue `/reload`, to reload `all the commands`. */
       "assistant": {
-        "enable": true,
+        "enable": true
+        /* The requirement to use the `command assistant`. */,
         "requirement": {
           "level_permission": 0
         }
       }
-    },
+    }
+    /* The permission related options. */,
     "permission": {
+      /* Fuji defines commands into 2 groups, for different users.
+      One group for `normal user`, these commands require `level 0 permission` to use.
+      One group for `admin user`, these commands require `level 4 permission` to use.
+      
+      If you want to define the permission of commands by yourself,
+      you can enable `this` option.
+      And use `command_permission` module to define permission for each command. */
       "all_commands_require_level_4_permission_to_use_by_default": false
-    },
+    }
+    /* The scheduler related options.
+    The `scheduler` system is used to run `jobs`. */,
     "scheduler": {
+      /* The logger level for `quartz` library.
+      The level is recommended to be higher than `WARN`, to prevent console spam.
+      Acceptable levels: ALL < TRACE < DEBUG < INFO < WARN < ERROR < FATAL < OFF */
       "logger_level": "WARN"
     },
     "formatter": {
       "date_formatter": "yyyy-MM-dd HH:mm:ss"
     },
     "document": {
+      /* When `enable` this option, we will always use the `built-in doc strings`, which is written in `English`.
+      This option is used to ensure you always see the `latest version` of `doc strings` from your `current using version`.
+      
+      When `disable` this option, we will ues the `doc strings` from the `language files`. */
       "always_use_built_in_doc_strings": true
     }
   }
@@ -252,7 +291,8 @@ It must NOT be copied directly into the configuration directory, as it does not 
   "modules": {
     "fuji": {
       "enable": true
-    },
+    }
+    /* The language related options. */,
     "language": {
       "enable": true
     },

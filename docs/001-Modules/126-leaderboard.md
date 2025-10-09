@@ -156,13 +156,19 @@ It must NOT be copied directly into the configuration directory, as it does not 
   /* A `leaderboard descriptor` is used to define a `leaderboard`. */,
   "leaderboard_descriptors": [
     {
+      /* The `unique` id for this `leaderboard`. */
       "leaderboard_id": "death-board",
-      "display_name": "<dark_red>Death Board</dark_red>",
+      "display_name": "<dark_red>Death Board</dark_red>"
+      /* This option is a `string` which will be evaluated to a `numeric value`.
+      The `string` value is typically a `placeholder`. */,
       "score_provider": "%player:statistic_raw minecraft:deaths%"
     },
     {
+      /* The `unique` id for this `leaderboard`. */
       "leaderboard_id": "zombie-kill-board",
-      "display_name": "<blue>Zombie Kills</blue>",
+      "display_name": "<blue>Zombie Kills</blue>"
+      /* This option is a `string` which will be evaluated to a `numeric value`.
+      The `string` value is typically a `placeholder`. */,
       "score_provider": "%player:statistic_raw minecraft:killed minecraft:zombie%"
     }
   ]

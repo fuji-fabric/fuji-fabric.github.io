@@ -28,7 +28,7 @@ title: command_toolbox.hat
 - Document:   Wear the item in hand.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

@@ -172,7 +172,9 @@ It must NOT be copied directly into the configuration directory, as it does not 
 {
   /* Customize the `chat style`. */
   "style": {
-    "sender": "<#B1B2FF>[%fuji:player_playtime%🔥 %fuji:player_mined%⛏ %fuji:player_placed%🔳 %fuji:player_killed%🗡 %fuji:player_moved%🌍]<reset> <<dark_green><click:suggest_command:'/msg %player:name% '><hover:show_text:'Time: %fuji:date%<newline><italic>Click to Message'>%player:displayname_visual%</hover></click></dark_green>> ",
+    /* The `format` used in `sender` component. */
+    "sender": "<#B1B2FF>[%fuji:player_playtime%🔥 %fuji:player_mined%⛏ %fuji:player_placed%🔳 %fuji:player_killed%🗡 %fuji:player_moved%🌍]<reset> <<dark_green><click:suggest_command:'/msg %player:name% '><hover:show_text:'Time: %fuji:date%<newline><italic>Click to Message'>%player:displayname_visual%</hover></click></dark_green>> "
+    /* The `format` used in `content` component. */,
     "content": "%s"
   }
 }
@@ -194,7 +196,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Document:   Reset your personal chat content format.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
@@ -216,7 +218,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
   For example: `/chat style set prefix + %message% + suffix`
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

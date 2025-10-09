@@ -59,23 +59,33 @@ It must NOT be copied directly into the configuration directory, as it does not 
   "replace": {
     "rules": [
       {
-        "regex": "(?<=^|\\s)item(?=\\s|$)",
+        /* The `regex` expression used to match the `target string`. */
+        "regex": "(?<=^|\\s)item(?=\\s|$)"
+        /* The `pattern` used to replace the `matched target string`. */,
         "replacement": "%fuji:item%"
       },
       {
-        "regex": "(?<=^|\\s)inv(?=\\s|$)",
+        /* The `regex` expression used to match the `target string`. */
+        "regex": "(?<=^|\\s)inv(?=\\s|$)"
+        /* The `pattern` used to replace the `matched target string`. */,
         "replacement": "%fuji:inv%"
       },
       {
-        "regex": "(?<=^|\\s)ender(?=\\s|$)",
+        /* The `regex` expression used to match the `target string`. */
+        "regex": "(?<=^|\\s)ender(?=\\s|$)"
+        /* The `pattern` used to replace the `matched target string`. */,
         "replacement": "%fuji:ender%"
       },
       {
-        "regex": "(?<=^|\\s)pos(?=\\s|$)",
+        /* The `regex` expression used to match the `target string`. */
+        "regex": "(?<=^|\\s)pos(?=\\s|$)"
+        /* The `pattern` used to replace the `matched target string`. */,
         "replacement": "%fuji:pos%"
       },
       {
-        "regex": "(?<=^|\\s)uuid(?=\\s|$)",
+        /* The `regex` expression used to match the `target string`. */
+        "regex": "(?<=^|\\s)uuid(?=\\s|$)"
+        /* The `pattern` used to replace the `matched target string`. */,
         "replacement": "<green>My uuid is %player:uuid%</green>"
       }
     ]

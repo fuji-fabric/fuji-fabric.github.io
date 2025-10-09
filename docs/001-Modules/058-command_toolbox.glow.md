@@ -27,7 +27,7 @@ title: command_toolbox.glow
 - Document:   Toggle the glowing state.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

@@ -82,11 +82,18 @@ It must NOT be copied directly into the configuration directory, as it does not 
 ```json showLineNumbers title="config/fuji/modules/skin/config.json"
 {
   "default_skin": {
-    "apply_default_skin_if_no_data": false,
-    "preferred_skin_name": "reimu-hakurei",
+    /* If this option is `true`, then for a player who doesn't have existing `skin` data, the `default skin` will be applied.
+    If this option is `false`, then the `Mojang online skin` will be applied instead. */
+    "apply_default_skin_if_no_data": false
+    /* Specify a `preferred skin` in the `default skin list`, so it will be the `default skin`.
+    If you specify a `invalid skin name` or this option is `null`, then a `random` skin will be picked from the `default skin list`. */,
+    "preferred_skin_name": "reimu-hakurei"
+    /* The defined `default skins` for this server. */,
     "default_skin_list": [
       {
-        "skin_name": "reimu-hakurei",
+        /* A name used to describe how this skin looks like. */
+        "skin_name": "reimu-hakurei"
+        /* The `properties` of this `skin`. */,
         "skin_property": {
           "name": "textures",
           "value": "ewogICJ0aW1lc3RhbXAiIDogMTYyMDIyMDc4MTQyNCwKICAicHJvZmlsZUlkIiA6ICJiYjdjY2E3MTA0MzQ0NDEyOGQzMDg5ZTEzYmRmYWI1OSIsCiAgInByb2ZpbGVOYW1lIiA6ICJsYXVyZW5jaW8zMDMiLAogICJzaWduYXR1cmVSZXF1aXJlZCIgOiB0cnVlLAogICJ0ZXh0dXJlcyIgOiB7CiAgICAiU0tJTiIgOiB7CiAgICAgICJ1cmwiIDogImh0dHA6Ly90ZXh0dXJlcy5taW5lY3JhZnQubmV0L3RleHR1cmUvZjVmMTcyMGM3ODBhNzk1OGI0MWYxNTNlNTA2OWRiNjg2MWJkMjgxYmU0MzJlN2JjNzk0MTE0YTdmNGVjNTJmZCIsCiAgICAgICJtZXRhZGF0YSIgOiB7CiAgICAgICAgIm1vZGVsIiA6ICJzbGltIgogICAgICB9CiAgICB9CiAgfQp9",
@@ -94,7 +101,9 @@ It must NOT be copied directly into the configuration directory, as it does not 
         }
       },
       {
-        "skin_name": "remilia-scarlet",
+        /* A name used to describe how this skin looks like. */
+        "skin_name": "remilia-scarlet"
+        /* The `properties` of this `skin`. */,
         "skin_property": {
           "name": "textures",
           "value": "ewogICJ0aW1lc3RhbXAiIDogMTYzODY4MjMwMjQ3MSwKICAicHJvZmlsZUlkIiA6ICI0ZjU2ZTg2ODk2OGU0ZWEwYmNjM2M2NzRlNzQ3ODdjOCIsCiAgInByb2ZpbGVOYW1lIiA6ICJDVUNGTDE1IiwKICAic2lnbmF0dXJlUmVxdWlyZWQiIDogdHJ1ZSwKICAidGV4dHVyZXMiIDogewogICAgIlNLSU4iIDogewogICAgICAidXJsIiA6ICJodHRwOi8vdGV4dHVyZXMubWluZWNyYWZ0Lm5ldC90ZXh0dXJlLzE0YjRlODI2OTJiOWRjYmY2YzEyOTJkNjJiNzMxN2MxMjRjNGMzOTQ2Y2FiMjFlY2E4NDJiNDJlNzBmMGMwMjIiLAogICAgICAibWV0YWRhdGEiIDogewogICAgICAgICJtb2RlbCIgOiAic2xpbSIKICAgICAgfQogICAgfQogIH0KfQ==",
@@ -102,7 +111,9 @@ It must NOT be copied directly into the configuration directory, as it does not 
         }
       },
       {
-        "skin_name": "koishi-komeiji",
+        /* A name used to describe how this skin looks like. */
+        "skin_name": "koishi-komeiji"
+        /* The `properties` of this `skin`. */,
         "skin_property": {
           "name": "textures",
           "value": "eyJ0aW1lc3RhbXAiOjE1ODc4MDcxMTkyNzEsInByb2ZpbGVJZCI6IjIzZjFhNTlmNDY5YjQzZGRiZGI1MzdiZmVjMTA0NzFmIiwicHJvZmlsZU5hbWUiOiIyODA3Iiwic2lnbmF0dXJlUmVxdWlyZWQiOnRydWUsInRleHR1cmVzIjp7IlNLSU4iOnsidXJsIjoiaHR0cDovL3RleHR1cmVzLm1pbmVjcmFmdC5uZXQvdGV4dHVyZS9iMjI4MTk0OWZlZDc2M2Q3OWYwODZiNGU4MjE0ZGVjNTdiZDM4NzgzODhkOTJmYWQ4NmRjMzQxNzE2MWNkYjJkIiwibWV0YWRhdGEiOnsibW9kZWwiOiJzbGltIn19fX0=",
@@ -162,7 +173,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Document:   Use the `default skin` with specified `skin name`.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
@@ -180,7 +191,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Document:   Set skin to an online skin of the specified name.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
@@ -198,7 +209,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Document:   Set skin to an online skin of the same name.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
@@ -216,7 +227,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Document:   Set skin to a random default skin.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
@@ -234,7 +245,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Document:   Set skin to a custom url in Alex model.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
@@ -252,7 +263,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Document:   Set skin to a custom url in Steve model.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

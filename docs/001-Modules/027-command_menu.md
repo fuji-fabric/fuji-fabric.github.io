@@ -151,24 +151,40 @@ It must NOT be copied directly into the configuration directory, as it does not 
   /* Defined `menus`. */
   "menus": {
     "another-menu": {
-      "title": "<blue>Another menu.",
-      "lines": 2,
+      /* The `title` of this GUI. */
+      "title": "<blue>Another menu."
+      /* Ranged [1, 6] */,
+      "lines": 2
+      /* Should we `close` this GUI automatically when any `slot` is `clicked`?
+      
+      Or you need to execute `/command-menu close <player>` command.
+      To close the GUI manually. */,
       "close_menu_on_clicked": false,
       "commands": {
         "on_open_commands": [],
         "on_closed_commands": []
-      },
+      }
+      /* Defined `slots` for this GUI. */,
       "slots": [
         {
-          "index": 0,
-          "other_indexes": [],
-          "fill_blank_indexes": false,
-          "item": "minecraft:golden_apple",
-          "count": 2,
+          /* Where to place this item in GUI? */
+          "index": 0
+          /* Also place this item in these specified indexes. */,
+          "other_indexes": []
+          /* Whether to place this item in all blank slots. */,
+          "fill_blank_indexes": false
+          /* What is the item? */,
+          "item": "minecraft:golden_apple"
+          /* The count of this item. */,
+          "count": 2
+          /* The display name of this item. */,
           "display_name": "This is another menu.",
-          "hide_tooltip": false,
-          "glow": false,
-          "lore": [],
+          "hide_tooltip": false
+          /* Should we glow this item? */,
+          "glow": false
+          /* The lore of this item. */,
+          "lore": []
+          /* The `requirement` to `see` this item in GUI. */,
           "view_requirement": {
             "level": 0,
             "string": null
@@ -186,15 +202,24 @@ It must NOT be copied directly into the configuration directory, as it does not 
           }
         },
         {
-          "index": 1,
-          "other_indexes": [],
-          "fill_blank_indexes": false,
-          "item": "minecraft:clock",
-          "count": 1,
+          /* Where to place this item in GUI? */
+          "index": 1
+          /* Also place this item in these specified indexes. */,
+          "other_indexes": []
+          /* Whether to place this item in all blank slots. */,
+          "fill_blank_indexes": false
+          /* What is the item? */,
+          "item": "minecraft:clock"
+          /* The count of this item. */,
+          "count": 1
+          /* The display name of this item. */,
           "display_name": "Click me to refresh: %server:uptime%",
-          "hide_tooltip": false,
-          "glow": false,
-          "lore": [],
+          "hide_tooltip": false
+          /* Should we glow this item? */,
+          "glow": false
+          /* The lore of this item. */,
+          "lore": []
+          /* The `requirement` to `see` this item in GUI. */,
           "view_requirement": {
             "level": 0,
             "string": null
@@ -212,27 +237,43 @@ It must NOT be copied directly into the configuration directory, as it does not 
       ]
     },
     "example-menu": {
-      "title": "<blue>My Example Menu",
-      "lines": 6,
+      /* The `title` of this GUI. */
+      "title": "<blue>My Example Menu"
+      /* Ranged [1, 6] */,
+      "lines": 6
+      /* Should we `close` this GUI automatically when any `slot` is `clicked`?
+      
+      Or you need to execute `/command-menu close <player>` command.
+      To close the GUI manually. */,
       "close_menu_on_clicked": false,
       "commands": {
         "on_open_commands": [],
         "on_closed_commands": []
-      },
+      }
+      /* Defined `slots` for this GUI. */,
       "slots": [
         {
-          "index": 0,
-          "other_indexes": [],
-          "fill_blank_indexes": false,
-          "item": "minecraft:stone",
-          "count": 42,
+          /* Where to place this item in GUI? */
+          "index": 0
+          /* Also place this item in these specified indexes. */,
+          "other_indexes": []
+          /* Whether to place this item in all blank slots. */,
+          "fill_blank_indexes": false
+          /* What is the item? */,
+          "item": "minecraft:stone"
+          /* The count of this item. */,
+          "count": 42
+          /* The display name of this item. */,
           "display_name": "<blue>My Nice Item Name",
-          "hide_tooltip": false,
-          "glow": false,
+          "hide_tooltip": false
+          /* Should we glow this item? */,
+          "glow": false
+          /* The lore of this item. */,
           "lore": [
             "<green>Hello %player:name%",
             "<yellow>You are in %world:id%"
-          ],
+          ]
+          /* The `requirement` to `see` this item in GUI. */,
           "view_requirement": {
             "level": 0,
             "string": null
@@ -250,15 +291,24 @@ It must NOT be copied directly into the configuration directory, as it does not 
           }
         },
         {
-          "index": 1,
-          "other_indexes": [],
-          "fill_blank_indexes": false,
-          "item": "minecraft:apple",
-          "count": 42,
+          /* Where to place this item in GUI? */
+          "index": 1
+          /* Also place this item in these specified indexes. */,
+          "other_indexes": []
+          /* Whether to place this item in all blank slots. */,
+          "fill_blank_indexes": false
+          /* What is the item? */,
+          "item": "minecraft:apple"
+          /* The count of this item. */,
+          "count": 42
+          /* The display name of this item. */,
           "display_name": "<green>Click to to open another menu.",
-          "hide_tooltip": false,
-          "glow": true,
-          "lore": [],
+          "hide_tooltip": false
+          /* Should we glow this item? */,
+          "glow": true
+          /* The lore of this item. */,
+          "lore": []
+          /* The `requirement` to `see` this item in GUI. */,
           "view_requirement": {
             "level": 0,
             "string": null

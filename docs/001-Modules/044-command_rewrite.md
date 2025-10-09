@@ -83,7 +83,9 @@ It must NOT be copied directly into the configuration directory, as it does not 
   /* Defined `rewrite` entries. */
   "rules": [
     {
-      "regex": "\\?",
+      /* The `regex` expression used to match the `target string`. */
+      "regex": "\\?"
+      /* The `pattern` used to replace the `matched target string`. */,
       "replacement": "help"
     }
   ]

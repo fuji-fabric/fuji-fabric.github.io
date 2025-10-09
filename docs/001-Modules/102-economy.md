@@ -102,19 +102,31 @@ It must NOT be copied directly into the configuration directory, as it does not 
   /* Define your `custom economy currency` types. */,
   "currencies": [
     {
-      "currency_id": "fuji:gold",
-      "currency_name": "<gold>Fuji Gold",
-      "currency_icon_item": "minecraft:gold_ingot",
-      "default_face_balance": 100.0,
-      "format_value_string": "%.2f",
+      /* The `custom currency` identifier. The `namespace` must be `fuji`. */
+      "currency_id": "fuji:gold"
+      /* The `display name` of this currency. */,
+      "currency_name": "<gold>Fuji Gold"
+      /* The `display item` of this currency. */,
+      "currency_icon_item": "minecraft:gold_ingot"
+      /* The default balance for this currency. (In raw value format) */,
+      "default_face_balance": 100.0
+      /* The `formatted string` of this currency. */,
+      "format_value_string": "%.2f"
+      /* The `formatted text` of this currency. */,
       "format_value_text": "<yellow>$%.2f"
     },
     {
-      "currency_id": "fuji:diamond",
-      "currency_name": "<aqua>Fuji Diamond",
-      "currency_icon_item": "minecraft:diamond",
-      "default_face_balance": 0.0,
-      "format_value_string": "%.2f",
+      /* The `custom currency` identifier. The `namespace` must be `fuji`. */
+      "currency_id": "fuji:diamond"
+      /* The `display name` of this currency. */,
+      "currency_name": "<aqua>Fuji Diamond"
+      /* The `display item` of this currency. */,
+      "currency_icon_item": "minecraft:diamond"
+      /* The default balance for this currency. (In raw value format) */,
+      "default_face_balance": 0.0
+      /* The `formatted string` of this currency. */,
+      "format_value_string": "%.2f"
+      /* The `formatted text` of this currency. */,
       "format_value_text": "<aqua>$%.2f"
     }
   ]

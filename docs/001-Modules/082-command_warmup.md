@@ -114,30 +114,44 @@ It must NOT be copied directly into the configuration directory, as it does not 
     {
       "tags": [
         "default-tag-name"
-      ],
+      ]
+      /* The `target command` and `warmup time in ms`. */,
       "command": {
-        "regex": "back",
+        /* The `regex` expression used to match the `target command`. */
+        "regex": "back"
+        /* The `warmup time` in ms. */,
         "warmup_time_ms": 3000
       },
       "interruptible": {
-        "enable": true,
-        "interrupt_distance": 3.0,
-        "interrupt_on_damaged": true,
+        /* Is this request interruptible? */
+        "enable": true
+        /* The max distance to interrupt this request. */,
+        "interrupt_distance": 3.0
+        /* Interrupt this request when player damaged. */,
+        "interrupt_on_damaged": true
+        /* Interrupt this request if player in combat. */,
         "interrupt_in_combat": true
       }
     },
     {
       "tags": [
         "default-tag-name"
-      ],
+      ]
+      /* The `target command` and `warmup time in ms`. */,
       "command": {
-        "regex": "heal",
+        /* The `regex` expression used to match the `target command`. */
+        "regex": "heal"
+        /* The `warmup time` in ms. */,
         "warmup_time_ms": 1000
       },
       "interruptible": {
-        "enable": true,
-        "interrupt_distance": 3.0,
-        "interrupt_on_damaged": true,
+        /* Is this request interruptible? */
+        "enable": true
+        /* The max distance to interrupt this request. */,
+        "interrupt_distance": 3.0
+        /* Interrupt this request when player damaged. */,
+        "interrupt_on_damaged": true
+        /* Interrupt this request if player in combat. */,
         "interrupt_in_combat": true
       }
     }

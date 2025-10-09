@@ -265,7 +265,9 @@ It must NOT be copied directly into the configuration directory, as it does not 
   NOTE: <red>Pre-defined rules only applied to non-operator players.</red> */
   "rules": [
     {
-      "permission_pattern_regex": "fuji.permission.*others.*",
+      /* The `regex` used to match the `corresponding permission` string. */
+      "permission_pattern_regex": "fuji.permission.*others.*"
+      /* For the `matched permission string`, we directly return the `pre-defined` permission test result. */,
       "permission_test_result": "DENY_TO_USE_THE_COMMAND"
     }
   ]

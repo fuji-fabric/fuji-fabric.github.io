@@ -20,7 +20,7 @@ title: command_toolbox.repair
 - Document:   Repair the item in hand.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

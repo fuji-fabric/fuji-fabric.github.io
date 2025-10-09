@@ -20,7 +20,7 @@ title: command_toolbox.trashcan
 - Document:   Open a trans can gui.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

@@ -71,10 +71,12 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "requirement": {
         "level": 0,
         "string": null
-      },
+      }
+      /* The `path` of `source command`. */,
       "from": [
         "r"
-      ],
+      ]
+      /* The `path` of `destination command`. */,
       "to": [
         "reply"
       ]
@@ -85,10 +87,12 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "requirement": {
         "level": 0,
         "string": null
-      },
+      }
+      /* The `path` of `source command`. */,
       "from": [
         "display"
-      ],
+      ]
+      /* The `path` of `destination command`. */,
       "to": [
         "chat",
         "display"
@@ -100,10 +104,12 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "requirement": {
         "level": 4,
         "string": null
-      },
+      }
+      /* The `path` of `source command`. */,
       "from": [
         "sudo"
-      ],
+      ]
+      /* The `path` of `destination command`. */,
       "to": [
         "run",
         "as",
@@ -116,10 +122,12 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "requirement": {
         "level": 4,
         "string": null
-      },
+      }
+      /* The `path` of `source command`. */,
       "from": [
         "wb"
-      ],
+      ]
+      /* The `path` of `destination command`. */,
       "to": [
         "workbench"
       ]
@@ -130,10 +138,12 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "requirement": {
         "level": 4,
         "string": null
-      },
+      }
+      /* The `path` of `source command`. */,
       "from": [
         "ec"
-      ],
+      ]
+      /* The `path` of `destination command`. */,
       "to": [
         "enderchest"
       ]
@@ -144,10 +154,12 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "requirement": {
         "level": 4,
         "string": null
-      },
+      }
+      /* The `path` of `source command`. */,
       "from": [
         "invsee"
-      ],
+      ]
+      /* The `path` of `destination command`. */,
       "to": [
         "view",
         "inv"
@@ -159,10 +171,12 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "requirement": {
         "level": 4,
         "string": null
-      },
+      }
+      /* The `path` of `source command`. */,
       "from": [
         "endersee"
-      ],
+      ]
+      /* The `path` of `destination command`. */,
       "to": [
         "view",
         "ender"

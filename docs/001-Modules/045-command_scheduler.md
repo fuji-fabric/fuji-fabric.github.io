@@ -83,13 +83,19 @@ It must NOT be copied directly into the configuration directory, as it does not 
 {
   "jobs": [
     {
-      "enable": true,
-      "name": "example_job",
-      "remaining_runs": 1024,
+      "enable": true
+      /* The `unique` name of this `job`. */,
+      "name": "example_job"
+      /* Allowed left times to run. */,
+      "remaining_runs": 1024
+      /* Defined `cron` expression list.
+      
+      Any met `cron` expression can `trigger` this `job`. */,
       "schedules": [
         "0 */3 * ? * *",
         "0 */5 * ? * *"
-      ],
+      ]
+      /* The commands to execute when the `job` is `triggered`. */,
       "command_groups": [
         [
           "send-broadcast Group 1 Command 1 -> This is the first group of commands.",

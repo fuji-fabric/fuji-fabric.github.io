@@ -45,10 +45,13 @@ It must NOT be copied directly into the configuration directory, as it does not 
 ```json showLineNumbers title="config/fuji/modules/chat/mention/config.json"
 {
   "mention_player": {
+    /* The `sound` identifier. */
     "sound": "entity.experience_orb.pickup",
     "volume": 100.0,
-    "pitch": 1.0,
-    "repeat_count": 3,
+    "pitch": 1.0
+    /* The times to play this sound. */,
+    "repeat_count": 3
+    /* The interval between each sound play. */,
     "interval_ms": 1000
   }
   /* The format used in `chat message` when a player is `mentioned`. */,

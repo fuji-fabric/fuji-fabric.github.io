@@ -26,7 +26,7 @@ title: command_toolbox.compass
 - Document:   Let the compass in hand track nothing.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
@@ -44,7 +44,7 @@ title: command_toolbox.compass
 - Document:   Let the compass in hand track a specified player.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
@@ -62,7 +62,7 @@ title: command_toolbox.compass
 - Document:   Let the compass in hand track a specified position.
 
 
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::

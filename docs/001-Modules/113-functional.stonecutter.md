@@ -16,7 +16,7 @@ title: functional.stonecutter
 :::command
 - Command Syntax: `/stonecutter others <PlayerCollection others>`
 - Document: null
-- Can be executed by console: `false`
+- Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
