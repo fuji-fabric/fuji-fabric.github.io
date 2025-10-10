@@ -33,15 +33,11 @@ title: command_meta.chain
   
   In vanilla Minecraft, the `return value` of a command, is a `integer`.
   
-  If integer less than zero, it's `failed`.
+  If integer `<= 0`, then the `command execution` is considered as `failure`.
   
-  If integer equals zero, it's `passed`.
+  If integer `> 0`, then the `command execution` is considered as `success`.
   
-  If integer grater than zero, it's `success`.
-  
-  
-  
-  So, we can know whether a command was executed successfully or not, based on the return value of that command.
+  The fact is, it's possible to know whether a command execution is success or not, based on the `return value` of that command execution.
   
   
   
