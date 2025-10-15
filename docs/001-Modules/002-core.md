@@ -907,6 +907,10 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Argument Type Class: `[DoubleRange]`
 :::
 :::argument-type
+- Argument Type Name: `[fuji-identifier]`
+- Argument Type Class: `[FujiIdentifier]`
+:::
+:::argument-type
 - Argument Type Name: `[game-profile, profile]`
 - Argument Type Class: `[GameProfileCollection]`
 :::

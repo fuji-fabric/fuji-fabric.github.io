@@ -347,6 +347,12 @@ title: world
   
   
   
+  NOTE: By default, the dimension namespace is `fuji`.
+  
+  Issue `/world create "custom_namespace:my_nether" minecraft:the_nether` to use a custom namespace.
+  
+  
+  
   ◉ Delete the extra dimension
   
   Issue: `/world delete fuji:my_nether --confirm true`
@@ -571,7 +577,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 ## Commands
 :::command
-- Command Syntax: `/world create <String name> <DimensionType dimensionType> [Long seed] [ChunkGeneratorType chunkGeneratorType] [String chunkGeneratorParameters] [WorldPresetType worldPresetType]`
+- Command Syntax: `/world create <FujiIdentifier name> <DimensionType dimensionType> [Long seed] [ChunkGeneratorType chunkGeneratorType] [String chunkGeneratorParameters] [WorldPresetType worldPresetType]`
 - Document:   This command does the following things:
   
   1. `Add` a `dimension descriptor` into the `config` file.
@@ -601,7 +607,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/world import <String name> <DimensionType dimensionType> [Long seed] [ChunkGeneratorType chunkGeneratorType] [String chunkGeneratorParameters] [WorldPresetType worldPresetType]`
+- Command Syntax: `/world import <FujiIdentifier name> <DimensionType dimensionType> [Long seed] [ChunkGeneratorType chunkGeneratorType] [String chunkGeneratorParameters] [WorldPresetType worldPresetType]`
 - Document:   This command will `import` an external `dimension directory` placed in `world/dimensions/fuji/<dimension-name>`.
   
   You need to provide enough information to define the `runtime dimension descriptor`.
@@ -692,15 +698,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::command
 - Command Syntax: `/world who <Dimension dimension>`
 - Document:   List the players in specified dimension.
-
-
-- Can be executed by console: `true`
-- Required Level Permission: `4`
-- Required String Permission: `null`
-:::
-:::command
-- Command Syntax: `/world who <ServerPlayerEntity player>`
-- Document:   Query which dimension the player is in.
 
 
 - Can be executed by console: `true`
