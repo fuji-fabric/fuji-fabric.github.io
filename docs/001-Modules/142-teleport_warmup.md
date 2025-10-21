@@ -56,11 +56,9 @@ title: teleport_warmup
   
   2. The target player's `age <= 3`
   
-  3. The target player is admin. (level permission >= 4)
+  3. The target player is a `fake player`.
   
-  4. The target player is a `fake player`.
-  
-  5. The target player has the `warmup bypass permission`.
+  4. The target player has the `warmup bypass permission`.
 
 
 :::
@@ -81,6 +79,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 {
   /* The `warmup seconds` for `all` teleports. */
   "warmup_second": 3.0,
+  "admin_players_can_bypass": true,
   "interruptible": {
     /* Is this request interruptible? */
     "enable": true

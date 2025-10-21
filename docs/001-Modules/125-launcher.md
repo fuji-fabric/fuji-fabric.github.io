@@ -19,7 +19,7 @@ title: launcher
   
   You can integrate with `command_attachment` module.
   
-  Issue: `/command-attachment attach-block-one ~ ~ ~ --interactType STEP_ON \<command\>`
+  Issue: `/command-attachment attach-block-one ~ ~ ~ --interactType STEP_ON <command>`
   
   
   

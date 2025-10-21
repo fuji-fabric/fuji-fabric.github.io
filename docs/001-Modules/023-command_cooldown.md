@@ -171,10 +171,11 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 ```json showLineNumbers title="config/fuji/modules/command_cooldown/config.json"
 {
+  "admin_players_can_bypass": true
   /* The `unnamed cooldown` is applied `per-player`.
   
   Define the `regex` expression to match the `target command`.
-  And the `cooldown ms` for that `target command`. */
+  And the `cooldown ms` for that `target command`. */,
   "unnamed_cooldown": {
     "chunks.*": 60000,
     "rtp.*": 60000,

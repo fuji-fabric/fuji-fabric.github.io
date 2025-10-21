@@ -26,19 +26,6 @@ title: command_warmup
 
 :::
 
-:::colorbox-note
-
-  ◉ The `command warmup` will NOT be applied if...
-  
-  1. The command source is `the console`.
-  
-  2. The command source is `admin` (level permission >= 4)
-  
-  3. The command source has the `warmup bypass permission` for that command.
-
-
-:::
-
 :::colorbox-example
 
   ◉ Set up the warmup for all commands.
@@ -108,7 +95,8 @@ It must NOT be copied directly into the configuration directory, as it does not 
 ```json showLineNumbers title="config/fuji/modules/command_warmup/config.json"
 {
   /* Should we send a warning message for no movement? */
-  "warn_for_move": true
+  "warn_for_move": true,
+  "admin_players_can_bypass": true
   /* Defined `warmup` rules. */,
   "rules": [
     {
