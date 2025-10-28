@@ -124,6 +124,20 @@ title: predicate
 - Required String Permission: `null`
 :::
 :::command
+- Command Syntax: `/equals? <ServerPlayerEntity player> <String expectedString> <GreedyString placeholderString>`
+- Document: null
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/false? <ServerPlayerEntity player> <GreedyString placeholderString>`
+- Document: null
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
 - Command Syntax: `/has-exp-level? <ServerPlayerEntity player> <int expLevel>`
 - Document: null
 - Can be executed by console: `true`
@@ -192,6 +206,20 @@ title: predicate
 :::
 :::command
 - Command Syntax: `/is-op? <ServerPlayerEntity player>`
+- Document: null
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/matches? <ServerPlayerEntity player> <String expectedString> <GreedyString placeholderString>`
+- Document: null
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+- Required String Permission: `null`
+:::
+:::command
+- Command Syntax: `/true? <ServerPlayerEntity player> <GreedyString placeholderString>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
