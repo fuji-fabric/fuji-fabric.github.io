@@ -40,7 +40,7 @@ title: tester
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/tester split <ServerPlayerEntity target> <String string>`
+- Command Syntax: `/tester split <ServerPlayer target> <String string>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`

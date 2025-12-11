@@ -23,7 +23,7 @@ title: echo.send_dialog
 :::
 ## Commands
 :::command
-- Command Syntax: `/send-dialog <ServerPlayerEntity player> [Integer rows] [Integer yesButtonSlotIndex] [ItemStackWrapper yesButtonItem] [String yesButtonName] [String yesButtonCommand] [Integer noButtonSlotIndex] [ItemStackWrapper noButtonItem] [String noButtonName] [String noButtonCommand] [Boolean canCloseUsingNoButton] <GreedyString title>`
+- Command Syntax: `/send-dialog <ServerPlayer player> [Integer rows] [Integer yesButtonSlotIndex] [ItemStackWrapper yesButtonItem] [String yesButtonName] [String yesButtonCommand] [Integer noButtonSlotIndex] [ItemStackWrapper noButtonItem] [String noButtonName] [String noButtonCommand] [Boolean canCloseUsingNoButton] <GreedyString title>`
 - Document:   Send a dialog GUI to a player.
 
 

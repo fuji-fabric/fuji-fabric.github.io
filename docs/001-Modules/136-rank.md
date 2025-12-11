@@ -657,7 +657,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/rank list next-rank-nodes <ServerPlayerEntity target>`
+- Command Syntax: `/rank list next-rank-nodes <ServerPlayer target>`
 - Document:   List all available `next rank nodes` for the specified player.
 
 
@@ -666,7 +666,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/rank list previous-rank-nodes <ServerPlayerEntity target>`
+- Command Syntax: `/rank list previous-rank-nodes <ServerPlayer target>`
 - Document:   List all available `previous rank nodes` for the specified player.
 
 
@@ -675,7 +675,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/rank list starting-rank-nodes <ServerPlayerEntity target>`
+- Command Syntax: `/rank list starting-rank-nodes <ServerPlayer target>`
 - Document:   List all available `starting rank nodes` for the specified player.
 
 
@@ -684,7 +684,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/rank list walked-rank-nodes <ServerPlayerEntity target>`
+- Command Syntax: `/rank list walked-rank-nodes <ServerPlayer target>`
 - Document:   List all `walked rank nodes` for the specified player.
 
 
@@ -702,7 +702,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/rank progress <ServerPlayerEntity target>`
+- Command Syntax: `/rank progress <ServerPlayer target>`
 - Document:   Query the rank progress of the specified player.
 
 
@@ -711,7 +711,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/rank remove <ServerPlayerEntity player> [Boolean confirm]`
+- Command Syntax: `/rank remove <ServerPlayer player> [Boolean confirm]`
 - Document:   Set the specified player's rank to none.
 
 
@@ -720,7 +720,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/rank set <ServerPlayerEntity target> <RankNode rankNode>`
+- Command Syntax: `/rank set <ServerPlayer target> <RankNode rankNode>`
 - Document:   Set the rank for specified player.
 
 
@@ -729,7 +729,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/rank try-up <ServerPlayerEntity target>`
+- Command Syntax: `/rank try-up <ServerPlayer target>`
 - Document:   If there is only one `next rank node` for the player, then rank up to that node, else do nothing.
 
 

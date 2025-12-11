@@ -56,7 +56,7 @@ title: echo.send_custom
 
 ## Commands
 :::command
-- Command Syntax: `/send-custom as-book <ServerPlayerEntity player> <CustomTextName customTextName> [Boolean openBook] [Boolean giveBook] [String title] [String author]`
+- Command Syntax: `/send-custom as-book <ServerPlayer player> <CustomTextName customTextName> [Boolean openBook] [Boolean giveBook] [String title] [String author]`
 - Document:   Send the `custom text` as a `book`.
 
 
@@ -65,7 +65,7 @@ title: echo.send_custom
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/send-custom as-message <ServerPlayerEntity player> <CustomTextName name>`
+- Command Syntax: `/send-custom as-message <ServerPlayer player> <CustomTextName name>`
 - Document:   Send the `custom text` as a `message`.
 
 

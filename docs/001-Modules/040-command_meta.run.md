@@ -179,7 +179,7 @@ title: command_meta.run
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/run as fake-op <ServerPlayerEntity player> <GreedyCommandString rest>`
+- Command Syntax: `/run as fake-op <ServerPlayer player> <GreedyCommandString rest>`
 - Document:   Execute a command as a player with fake-op.
 
 
@@ -188,7 +188,7 @@ title: command_meta.run
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/run as player <ServerPlayerEntity player> <GreedyCommandString rest>`
+- Command Syntax: `/run as player <ServerPlayer player> <GreedyCommandString rest>`
 - Document:   Execute a command as a player.
 
 

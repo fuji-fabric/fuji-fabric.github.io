@@ -31,7 +31,7 @@ title: command_toolbox.compass
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/compass track player <ServerPlayerEntity target>`
+- Command Syntax: `/compass track player <ServerPlayer target>`
 - Document:   Let the compass in hand track a specified player.
 
 
@@ -40,7 +40,7 @@ title: command_toolbox.compass
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/compass track player others <PlayerCollection others> <ServerPlayerEntity target>`
+- Command Syntax: `/compass track player others <PlayerCollection others> <ServerPlayer target>`
 - Document:   Let the compass in hand track a specified player.
 
 

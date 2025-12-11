@@ -82,32 +82,32 @@ It must NOT be copied directly into the configuration directory, as it does not 
   /* Use `regex` expression to define `triggers`. */
   "triggers": [
     {
-      "regex": "magic",
+      "chat_string_regex": "magic",
       "commands": [
         "say magic!"
       ]
     },
     {
-      "regex": "i am (.+)",
+      "chat_string_regex": "i am (.+)",
       "commands": [
         "say You just said: $0",
         "say Hello $1"
       ]
     },
     {
-      "regex": "(?<=^|\\s)item(?=\\s|$)",
+      "chat_string_regex": "(?<=^|\\s)item(?=\\s|$)",
       "commands": [
         "run as fake-op %player:name% chat display item"
       ]
     },
     {
-      "regex": "(?<=^|\\s)inv(?=\\s|$)",
+      "chat_string_regex": "(?<=^|\\s)inv(?=\\s|$)",
       "commands": [
         "run as fake-op %player:name% chat display inv"
       ]
     },
     {
-      "regex": "(?<=^|\\s)ender(?=\\s|$)",
+      "chat_string_regex": "(?<=^|\\s)ender(?=\\s|$)",
       "commands": [
         "run as fake-op %player:name% chat display ender"
       ]

@@ -7,7 +7,7 @@ title: command_toolbox.ping
 
 ## Commands
 :::command
-- Command Syntax: `/ping <ServerPlayerEntity target>`
+- Command Syntax: `/ping <ServerPlayer target>`
 - Document:   Query the ping of a player.
 
 

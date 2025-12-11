@@ -51,7 +51,7 @@ title: placeholder
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/placeholder parse [ServerPlayerEntity player] <GreedyString input>`
+- Command Syntax: `/placeholder parse [ServerPlayer player] <GreedyString input>`
 - Document:   Parse a placeholder with a contextual player.
 
 
@@ -123,6 +123,12 @@ title: placeholder
 :::placeholder
 - Placeholder Name: `fuji:health_bar`
 - Document:   Returns the `health` of the `player`, in visual heart characters.
+
+
+:::
+:::placeholder
+- Placeholder Name: `fuji:rotate`
+- Document:   Returns the rotating string of specified string, when evaluated.
 
 
 :::

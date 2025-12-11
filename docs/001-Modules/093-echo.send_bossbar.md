@@ -32,7 +32,7 @@ title: echo.send_bossbar
 
 ## Commands
 :::command
-- Command Syntax: `/send-bossbar <ServerPlayerEntity player> [Integer totalMs] [Color color] [Style style] [StringList commandList] [Boolean notifyMeOnComplete] [StepType stepType] <GreedyString title>`
+- Command Syntax: `/send-bossbar <ServerPlayer player> [Integer totalMs] [BossBarColor color] [BossBarOverlay style] [StringList commandList] [Boolean notifyMeOnComplete] [StepType stepType] <GreedyString title>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`

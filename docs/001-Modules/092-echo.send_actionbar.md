@@ -32,7 +32,7 @@ title: echo.send_actionbar
 
 ## Commands
 :::command
-- Command Syntax: `/send-actionbar <ServerPlayerEntity player> <GreedyString rest>`
+- Command Syntax: `/send-actionbar <ServerPlayer player> <GreedyString rest>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`

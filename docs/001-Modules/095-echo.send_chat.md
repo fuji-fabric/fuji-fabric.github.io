@@ -32,7 +32,7 @@ title: echo.send_chat
 
 ## Commands
 :::command
-- Command Syntax: `/send-chat <ServerPlayerEntity player> <GreedyString message>`
+- Command Syntax: `/send-chat <ServerPlayer player> <GreedyString message>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`

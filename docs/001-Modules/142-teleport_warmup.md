@@ -79,7 +79,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 {
   /* The `warmup seconds` for `all` teleports. */
   "warmup_second": 3.0,
-  "admin_players_can_bypass": true,
+  "admin_players_can_bypass": false,
   "interruptible": {
     /* Is this request interruptible? */
     "enable": true

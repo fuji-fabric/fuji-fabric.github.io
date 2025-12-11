@@ -9,7 +9,7 @@ title: command_toolbox.lore
 
 :::colorbox-example
 
-  ◉ Set lore for item in mainhand.
+  ◉ Set lore for the item in mainhand.
   
   Issue: `/lore set <rainbow>the first line<newline><bold><green>the second`
 
@@ -19,7 +19,7 @@ title: command_toolbox.lore
 ## Commands
 :::command
 - Command Syntax: `/lore set <GreedyString lore>`
-- Document:   Set lore for item.
+- Document:   Set the lore for item.
 
 
 - Can be executed by console: `true`
@@ -28,7 +28,7 @@ title: command_toolbox.lore
 :::
 :::command
 - Command Syntax: `/lore unset`
-- Document:   Clear all lore in item.
+- Document:   Clear the lore of the item.
 
 
 - Can be executed by console: `true`

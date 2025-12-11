@@ -31,8 +31,6 @@ title: command_cooldown
   
   To define a `unnamed cooldown`, you need to modify the config file, and issue `/fuji reload` command to apply it.
   
-  NOTE: The `console` and `players with level permission 4` can `bypass` the `unnamed cooldown`.
-  
   
   
   2. `Named Cooldown`
@@ -47,7 +45,7 @@ title: command_cooldown
   
   Then, you have to use `/command-cooldown test` to `test` a `named cooldown` manually.
   
-  You have to specify the `failure case commands` and `success case commands` when `test` a `named cooldown`.
+  You have to specify the `failure case commands` and `success case commands` when `testing` a `named cooldown`.
   
   If the `conditions` defined by the `named cooldown` is satisfied, then it is a `success case`, else it is a `failure case`.
   
@@ -57,18 +55,7 @@ title: command_cooldown
   
   
   
-  NOTE: If you only want to define a simple `cooling duration` for a specified command, just use `unnamed cooldown`.
-
-
-:::
-
-:::colorbox-note
-
-  ◉ The `command cooldown` will NOT be applied if...
-  
-  1. The command source is `the console`.
-  
-  2. The command source is `admin` (level permission >= 4)
+  TL;DR: If you only want to define a simple `cooling duration` for a specified command, just use `unnamed cooldown`.
 
 
 :::
@@ -179,7 +166,8 @@ It must NOT be copied directly into the configuration directory, as it does not 
   "unnamed_cooldown": {
     "chunks.*": 60000,
     "rtp.*": 60000,
-    "download.*": 120000
+    "download.*": 120000,
+    "heal.*": 10000
   }
   /* The `named cooldown` is created by `/command-cooldown create` command. */,
   "named_cooldown": {
@@ -245,7 +233,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/command-cooldown reset <NamedCooldownDescriptor namedCooldown> <ServerPlayerEntity player>`
+- Command Syntax: `/command-cooldown reset <NamedCooldownDescriptor namedCooldown> <ServerPlayer player>`
 - Document:   Reset `the last use time` of a named-cooldown for a player.
 
 
@@ -254,7 +242,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/command-cooldown test <NamedCooldownDescriptor namedCooldown> <ServerPlayerEntity player> [StringList onFailed] <GreedyCommandString onSuccess>`
+- Command Syntax: `/command-cooldown test <NamedCooldownDescriptor namedCooldown> <ServerPlayer player> [StringList onFailed] <GreedyCommandString onSuccess>`
 - Document:   Test a named-cooldown with `arbitrary command instance`, and execute `success case command` or `failure case command`.
 
 
@@ -263,7 +251,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/command-cooldown try-use <NamedCooldownDescriptor namedCooldown> <ServerPlayerEntity player>`
+- Command Syntax: `/command-cooldown try-use <NamedCooldownDescriptor namedCooldown> <ServerPlayer player>`
 - Document:   Test a named-cooldown with `pre-defined command instance`, and execute `success case command` or `failure case command`.
 
 

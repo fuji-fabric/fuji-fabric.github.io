@@ -63,7 +63,7 @@ title: predicate
   
   ◉ Test if a player killed more than 100 zombies.
   
-  Issue: `/command-debug <=? Steve 100 %player:statistic_raw minecraft:deaths%`
+  Issue: `/command-debug <=? Steve 100 %player:statistic_raw minecraft:killed minecraft:zombie%`
   
   
   
@@ -82,77 +82,77 @@ title: predicate
 
 ## Commands
 :::command
-- Command Syntax: `/!=? <ServerPlayerEntity player> <double value> <GreedyString numericValueString>`
+- Command Syntax: `/!=? <ServerPlayer player> <double value> <GreedyString numericValueString>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/<=? <ServerPlayerEntity player> <double value> <GreedyString numericValueString>`
+- Command Syntax: `/<=? <ServerPlayer player> <double value> <GreedyString numericValueString>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/<? <ServerPlayerEntity player> <double value> <GreedyString numericValueString>`
+- Command Syntax: `/<? <ServerPlayer player> <double value> <GreedyString numericValueString>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/=? <ServerPlayerEntity player> <double value> <GreedyString numericValueString>`
+- Command Syntax: `/=? <ServerPlayer player> <double value> <GreedyString numericValueString>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/>=? <ServerPlayerEntity player> <double value> <GreedyString numericValueString>`
+- Command Syntax: `/>=? <ServerPlayer player> <double value> <GreedyString numericValueString>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/>? <ServerPlayerEntity player> <double value> <GreedyString numericValueString>`
+- Command Syntax: `/>? <ServerPlayer player> <double value> <GreedyString numericValueString>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/equals? <ServerPlayerEntity player> <String expectedString> <GreedyString placeholderString>`
+- Command Syntax: `/equals? <ServerPlayer player> <String expectedString> <GreedyString placeholderString>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/false? <ServerPlayerEntity player> <GreedyString placeholderString>`
+- Command Syntax: `/false? <ServerPlayer player> <GreedyString placeholderString>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/has-exp-level? <ServerPlayerEntity player> <int expLevel>`
+- Command Syntax: `/has-exp-level? <ServerPlayer player> <int expLevel>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/has-exp? <ServerPlayerEntity player> <int exp>`
+- Command Syntax: `/has-exp? <ServerPlayer player> <int exp>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/has-item? <ServerPlayerEntity player> <ItemStackPredicateArgument itemPredicate> <int count>`
+- Command Syntax: `/has-item? <ServerPlayer player> <Result itemPredicate> <int count>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
@@ -184,42 +184,42 @@ title: predicate
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/is-holding? <ServerPlayerEntity player> <ItemStackPredicateArgument itemPredicate>`
+- Command Syntax: `/is-holding? <ServerPlayer player> <Result itemPredicate>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/is-in-gamemode? <ServerPlayerEntity player> <GameMode gameMode>`
+- Command Syntax: `/is-in-gamemode? <ServerPlayer player> <GameType gameMode>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/is-in-world? <ServerPlayerEntity player> <Dimension dimension>`
+- Command Syntax: `/is-in-world? <ServerPlayer player> <Dimension dimension>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/is-op? <ServerPlayerEntity player>`
+- Command Syntax: `/is-op? <ServerPlayer player>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/matches? <ServerPlayerEntity player> <String expectedString> <GreedyString placeholderString>`
+- Command Syntax: `/matches? <ServerPlayer player> <String expectedString> <GreedyString placeholderString>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/true? <ServerPlayerEntity player> <GreedyString placeholderString>`
+- Command Syntax: `/true? <ServerPlayer player> <GreedyString placeholderString>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`

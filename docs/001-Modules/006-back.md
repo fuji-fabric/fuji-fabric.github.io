@@ -106,7 +106,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/back clear <ServerPlayerEntity player>`
+- Command Syntax: `/back clear <ServerPlayer player>`
 - Document:   Clear the back location history.
 
 
@@ -133,7 +133,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/back list <ServerPlayerEntity player>`
+- Command Syntax: `/back list <ServerPlayer player>`
 - Document:   List the back location history.
 
 

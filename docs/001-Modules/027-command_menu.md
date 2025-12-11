@@ -332,7 +332,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 ## Commands
 :::command
-- Command Syntax: `/command-menu close <ServerPlayerEntity player>`
+- Command Syntax: `/command-menu close <ServerPlayer player>`
 - Document:   Close the currently `opened GUI` for the player.
 
 
@@ -341,7 +341,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/command-menu open <ServerPlayerEntity player> <MenuName menuName>`
+- Command Syntax: `/command-menu open <ServerPlayer player> <MenuName menuName>`
 - Document:   Open the specified `menu` for the player.
 
 

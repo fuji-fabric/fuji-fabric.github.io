@@ -26,7 +26,7 @@ title: echo.send_message
 
 ## Commands
 :::command
-- Command Syntax: `/send-message <ServerPlayerEntity player> <GreedyString rest>`
+- Command Syntax: `/send-message <ServerPlayer player> <GreedyString rest>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`

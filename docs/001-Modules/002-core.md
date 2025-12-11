@@ -441,9 +441,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": false,
       "border": {
         "enable": true
-      },
-      "gamerule": {
-        "enable": true
       }
     },
     "skin": {
@@ -844,15 +841,15 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::argument-type
 - Argument Type Name: `[bossbar-color]`
-- Argument Type Class: `[Color]`
+- Argument Type Class: `[BossBarColor]`
 :::
 :::argument-type
 - Argument Type Name: `[bossbar-style]`
-- Argument Type Class: `[Style]`
+- Argument Type Class: `[BossBarOverlay]`
 :::
 :::argument-type
 - Argument Type Name: `[color]`
-- Argument Type Class: `[Formatting]`
+- Argument Type Class: `[ChatFormatting]`
 :::
 :::argument-type
 - Argument Type Name: `[column-pos]`
@@ -884,7 +881,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::argument-type
 - Argument Type Name: `[entity-anchor]`
-- Argument Type Class: `[EntityAnchor]`
+- Argument Type Class: `[Anchor]`
 :::
 :::argument-type
 - Argument Type Name: `[entity]`
@@ -904,7 +901,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::argument-type
 - Argument Type Name: `[float-range]`
-- Argument Type Class: `[DoubleRange]`
+- Argument Type Class: `[NotSupportedType]`
 :::
 :::argument-type
 - Argument Type Name: `[fuji-identifier]`
@@ -916,7 +913,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::argument-type
 - Argument Type Name: `[gamemode]`
-- Argument Type Class: `[GameMode]`
+- Argument Type Class: `[GameType]`
 :::
 :::argument-type
 - Argument Type Name: `[greedy-string, greedy]`
@@ -932,11 +929,11 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::argument-type
 - Argument Type Name: `[id, identifier]`
-- Argument Type Class: `[Identifier]`
+- Argument Type Class: `[IdentifierIR]`
 :::
 :::argument-type
 - Argument Type Name: `[int-range]`
-- Argument Type Class: `[IntRange]`
+- Argument Type Class: `[NotSupportedType]`
 :::
 :::argument-type
 - Argument Type Name: `[int, integer]`
@@ -944,11 +941,11 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::argument-type
 - Argument Type Name: `[item-predicate]`
-- Argument Type Class: `[ItemStackPredicateArgument]`
+- Argument Type Class: `[Result]`
 :::
 :::argument-type
 - Argument Type Name: `[item-slot]`
-- Argument Type Class: `[ItemSlotArgumentType]`
+- Argument Type Class: `[SlotArgument]`
 :::
 :::argument-type
 - Argument Type Name: `[item, itemstack]`
@@ -960,11 +957,11 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::argument-type
 - Argument Type Name: `[nbt-compound]`
-- Argument Type Class: `[NbtCompound]`
+- Argument Type Class: `[CompoundTag]`
 :::
 :::argument-type
 - Argument Type Name: `[nbt-element]`
-- Argument Type Class: `[NbtElement]`
+- Argument Type Class: `[Tag]`
 :::
 :::argument-type
 - Argument Type Name: `[nbt-path]`
@@ -984,11 +981,11 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::argument-type
 - Argument Type Name: `[particle-effect]`
-- Argument Type Class: `[ParticleEffect]`
+- Argument Type Class: `[ParticleOptions]`
 :::
 :::argument-type
 - Argument Type Name: `[player]`
-- Argument Type Class: `[ServerPlayerEntity]`
+- Argument Type Class: `[ServerPlayer]`
 :::
 :::argument-type
 - Argument Type Name: `[players, player-list]`
@@ -996,23 +993,23 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::argument-type
 - Argument Type Name: `[rotation]`
-- Argument Type Class: `[PosArgument]`
+- Argument Type Class: `[Coordinates]`
 :::
 :::argument-type
 - Argument Type Name: `[scoreboard-criterion]`
-- Argument Type Class: `[ScoreboardCriterion]`
+- Argument Type Class: `[ObjectiveCriteria]`
 :::
 :::argument-type
 - Argument Type Name: `[scoreboard-objective]`
-- Argument Type Class: `[ScoreboardObjective]`
+- Argument Type Class: `[Objective]`
 :::
 :::argument-type
 - Argument Type Name: `[scoreboard-slot]`
-- Argument Type Class: `[ScoreboardDisplaySlot]`
+- Argument Type Class: `[DisplaySlot]`
 :::
 :::argument-type
 - Argument Type Name: `[]`
-- Argument Type Class: `[ServerCommandSource]`
+- Argument Type Class: `[CommandSourceStack]`
 :::
 :::argument-type
 - Argument Type Name: `[slot-range]`
@@ -1032,19 +1029,19 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::argument-type
 - Argument Type Name: `[team]`
-- Argument Type Class: `[Team]`
+- Argument Type Class: `[PlayerTeam]`
 :::
 :::argument-type
 - Argument Type Name: `[text]`
-- Argument Type Class: `[Text]`
+- Argument Type Class: `[Component]`
 :::
 :::argument-type
 - Argument Type Name: `[vec2f, vec2]`
-- Argument Type Class: `[Vec2f]`
+- Argument Type Class: `[Vec2]`
 :::
 :::argument-type
 - Argument Type Name: `[vec3d]`
-- Argument Type Class: `[Vec3d]`
+- Argument Type Class: `[Vec3]`
 :::
 :::argument-type
 - Argument Type Name: `[word]`

@@ -33,7 +33,7 @@ title: command_toolbox.reply
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/reply set-target <ServerPlayerEntity target>`
+- Command Syntax: `/reply set-target <ServerPlayer target>`
 - Document:   Set the reply target player.
 
 

@@ -927,7 +927,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/gm <GameMode gamemode-arg>`
+- Command Syntax: `/gm <GameType gamemode-arg>`
 - Document:   This command is an alias for `/gamemode`
 
 
@@ -1170,7 +1170,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/uuid <ServerPlayerEntity target>`
+- Command Syntax: `/uuid <ServerPlayer target>`
 - Document:   This command will print the UUID of specified player.
 
 

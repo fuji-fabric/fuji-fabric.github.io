@@ -156,14 +156,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 ## Commands
 :::command
-- Command Syntax: `/nametag toggle <ServerPlayerEntity target>`
+- Command Syntax: `/nametag toggle <ServerPlayer target>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/nametag toggle <ServerPlayerEntity target> <boolean flag>`
+- Command Syntax: `/nametag toggle <ServerPlayer target> <boolean flag>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`

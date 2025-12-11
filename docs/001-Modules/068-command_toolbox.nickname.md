@@ -37,7 +37,12 @@ It must NOT be copied directly into the configuration directory, as it does not 
 ```json showLineNumbers title="config/fuji/modules/command_toolbox/nickname/config.json"
 {
   /* The `format` used when `setting` the nickname. */
-  "nickname_format": "%.12s <grey>(%player:name%)"
+  "nickname_format": "%s <grey>(%player:name%)",
+  "nickname_constraints": {
+    "max_length": 16,
+    "accept_string_pattern": ".+",
+    "reject_string_pattern": ""
+  }
 }
 ```
 </details>

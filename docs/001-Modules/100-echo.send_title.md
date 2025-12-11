@@ -32,7 +32,7 @@ title: echo.send_title
 
 ## Commands
 :::command
-- Command Syntax: `/send-title <ServerPlayerEntity player> [String mainTitle] [String subTitle] [Integer fadeInTicks] [Integer stayTicks] [Integer fadeOutTicks]`
+- Command Syntax: `/send-title <ServerPlayer player> [String mainTitle] [String subTitle] [Integer fadeInTicks] [Integer stayTicks] [Integer fadeOutTicks]`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`

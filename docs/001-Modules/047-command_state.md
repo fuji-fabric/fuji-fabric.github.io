@@ -98,7 +98,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 {
   "state_descriptors": [
     {
-      "enable": true,
+      "enable": false,
       "id": "is-in-overworld"
       /* The `predicate commands` used to define this `state`. */,
       "definition": {
@@ -118,7 +118,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       }
     },
     {
-      "enable": true,
+      "enable": false,
       "id": "has-iron-and-gold"
       /* The `predicate commands` used to define this `state`. */,
       "definition": {
@@ -139,7 +139,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       }
     },
     {
-      "enable": true,
+      "enable": false,
       "id": "can-use-fly-command"
       /* The `predicate commands` used to define this `state`. */,
       "definition": {
@@ -189,7 +189,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 ## Commands
 :::command
-- Command Syntax: `/command-state info <ServerPlayerEntity player>`
+- Command Syntax: `/command-state info <ServerPlayer player>`
 - Document:   Display the value of all `states` of the specified player.
 
 
@@ -225,7 +225,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Required String Permission: `null`
 :::
 :::command
-- Command Syntax: `/is-in-state? <ServerPlayerEntity player> <StateDescriptor state>`
+- Command Syntax: `/is-in-state? <ServerPlayer player> <StateDescriptor state>`
 - Document:   Returns whether the specified `state` value for the player is currently `true`.
 
 
