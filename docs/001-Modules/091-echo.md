@@ -9,7 +9,7 @@ title: echo
 :::module
   This module provides a collection of `echo commands`.
   
-  They can be used to send `feedback texts`.
+  An `echo command` will display a `text` in a particular `place` in the client.
 
 
 :::

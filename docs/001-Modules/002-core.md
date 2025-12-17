@@ -9,63 +9,67 @@ title: core
 
 :::colorbox-note
 
-  ◉ Does fuji support the `hot reload`?
+  ◉ Does this mod support hot reload?
+  
+  Yes. It supports hot reloading for files belonging to `enabled` modules.
+  
+  Use the command `/fuji reload` to do that.
   
   
   
-  Yes, fuji does support to `hot reload` the `files` from a `enabled module`.
+  Limitations:
   
-  To do that, just issue `/fuji reload`.
+  - Modules cannot be `enabled` or `disabled` while the server is running.
   
   
   
-  However, you can't `enable` or `disable` a module when the server `is running`.
+  Design rationale:
   
-  This is a design decision.
+  1. Disabled modules are never loaded.
   
-  Fuji will `never load` a `disabled module` at all, for these considerations:
+  2. You can freely disable unwanted modules.
   
-  1. For flexible, you can `disable any module` you don't like.
+  3. Module-level conflicts can be resolved by disabling only the affected module.
   
-  2. If any other mods conflicts with `a module`, you can just `disable that module`.
-  
-  3. You only enable the `interested modules`, and there is no performance paying for `disabled module`.
+  4. Disabled modules incur no performance cost.
 
 
 :::
 
 :::colorbox-tip
 
-  ◉ How to use fuji?
+  ◉ How to use this mod?
+  
+  All modules are disabled by default.
+  
+  Enable only the modules you need.
   
   
   
-  All `modules` are `disabled` by default.
+  Steps:
   
-  You can only enable the `interested modules`.
+  1. Edit `config/fuji/config.json` file.
   
-  Modify the `config/fuji/config.json` file to `enable` a module.
+  2. Set the desired modules to `enabled`.
   
-  After that, `re-start` the server, to apply the `module enable status`.
+  3. Re-start the server to apply the changes.
 
 
 :::
 
 :::colorbox-tip
 
-  ◉ Adjust the `lore` text font size.
+  ◉ Adjust lore text font size
   
-  If the `lore` text is too large in your UI.
+  If lore text appears too large:
   
-  You can configure it in `Esc` - `Options` - `Video Settings` - `GUI Scale`
+  - Open `Esc` → `Options` → `Video Settings` → `GUI Scale`.
   
   
   
-  ◉ Install the `client-side` mod to improve the displaying of `tooltip`.
+  ◉ Improve tooltip rendering
   
-  If adjusting the `GUI Scale` option doesn't work well for you.
-  
-  You can install the `ToolTipFix` mod to enhance the `tooltip` displaying.
+  If `GUI scaling` is insufficient, install the client-side mod `ToolTipFix`:
   
   - https://modrinth.com/mod/tooltipfix
   
@@ -76,17 +80,17 @@ title: core
 
 :::colorbox-tip
 
-  ◉ Use a `modern` text editor.
+  ◉ Use a modern text editor
   
-  The most of `config files` are written in `json language`, and contains lots of lines.
+  Most configuration files are written in JSON and may be large.
   
-  A `modern` text editor can `highlight` the structure of the file, and check the `syntax errors` for you.
+  A modern text editor provides `syntax highlighting` and `error checking`.
   
-  So that you can `read` and `edit` the config files easier.
+  It makes configuration easier and safer.
   
   
   
-  Here are recommended text editors:
+  Recommended text editors:
   
   1. Visual Studio Code: https://code.visualstudio.com/
   
@@ -99,78 +103,86 @@ title: core
 
 :::colorbox-tip
 
-  ◉ Setup a `test server` in your `local machine`.
+  ◉ Set up a local test server
   
-  You may have a `remote machine` (Typically named `production server`) that is `running` and `hosting` your `Minecraft network`.
+  If you run a remote production server, it is strongly recommended to
   
-  However, it's strongly recommended to setup a `test server` in your `local machine`.
-  
-  The `test server` should be a `mirror` of that `production server`.
-  
-  It should contains the `mods` files and the `config files`.
+  maintain a local test server.
   
   
   
-  You can modify and test new things in your `test server`.
+  The test server should mirror the production environment:
   
-  After everything is configured and working properly, you just upload the `mods` and `config files` into your `remote machine`.
+  1. Same mods
+  
+  2. Same configuration files
+  
+  
+  
+  Workflow:
+  
+  1. Test changes locally.
+  
+  2. Verify everything works as expected.
+  
+  3. Upload the updated mods and configurations to the production server.
 
 
 :::
 
 :::colorbox-example
 
-  ◉ Open `this` GUI
+  ◉ Open the interactive document GUI
   
-  Issue: `/fuji`
-  
-  
-  
-  ◉ List all `fuji commands`
-  
-  Issue: `/fuji inspect fuji-commands`
+  Command: `/fuji`
   
   
   
-  ◉ List all `fuji permissions` and `fuji metas`
+  ◉ List all Fuji commands
   
-  Issue: `/fuji inspect permissions-and-metas`
-  
-  
-  
-  ◉ List all `fuji placeholders`
-  
-  Issue: `/fuji inspect placeholders`
+  Command: `/fuji inspect fuji-commands`
   
   
   
-  ◉ List all `fuji configurations`
+  ◉ List all Fuji permissions and metas
   
-  Issue: `/fuji inspect configurations`
-  
-  
-  
-  ◉ List all `fuji jobs`
-  
-  Issue: `/fuji inspect jobs`
+  Command: `/fuji inspect permissions-and-metas`
   
   
   
-  ◉ List all `fuji languages`
+  ◉ List all Fuji placeholders
   
-  Issue: `/fuji inspect languages`
-  
-  
-  
-  ◉ List all `fuji argument types`
-  
-  Issue: `/fuji inspect argument-types`
+  Command: `/fuji inspect placeholders`
   
   
   
-  ◉ List all `fuji events`
+  ◉ List all Fuji configurations
   
-  Issue: `/fuji inspect events`
+  Command: `/fuji inspect configurations`
+  
+  
+  
+  ◉ List all Fuji jobs
+  
+  Command: `/fuji inspect jobs`
+  
+  
+  
+  ◉ List all Fuji languages
+  
+  Command: `/fuji inspect languages`
+  
+  
+  
+  ◉ List all Fuji argument types
+  
+  Command: `/fuji inspect argument-types`
+  
+  
+  
+  ◉ List all Fuji events
+  
+  Command: `/fuji inspect events`
 
 
 :::
