@@ -41,7 +41,7 @@ title: echo.send_toast
 
 ## Commands
 :::command
-- Command Syntax: `/send-toast <ServerPlayer player> [AdvancementFrameTypeWrapper toastType] [ItemStackWrapper icon] <GreedyString message>`
+- Command Syntax: `/send-toast <ServerPlayer player> [AdvancementFrameTypeIR toastType] [ItemStackWrapper icon] <GreedyString message>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
@@ -50,5 +50,5 @@ title: echo.send_toast
 ## Argument Types
 :::argument-type
 - Argument Type Name: `[advancement-frame]`
-- Argument Type Class: `[AdvancementFrameTypeWrapper]`
+- Argument Type Class: `[AdvancementFrameTypeIR]`
 :::

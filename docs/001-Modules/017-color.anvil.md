@@ -7,7 +7,7 @@ title: color.anvil
 
 ## Overview
 :::module
-  This module enables the use of `color tags` in the `anvil screen`.
+  This module introduces `style tags` in `anvil block`.
 
 
 :::

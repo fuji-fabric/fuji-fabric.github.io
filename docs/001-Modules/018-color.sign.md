@@ -7,7 +7,7 @@ title: color.sign
 
 ## Overview
 :::module
-  This module allows you to use `color tags` in `sign blocks`.
+  This module introduces `style tags` in `sign blocks`.
 
 
 :::
@@ -15,9 +15,9 @@ title: color.sign
 
 :::colorbox-tip
 
-  ◉ You can write `style tags` on the sign.
+  ◉ You can write `style tags` on the sign block.
   
-  Foe example: `<red>`, `<rb>`, `<bold>` and `<i>`.
+  For example: `<red>`, `<rb>`, `<bold>` and `<i>`.
 
 
 :::
