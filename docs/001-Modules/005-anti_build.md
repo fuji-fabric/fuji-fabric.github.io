@@ -101,37 +101,37 @@ It must NOT be copied directly into the configuration directory, as it does not 
 {
   "anti_types": {
     "break_block": {
-      "enable": true,
+      "enable": false,
       "id": [
         "minecraft:gold_block"
       ]
     },
     "place_block": {
-      "enable": true,
+      "enable": false,
       "id": [
         "minecraft:tnt"
       ]
     },
     "interact_item": {
-      "enable": true,
+      "enable": false,
       "id": [
         "minecraft:lava_bucket"
       ]
     },
     "interact_block": {
-      "enable": true,
+      "enable": false,
       "id": [
         "minecraft:lever"
       ]
     },
     "interact_entity": {
-      "enable": true,
+      "enable": false,
       "id": [
         "minecraft:villager"
       ]
     },
     "attack_entity": {
-      "enable": true,
+      "enable": false,
       "id": [
         "minecraft:villager"
       ]

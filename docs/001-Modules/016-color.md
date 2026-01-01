@@ -7,7 +7,7 @@ title: color
 
 ## Overview
 :::module
-  This module introduces the `style tags` in certain `places`.
+  This module introduces `style tags` in certain `places`.
 
 
 :::

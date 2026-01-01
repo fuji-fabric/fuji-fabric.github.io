@@ -130,55 +130,55 @@ title: core
 
   ◉ Open the interactive document GUI
   
-  Command: `/fuji`
+  Issue: `/fuji`
   
   
   
   ◉ List all Fuji commands
   
-  Command: `/fuji inspect fuji-commands`
+  Issue: `/fuji inspect fuji-commands`
   
   
   
   ◉ List all Fuji permissions and metas
   
-  Command: `/fuji inspect permissions-and-metas`
+  Issue: `/fuji inspect permissions-and-metas`
   
   
   
   ◉ List all Fuji placeholders
   
-  Command: `/fuji inspect placeholders`
+  Issue: `/fuji inspect placeholders`
   
   
   
   ◉ List all Fuji configurations
   
-  Command: `/fuji inspect configurations`
+  Issue: `/fuji inspect configurations`
   
   
   
   ◉ List all Fuji jobs
   
-  Command: `/fuji inspect jobs`
+  Issue: `/fuji inspect jobs`
   
   
   
   ◉ List all Fuji languages
   
-  Command: `/fuji inspect languages`
+  Issue: `/fuji inspect languages`
   
   
   
   ◉ List all Fuji argument types
   
-  Command: `/fuji inspect argument-types`
+  Issue: `/fuji inspect argument-types`
   
   
   
   ◉ List all Fuji events
   
-  Command: `/fuji inspect events`
+  Issue: `/fuji inspect events`
 
 
 :::
@@ -238,7 +238,10 @@ It must NOT be copied directly into the configuration directory, as it does not 
     "language": {
       /* The `default language` used by Fuji.
       The language files are located in `config/fuji/lang` dir. */
-      "default_language": "en_US",
+      "default_language": "en_US"
+      /* Define the `common prefix` for all language values.
+      This prefix will only be inserted when a text is displayed in `chat message`. */,
+      "language_value_common_prefix": "<orange>➜</orange> ",
       "validator": {
         /* Should we validate the `arguments` when loading a `language file`? */
         "validate_arguments": true
