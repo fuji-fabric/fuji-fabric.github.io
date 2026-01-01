@@ -7,11 +7,11 @@ title: anti_build
 
 ## Overview
 :::module
-  This module allows restricting specific player `actions`.
+  This module `bans` specific player `actions`.
   
   
   
-  Currently supported `action types` include:
+  The `actions` can be:
   
   1. Break a specified block.
   
@@ -29,52 +29,50 @@ title: anti_build
 :::
 ## Color Boxes
 
-:::colorbox-tip
-
-  Read the document to see the definition of `identifier` in Minecraft.
-
-
-:::
-
-:::colorbox-tip
-
-  Use the `command suggestion` from `luckperms` mod to see the supported types by this module.
-
-
-:::
-
 :::colorbox-example
 
-  ◉ To ban the placement of TNT block:
+  ◉ To ban the placement of TNT block.
   
-  Just add the `minecraft:tnt` into the `place_block` list in config file.
+  Add the `minecraft:tnt` into the `place_block` list in config file.
   
   
   
   ◉ To ban the placement of TNT block, but allow player Alice to use it.
   
-  Grant a `bypass permission` for that player: `/lp user Alice permission set fuji.anti_build.place_block.bypass.minecraft:tnt`.
+  Assign a `bypass permission` for that player.
+  
+  Issue: `/lp user Alice permission set fuji.anti_build.place_block.bypass.minecraft:tnt`.
   
   
   
-  ◉ To assign a override permission for a player explicitly.
+  ◉ To `ban` or `allow` the player Alice to do a specific action explicitly.
+  
+  Assign a `override permission` for that player.
+  
+  
   
   Issue: `/lp user Alice permission set fuji.anti_build.break_block.override.minecraft:grass_block false`
   
-  This will `dis-allow` the player Alice to `break a minecraft:grass_block block`.
+  It will `ban` the player Alice from breaking `minecraft:grass_block` block.
   
   
   
-  ◉ Dis-allow to place `any` blocks.
+  Issue: `/lp user Alice permission set fuji.anti_build.break_block.override.minecraft:grass_block true`
   
-  Use `*` as the wildcard character, put it into the `place_block` list.
+  It will `allow` the player Alice to break `minecraft:grass_block` block.
+  
+  
+  
+  ◉ To ban the placement of `any` block.
+  
+  Add the `*` into the `place_block` list in config file.
 
 
 :::
 
 :::colorbox-example
 
-  ◉ Ban the `placement` of `mushroom` in `minecraft:the_end` dimension.
+  ◉ Ban the `placement` of `mushroom` blocks in `minecraft:the_end` dimension.
   
   Issue:
   
