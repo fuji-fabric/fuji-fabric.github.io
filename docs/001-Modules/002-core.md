@@ -9,29 +9,27 @@ title: core
 
 :::colorbox-note
 
-  ◉ Does this mod support hot reload?
+  ◉ Can I reload the config files while the server is running?
   
-  Yes. It supports hot reloading for files belonging to `enabled` modules.
+  Yes.
   
-  Use the command `/fuji reload` to do that.
+  You can do that only for a `enabled` module.
   
-  
-  
-  Limitations:
-  
-  - Modules cannot be `enabled` or `disabled` while the server is running.
+  For such module, use `/fuji reload` to reload the module specific files.
   
   
   
-  Design rationale:
+  You can not `enable` or `disable` a module while the server is running.
   
-  1. Disabled modules are never loaded.
+  Modules are only loaded during the server start-up.
   
-  2. You can freely disable unwanted modules.
   
-  3. Module-level conflicts can be resolved by disabling only the affected module.
   
-  4. Disabled modules incur no performance cost.
+  It's a design choice, for reasons:
+  
+  1. For performance: You never pay for the disabled modules.
+  
+  2. For compatibility: If conflicting with other mods, you can disable the related module to solve it.
 
 
 :::
@@ -40,17 +38,19 @@ title: core
 
   ◉ How to use this mod?
   
+  Functions are provided by modules.
+  
   All modules are disabled by default.
   
-  Enable only the modules you need.
+  You need to enable the modules you want to use.
   
   
   
-  Steps:
+  ◉ How to enable a module?
   
-  1. Edit `config/fuji/config.json` file.
+  1. Edit the `<your-server>/config/fuji/config.json` file.
   
-  2. Set the desired modules to `enabled`.
+  2. In `modules` section, set the `true` and `false` values for each module.
   
   3. Re-start the server to apply the changes.
 
@@ -59,17 +59,21 @@ title: core
 
 :::colorbox-tip
 
-  ◉ Adjust lore text font size
+  ◉ How can I make the lore text easier to read?
   
-  If lore text appears too large:
+  
+  
+  ➜ Adjust lore text font size if too large
+  
+  If lore text is too large:
   
   - Open `Esc` → `Options` → `Video Settings` → `GUI Scale`.
   
   
   
-  ◉ Improve tooltip rendering
+  ➜ Improve lore text rendering if necessary
   
-  If `GUI scaling` is insufficient, install the client-side mod `ToolTipFix`:
+  If `GUI scaling` isn't enough, install the client-side mod `ToolTipFix`:
   
   - https://modrinth.com/mod/tooltipfix
   
@@ -80,13 +84,17 @@ title: core
 
 :::colorbox-tip
 
-  ◉ Use a modern text editor
+  ◉ How can I make the config file easier to edit?
   
-  Most configuration files are written in JSON and may be large.
+  Please use a modern text editor.
   
-  A modern text editor provides `syntax highlighting` and `error checking`.
   
-  It makes configuration easier and safer.
+  
+  Most configuration files are written in `JSON format` and may be large.
+  
+  A modern `text editor` provides `structure highlighting` and `error checking` features.
+  
+  It makes configuration easier.
   
   
   
@@ -101,82 +109,61 @@ title: core
 
 :::
 
-:::colorbox-tip
-
-  ◉ Set up a local test server
-  
-  If you run a remote production server, it is strongly recommended to maintain a local test server.
-  
-  The test server should mirror the production environment:
-  
-  1. Same mods
-  
-  2. Same configuration files
-  
-  
-  
-  Workflow:
-  
-  1. Test changes locally.
-  
-  2. Verify everything works as expected.
-  
-  3. Upload the updated mods and configurations to the production server.
-
-
-:::
-
 :::colorbox-example
 
-  ◉ Open the interactive document GUI
+  ◉ How can I know what is provided by this mod?
+  
+  
+  
+  ➜ Open the interactive document GUI
   
   Issue: `/fuji`
   
   
   
-  ◉ List all Fuji commands
+  ➜ List all commands
   
   Issue: `/fuji inspect fuji-commands`
   
   
   
-  ◉ List all Fuji permissions and metas
+  ➜ List all permissions and metas
   
   Issue: `/fuji inspect permissions-and-metas`
   
   
   
-  ◉ List all Fuji placeholders
+  ➜ List all placeholders
   
   Issue: `/fuji inspect placeholders`
   
   
   
-  ◉ List all Fuji configurations
+  ➜ List all configurations
   
   Issue: `/fuji inspect configurations`
   
   
   
-  ◉ List all Fuji jobs
+  ➜ List all jobs
   
   Issue: `/fuji inspect jobs`
   
   
   
-  ◉ List all Fuji languages
+  ➜ List all languages
   
   Issue: `/fuji inspect languages`
   
   
   
-  ◉ List all Fuji argument types
+  ➜ List all argument types
   
   Issue: `/fuji inspect argument-types`
   
   
   
-  ◉ List all Fuji events
+  ➜ List all events
   
   Issue: `/fuji inspect events`
 

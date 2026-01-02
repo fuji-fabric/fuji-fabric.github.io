@@ -41,7 +41,7 @@ title: anti_build
   
   Assign a `bypass permission` for that player.
   
-  Issue: `/lp user Alice permission set fuji.anti_build.place_block.bypass.minecraft:tnt`.
+  Issue: `/lp user Alice permission set fuji.anti_build.place_block.bypass.minecraft:tnt`
   
   
   
@@ -72,7 +72,7 @@ title: anti_build
 
 :::colorbox-example
 
-  ◉ Ban the `placement` of `mushroom` blocks in `minecraft:the_end` dimension.
+  ◉ To ban the `placement` of `mushroom` blocks in `minecraft:the_end` dimension.
   
   Issue:
   
@@ -97,7 +97,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 ```json showLineNumbers title="config/fuji/modules/anti_build/config.json"
 {
-  "anti_types": {
+  "anti_action_types": {
     "break_block": {
       "enable": false,
       "id": [

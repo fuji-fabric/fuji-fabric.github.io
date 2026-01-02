@@ -7,11 +7,13 @@ title: back
 
 ## Overview
 :::module
-  This module allows players to `teleport back` to:
+  This module allows a player to `teleport` to their `last location`.
   
-  - Their last teleport point.
+  The `last location` can be:
   
-  - Their death location.
+  - Their last teleport location.
+  
+  - Their last death location.
 
 
 :::
@@ -29,14 +31,11 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 ```json showLineNumbers title="config/fuji/modules/back/config.json"
 {
-  /* Ignore `this teleport` if the `distance` is too close in between. */
-  "ignore_distance": 32.0
-  /* Should we save the location on player death? */,
-  "enable_back_on_death": true
-  /* Should we save the location on player teleport? */,
-  "enable_back_on_teleport": true
-  /* Max saved location slots. */,
-  "max_back_location_entries_to_save": 3
+  /* Do not push the current `location` if it is too `close` to the most recently pushed `location`. */
+  "do_not_push_back_location_if_closer_than_n_blocks": 32.0,
+  "push_back_location_on_player_death": true,
+  "push_back_location_on_player_teleport": true,
+  "max_back_locations_to_save": 3
 }
 ```
 </details>
@@ -71,7 +70,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 ## Commands
 :::command
 - Command Syntax: `/back`
-- Document:   Back to the specified location.
+- Document:   Teleport to the last `one` location in the location history.
 
 
 - Can be executed by console: `false`
@@ -80,7 +79,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::command
 - Command Syntax: `/back 1 <Dimension targetDimension>`
-- Document:   Back to the specified location.
+- Document:   Teleport to the last `one` location in specified `dimension` in the location history.
 
 
 - Can be executed by console: `false`
@@ -89,7 +88,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::command
 - Command Syntax: `/back <int lastNLocation>`
-- Document:   Back to the specified location.
+- Document:   Teleport to the last `N` location in the location history.
 
 
 - Can be executed by console: `false`
@@ -98,7 +97,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::command
 - Command Syntax: `/back <int lastNLocation> <Dimension targetDimension>`
-- Document:   Back to the specified location.
+- Document:   Teleport to the last `N` location in specified `dimension` in the location history.
 
 
 - Can be executed by console: `false`
@@ -107,7 +106,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::command
 - Command Syntax: `/back clear <ServerPlayer player>`
-- Document:   Clear the back location history.
+- Document:   Clear the location history.
 
 
 - Can be executed by console: `true`
@@ -116,7 +115,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::command
 - Command Syntax: `/back clear others <PlayerCollection others>`
-- Document:   Clear the back location history.
+- Document:   Clear the location history.
 
 
 - Can be executed by console: `true`
@@ -125,7 +124,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::command
 - Command Syntax: `/back list`
-- Document:   List the back location history.
+- Document:   List the locations in the location history.
 
 
 - Can be executed by console: `false`
@@ -134,7 +133,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::command
 - Command Syntax: `/back list <ServerPlayer player>`
-- Document:   List the back location history.
+- Document:   List the locations in the location history.
 
 
 - Can be executed by console: `true`
@@ -143,7 +142,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::command
 - Command Syntax: `/back push`
-- Document:   Push current location into the back location history.
+- Document:   Push current location into the location history.
 
 
 - Can be executed by console: `false`
@@ -152,7 +151,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::command
 - Command Syntax: `/back push others <PlayerCollection others>`
-- Document:   Push current location into the back location history.
+- Document:   Push current location into the location history.
 
 
 - Can be executed by console: `true`
