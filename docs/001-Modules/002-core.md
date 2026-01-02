@@ -7,7 +7,30 @@ title: core
 
 ## Color Boxes
 
-:::colorbox-note
+:::colorbox-tip
+
+  ◉ How to use this mod?
+  
+  Functions are provided by modules.
+  
+  All modules are disabled by default.
+  
+  You need to enable the modules you want to use.
+  
+  
+  
+  ◉ How to enable a module?
+  
+  1. Edit the `<your-server>/config/fuji/config.json` file.
+  
+  2. In `modules` section, set the `true` and `false` values for each module.
+  
+  3. Re-start the server to apply the changes.
+
+
+:::
+
+:::colorbox-tip
 
   ◉ Can I reload the config files while the server is running?
   
@@ -30,29 +53,6 @@ title: core
   1. For performance: You never pay for the disabled modules.
   
   2. For compatibility: If conflicting with other mods, you can disable the related module to solve it.
-
-
-:::
-
-:::colorbox-tip
-
-  ◉ How to use this mod?
-  
-  Functions are provided by modules.
-  
-  All modules are disabled by default.
-  
-  You need to enable the modules you want to use.
-  
-  
-  
-  ◉ How to enable a module?
-  
-  1. Edit the `<your-server>/config/fuji/config.json` file.
-  
-  2. In `modules` section, set the `true` and `false` values for each module.
-  
-  3. Re-start the server to apply the changes.
 
 
 :::
@@ -109,7 +109,7 @@ title: core
 
 :::
 
-:::colorbox-example
+:::colorbox-tip
 
   ◉ How can I know what is provided by this mod?
   
