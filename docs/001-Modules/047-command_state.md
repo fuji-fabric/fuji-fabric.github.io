@@ -195,7 +195,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-state list`
@@ -204,7 +203,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-state update <StateDescriptor state>`
@@ -213,7 +211,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-state update-all`
@@ -222,7 +219,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/is-in-state? <ServerPlayer player> <StateDescriptor state>`
@@ -231,7 +227,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 ## Placeholders
 :::placeholder

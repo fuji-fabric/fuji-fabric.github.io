@@ -13,5 +13,4 @@ title: command_toolbox.ping
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

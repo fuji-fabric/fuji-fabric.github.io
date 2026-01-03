@@ -23,33 +23,28 @@ title: tester
 - Document: null
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/tester non-split others <PlayerCollection others> <String string>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/tester run`
 - Document: null
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/tester split <ServerPlayer target> <String string>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/tester split others <PlayerCollection others> <String string>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

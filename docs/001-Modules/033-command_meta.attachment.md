@@ -34,21 +34,18 @@ title: command_meta.attachment
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/attachment set <SubjectName subject> <SubjectId uuid> <GreedyString data>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/attachment unset <SubjectName subject> <SubjectId uuid>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 ## Argument Types
 :::argument-type

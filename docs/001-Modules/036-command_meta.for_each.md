@@ -32,5 +32,4 @@ title: command_meta.for_each
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

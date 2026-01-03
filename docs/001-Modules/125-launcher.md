@@ -89,12 +89,10 @@ title: launcher
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/launch facing <EntityCollection target> <float angle> <double power>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

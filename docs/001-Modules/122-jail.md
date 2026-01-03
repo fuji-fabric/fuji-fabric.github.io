@@ -334,7 +334,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/jail create <String jailId>`
@@ -343,7 +342,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/jail delete <JailDescriptor jail> [Boolean confirm]`
@@ -352,7 +350,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/jail gui`
@@ -361,7 +358,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/jail list`
@@ -370,7 +366,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/jail put <OfflinePlayerName playerName> <JailDescriptor jail> [Duration duration] <GreedyString reason>`
@@ -379,7 +374,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/jail set-position <JailDescriptor jail>`
@@ -388,7 +382,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/jail tp <JailDescriptor jail>`
@@ -397,7 +390,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/jail tp others <PlayerCollection others> <JailDescriptor jail>`
@@ -406,7 +398,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/jail un-put <JailedPlayerName playerName>`
@@ -415,7 +406,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/jail where <JailedPlayerName playerName>`
@@ -424,7 +414,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 ## Placeholders
 :::placeholder

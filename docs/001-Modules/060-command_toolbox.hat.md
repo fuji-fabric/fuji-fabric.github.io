@@ -21,7 +21,6 @@ title: command_toolbox.hat
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/hat others <PlayerCollection others>`
@@ -30,5 +29,4 @@ title: command_toolbox.hat
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

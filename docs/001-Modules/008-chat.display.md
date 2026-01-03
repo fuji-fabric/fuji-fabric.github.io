@@ -7,13 +7,15 @@ title: chat.display
 
 ## Overview
 :::module
-  This module allows players to show things to others:
+  This module allows a player to `show` things to `others`.
   
-  1. Show their main-hand item.
+  The `thing` can be:
   
-  2. Show their inventory.
+  1. Their main-hand item.
   
-  3. Show their ender chest.
+  2. Their inventory.
+  
+  3. Their ender chest.
 
 
 :::
@@ -32,24 +34,35 @@ title: chat.display
 
 :::colorbox-tip
 
-  ◉ This module is designed to work with other `chat-related` mods.
+  ◉ Integrate this module with other `chat-related` mods.
   
-  For example, you use this with `Styled Chat` mod.
-
-
-:::
-
-:::colorbox-tip
-
-  ◉ Define a `chat shortcut` to create a display
   
-  You can use `chat.replace` module, to define chat shortcut.
   
-  The shortcut can be `"item"` for example.
+  ➜ Integrate via the `placeholder` way.
   
-  Then you can type `"item"` in chat.
+  You can use `chat.replace` module.
   
-  To create a display directly using chat, without the commands.
+  That module can be used to define a `chat text` replacement.
+  
+  To replace the chat text from `item` to the `%fuji:item%` placeholder.
+  
+  To replace the chat text from `inv` to the `%fuji:inv%` placeholder.
+  
+  To replace the chat text from `ender` to the `%fuji:ender%` placeholder.
+  
+  
+  
+  ➜ Integrate via the `command` way.
+  
+  You can use `chat.trigger` module.
+  
+  That module can be used to define a `chat string` trigger.
+  
+  To execute the `/run as fake-op %player:name% chat display item` command, when the `trigger` is `fired`.
+  
+  To execute the `/run as fake-op %player:name% chat display inv` command, when the `trigger` is `fired`.
+  
+  To execute the `/run as fake-op %player:name% chat display ender` command, when the `trigger` is `fired`.
 
 
 :::
@@ -68,7 +81,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 ```json showLineNumbers title="config/fuji/modules/chat/display/config.json"
 {
-  /* The expiration duration for each created `display`. */
+  /* The expiration duration for a created `display`. */
   "expiration_duration_seconds": 3600
 }
 ```
@@ -77,30 +90,27 @@ It must NOT be copied directly into the configuration directory, as it does not 
 ## Commands
 :::command
 - Command Syntax: `/chat display ender`
-- Document:   Show your enderchest.
+- Document:   Show your enderchest to others.
 
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/chat display inv`
-- Document:   Show your inventory.
+- Document:   Show your inventory to others.
 
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/chat display item`
-- Document:   Show your item in main hand.
+- Document:   Show your item in main hand to others.
 
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
-- Required String Permission: `null`
 :::
 ## Placeholders
 :::placeholder

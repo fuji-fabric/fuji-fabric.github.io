@@ -30,7 +30,6 @@ title: command_toolbox.reply
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/reply set-target <ServerPlayer target>`
@@ -39,5 +38,4 @@ title: command_toolbox.reply
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

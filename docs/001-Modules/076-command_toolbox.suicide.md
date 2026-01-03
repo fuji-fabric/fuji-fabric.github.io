@@ -13,5 +13,4 @@ title: command_toolbox.suicide
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
-- Required String Permission: `null`
 :::

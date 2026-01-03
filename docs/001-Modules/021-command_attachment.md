@@ -192,7 +192,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-attachment attach-entity-one <Entity entity> [InteractType interactType] [Integer maxUseTimes] [ExecuteAsType executeAsType] <GreedyCommandString command>`
@@ -201,7 +200,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-attachment attach-item-one [InteractType interactType] [Integer maxUseTimes] [ExecuteAsType executeAsType] [Boolean destroyItem] <GreedyCommandString command>`
@@ -210,7 +208,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-attachment detach-block-all <BlockPos blockPos> [Boolean confirm]`
@@ -219,7 +216,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-attachment detach-entity-all <Entity entity> [Boolean confirm]`
@@ -228,7 +224,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-attachment detach-item-all [Boolean confirm]`
@@ -237,7 +232,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-attachment editor`
@@ -246,7 +240,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-attachment query-block <BlockPos blockPos>`
@@ -255,7 +248,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-attachment query-entity <Entity entity>`
@@ -264,7 +256,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-attachment query-item`
@@ -273,7 +264,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 ## Argument Types
 :::argument-type

@@ -39,7 +39,6 @@ title: command_toolbox.tppos
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/tppos here <PlayerCollection targets>`
@@ -56,7 +55,6 @@ title: command_toolbox.tppos
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/tppos offline <OfflinePlayerName player>`
@@ -65,7 +63,6 @@ title: command_toolbox.tppos
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/tppos others <PlayerCollection others> [Dimension dimension] [Double x] [Double y] [Double z] [Float yaw] [Float pitch] [Integer centerX] [Integer centerZ] [Boolean circle] [Integer minRange] [Integer maxRange] [Integer minY] [Integer maxY] [Integer maxTryTimes] [Integer asyncChunkLoadingTimeoutTicks] [Integer chunkInhabitedTimeLowerThanTicks] [BiomeId biome]`
@@ -74,5 +71,4 @@ title: command_toolbox.tppos
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

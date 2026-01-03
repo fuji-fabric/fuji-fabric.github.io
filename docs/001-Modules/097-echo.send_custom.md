@@ -62,7 +62,6 @@ title: echo.send_custom
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/send-custom as-message <ServerPlayer player> <CustomTextName name>`
@@ -71,7 +70,6 @@ title: echo.send_custom
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 ## Argument Types
 :::argument-type

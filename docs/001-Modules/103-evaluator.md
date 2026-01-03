@@ -30,7 +30,6 @@ title: evaluator
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/lisp eval <GreedyString form>`
@@ -39,5 +38,4 @@ title: evaluator
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

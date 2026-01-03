@@ -13,7 +13,6 @@ title: command_toolbox.feed
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/feed others <PlayerCollection others>`
@@ -22,5 +21,4 @@ title: command_toolbox.feed
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

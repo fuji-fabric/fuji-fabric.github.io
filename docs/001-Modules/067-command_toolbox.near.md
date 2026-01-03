@@ -13,5 +13,4 @@ title: command_toolbox.near
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

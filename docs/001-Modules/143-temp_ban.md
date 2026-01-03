@@ -30,12 +30,10 @@ title: temp_ban
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/temp-ban player <GameProfileCollection collection> <Duration expiry> <GreedyString reason>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

@@ -25,7 +25,6 @@ title: view
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/view inv <OfflinePlayerName target>`
@@ -34,5 +33,4 @@ title: view
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

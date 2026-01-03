@@ -13,14 +13,12 @@ title: command_toolbox.glow
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/glow <EntityCollection entities>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/glow others <PlayerCollection others>`
@@ -29,5 +27,4 @@ title: command_toolbox.glow
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

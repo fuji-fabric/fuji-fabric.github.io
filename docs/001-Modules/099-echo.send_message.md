@@ -30,5 +30,4 @@ title: echo.send_message
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

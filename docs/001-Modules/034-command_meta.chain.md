@@ -113,7 +113,6 @@ title: command_meta.chain
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 ## Argument Types
 :::argument-type

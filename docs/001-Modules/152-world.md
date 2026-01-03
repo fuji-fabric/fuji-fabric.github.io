@@ -589,7 +589,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/world delete <Dimension dimension> [Boolean confirm]`
@@ -604,7 +603,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/world import <FujiIdentifier name> <DimensionType dimensionType> [Long seed] [ChunkGeneratorType chunkGeneratorType] [String chunkGeneratorParameters] [WorldPresetType worldPresetType]`
@@ -619,7 +617,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/world info <Dimension dimension>`
@@ -628,7 +625,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/world list`
@@ -637,7 +633,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/world load <UnloadedRuntimeDimensionDescriptor dimension>`
@@ -650,7 +645,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/world reset <Dimension dimension> [Boolean useTheSameSeed] [Boolean confirm]`
@@ -659,7 +653,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/world save-configs`
@@ -668,7 +661,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/world tp <Dimension dimension>`
@@ -677,14 +669,12 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/world unload <LoadedRuntimeDimensionDescriptor dimension>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/world who`
@@ -693,7 +683,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/world who <Dimension dimension>`
@@ -702,7 +691,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 ## Argument Types
 :::argument-type

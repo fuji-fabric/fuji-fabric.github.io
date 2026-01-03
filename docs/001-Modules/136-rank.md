@@ -636,7 +636,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rank info <RankNode rankNode>`
@@ -645,7 +644,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rank list all-rank-nodes`
@@ -654,7 +652,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rank list next-rank-nodes <ServerPlayer target>`
@@ -663,7 +660,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rank list previous-rank-nodes <ServerPlayer target>`
@@ -672,7 +668,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rank list starting-rank-nodes <ServerPlayer target>`
@@ -681,7 +676,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rank list walked-rank-nodes <ServerPlayer target>`
@@ -690,7 +684,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rank progress`
@@ -699,7 +692,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rank progress <ServerPlayer target>`
@@ -708,7 +700,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rank remove <ServerPlayer player> [Boolean confirm]`
@@ -717,7 +708,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rank set <ServerPlayer target> <RankNode rankNode>`
@@ -726,7 +716,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rank try-up <ServerPlayer target>`
@@ -735,7 +724,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/rank up <NextAvailableRankNode nextRank> [Boolean confirm]`
@@ -744,7 +732,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
-- Required String Permission: `null`
 :::
 ## Placeholders
 :::placeholder

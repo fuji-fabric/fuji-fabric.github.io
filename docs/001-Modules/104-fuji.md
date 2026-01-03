@@ -25,7 +25,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji about`
@@ -34,7 +33,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji debug`
@@ -43,7 +41,6 @@ title: fuji
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji gui`
@@ -52,7 +49,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji inspect argument-types`
@@ -61,7 +57,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji inspect configurations`
@@ -70,7 +65,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji inspect events`
@@ -79,7 +73,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji inspect fuji-commands`
@@ -88,7 +81,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji inspect jobs`
@@ -97,7 +89,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji inspect languages`
@@ -106,7 +97,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji inspect mixins`
@@ -115,7 +105,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji inspect modules`
@@ -124,7 +113,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji inspect permissions-and-metas`
@@ -133,7 +121,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji inspect placeholders`
@@ -142,7 +129,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji inspect registry`
@@ -151,7 +137,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji inspect server-commands`
@@ -160,7 +145,6 @@ title: fuji
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji reload`
@@ -175,7 +159,6 @@ title: fuji
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fuji user-guide`
@@ -184,5 +167,4 @@ title: fuji
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

@@ -24,12 +24,10 @@ title: command_toolbox.disconnect
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/dis-connect others <PlayerCollection others> <GreedyString reason>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

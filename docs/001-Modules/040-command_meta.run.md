@@ -176,7 +176,6 @@ title: command_meta.run
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/run as fake-op <ServerPlayer player> <GreedyCommandString rest>`
@@ -185,7 +184,6 @@ title: command_meta.run
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/run as player <ServerPlayer player> <GreedyCommandString rest>`
@@ -194,5 +192,4 @@ title: command_meta.run
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

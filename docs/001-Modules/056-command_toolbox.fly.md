@@ -13,7 +13,6 @@ title: command_toolbox.fly
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fly <boolean flag>`
@@ -22,7 +21,6 @@ title: command_toolbox.fly
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fly others <PlayerCollection others>`
@@ -31,7 +29,6 @@ title: command_toolbox.fly
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/fly others <PlayerCollection others> <boolean flag>`
@@ -40,5 +37,4 @@ title: command_toolbox.fly
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

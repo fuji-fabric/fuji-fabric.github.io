@@ -5,45 +5,27 @@ title: chat
 
 # Module: chat
 
+## Overview
+:::module
+  This module provides functions for vanilla Minecraft's `chat` system.
+
+
+:::
 ## Color Boxes
 
 :::colorbox-note
 
-  ◉ All sub-modules of `chat` module are designed to work with `other mods`.
+  ◉ The compatibility issue with other `chat-related` mods.
   
-  Especially, provides the first support to work with `Styled Chat` mod.
+  There is not a standard API to interact with the vanilla Minecraft's chat system.
   
-  For other `chat-related` mods, you can try and test the compatibility.
-  
-  It's likely it will work.
-
-
-:::
-
-:::colorbox-tip
-
-  The `placeholder` module provides many `extra placeholders` for `Text Placeholder API`.
-  
-  You can enable that module to get more placeholders.
+  It makes the compatibility issue between `chat-related mods` harder to resolve.
   
   
   
-  Text Placeholder API - default placeholders
+  I try my best to write the code in the most compatible way.
   
-  https://placeholders.pb4.eu/user/default-placeholders/
-
-
-:::
-
-:::colorbox-tip
-
-  The `luckperms` mod provides the `prefix` and `suffix` for players.
-  
-  Which can be used as the `player title`.
-  
-  
-  
-  See: https://luckperms.net/wiki/Prefixes,-Suffixes-&-Meta
+  If any of the chat module doesn't work, feel free to open an issue.
 
 
 :::

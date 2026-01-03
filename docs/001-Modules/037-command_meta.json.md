@@ -51,35 +51,30 @@ title: command_meta.json
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/json put <String filePath> <String jsonPath> <String jsonKey> <JsonValueType valueType> <GreedyString value>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/json read <String filePath> <String jsonPath>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/json renameKey <String filePath> <String jsonPath> <String oldJsonKey> <String newJsonKey>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/json write <String filePath> <String jsonPath> <JsonValueType valueType> <GreedyString value>`
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 ## Argument Types
 :::argument-type

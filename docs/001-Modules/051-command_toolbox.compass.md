@@ -19,7 +19,6 @@ title: command_toolbox.compass
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/compass reset others <PlayerCollection others>`
@@ -28,7 +27,6 @@ title: command_toolbox.compass
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/compass track player <ServerPlayer target>`
@@ -37,7 +35,6 @@ title: command_toolbox.compass
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/compass track player others <PlayerCollection others> <ServerPlayer target>`
@@ -46,7 +43,6 @@ title: command_toolbox.compass
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/compass track pos <Dimension dimension> <BlockPos blockPos>`
@@ -55,7 +51,6 @@ title: command_toolbox.compass
 
 - Can be executed by console: `false`
 - Required Level Permission: `0`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/compass track pos others <PlayerCollection others> <Dimension dimension> <BlockPos blockPos>`
@@ -64,5 +59,4 @@ title: command_toolbox.compass
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

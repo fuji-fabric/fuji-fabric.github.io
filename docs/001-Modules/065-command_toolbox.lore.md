@@ -24,7 +24,6 @@ title: command_toolbox.lore
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/lore unset`
@@ -33,5 +32,4 @@ title: command_toolbox.lore
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

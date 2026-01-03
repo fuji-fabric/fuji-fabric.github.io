@@ -53,5 +53,4 @@ title: command_meta.delay
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

@@ -36,5 +36,4 @@ title: echo.send_bossbar
 - Document: null
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

@@ -13,5 +13,4 @@ title: command_toolbox.realname
 
 - Can be executed by console: `true`
 - Required Level Permission: `0`
-- Required String Permission: `null`
 :::

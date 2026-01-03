@@ -13,7 +13,6 @@ title: command_toolbox.jump
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/jump others <PlayerCollection others> [Integer distance]`
@@ -22,5 +21,4 @@ title: command_toolbox.jump
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::

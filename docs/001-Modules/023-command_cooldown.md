@@ -212,7 +212,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-cooldown delete <NamedCooldownDescriptor namedCooldown> [Boolean confirm]`
@@ -221,7 +220,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-cooldown list`
@@ -230,7 +228,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-cooldown reset <NamedCooldownDescriptor namedCooldown> <ServerPlayer player>`
@@ -239,7 +236,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-cooldown test <NamedCooldownDescriptor namedCooldown> <ServerPlayer player> [StringList onFailed] <GreedyCommandString onSuccess>`
@@ -248,7 +244,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 :::command
 - Command Syntax: `/command-cooldown try-use <NamedCooldownDescriptor namedCooldown> <ServerPlayer player>`
@@ -257,7 +252,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 - Can be executed by console: `true`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
 ## Placeholders
 :::placeholder

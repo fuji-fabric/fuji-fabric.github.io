@@ -27,5 +27,4 @@ title: command_toolbox.tphere
 - Document: null
 - Can be executed by console: `false`
 - Required Level Permission: `4`
-- Required String Permission: `null`
 :::
