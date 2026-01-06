@@ -181,13 +181,15 @@ It must NOT be copied directly into the configuration directory, as it does not 
   
   It's used to:
   
-  1. Configure the options for `core`, which affects all `modules`.
+  1. Control the behaviour of the `core`, which affects all `modules`.
   
   2. Enable or disable a `module`.
   
   
   
-  NOTE: You need to re-start the server, to `enable` or `disable` a `module`.
+  You can NOT `enable` or `disable` a `module` while the server is running.
+  
+  You MUST re-start the server, to switch the modules.
 
 - File Content: 
 <details>
@@ -196,73 +198,79 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 ```json showLineNumbers title="config/fuji/config.json"
 {
-  /* Fuji is composed by `core` and `module`.
-  The `core` config affects `all` modules.
-  The `module` config only affects that specific module. */
+  /* This mod is composed of `core` and `module` parts.
+  The `core` part options are applied to ALL the modules.
+  The `module` part options are applied to ONLY that module. */
   "core": {
-    /* Debug related options. */
     "debug": {
-      /* Force disable `all` modules.
-      Used to test the compatibility between `fuji` and `other mods`. */
+      /* Forcefully disable `all` modules.
+      If you want to test the `compatibility` between `this mod` and `other mods`, set the option to `true`. */
       "disable_all_modules": false
-      /* Should we log the `debug` level messages into the `console`?
-      This option can be changed using `/fuji debug` command. */,
+      /* Print the `DEBUG` level messages into the `console`.
+      
+      This option can be switched using `/fuji debug` command, while the server is running. */,
       "log_debug_messages": false
-      /* Should we print the user guide in the console on server startup? */,
+      /* Print the `first-time user guide` in the `console` on server start-up. */,
       "print_user_guide_in_console": true
     }
-    /* Fuji will back up the `config/fuji` dir before it loads any module. */,
+    /* Backup options.
+    This mod will back up the `config/fuji` directory at server start-up, before it loads any module. */,
     "backup": {
-      /* How many `backup files` should we keep? */
+      /* Max number of backup files to keep in `config/fuji/backup/` directory. */
       "max_slots": 15
-      /* The `paths` that should be skipped when backup.
-      The `path` is resolved and related to `config/fuji/` dir. */,
+      /* Define the `paths` to be ignored when creating a `backup file`.
+      A `path` is resolved and related to the `config/fuji/` directory. */,
       "skip": [
         "modules/head/head-data"
       ]
-    }
-    /* The language related options. */,
+    },
     "language": {
-      /* The `default language` used by Fuji.
-      The language files are located in `config/fuji/lang` dir. */
+      /* Define the `default language` used by this mod.
+      A language file is located in `config/fuji/languages/` directory. */
       "default_language": "en_US"
-      /* Define the `common prefix` for all language values.
-      This prefix will only be inserted when a text is displayed in `chat message`. */,
+      /* Define the `common prefix` for all `language values`.
+      This prefix will `only` be inserted when a text is displayed in `chat message`. */,
       "language_value_common_prefix": "<orange>➜</orange> ",
       "validator": {
-        /* Should we validate the `arguments` when loading a `language file`? */
+        /* If true, it will `validate` the `arity` of `arguments` for each `language value`, when loading a `language file`.
+        If false, do nothing. */
         "validate_arguments": true
       }
-    }
-    /* The options for all fuji commands. */,
+    },
     "command": {
-      /* The `command assistant` offers an `auto help` feature for all fuji commands.
+      /* The `command assistant` function offers the `auto /help feature` for all commands from this mod.
       It dynamically inspects possible command paths and provides users with real-time command hints.
       
-      <green>NOTE: To hot-switch this feature without a server re-start, you have to:
-      1. Issue `/fuji reload` first, to reload the `main control file`.
-      2. Issue `/reload`, to reload `all the commands`. */
+      <green>NOTE: To hot-switch this feature without a server re-start, do:
+      1. Issue `/fuji reload` command, to reload the `main control file`.
+      2. Issue `/reload` command, to reload `all the commands`. */
       "assistant": {
         "enable": true
-        /* The requirement to use the `command assistant`. */,
+        /* Define the requirement to use the `command assistant` function. */,
         "requirement": {
           "level_permission": 0
         }
       }
-    }
-    /* The permission related options. */,
+    },
     "permission": {
-      /* Fuji defines commands into 2 groups, for different users.
+      /* ◉ What is the permission system of this mod?
+      
+      ➜ Vanilla `permission level` is used for all commands.
+      You can use this mod without a 3rd party `permission mods`.
+      By default, all commands from this mod using the `permission level` as their requirement.
+      It makes it easier to use this mod in a `single player` world.
+      
+      ➜ There are two groups of commands
+      This mod splits commands into 2 groups, for different users.
       One group for `normal user`, these commands require `level 0 permission` to use.
       One group for `admin user`, these commands require `level 4 permission` to use.
       
-      If you want to define the permission of commands by yourself,
-      you can enable `this` option.
-      And use `command_permission` module to define permission for each command. */
+      ➜ Integrate with the `LuckPerms` mod.
+      One typical use-case, is to:
+      1. Set this option to be `true`
+      2. Use `command_permission` module, to assign a `string permission` for each command. */
       "all_commands_require_level_4_permission_to_use_by_default": false
-    }
-    /* The scheduler related options.
-    The `scheduler` system is used to run `jobs`. */,
+    },
     "scheduler": {
       /* The logger level for `quartz` library.
       The level is recommended to be higher than `WARN`, to prevent console spam.
@@ -273,24 +281,17 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "date_formatter": "yyyy-MM-dd HH:mm:ss"
     },
     "document": {
-      /* When `enable` this option, we will always use the `built-in doc strings`, which is written in `English`.
-      This option is used to ensure you always see the `latest version` of `doc strings` from your `current using version`.
+      /* If true, it will always use the `built-in doc strings` from the `.jar` file. (It's written in `English`)
+      So that you can always see the `latest version` of `doc strings`.
       
-      When `disable` this option, we will ues the `doc strings` from the `language files`. */
+      If false, it will use the `external doc strings` from the `config/fuji/languages/<default-language>.json` file. */
       "always_use_built_in_doc_strings": true
     }
-  }
-  /* Fuji is designed to be fully-modular.
-  All modules is `disabled` by default.
-  You can modify the `enable` field to enable a module <red>after a server re-start</red>.
-  <b>Remember to `restart` the server to apply the modification.
-  
-  Issue `/fuji inspect modules` to see the module status. */,
+  },
   "modules": {
     "fuji": {
       "enable": true
-    }
-    /* The language related options. */,
+    },
     "language": {
       "enable": true
     },
@@ -751,35 +752,39 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::
 :::config
 - File Name: `permission.json`
-- Document:   ◉ How is `permission` handled for each fuji command?
+- Document:   ◉ What is the permission of a command from this mod?
   
-  1. Each fuji command is registered with a `default level permission`.
+  1. Each command is registered with a default `level permission`.
   
-  1.a. Check the status of `all_commands_require_level_4_permission_to_use_by_default` option in `config.json` file.
+  1.a. Check the value of `all_commands_require_level_4_permission_to_use_by_default` option in `config/fuji/config.json` file.
   
-  1.a.i. If it's `true`, then all fuji commands are registered with `level permission 4`.
+  1.a.i. If `true`, then `all` commands from this mod are registered with `level permission 4`.
   
-  1.a.ii. If it's `false`, then each fuji command is registered with `level permission N` defined in `permission.json` file.
-  
-  2. You can use `command_permission` module to assign a `string permission` for each command, and override the `default level permission`.
+  1.a.ii. If `false`, then `each` command from this mod is registered with `level permission N` defined in `config/fuji/permission.json` file.
   
   
   
   ◉ What is the `permission.json` file?
   
-  This file is used to define the `default required level permission` for each registered fuji commands.
+  This file is used to define the `default required level permission` for each command from this mod.
   
   After modifying this file, issue the `/reload` command to reload all the commands.
   
   
   
-  This config is typically used in a `single-player world`, where no `LuckPerms` mod is installed.
+  This config is usually used in a `single-player` world, where `LuckPerms` mod is NOT installed.
   
-  If you are hosting a dedicated Minecraft server, you can configure the `string permission` for each command using `command_permission` module.
+  If you are hosting a dedicated Minecraft server, you may want to use the `command_permission` module.
   
-  The `command_permission` module will override the `command requirement` defined in this file.
   
-  So, if you are hosting a dedicated Minecraft server, you can simply use `command_permission` module, and ignore this file.
+  
+  ◉ What if I want to use a `string permission` from `LuckPerms` mod?
+  
+  You can use `command_permission` module.
+  
+  That module is used to assign a `string permission` for each command, and `override` the original (the default level permission) requirement.
+  
+  In other words, the `default required level permission` defined in `permission.json` file will be `overridden` by `command_permission` module.
 
 - File Content: 
 <details>
