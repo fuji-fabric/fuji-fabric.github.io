@@ -7,7 +7,7 @@ title: color
 
 ## Overview
 :::module
-  This module introduces `style tags` in certain `places`.
+  This module introduces `style tags` in some `places`.
 
 
 :::
@@ -28,135 +28,135 @@ It must NOT be copied directly into the configuration directory, as it does not 
   "rewrite": {
     "rules": [
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&0"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<black>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&1"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<dark_blue>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&2"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<dark_green>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&3"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<dark_aqua>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&4"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<dark_red>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&5"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<dark_purple>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&6"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<gold>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&7"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<gray>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&8"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<dark_gray>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&9"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<blue>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&a"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<green>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&b"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<aqua>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&c"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<red>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&d"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<light_purple>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&e"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<yellow>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&f"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<white>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&k"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<obf>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&l"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<b>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&m"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<st>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&n"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<u>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&o"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<i>"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "&r"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<r>"
       }
     ]

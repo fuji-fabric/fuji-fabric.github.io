@@ -209,7 +209,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       /* Print the `DEBUG` level messages into the `console`.
       
       This option can be switched using `/fuji debug` command, while the server is running. */,
-      "log_debug_messages": false
+      "print_debug_messages_in_console": false
       /* Print the `first-time user guide` in the `console` on server start-up. */,
       "print_user_guide_in_console": true
     }
@@ -256,11 +256,11 @@ It must NOT be copied directly into the configuration directory, as it does not 
       /* ◉ What is the permission system of this mod?
       
       ➜ Vanilla `permission level` is used for all commands.
-      You can use this mod without a 3rd party `permission mods`.
+      You can use this mod without a `3rd party permission mod`.
       By default, all commands from this mod using the `permission level` as their requirement.
       It makes it easier to use this mod in a `single player` world.
       
-      ➜ There are two groups of commands
+      ➜ There are two groups of commands.
       This mod splits commands into 2 groups, for different users.
       One group for `normal user`, these commands require `level 0 permission` to use.
       One group for `admin user`, these commands require `level 4 permission` to use.
@@ -722,15 +722,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": false,
       "multi_obsidian_platform": {
         "enable": false
-      },
-      "carpet": {
-        "enable": false,
-        "fake_player_manager": {
-          "enable": false
-        },
-        "better_info": {
-          "enable": false
-        }
       }
     },
     "doctor": {

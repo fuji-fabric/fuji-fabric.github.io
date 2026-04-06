@@ -32,7 +32,7 @@ title: launcher
 
 :::colorbox-example
 
-  ◉ Use a lower `angle` for `fast horizontal movement`.
+  ◉ Use a lower `angle` for `fast horizontal` move.
   
   1. `/launch facing @s 15 1`
   
@@ -42,7 +42,7 @@ title: launcher
   
   
   
-  ◉ Use a median `angle` for `balanced horizontal and vertical movement`.
+  ◉ Use a median `angle` for `balanced horizontal and vertical` move.
   
   1. `/launch facing @s 30 3.9`
   

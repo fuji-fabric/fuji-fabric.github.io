@@ -7,11 +7,11 @@ title: anti_build
 
 ## Overview
 :::module
-  This module `bans` specific player `actions`.
+  This module `bans` a specific player `action`.
   
   
   
-  The `actions` can be:
+  The `action` can be:
   
   1. Break a specified block.
   

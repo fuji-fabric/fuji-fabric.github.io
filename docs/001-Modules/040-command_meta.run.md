@@ -179,7 +179,7 @@ title: command_meta.run
 :::
 :::command
 - Command Syntax: `/run as fake-op <ServerPlayer player> <GreedyCommandString rest>`
-- Document:   Execute a command as a player with fake-op.
+- Document:   Execute a command as a player with level permission 4.
 
 
 - Can be executed by console: `true`

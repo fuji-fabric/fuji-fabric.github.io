@@ -7,21 +7,52 @@ title: chat.history
 
 ## Overview
 :::module
-  This module does:
-  
-  1. Stores chat messages as history.
-  
-  2. Delivers them to players when they join the server.
+  This module provides the `history` function for vanilla Minecraft's `chat` system.
 
 
 :::
 ## Color Boxes
 
-:::colorbox-tip
+:::colorbox-note
 
-  ◉ This module works with `Styled Chat` mod.
+  ◉ How it works?
   
-  You can use this module to provide the `chat history` for it.
+  
+  
+  ➜ Store the `chat text` sent by a player.
+  
+  When a player sends a chat text, store it.
+  
+  
+  
+  ➜ Restore the `chat texts` to a new joined player.
+  
+  When a player joins the server, send all the stored chat texts to the player.
+
+
+:::
+
+:::colorbox-note
+
+  ◉ What is the `acceptors` and `rejectors`?
+  
+  A `chat message` = `chat type` + `chat content` + `chat parameter`
+  
+  In vanilla Minecraft, all `chat messages` are sent in a shared channel.
+  
+  
+  
+  The `acceptors` and `rejectors` are used to `select` the interested `chat message`.
+  
+  They are introduced to improve the compatibility with other chat-related mods.
+  
+  
+  
+  A `chat type acceptor` filter a `chat message` by its `chat type`.
+  
+  A `chat content rejector` filter a `chat message` by its `chat content`.
+  
+  A `chat parameter rejector` filter a `chat message` by its `chat parameter`.
 
 
 :::
@@ -40,9 +71,9 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 ```json showLineNumbers title="config/fuji/modules/chat/history/config.json"
 {
-  /* Max stored `chat message` in history. */
-  "buffer_size": 50
-  /* Only accept and save messages with these `message types`. */,
+  /* Maximum number of chat texts stored in chat history. */
+  "max_chat_history_size": 50
+  /* A `chat text` sent by a player will be `stored`, if its `message type` is one of the defined types. */,
   "message_type_acceptors": [
     "minecraft:chat",
     "minecraft:say_command",
@@ -51,18 +82,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
     "fuji:chat_client",
     "styled_chat:generic_hack"
   ]
-  /* Should reject and never save messages that meet the `rejector`. */,
+  /* A `chat text` sent by a player will be `ignored`, if it satisfy one of the defined rejectors. */,
   "message_rejectors": {
-    /* Should reject and never save messages whose `content` meets the rejector. */
+    /* A `chat text` sent by a player will be `ignored`, if its `content` matches one of the defined rejector. */
     "content_rejector": {
-      /* Define `regex` expression to match `message content` */
       "matches": []
     }
-    /* Should reject and never save messages whose `parameter` meets the rejector. */,
+    /* A `chat text` sent by a player will be `ignored`, if its `parameter` matches one of the defined rejector. */,
     "parameter_rejector": {
-      /* Use `regex` expression to match `message parameter`.
-      
-      Issue `/fuji debug` to see the `parameter` of a message. */
       "matches": [
         ".*literal\\{PM\\}.*"
       ]

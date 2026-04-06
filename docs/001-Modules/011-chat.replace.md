@@ -59,33 +59,33 @@ It must NOT be copied directly into the configuration directory, as it does not 
   "replace": {
     "rules": [
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "(?<=^|\\s)item(?=\\s|$)"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "%fuji:item%"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "(?<=^|\\s)inv(?=\\s|$)"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "%fuji:inv%"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "(?<=^|\\s)ender(?=\\s|$)"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "%fuji:ender%"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "(?<=^|\\s)pos(?=\\s|$)"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "%fuji:pos%"
       },
       {
-        /* The `regex` expression used to match the `target string`. */
+        /* The `pattern string` used to match the `target string`. */
         "regex": "(?<=^|\\s)uuid(?=\\s|$)"
-        /* The `pattern` used to replace the `matched target string`. */,
+        /* The `replacement string` used to replace the `matched target string`. */,
         "replacement": "<green>My uuid is %player:uuid%</green>"
       }
     ]

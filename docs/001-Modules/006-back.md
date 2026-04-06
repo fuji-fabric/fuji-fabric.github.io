@@ -35,7 +35,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
   "do_not_push_back_location_if_closer_than_n_blocks": 32.0,
   "push_back_location_on_player_death": true,
   "push_back_location_on_player_teleport": true,
-  "max_back_locations_to_save": 3
+  "max_number_of_back_locations_to_save": 3
 }
 ```
 </details>

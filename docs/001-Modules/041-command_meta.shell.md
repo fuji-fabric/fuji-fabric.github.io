@@ -73,7 +73,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 ```json showLineNumbers title="config/fuji/modules/command_meta/shell/config.json"
 {
-  "enable_warning": "ENABLE THIS MODULE IS POTENTIAL TO HARM YOUR COMPUTER! YOU NEED TO CHANGE THIS FIELD INTO `CONFIRM` TO ENABLE THIS MODULE"
+  "DANGER": "ENABLE THIS MODULE IS POTENTIAL TO HARM YOUR COMPUTER! YOU NEED TO CHANGE THIS FIELD INTO `CONFIRM` TO ENABLE THIS MODULE"
   /* Security options. */,
   "security": {
     /* Only the `console` can use the `/shell` command? */
