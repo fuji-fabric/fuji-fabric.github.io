@@ -617,6 +617,9 @@ It must NOT be copied directly into the configuration directory, as it does not 
       },
       "disconnect": {
         "enable": false
+      },
+      "delete": {
+        "enable": false
       }
     },
     "command_spy": {

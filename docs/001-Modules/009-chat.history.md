@@ -99,3 +99,12 @@ It must NOT be copied directly into the configuration directory, as it does not 
 ```
 </details>
 :::
+## Commands
+:::command
+- Command Syntax: `/chat history forget`
+- Document:   Forget the chat history.
+
+
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+:::

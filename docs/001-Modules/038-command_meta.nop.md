@@ -9,16 +9,16 @@ title: command_meta.nop
 :::module
   This module provides the `/nop` command.
   
-  This command `does nothing` and returns `success` directly.
+  It is a command that `does nothing`, and returns `SUCCESS` directly as its return value.
   
-  It can be used as a `dummy command`.
+  It can be used to hold the `place` where a command is required.
 
 
 :::
 ## Commands
 :::command
 - Command Syntax: `/nop`
-- Document:   Do nothing, simply return SUCCESS as the command return value.
+- Document:   Do nothing, return SUCCESS directly as the command return value.
 
 
 - Can be executed by console: `true`

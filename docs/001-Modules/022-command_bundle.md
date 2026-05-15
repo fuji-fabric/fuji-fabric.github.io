@@ -874,6 +874,44 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "bundle": [
         "run as fake-op $target send-message %player:name% <yellow>The UUID of player $target is %fuji:escape player:uuid 2%"
       ]
+    },
+    {
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command does nothing, and returns `SUCCESS` as its return value."
+      /* The requirement to use this `bundle command`. */,
+      "requirement": {
+        "level": 4,
+        "string": null
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "success"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
+      "bundle": [
+        "nop"
+      ]
+    },
+    {
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This command does nothing, and returns `FAILURE` as its return value."
+      /* The requirement to use this `bundle command`. */,
+      "requirement": {
+        "level": 4,
+        "string": null
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "failure"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
+      "bundle": [
+        "NOT nop"
+      ]
     }
   ]
 }
@@ -916,6 +954,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::command
 - Command Syntax: `/dice`
 - Document:   This command will roll a random dice.
+
+
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+:::
+:::command
+- Command Syntax: `/failure`
+- Document:   This command does nothing, and returns `FAILURE` as its return value.
 
 
 - Can be executed by console: `true`
@@ -1108,6 +1154,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::command
 - Command Syntax: `/strike`
 - Document:   This command summons a lightning_bolt entity.
+
+
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+:::
+:::command
+- Command Syntax: `/success`
+- Document:   This command does nothing, and returns `SUCCESS` as its return value.
 
 
 - Can be executed by console: `true`
