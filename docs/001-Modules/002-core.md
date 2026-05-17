@@ -475,6 +475,9 @@ It must NOT be copied directly into the configuration directory, as it does not 
     "sit": {
       "enable": false
     },
+    "sign_editor": {
+      "enable": false
+    },
     "teleport_warmup": {
       "enable": false
     },
@@ -875,6 +878,10 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::argument-type
 - Argument Type Name: `[double]`
 - Argument Type Class: `[double, Double]`
+:::
+:::argument-type
+- Argument Type Name: `[dye-color]`
+- Argument Type Class: `[DyeColor]`
 :::
 :::argument-type
 - Argument Type Name: `[entity-anchor]`
