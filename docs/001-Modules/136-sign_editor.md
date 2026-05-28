@@ -17,9 +17,9 @@ title: sign_editor
 
   ◉ Modify the states.
   
-  - Toggle the value: `/sign-edit glow`
+  - Flip the value: `/sign-edit glowing`
   
-  - Set the value: `/sign-edit glow --glow true`
+  - Set the value: `/sign-edit glowing --value true`
   
   
   
@@ -50,16 +50,16 @@ title: sign_editor
 
 ## Commands
 :::command
-- Command Syntax: `/sign-edit glow [Boolean glow] [Boolean frontSide] [Boolean bothSides]`
-- Document:   Set the `glow` state of the sign block.
+- Command Syntax: `/sign-edit glowing [Boolean value] [Boolean frontSide] [Boolean bothSides]`
+- Document:   Modify the `glowing` state of the sign block.
 
 
 - Can be executed by console: `false`
 - Required Level Permission: `4`
 :::
 :::command
-- Command Syntax: `/sign-edit lock [Boolean lock]`
-- Document:   Set the `lock` state of the sign block.
+- Command Syntax: `/sign-edit locking [Boolean value]`
+- Document:   Modify the `locking` state of the sign block.
 
 
 - Can be executed by console: `false`

@@ -912,6 +912,27 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "bundle": [
         "NOT nop"
       ]
+    },
+    {
+      "enable": true
+      /* The `document` for this `bundle command`. This field can be `null`. */,
+      "document": "This is a custom predicate command."
+      /* The requirement to use this `bundle command`. */,
+      "requirement": {
+        "level": 4,
+        "string": null
+      }
+      /* The `syntax pattern` for this `bundle command`. */,
+      "pattern": "is-rich? <player target>"
+      /* The `body` of this `bundle command`.
+      
+      The `body` is a list of commands.
+      It will be executed as console. */,
+      "bundle": [
+        "say The commands are executed one by one from up to down.",
+        "say The last command's return value is the final return value of the entire bundle command.",
+        "has-item? $target minecraft:gold_ingot 2048"
+      ]
     }
   ]
 }
@@ -1010,6 +1031,14 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::command
 - Command Syntax: `/introduce-me`
 - Document:   This command will introduce yourself to others.
+
+
+- Can be executed by console: `true`
+- Required Level Permission: `4`
+:::
+:::command
+- Command Syntax: `/is-rich? <ServerPlayer target>`
+- Document:   This is a custom predicate command.
 
 
 - Can be executed by console: `true`

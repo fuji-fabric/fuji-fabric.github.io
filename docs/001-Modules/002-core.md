@@ -92,7 +92,7 @@ title: core
   
   Most configuration files are written in `JSON format` and may be large.
   
-  A modern `text editor` provides `structure highlighting` and `error checking` features.
+  A modern `text editor` can `highlight the structure` and `check the errors`.
   
   It makes configuration easier.
   

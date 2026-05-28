@@ -7,7 +7,9 @@ title: command_event
 
 ## Overview
 :::module
-  This module allows executing `defined commands` in response to various `events`.
+  This module allows to define `commands` to react to a target `event`.
+  
+  When an interesting event occurs, the specified commands will be executed, as the response.
 
 
 :::
