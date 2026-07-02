@@ -9,33 +9,11 @@ title: command_advice
 :::module
   This module allows you to `decorate` an existing `target command` with specified `commands`.
   
-  It can be used to `modify` the `effect` of an existing `target command` with `commands`, without modifying the original `definition` of the target command.
-  
   
   
   A `command advice` is a `modifier` for a `target command`.
   
-  The types of command advices include:
-  
-  - `BEFORE_EXECUTION`
-  
-  - `AFTER_EXECUTION`
-  
-  - `ON_EXECUTION_SUCCESS`
-  
-  - `ON_EXECUTION_FAILURE`
-  
-  - `ON_EXECUTION_CANCELLED`
-  
-  - `CANCEL_AS_SUCCESS`
-  
-  - `CANCEL_AS_FAILURE`
-  
-  - `CANCEL_IF_ANY_SUCCESS`
-  
-  - `CANCEL_IF_ALL_SUCCESS`
-  
-  - ...
+  It can be used to `modify` the `effect` of an existing `target command` with `commands`, without modifying the original `definition` of the target command.
 
 
 :::

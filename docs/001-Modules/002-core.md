@@ -848,10 +848,6 @@ It must NOT be copied directly into the configuration directory, as it does not 
 - Argument Type Class: `[BossBarOverlay]`
 :::
 :::argument-type
-- Argument Type Name: `[color]`
-- Argument Type Class: `[ChatFormatting]`
-:::
-:::argument-type
 - Argument Type Name: `[column-pos]`
 - Argument Type Class: `[ColumnPos]`
 :::
@@ -1034,6 +1030,10 @@ It must NOT be copied directly into the configuration directory, as it does not 
 :::argument-type
 - Argument Type Name: `[team]`
 - Argument Type Class: `[PlayerTeam]`
+:::
+:::argument-type
+- Argument Type Name: `[color, team-color]`
+- Argument Type Class: `[ChatFormatting]`
 :::
 :::argument-type
 - Argument Type Name: `[text]`

@@ -815,7 +815,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
       The `body` is a list of commands.
       It will be executed as console. */,
       "bundle": [
-        "say %player:name% just roll out %fuji:random 1 6% points."
+        "say %player:name% just roll out %fuji:random 1 7% points."
       ]
     },
     {
