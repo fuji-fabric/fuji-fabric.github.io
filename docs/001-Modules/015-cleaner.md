@@ -50,7 +50,7 @@ title: cleaner
   
   - `KILL`: Remove the entity as if it had `died`, triggering the `entity death event`. (Loot will be dropped.)
   
-  - `DISCARD`: Remove the entity by `discarding` it, without triggering any events. (No loot will be dropped.)
+  - `DELETE`: Remove the entity by `deleting` it, without triggering any events. (No loot will be dropped.)
   
   
   
@@ -148,25 +148,25 @@ It must NOT be copied directly into the configuration directory, as it does not 
       "enable": false,
       "translatable_key": "block.minecraft.sand",
       "lives_longer_than_age": 1200,
-      "cleanup_method": "DISCARD"
+      "cleanup_method": "DELETE"
     },
     {
       "enable": false,
       "translatable_key": "item.minecraft.ender_pearl",
       "lives_longer_than_age": 1200,
-      "cleanup_method": "DISCARD"
+      "cleanup_method": "DELETE"
     },
     {
       "enable": false,
       "translatable_key": "block.minecraft.white_carpet",
       "lives_longer_than_age": 1200,
-      "cleanup_method": "DISCARD"
+      "cleanup_method": "DELETE"
     },
     {
       "enable": false,
       "translatable_key": "block.minecraft.cobblestone",
       "lives_longer_than_age": 1200,
-      "cleanup_method": "DISCARD"
+      "cleanup_method": "DELETE"
     },
     {
       "enable": false,
