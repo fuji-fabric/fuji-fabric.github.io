@@ -158,7 +158,7 @@ It must NOT be copied directly into the configuration directory, as it does not 
 
 ```json showLineNumbers title="config/fuji/modules/command_cooldown/config.json"
 {
-  "admin_players_can_bypass": true
+  "admin_players_can_bypass": false
   /* The `unnamed cooldown` is applied `per-player`.
   
   Define the `regex` expression to match the `target command`.

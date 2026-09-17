@@ -115,6 +115,10 @@ title: system_message
 
   ◉ Customize the text used in screen.
   
+  NOTE: Some texts may need a server restart to apply the changes.
+  
+  
+  
   Key: `multiplayer.disconnect.server_shutdown`
   
   Value: `Server closeeeeeeeed`
