@@ -8,7 +8,7 @@ title: command_toolbox.trashcan
 ## Commands
 :::command
 - Command Syntax: `/trashcan`
-- Document:   Open a trans can gui.
+- Document:   Open a trash can gui.
 
 
 - Can be executed by console: `false`
@@ -16,7 +16,7 @@ title: command_toolbox.trashcan
 :::
 :::command
 - Command Syntax: `/trashcan others <PlayerCollection others>`
-- Document:   Open a trans can gui.
+- Document:   Open a trash can gui.
 
 
 - Can be executed by console: `true`
